@@ -33,6 +33,11 @@
   --color-beige: #f5ebdc;
   --color-light-beige: #fffcf8;
   --color-yellow: #ffaa00;
+
+  /* breakpoint 설정*/
+  --breakpoint-md: 39.9375rem;
+  --breakpoint-lg: 64rem;
+  --breakpoint-xl: 93.75rem;
 }
 
 /* BKBulMatPro 폰트 */
