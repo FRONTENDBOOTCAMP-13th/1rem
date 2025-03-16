@@ -1,6 +1,9 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 @theme {
+  /* BKBulMatPRo 폰트 변수 설정*/
+  --font-BKBulMatPro: 'BKBulMatPro', serif;
+
   /* 텍스트 사이즈 변수 설정 */
   --text-*: initial;
 
@@ -30,4 +33,41 @@
   --color-beige: #f5ebdc;
   --color-light-beige: #fffcf8;
   --color-yellow: #ffaa00;
+}
+
+/* BKBulMatPro 폰트 */
+@font-face {
+  font-family: 'BKBulMatPro';
+  font-weight: 700;
+  font-display: swap;
+  src:
+    local('BKBulMatPro-Black'),
+    url('/fonts/BKBulMatPro-Bold.woff') format('woff');
+}
+
+/* Sandoll-GothicNeoRound 폰트 */
+@font-face {
+  font-family: 'Sandoll-GothicNeoRound';
+  font-weight: 400;
+  font-display: swap;
+  src:
+    local('Sandoll-GothicNeoRound-400'),
+    url('/fonts/Sandoll-GothicNeoRound-400.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Sandoll-GothicNeoRound';
+  font-weight: 700;
+  font-display: swap;
+  src:
+    local('Sandoll-GothicNeoRound-700'),
+    url('/fonts/Sandoll-GothicNeoRound-700.woff') format('woff');
+}
+
+body {
+  /* 기본 폰트 선언 */
+  font-family: 'Sandoll-GothicNeoRound', sans-serif;
+
+  /* 기본 배경색 선언 */
+  background-color: var(--color-beige);
 }
