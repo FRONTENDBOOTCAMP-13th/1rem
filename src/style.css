@@ -4,6 +4,9 @@
   /* BKBulMatPRo 폰트 변수 설정*/
   --font-BKBulMatPro: 'BKBulMatPro', serif;
 
+  /* BKBulMatPRo 폰트 변수 설정*/
+  --font-Flame: 'Flame', serif;
+
   /* 텍스트 사이즈 변수 설정 */
   --text-*: initial;
 
@@ -33,6 +36,11 @@
   --color-beige: #f5ebdc;
   --color-light-beige: #fffcf8;
   --color-yellow: #ffaa00;
+
+  /* breakpoint 설정*/
+  --breakpoint-md: 39.9375rem;
+  --breakpoint-lg: 64rem;
+  --breakpoint-xl: 93.75rem;
 }
 
 /* BKBulMatPro 폰트 */
@@ -43,6 +51,16 @@
   src:
     local('BKBulMatPro-Black'),
     url('/fonts/BKBulMatPro-Bold.woff') format('woff');
+}
+
+/* Flame 폰트 */
+@font-face {
+  font-family: 'Flame';
+  font-weight: 400;
+  font-display: swap;
+  src:
+    local('Flame-Regular'),
+    url('/fonts/Flame-Regular.woff') format('woff');
 }
 
 /* Sandoll-GothicNeoRound 폰트 */
