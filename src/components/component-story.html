@@ -8,13 +8,13 @@
     <link rel="preload" as="font" href="/fonts/Sandoll-GothicNeoRound-700.woff" crossorigin="anonymous" />
     <script type="module" src="/src/main.js"></script>
   </head>
-  <body class="m-7.5 space-y-10 pb-[500px]">
+  <body class="m-5 space-y-10 pb-[500px]">
     <h1 class="text-3xl font-bold">STORY 메뉴 하위 페이지 컴포넌트 모음</h1>
 
     <!-- ST: 브랜드 CARD 컴포넌트 -->
     <div>
       <h2 class="mb-4 2xl font-bold">브랜드 CARD 컴포넌트</h2>
-      <article class="px-[.9375rem] py-7.5 rounded-[.625rem] bg-white md:p-7.5 lg:flex lg:gap-x-15 lg:items-center">
+      <article class="px-[.9375rem] py-7.5 rounded-[.625rem] bg-light-beige md:p-7.5 lg:flex lg:gap-x-15 lg:items-center">
         <div class="lg:w-1/2">
           <h3 class="font-BKBulMatPro text-lg text-brown text-center md:text-3xl lg:text-5xl">버거킹 GLOBAL</h3>
           <div class="mt-5 space-y-[1em] text-xs text-brown leading-[1.3] md:text-sm">
@@ -25,7 +25,7 @@
           </div>
         </div>
         <div class="lg:w-[calc(50%-30px)]">
-          <img src="/src/assets/story/brand/brand_2.webp" alt="" class="mx-auto mt-5 lg:mt-0" />
+          <img src="/src/assets/story/brand/brand_2.webp" alt="초기 버거킹 매장 이미지" class="mx-auto mt-5 lg:mt-0" />
         </div>
       </article>
     </div>
@@ -34,7 +34,7 @@
     <!-- ST: Why, ESG, QSR 상단 목차 컴포넌트 -->
     <div>
       <h2 class="mb-4 2xl font-bold">Why, ESG, QSR 상단 목차 컴포넌트</h2>
-      <div class="p-5 rounded-[.625rem] bg-white md:p-7.5 lg:p-10">
+      <div class="p-5 rounded-[.625rem] bg-light-beige md:p-7.5 lg:p-10">
         <h3 class="font-BKBulMatPro text-lg text-brown text-center md:text-3xl lg:text-5xl">우리가 버거의 킹인 7가지 이유</h3>
         <p class="mt-4.5 text-brown-0.7 text-center leading-[1.06]">
           70년 넘게 전세계 고객에게 꾸준히 사랑 받아 온<br />
@@ -62,10 +62,10 @@
     </div>
     <!-- ED: Why, ESG, QSR 상단 목차 컴포넌트 -->
 
-    <!-- ST: Why, QSR 카드 컴포넌트 -->
+    <!-- ST: Why 카드 컴포넌트 -->
     <div>
-      <h2 class="mb-4 2xl font-bold">Why, QSR 카드 컴포넌트</h2>
-      <div class="p-5 rounded-[.625rem] bg-white md:px-7.5 md:p-7.5 lg:flex lg:gap-x-15 lg:items-center">
+      <h2 class="mb-4 2xl font-bold">Why 카드 컴포넌트</h2>
+      <div class="p-5 rounded-[.625rem] bg-light-beige md:px-7.5 md:p-7.5 lg:flex lg:gap-x-15 lg:items-center">
         <div class="space-y-5 lg:w-1/2 lg:space-y-7.5">
           <h3 class="text-2xs text-brown font-bold md:text-sm">버거킹의 자랑, 와퍼!</h3>
           <strong class="block font-BKBulMatPro text-lg text-brown leading-[1.1] md:text-3xl lg:text-5xl lg-leading-[1.2]">Real WHOPPER</strong>
@@ -76,16 +76,42 @@
           </div>
         </div>
         <div class="lg:w-[calc(50%-30px)]">
-          <img src="/src/assets/story/whyburgerking/whyburgerking_2.webp" alt="" class="hidden lg:block mx-auto" />
+          <img src="/src/assets/story/whyburgerking/whyburgerking_2.webp" alt="" class="hidden lg:block mx-auto" aria-label="true"/>
         </div>
       </div>
     </div>
-    <!-- ED: Why, QSR 카드 컴포넌트 -->
+    <!-- ED: Why 카드 컴포넌트 -->
+
+    <!-- ST: QSR 카드 컴포넌트 -->
+    <div>
+      <h2 class="mb-4 2xl font-bold">QSR 카드 컴포넌트</h2>
+      <div class="p-5 rounded-[.625rem] bg-light-beige md:px-7.5 md:p-7.5 lg:flex lg:gap-x-15 lg:items-center">
+        <div class="space-y-5 lg:w-1/2 lg:space-y-7.5">
+          <h3 class="text-2xs text-brown font-bold md:text-sm">모바일 오더 UX 강화</h3>
+          <strong class="block font-BKBulMatPro text-lg text-brown leading-[1.1] md:text-3xl lg:text-5xl lg-leading-[1.2]">미리 주문 직접 픽업 킹오더, 집과 회사로 배달 딜리버리오더</strong>
+          <div class="mb-5 space-y-[1em] text-sm text-brown-0.7 leading-[1.47] md:text-lg">
+            <p>
+              버거킹은 '가장 스마트한 QSR(Smartest QSR) 브랜드'를 목표로 '버거킹 앱'을 핵심 디지털 플랫폼으로 구축하고<br />
+              옴니채널 전략과 UX/UI에 대한 투자 등 사용자 경험향상을 위해 끊임 없이 노력하고 있습니다.
+            </p>
+            <p>
+              버거킹 앱은 누적 다운로드 수 약 1000만(2023년 7월 기준)을 달성하였으며,<br />
+              월간 앱 활성 이용자 수 190만명(2023년 7월 기준)을 기록하는 등 동종 QSR업계에서<br />
+              압도적으로 높은 수준을 유지하고 있습니다.
+            </p>
+          </div>
+        </div>
+        <div class="lg:w-[calc(50%-30px)]">
+          <img src="/src/assets/story/smartqsr/smartqsr_1.webp" alt="" class="mx-auto" aria-label="true"/>
+        </div>
+      </div>
+    </div>
+    <!-- ED: QSR 카드 컴포넌트 -->
 
     <!-- ST: ESG 카드 컴포넌트 -->
     <div>
       <h2 class="mb-4 2xl font-bold">ESG 카드 컴포넌트</h2>
-      <div class="p-5 rounded-[.625rem] bg-white md:px-7.5 md:p-7.5 lg:flex lg:gap-15 lg:items-center">
+      <div class="p-5 rounded-[.625rem] bg-light-beige md:px-7.5 md:p-7.5 lg:flex lg:gap-15 lg:items-center">
         <div class="space-y-5 lg:w-1/2 lg:space-y-7.5">
           <h3 class="text-2xs text-brown-0.7 font-bold md:text-sm">플라스틱 빨대 사용 줄이기 캠페인</h3>
           <strong class="block font-BKBulMatPro text-lg text-brown leading-[1] md:text-3xl lg:text-5xl lg-leading-[1.2]">저희 매장은 빨대 없는 뚜껑을 제공합니다.</strong>
@@ -95,7 +121,7 @@
           </p>
         </div>
         <div class="lg:w-[calc(50%-30px)]">
-          <img src="/src/assets/story/esgbusiness/esgbusiness_1.webp" alt="" class="mx-auto max-w-full" />
+          <img src="/src/assets/story/esgbusiness/esgbusiness_1.webp" alt="STOP USING PLASTIC STRAWS" class="mx-auto" />
         </div>
       </div>
     </div>
@@ -109,7 +135,7 @@
         <ul class="grid lg:grid-cols-2 gap-x-15 gap-y-5">
           <li class="flex gap-2.5 md:gap-5">
             <div class="w-25 md:w-40">
-              <img src="/src/assets/story/growth/growth_1.webp" alt="" />
+              <img src="/src/assets/story/growth/growth_1.webp" alt="" aria-label="true"/>
             </div>
             <div class="space-y-2.5 leading-[1] flex-1">
               <p class="text-brown-0.7 text-xs lg:text-lg">2024년 08월</p>
@@ -119,7 +145,7 @@
           </li>
           <li class="flex gap-2.5 md:gap-5">
             <div class="w-25 md:w-40">
-              <img src="/src/assets/story/growth/growth_1.webp" alt="" />
+              <img src="/src/assets/story/growth/growth_1.webp" alt="" aria-label="true"/>
             </div>
             <div class="space-y-2.5 leading-[1] flex-1">
               <p class="text-brown-0.7 text-xs lg:text-lg">2024년 12월</p>
@@ -129,7 +155,7 @@
           </li>
           <li class="flex gap-2.5 md:gap-5">
             <div class="w-25 md:w-40">
-              <img src="/src/assets/story/growth/growth_1.webp" alt="" />
+              <img src="/src/assets/story/growth/growth_1.webp" alt="" aria-label="true" />
             </div>
             <div class="space-y-2.5 leading-[1] flex-1">
               <p class="text-brown-0.7 text-xs lg:text-lg">2024년 12월</p>
@@ -147,17 +173,77 @@
       <h2 class="mb-4 2xl font-bold">수상실적 카드 리스트 컴포넌트</h2>
       <div>
         <h3 class="font-BKBulMatPro text-[1.25rem] text-brown md:text-5xl lg:text-6xl">2025</h3>
-        <ul class="grid gap-y-5 mt-2.5 md:grid-cols-2 md:gap-x-3 md:gap-y-7.5 md:mt-7.5">
+        <ul class="grid gap-y-5 mt-2.5 md:grid-cols-2 md:gap-x-3 md:gap-y-7.5 md:mt-7.5 lg:grid-cols-3 lg:gap-x-5">
           <li>
             <div class="relative">
-              <img src="/src/assets/story/adarchive/adarchive_11.webp" alt="" class="w-full rounded-[.625rem]" />
+              <img src="/src/assets/story/adarchive/adarchive_11.webp" alt="콰트로치즈 풀드비프 와퍼 광고영상 썸네일 이미지" class="w-full rounded-[.625rem]" />
               <button type="button" class="absolute top-1/2 left-1/2 w-25 h-25 translate-x-[-50%] translate-y-[-50%] bg-[url(/src/assets/elements/btn_play.svg)] bg-no-repeat bg-center bg-[length:3rem] md:bg-[length:auto]"><span class="sr-only">'콰트로치즈 풀드비프 와퍼' 광고 영상 팝업 열기</span></button>
             </div>
-            <h4 class="mt-2.5 text-brown">콰트로치즈 풀드비프 와퍼</h4>
+            <h4 class="mt-2.5 text-brown lg:text-3xl">콰트로치즈 풀드비프 와퍼</h4>
+          </li>
+          <li>
+            <div class="relative">
+              <img src="/src/assets/story/adarchive/adarchive_10.webp" alt="불끈버거 광고영상 썸네일 이미지" class="w-full rounded-[.625rem]" />
+              <button type="button" class="absolute top-1/2 left-1/2 w-25 h-25 translate-x-[-50%] translate-y-[-50%] bg-[url(/src/assets/elements/btn_play.svg)] bg-no-repeat bg-center bg-[length:3rem] md:bg-[length:auto]"><span class="sr-only">'콰트로치즈 풀드비프 와퍼' 광고 영상 팝업 열기</span></button>
+            </div>
+            <h4 class="mt-2.5 text-brown leading-[1.1] lg:text-3xl">[불끈버거] 먹으면 불끈 힘이 나는, 불 끈 영웅들의 버거</h4>
+          </li>
+          <li>
+            <div class="relative">
+              <img src="/src/assets/story/adarchive/adarchive_11.webp" alt="콰트로치즈 풀드비프 와퍼 광고영상 썸네일 이미지" class="w-full rounded-[.625rem]" />
+              <button type="button" class="quatro absolute top-1/2 left-1/2 w-25 h-25 translate-x-[-50%] translate-y-[-50%] bg-[url(/src/assets/elements/btn_play.svg)] bg-no-repeat bg-center bg-[length:3rem] md:bg-[length:auto]"><span class="sr-only">'콰트로치즈 풀드비프 와퍼' 광고 영상 팝업 열기</span></button>
+            </div>
+            <h4 class="mt-2.5 text-brown lg:text-3xl">콰트로치즈 풀드비프 와퍼</h4>
           </li>
         </ul>
       </div>
     </div>
     <!-- ED: 광고영상 카드 리스트 컴포넌트 -->
+
+    <!-- ST: 광고영상 모달 컴포넌트 -->
+    <div>
+      <h2 class="mb-4 2xl font-bold">광고영상 모달 컴포넌트</h2>
+      <p>위에 광고 영상을 눌러보세요</p>
+      <dialog class="dialog top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] justify-center items-center w-full h-full bg-transparent [&::backdrop]:bg-brown [&::backdrop]:opacity-80">
+        <div class="max-w-125 w-full min-h-37.5 rounded-[1.25rem] bg-beige lg:max-w-none lg:w-[60vw] lg:min-w-160">
+        <header class="flex justify-end">
+          <button tyep="button" class="close-dialog block w-[3.375rem] h-[54px] bg-[url(/src/assets/elements/btn_pop_close.svg)] bg-no-repeat bg-center"><span class="sr-only">광고 영상 모달창 닫기</span></button>
+        </header>
+        <div>
+          <iframe data-v-2e28f2b0="" class="w-full h-[70vh]" src="https://www.youtube.com/embed/6LbnTsNSZWM?autoplay=1&amp;mute=1" title="콰트로치즈 풀드비프 와퍼" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+        </div>
+        <footer class="p-[.9375rem] lg:pt-5 lg:px-7.5 lg:pb-[1.5625rem]">
+          <h3 class="text-lg text-brown font-bold leading-[1.2]">콰트로치즈 풀드비프 와퍼</h3>
+        </footer>
+      </dialog>
+    </div>
+    </div>
+    <!-- ED: 광고영상 모달 컴포넌트 -->
   </body>
+
+  <script type="module">
+    // 광고영상 모달 컴포넌트 스크립트
+    document.addEventListener('DOMContentLoaded', () => {
+      // DOM 선택 부분
+      let showDialogButton = document.querySelector('.quatro');
+      let closeDialogButton = document.querySelector('.close-dialog');
+      let dialog = document.querySelector('.dialog');
+      let iframe = dialog.querySelector("iframe");
+
+      // 함수 구현 부분
+      const showModal = () => {
+        dialog.showModal();
+        dialog.style.display = 'flex'; 
+      }
+      const closeModal = () => {
+        dialog.close();
+        dialog.style.display = 'none';
+        iframe.src = iframe.src;
+      };
+
+      // 이벤트 바인딩 부분
+      showDialogButton.addEventListener('click', showModal);
+      closeDialogButton.addEventListener('click', closeModal);
+    });
+  </script>
 </html>
