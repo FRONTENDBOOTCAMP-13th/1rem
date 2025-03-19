@@ -142,25 +142,4 @@
       <!-- ED:Open mobile menu-->
     </div>
   </body>
-  <script type="module">
-    // 모바일 메뉴 열림/닫힘 스크립트
-    document.addEventListener('DOMContentLoaded', () => {
-      let moGnbOpen = document.querySelector('.mognb-open');
-      let moGnb = document.querySelector('#moGnb');
-      let moGnbClose = document.querySelector('.mognb-close');
-
-      //클릭 이벤트
-      const openMoGnb = () => {
-        moGnb.style.left = '0';
-        console.log('click');
-      };
-      const closeMoGnb = () => {
-        moGnb.style.left = '-100%';
-        console.log('click');
-      };
-
-      moGnbOpen.addEventListener('click', openMoGnb);
-      moGnbClose.addEventListener('click', closeMoGnb);
-    });
-  </script>
 </html>
