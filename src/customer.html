@@ -11,6 +11,7 @@
       // DOM 선택 부분
       const showPrivacyPolicy = document.querySelector('#showPrivacyPolicy');
       const closePrivacyPolicy = document.querySelector('#closePrivacyPolicy');
+      const closePrivacyPolicy2 = document.querySelector('#confirmButton');
       const privacyPolicy = document.querySelector('#privacyPolicy');
 
       // 함수 구현 부분
@@ -20,6 +21,7 @@
       // 이벤트 바인딩 부분
       showPrivacyPolicy.addEventListener('click', openDialog);
       closePrivacyPolicy.addEventListener('click', closeDialog);
+      closePrivacyPolicy2.addEventListener('click', closeDialog);
     </script>
   </head>
   <body class="text-brown m-10 space-y-10">
@@ -456,7 +458,8 @@
       <!-- 임시 버튼 -->
       <button type="button" id="showPrivacyPolicy" class="bg-white border border-brown rounded-xl p-2">개인정보 처리방침</button>
       <!-- dialog -->
-      <dialog id="privacyPolicy" aria-label="개인정보 처리방침" class="bg-beige backdrop:bg-brown-0.7 m-auto lg:rounded-[1.25rem] w-screen h-screen lg:w-160 lg:h-[90vh] text-brown">
+      <dialog id="privacyPolicy" aria-label="개인정보 처리방침" class="bg-beige lg:backdrop:bg-brown-0.7 m-auto lg:rounded-[1.25rem] max-lg:min-w-dvw max-lg:min-h-dvh lg:w-160 lg:h-[90vh] text-brown">
+        <!-- class="fixed inset-0 flex flex-col" -->
         <article class="flex flex-col">
           <header class="relative p-[.9375rem_2.5rem] md:p-[1.875rem_3.75rem] h-[3.375rem] md:h-22 text-center text-lg md:text-2xl">
             <p>개인정보 처리방침</p>
@@ -471,17 +474,12 @@
               <option value="2024.04.01">2024.04.01</option>
             </select>
           </div>
-          <div class="px-0 lg:px-7.5 h-[calc(100vh-189px)] md:h-[calc(100vh-223px)] lg:h-[calc(90vh-223px)] overflow-auto">
+          <div class="px-0 lg:px-7.5 h-[calc(100vh-11.8125rem)] md:h-[calc(100vh-13.9375rem)] lg:h-[calc(90vh-13.9375rem)] overflow-scroll">
             <div class="p-5">
               <ul class="">
                 <li>1. 개인정보 수집</li>
                 <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta qui, non quia labore animi eum, voluptatem voluptatibus aut molestias ea cum! Eos, incidunt repudiandae ducimus maiores vero sit modi aspernatur.</li>
-                <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit dignissimos rem praesentium nemo, qui esse sapiente quos unde ad tempore sequi totam optio provident quod ab accusamus nihil voluptatibus asperiores.</li>
-                <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit dignissimos rem praesentium nemo, qui esse sapiente quos unde ad tempore sequi totam optio provident quod ab accusamus nihil voluptatibus asperiores.</li>
-                <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit dignissimos rem praesentium nemo, qui esse sapiente quos unde ad tempore sequi totam optio provident quod ab accusamus nihil voluptatibus asperiores.</li>
-                <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit dignissimos rem praesentium nemo, qui esse sapiente quos unde ad tempore sequi totam optio provident quod ab accusamus nihil voluptatibus asperiores.</li>
-                <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit dignissimos rem praesentium nemo, qui esse sapiente quos unde ad tempore sequi totam optio provident quod ab accusamus nihil voluptatibus asperiores.</li>
-                <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit dignissimos rem praesentium nemo, qui esse sapiente quos unde ad tempore sequi totam optio provident quod ab accusamus nihil voluptatibus asperiores.</li>
+
                 <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit dignissimos rem praesentium nemo, qui esse sapiente quos unde ad tempore sequi totam optio provident quod ab accusamus nihil voluptatibus asperiores.</li>
                 <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit dignissimos rem praesentium nemo, qui esse sapiente quos unde ad tempore sequi totam optio provident quod ab accusamus nihil voluptatibus asperiores.</li>
                 <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit dignissimos rem praesentium nemo, qui esse sapiente quos unde ad tempore sequi totam optio provident quod ab accusamus nihil voluptatibus asperiores.</li>
@@ -492,7 +490,7 @@
             </div>
           </div>
           <footer class="p-[.625rem_0.9375rem_0.9375rem_0.9375rem] lg:p-[1.25rem_1.875rem] h-21">
-            <button type="button" class="pt-[.6563rem] pb-[.5938rem] px-5 rounded-[3.125rem] w-full h-11 text-sm text-white bg-brown">제출하기</button>
+            <button type="button" id="confirmButton" class="pt-[.6563rem] pb-[.5938rem] px-5 rounded-[3.125rem] w-full h-11 text-sm text-white bg-brown">확인</button>
           </footer>
         </article>
       </dialog>
