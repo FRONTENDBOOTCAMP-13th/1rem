@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>[컴포넌트] 공통 버튼 및 라벨</title>
+    <link rel="preload" as="font" href="/fonts/Sandoll-GothicNeoRound-400.woff" crossorigin="anonymous" />
+    <link rel="preload" as="font" href="/fonts/Sandoll-GothicNeoRound-700.woff" crossorigin="anonymous" />
+    <script type="module" src="/src/main.js"></script>
+  </head>
+  <body class="m-10 space-y-10">
+    <h1 class="text-3xl font-bold">[컴포넌트] 공통 버튼 및 라벨</h1>
+
+    <!-- 앞 아이콘 링크 이동 버튼 / 1024px 이상 -->
+    <div>
+      <h2 class="mb-4 2xl font-bold">앞 아이콘 링크 이동 버튼</h2>
+      <a href="#" class="pt-[.5625rem] pb-2 pr-4 pl-[2.125rem] text-xs text-brown text-center rounded-[3.125rem] bg-brown-0.05 bg-[url('/src/assets/elements/ico_tit_store.svg')] bg-no-repeat bg-[left_14px_center] bg-[length:14px]">가맹점 모집</a>
+    </div>
+
+    <!-- 뒤 아이콘 링크 이동 버튼 / 1024px 이상 -->
+    <div>
+      <h2 class="mb-4 2xl font-bold">뒤 아이콘 링크 이동 버튼</h2>
+      <a href="#" class="py-[.7188rem] pr-[2.375rem] pl-3 text-2xs text-brown text-center rounded-[3.125rem] bg-brown-0.05 bg-[url('/src/assets/elements/ico_bt_link.svg')] bg-no-repeat bg-[right_12px_center] opacity-70">인재채용</a>
+    </div>
+
+    <!-- 메뉴소개 버튼 default -->
+    <div>
+      <h2 class="mb-4 2xl font-bold">메뉴소개 버튼 default</h2>
+      <a href="#" class="py-[.5313rem] px-4 text-xs text-brown text-center rounded-[3.125rem] bg-brown-0.05 lg:text-sm lg:py-[10px]">추천메뉴</a>
+    </div>
+
+    <!-- 메뉴소개 버튼 active-->
+    <div>
+      <h2 class="mb-4 2xl font-bold">메뉴소개 버튼 active</h2>
+      <a href="#" class="py-[.5313rem] px-4 text-xs font-bold text-white text-center rounded-[3.125rem] bg-brown lg:text-sm lg:py-[10px]">추천메뉴</a>
+    </div>
+
+    <!-- fill 버튼 default -->
+    <div>
+      <h2 class="mb-4 2xl font-bold">fill 버튼 default</h2>
+      <button type="button" class="w-full pt-[.6563rem] pb-[.5938rem] px-5 rounded-[3.125rem] text-sm text-white bg-brown">제출하기</button>
+    </div>
+
+    <!-- fill 버튼 light -->
+    <div>
+      <h2 class="mb-4 2xl font-bold">fill 버튼 light</h2>
+      <button type="button" class="w-full pt-[.6563rem] pb-[.5938rem] px-5 rounded-[3.125rem] text-sm text-brown bg-brown-0.05">취소</button>
+    </div>
+
+    <!-- fill 버튼 disabled -->
+    <div>
+      <h2 class="mb-4 2xl font-bold">submit 버튼 disabled</h2>
+      <button type="button" disabled class="w-full pt-[.6563rem] pb-[.5938rem] px-5 rounded-[3.125rem] text-sm text-white bg-brown-0.1">제출하기</button>
+    </div>
+
+    <!-- outline 버튼 default -->
+    <div>
+      <h2 class="mb-4 2xl font-bold">outline 버튼 default</h2>
+      <button type="button" disabled class="w-full pt-[.6563rem] pb-[.5938rem] px-5 border border-border-form rounded-[3.125rem] text-sm text-brown">취소</button>
+    </div>
+  </body>
+</html>
