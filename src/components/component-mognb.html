@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>[컴포넌트] 공통 버튼 및 라벨</title>
+    <link rel="preload" as="font" href="/fonts/Sandoll-GothicNeoRound-400.woff" crossorigin="anonymous" />
+    <link rel="preload" as="font" href="/fonts/Sandoll-GothicNeoRound-700.woff" crossorigin="anonymous" />
+    <script type="module" src="/src/main.js"></script>
+  </head>
+  <button type="button" class="mognb-open">햄버거 버튼</button>
+  <body>
+    <div id="moGnb" class="absolute top-0 left-[-100%] bg-beige w-screen h-screen px-5 translate duration-[400ms]">
+      <header class="h-[3.5rem] flex justify-between items-center">
+        <!-- 이미지 이동 및 경로 수정 필요 -->
+        <a href="#" target="_self" aria-label="BURGER KING 홈으로 이동" class="block w-[9.375rem] h-4 bg-[url(/src/assets/elements/bg_logo.svg)] bg-no-repeat bg-contain"></a>
+        <button type="button" aria-label="모바일 메뉴 닫기" class="mognb-close w-[34px] h-full bg-[url(/src/assets/elements/btn_pop_close.svg)] bg-no-repeat bg-center"></button>
+      </header>
+      <nav class="h-[calc(100%-130px)]">
+        <ul>
+          <li><a href="" class="block content-center h-21 p-5 pl-18.5 font-BKBulMatPro text-4xl text-brown font-bold bg-[url(/src/assets/elements/ico_gnb_menu01.svg)] bg-no-repeat bg-[left_center]">MENU</a></li>
+          <li class="flex justify-center items-center">
+            <a href="" class="flex-1 content-center h-21 p-5 pl-18.5 font-BKBulMatPro text-4xl text-brown font-bold bg-[url(/src/assets/elements/ico_gnb_menu02.svg)] bg-no-repeat bg-[left_center]">STORY</a>
+            <button type="button" aria-label="STORY 하위 메뉴 펼치기" aria-expanded="false" class="w-[3.625rem] h-21 bg-[url(/src/assets/elements/btn_acc_gnb.svg)] bg-no-repeat bg-center"></button>
+          </li>
+          <li class="flex justify-center items-center">
+            <a href="" class="flex-1 content-center h-21 p-5 pl-18.5 font-BKBulMatPro text-4xl text-brown font-bold bg-[url(/src/assets/elements/ico_gnb_menu04.svg)] bg-no-repeat bg-[left_center]">NEWS</a>
+            <button type="button" aria-label="NEWS 하위 메뉴 펼치기" aria-expanded="false" class="w-[3.625rem] h-21 bg-[url(/src/assets/elements/btn_acc_gnb.svg)] bg-no-repeat bg-center"></button>
+          </li>
+          <li><a href="" class="block content-center h-21 p-5 pl-18.5 font-BKBulMatPro text-4xl text-brown font-bold bg-[url(/src/assets/elements/ico_gnb_menu03.svg)] bg-no-repeat bg-[left_center]">STORE</a></li>
+          <li><a href="" class="block content-center h-21 p-5 pl-18.5 font-BKBulMatPro text-4xl text-brown font-bold bg-[url(/src/assets/elements/ico_gnb_menu05.svg)] bg-no-repeat bg-[left_center]">CUSTOMER</a></li>
+        </ul>
+        <a href="#" class="inline-block mt-[1.5625rem] pt-[.5625rem] pb-2 pr-4 pl-[2.125rem] text-xs text-brown text-center rounded-[3.125rem] bg-brown-0.05 bg-[url('/src/assets/elements/ico_tit_store.svg')] bg-no-repeat bg-[left_14px_center] bg-[length:14px]">가맹점 모집</a>
+      </nav>
+      <footer class="flex justify-between items-center h-18.5">
+        <a href="#" class="py-[.3125rem] pr-[2.375rem] pl-3 text-sm text-brown text-center rounded-[3.125rem] bg-brown-0.05 bg-[url('/src/assets/elements/ico_bt_link.svg')] bg-no-repeat bg-[right_12px_center]">인재채용</a>
+        <ul class="flex gap-5">
+          <li><a href="" class="block w-8 h-8 rounded-full bg-[url(/src/assets/elements/ico_sns_instagram.svg)] bg-no-repeat bg-cover"></a></li>
+          <li><a href="" class="block w-8 h-8 rounded-full bg-[url(/src/assets/elements/ico_sns_facebook.svg)] bg-no-repeat bg-cover"></a></li>
+          <li><a href="" class="block w-8 h-8 rounded-full bg-[url(/src/assets/elements/ico_sns_x.svg)] bg-no-repeat bg-cover"></a></li>
+          <li><a href="" class="block w-8 h-8 rounded-full bg-[url(/src/assets/elements/ico_sns_youtube.svg)] bg-no-repeat bg-cover"></a></li>
+        </ul>
+      </footer>
+    </div>
+  </body>
+  <script type="module">
+    document.addEventListener('DOMContentLoaded', () => {
+      // 모바일 메뉴 열림/닫힘 스크립트
+
+      let moGnbOpen = document.querySelector('.mognb-open');
+      let moGnb = document.querySelector('#moGnb');
+      let moGnbClose = document.querySelector('.mognb-close');
+
+      const openMoGnb = () => {
+        //
+        moGnb.style.left = '0';
+        console.log('click');
+      };
+      const closeMoGnb = () => {
+        moGnb.style.left = '-100%';
+        console.log('click');
+      };
+
+      moGnbOpen.addEventListener('click', openMoGnb);
+      moGnbClose.addEventListener('click', closeMoGnb);
+    });
+  </script>
+</html>
