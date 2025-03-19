@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>[컴포넌트] 공통 버튼 및 라벨</title>
+    <link rel="preload" as="font" href="/fonts/Sandoll-GothicNeoRound-400.woff" crossorigin="anonymous" />
+    <link rel="preload" as="font" href="/fonts/Sandoll-GothicNeoRound-700.woff" crossorigin="anonymous" />
+    <script type="module" src="/src/main.js"></script>
+  </head>
+  <body>
+    <!-- st : 매장 정보 카드 컴포넌트 -->
+    <div class="mt-4 mr-4 mb-4 ml-4">
+      <ul>
+        <li class="flex bg-light-beige relative mb-5 rounded-[.625rem] p-[15px]">
+          <a href="#" class="w-full">
+            <div class="flex justify-between relative min-h-20 mb-2.5">
+              <div class="relative pr-[5.9375rem]">
+                <span class="flex flex-nowrap items-center gap-1 relative"
+                  ><p class="text-sm font-bold text-brown">천안 성성점</p>
+                  <p class="text-xs text-[#89665b]">538m</p></span
+                >
+                <p class="font-Pretendard text-2xs text-brown-0.7 mt-[.3125rem] mr-0 mb-0.5 ml-0">충청남도 천안시 서북구 성성8로 2-11</p>
+                <p class="font-Pretendard m-0 text-2xs text-brown">연중무휴 (10:00~22:00)</p>
+                <div class="flex flex-wrap mt-[5px] mr-[5px] mb-0 ml-0">
+                  <span class="inline-block min-w-[1.5625rem] h-4 pt-0.5 pr-[.3125rem] pb-0.5 pl-[.3125rem] text-[.5rem] text-[#89665b] text-center leading-3 bg-[#faf4ed] rounded-[20px]">킹오더</span>
+                  <span class="inline-block min-w-[1.5625rem] h-4 pt-0.5 pr-[.3125rem] pb-0.5 pl-[.3125rem] text-[.5rem] text-[#89665b] text-center leading-3 bg-[#faf4ed] rounded-[20px]">딜리버리 </span>
+                </div>
+              </div>
+              <img src="/src/assets/store/store_1.webp" alt="" class="absolute right-0 top-0 w-[80px] h-[80px] rounded-[.625rem]" />
+            </div>
+            <div class="flex justify-between mt-auto mr-0 mb-auto ml-0 text-center relative">
+              <div class="flex items-center min-w-20 mb-[-5px]">
+                <p class="text-left text-xs text-brown">매장정보</p>
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_108_2309)">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M11.0659 6.58163L5.57375 1.34435C5.46279 1.23882 5.27871 1.16882 5.09412 1.16882C4.90953 1.16882 4.72493 1.23882 4.61449 1.34435L3.69153 2.22307C3.58108 2.3286 3.50693 2.50413 3.50693 2.67966C3.50693 2.85519 3.58108 2.99678 3.69153 3.13678L7.74582 7.00269L3.70034 10.8596C3.58938 10.9651 3.51575 11.1406 3.51575 11.3167C3.51575 11.4922 3.58938 11.6678 3.70034 11.7733L4.62279 12.652C4.73375 12.7575 4.91834 12.8275 5.10293 12.8275C5.28753 12.8275 5.43479 12.7575 5.58256 12.652L11.0545 7.43382C11.0545 7.43382 11.5372 7.02443 11.0659 6.58163Z"
+                      fill="#502314"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_108_2309">
+                      <rect width="11.6667" height="7.77778" fill="white" transform="translate(11.2778 1.16669) rotate(90)" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+              <span class="inline-block rounded-[1.875rem] bg-[url('/src/assets/elements/ico_crown.svg')] py-[.1563rem] bg-no-repeat text-2xs bg-brown-0.05 text-brown bg-[length:1rem] bg-[left_5px_center] pl-[25px] pr-[5px]">멤버십 적립매장</span>
+            </div>
+          </a>
+        </li>
+        <li class="flex bg-light-beige relative mb-5 rounded-[.625rem] p-[15px]">
+          <a href="#" class="w-full">
+            <div class="flex justify-between relative min-h-20 mb-2.5">
+              <div class="relative pr-[5.9375rem]">
+                <span class="flex flex-nowrap items-center gap-1 relative"
+                  ><p class="text-sm font-bold text-brown">천안 성성점</p>
+                  <p class="text-xs text-[#89665b]">538m</p></span
+                >
+                <p class="font-Pretendard text-2xs text-brown-0.7 mt-[.3125rem] mr-0 mb-0.5 ml-0">충청남도 천안시 서북구 성성8로 2-11</p>
+                <p class="font-Pretendard m-0 text-2xs text-brown">연중무휴 (10:00~22:00)</p>
+                <div class="flex flex-wrap mt-[5px] mr-[5px] mb-0 ml-0">
+                  <span class="inline-block min-w-[1.5625rem] h-4 pt-0.5 pr-[.3125rem] pb-0.5 pl-[.3125rem] text-[.5rem] text-[#89665b] text-center leading-3 bg-[#faf4ed] rounded-[20px]">킹오더</span>
+                  <span class="inline-block min-w-[1.5625rem] h-4 pt-0.5 pr-[.3125rem] pb-0.5 pl-[.3125rem] text-[.5rem] text-[#89665b] text-center leading-3 bg-[#faf4ed] rounded-[20px]">딜리버리 </span>
+                </div>
+              </div>
+              <img src="/src/assets/store/store_1.webp" alt="" class="absolute right-0 top-0 w-[80px] h-[80px] rounded-[.625rem]" />
+            </div>
+            <div class="flex justify-between mt-auto mr-0 mb-auto ml-0 text-center relative">
+              <div class="flex items-center min-w-20 mb-[-5px]">
+                <p class="text-left text-xs text-brown">매장정보</p>
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_108_2309)">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M11.0659 6.58163L5.57375 1.34435C5.46279 1.23882 5.27871 1.16882 5.09412 1.16882C4.90953 1.16882 4.72493 1.23882 4.61449 1.34435L3.69153 2.22307C3.58108 2.3286 3.50693 2.50413 3.50693 2.67966C3.50693 2.85519 3.58108 2.99678 3.69153 3.13678L7.74582 7.00269L3.70034 10.8596C3.58938 10.9651 3.51575 11.1406 3.51575 11.3167C3.51575 11.4922 3.58938 11.6678 3.70034 11.7733L4.62279 12.652C4.73375 12.7575 4.91834 12.8275 5.10293 12.8275C5.28753 12.8275 5.43479 12.7575 5.58256 12.652L11.0545 7.43382C11.0545 7.43382 11.5372 7.02443 11.0659 6.58163Z"
+                      fill="#502314"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_108_2309">
+                      <rect width="11.6667" height="7.77778" fill="white" transform="translate(11.2778 1.16669) rotate(90)" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+              <span class="inline-block rounded-[1.875rem] bg-[url('/src/assets/elements/ico_crown.svg')] py-[.1563rem] bg-no-repeat text-2xs bg-brown-0.05 text-brown bg-[length:1rem] bg-[left_5px_center] pl-[25px] pr-[5px]">멤버십 적립매장</span>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Ed : 매장 정보 카드 컴포넌트 -->
+    <!-- st : input 컴포넌트 -->
+    <div class="m-4 flex relative items-center">
+      <input type="text" class="inline-block border border-border-form text-brown-0.5 bg-light-beige rounded-lg flex-1 h-[2.875rem] m-0 pt-[5px] pr-[.9375rem] pb-[5px] pl-[.9375rem]" placeholder="지역, 매장명을 입력해주세요" maxlength="30" />
+      <p class="font-xs relative p-[5px_10px] text-brown">취소</p>
+    </div>
+
+    <!-- ed : input 컴포넌트 -->
+  </body>
+</html>
