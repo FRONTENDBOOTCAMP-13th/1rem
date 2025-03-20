@@ -25,8 +25,6 @@
     </script>
   </head>
   <body class="text-brown m-10 space-y-10">
-    <!-- ------------------------------------------- -->
-
     <!-- ST: customer - 고객지원 -->
     <h1 class="text-center text-xl uppercase">customer : 고객지원</h1>
 
@@ -50,9 +48,9 @@
 
       <ul class="grid grid-cols-3 md:grid-cols-6 max-w-[60.25rem] gap-2.5">
         <li class="">
-          <button type="button" class="flex flex-col justify-center items-center border-1 border-border rounded-[.625rem] bg-light-beige w-[100%] h-[5.0625rem]">
-            <span class="contents text-2xs">
-              <img src="/src/assets/faq/ico_faq_delivery.svg" alt="딜리버리" />
+          <button type="button" class="flex flex-col justify-center items-center border-1 border-border rounded-[.625rem] lg:rounded-3xl bg-light-beige w-[100%] h-[5.0625rem] lg:h-[7.375rem]">
+            <span class="contents text-2xs lg:text-xl">
+              <img src="/src/assets/faq/ico_faq_delivery.svg" alt="딜리버리" class="lg:h-[2.375rem] lg:my-2" />
               딜리버리
             </span>
           </button>
@@ -78,7 +76,8 @@
     <!-- ST: 상담 안내 컨테이너 -->
     <div>
       <h2 class="mb-4">상담 안내</h2>
-      <ul class="grid lg:grid-cols-2 gap-2.5 font-Pretendard">
+
+      <ul class="grid md:grid-cols-2 gap-2.5 font-Pretendard">
         <li class="contents">
           <div class="consultation-container flex flex-col gap-[.1875rem] p-[.9375rem] rounded-[.625rem] bg-brown-0.05">
             <strong class="text-xs font-bold">대표 소비자 상담</strong>
@@ -459,7 +458,6 @@
       <button type="button" id="showPrivacyPolicy" class="bg-white border border-brown rounded-xl p-2">개인정보 처리방침</button>
       <!-- dialog -->
       <dialog id="privacyPolicy" aria-label="개인정보 처리방침" class="bg-beige lg:backdrop:bg-brown-0.7 m-auto lg:rounded-[1.25rem] max-lg:min-w-dvw max-lg:min-h-dvh lg:w-160 lg:h-[90vh] text-brown">
-        <!-- class="fixed inset-0 flex flex-col" -->
         <article class="flex flex-col">
           <header class="relative p-[.9375rem_2.5rem] md:p-[1.875rem_3.75rem] h-[3.375rem] md:h-22 text-center text-lg md:text-2xl">
             <p>개인정보 처리방침</p>
@@ -474,23 +472,19 @@
               <option value="2024.04.01">2024.04.01</option>
             </select>
           </div>
-          <div class="px-0 lg:px-7.5 h-[calc(100vh-11.8125rem)] md:h-[calc(100vh-13.9375rem)] lg:h-[calc(90vh-13.9375rem)] overflow-scroll">
-            <div class="p-5">
-              <ul class="">
-                <li>1. 개인정보 수집</li>
-                <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta qui, non quia labore animi eum, voluptatem voluptatibus aut molestias ea cum! Eos, incidunt repudiandae ducimus maiores vero sit modi aspernatur.</li>
-
-                <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit dignissimos rem praesentium nemo, qui esse sapiente quos unde ad tempore sequi totam optio provident quod ab accusamus nihil voluptatibus asperiores.</li>
-                <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit dignissimos rem praesentium nemo, qui esse sapiente quos unde ad tempore sequi totam optio provident quod ab accusamus nihil voluptatibus asperiores.</li>
-                <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit dignissimos rem praesentium nemo, qui esse sapiente quos unde ad tempore sequi totam optio provident quod ab accusamus nihil voluptatibus asperiores.</li>
-                <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit dignissimos rem praesentium nemo, qui esse sapiente quos unde ad tempore sequi totam optio provident quod ab accusamus nihil voluptatibus asperiores.</li>
-                <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit dignissimos rem praesentium nemo, qui esse sapiente quos unde ad tempore sequi totam optio provident quod ab accusamus nihil voluptatibus asperiores.</li>
-                <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit dignissimos rem praesentium nemo, qui esse sapiente quos unde ad tempore sequi totam optio provident quod ab accusamus nihil voluptatibus asperiores.</li>
-              </ul>
-            </div>
+          <div class="p-5 lg:px-7.5 h-[calc(100vh-11.8125rem)] md:h-[calc(100vh-13.9375rem)] lg:h-[calc(90vh-13.9375rem)] overflow-scroll font-Pretendard">
+            <h1 class="text-sm font-bold mt-[.9375rem] mb-[.3125rem]">제 1장 총칙</h1>
+            <h2 class="text-sm font-bold my-[.9375rem_.3125rem]">제 1조 (목적)</h2>
+            <p class="text-base mb-2.5 lg:text-[0.875rem]">
+              AI 코딩 도구를 활용하면 코드 생성 및 자동화, 개발 워크플로우와의 통합 등이 가능하며 기존 개발 환경 대비 생산성을 높일 수 있습니다. 그러나 개발자를 꿈꾸며 학습을하는 예비 개발자에게 AI 코딩 도구는 양날의 검이 될 수 있습니다. AI 코딩 도구에만 의존하는 주니어 개발자는 경쟁력을 갖출 수 없기 때문입니다. 오히려 더 깊이 있게 언어를 학습하고 좋은 질문을 할 수 있도록 문해력(Literacy)을 기르는 것이 필요합니다. 다만 AI 도구를 완전히 배제하는 것이 아닌 학습을 위한 파트너로서 활용할 것을
+              추천합니다.
+            </p>
+            <ul class="text-base mb-2.5 lg:text-[0.875rem]">
+              <li></li>
+            </ul>
           </div>
-          <footer class="p-[.625rem_0.9375rem_0.9375rem_0.9375rem] lg:p-[1.25rem_1.875rem] h-21">
-            <button type="button" id="confirmButton" class="pt-[.6563rem] pb-[.5938rem] px-5 rounded-[3.125rem] w-full h-11 text-sm text-white bg-brown">확인</button>
+          <footer class="flex justify-center items-center p-[.625rem_0.9375rem_0.9375rem_0.9375rem] lg:p-[1.25rem_1.875rem] h-21">
+            <button type="button" id="confirmButton" class="pt-[.6563rem] pb-[.5938rem] px-5 rounded-[3.125rem] w-full md:w-80 h-11 text-sm text-white bg-brown">확인</button>
           </footer>
         </article>
       </dialog>

@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>고객지원</title>
+    <link rel="preload" as="font" href="/fonts/Sandoll-GothicNeoRound-400.woff" crossorigin="anonymous" />
+    <link rel="preload" as="font" href="/fonts/Sandoll-GothicNeoRound-700.woff" crossorigin="anonymous" />
+    <script type="module" src="/src/main.js"></script>
+  </head>
+  <body>
+    <!-- header 컴포넌트 넣어주세요. -->
+    <div class="wrapper px-5 pt-5 pb-22.5 md:p-7.5 lg:pt-10 lg:px-15 lg:pb-22.5">
+      <div class="inner max-w-[1620px] mx-auto">
+        <h2 class="hidden text-[2.125rem] text-brown text-center font-bold lg:block lg:mt-10 lg:mb-12.5">고객지원</h2>
+
+        <!-- 타이틀 아래의 본문 내용은 여기서 작성해주세요. div말고 다른 태그 넣어도 됩니다.-->
+        <div class="text-brown">
+          <p class="text-sm lg:mb-7.5 lg:text-center lg:text-lg">버거킹에 <br class="md:hidden" />궁금한 점이 있나요?</p>
+          <form action="" method="post" class="relative block my-2.5 w-full">
+            <label for="search" class="sr-only">궁금한 내용을 검색해주세요.</label>
+            <input type="text" placeholder="궁금한 내용을 검색해주세요" name="search" id="search" class="p-[.3125rem_2.1875rem_.1875rem_.9375rem] border-1 border-border-form rounded-[.625rem] text-sm bg-light-beige box-border h-[2.875rem] w-full placeholder:text-brown-0.3" />
+            <button type="submit" class="flex items-center justify-center absolute right-0 top-0 h-full aspect-1/1">
+              <img src="/src/assets/elements/btn_form_search.svg" alt="검색하기" class="" />
+            </button>
+          </form>
+
+          <ul class="grid grid-cols-3 md:grid-cols-6 max-w-[60.25rem] gap-2.5 m-auto lg:my-5">
+            <li class="">
+              <button type="button" class="flex flex-col justify-center items-center border-1 border-border rounded-[.625rem] lg:rounded-3xl bg-light-beige w-[100%] h-[5.1875rem] lg:h-30">
+                <span class="contents text-xs lg:text-xl">
+                  <img src="/src/assets/faq/ico_faq_delivery.svg" alt="딜리버리" class="lg:h-[2.375rem] lg:my-2" />
+                  딜리버리
+                </span>
+              </button>
+            </li>
+            <li class="">
+              <button type="button" class="flex flex-col justify-center items-center border-1 border-border rounded-[.625rem] lg:rounded-3xl bg-light-beige w-[100%] h-[5.1875rem] lg:h-30">
+                <span class="contents text-xs lg:text-xl">
+                  <img src="/src/assets/faq/ico_faq_order.svg" alt="킹오더" class="lg:h-[2.375rem] lg:my-2" />
+                  킹오더
+                </span>
+              </button>
+            </li>
+            <li class="">
+              <button type="button" class="flex flex-col justify-center items-center border-1 border-border rounded-[.625rem] lg:rounded-3xl bg-light-beige w-[100%] h-[5.1875rem] lg:h-30">
+                <span class="contents text-xs lg:text-xl">
+                  <img src="/src/assets/faq/ico_faq_coupon.svg" alt="쿠폰" class="lg:h-[2.375rem] lg:my-2" />
+                  쿠폰
+                </span>
+              </button>
+            </li>
+            <li class="">
+              <button type="button" class="flex flex-col justify-center items-center border-1 border-border rounded-[.625rem] lg:rounded-3xl bg-light-beige w-[100%] h-[5.1875rem] lg:h-30">
+                <span class="contents text-xs lg:text-xl">
+                  <img src="/src/assets/faq/ico_faq_membership.svg" alt="멤버십" class="lg:h-[2.375rem] lg:my-2" />
+                  멤버십
+                </span>
+              </button>
+            </li>
+            <li class="">
+              <button type="button" class="flex flex-col justify-center items-center border-1 border-border rounded-[.625rem] lg:rounded-3xl bg-light-beige w-[100%] h-[5.1875rem] lg:h-30">
+                <span class="contents text-xs lg:text-xl">
+                  <img src="/src/assets/faq/ico_faq_product.svg" alt="매장/상품/서비스" class="lg:h-[2.375rem] lg:my-2" />
+                  매장/상품/서비스
+                </span>
+              </button>
+            </li>
+            <li class="">
+              <button type="button" class="flex flex-col justify-center items-center border-1 border-border rounded-[.625rem] lg:rounded-3xl bg-light-beige w-[100%] h-[5.1875rem] lg:h-30">
+                <span class="contents text-xs lg:text-xl">
+                  <img src="/src/assets/faq/ico_faq_other.svg" alt="기타" class="lg:h-[2.375rem] lg:my-2" />
+                  기타
+                </span>
+              </button>
+            </li>
+          </ul>
+
+          <div class="m-[1.3125rem_-1.25rem_0_-1.25rem] md:m-[1.875rem_-1.875rem_0_-1.875rem] lg:mx-0 p-[.9375rem_1.25rem_.625rem_1.25rem] md:p-[.9375rem_1.875rem] lg:py-[1.875rem_0] border-t-[.3125rem] border-border">
+            <h5 class="font-bold md:text-sm md:font-normal lg:text-3xl">많이 물어본 질문</h5>
+            <ul>
+              <li class="border-b-1 border-border py-[.9375rem] lg:py-[1.875rem] w-full">
+                <a href="/" class="flex flex-row justify-between">
+                  <span class="text-xs lg:text-lg">쿠폰은 어떻게 사용하나요?</span>
+                  <img src="/src/assets/elements/ico_more_arrow.svg" alt="더보기" class="" />
+                </a>
+              </li>
+              <li class="border-b-1 border-border py-[.9375rem] lg:py-[1.875rem] w-full">
+                <a href="/" class="flex flex-row justify-between">
+                  <span class="text-xs lg:text-lg">회원가입은 어떻게 하나요?</span>
+                  <img src="/src/assets/elements/ico_more_arrow.svg" alt="더보기" class="" />
+                </a>
+              </li>
+              <li class="border-b-1 border-border py-[.9375rem] lg:py-[1.875rem] w-full">
+                <a href="/" class="flex flex-row justify-between">
+                  <span class="text-xs lg:text-lg">푸시 알림 및 주문하기 서비스 알림이 오지 않아요.</span>
+                  <img src="/src/assets/elements/ico_more_arrow.svg" alt="더보기" class="" />
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <ul class="grid md:grid-cols-2 gap-2.5 mt-2.5 lg:mt-10 font-Pretendard">
+            <li class="contents">
+              <div class="consultation-container flex flex-col gap-[.1875rem] p-[.9375rem] rounded-[.625rem] bg-brown-0.05">
+                <strong class="text-xs font-bold">대표 소비자 상담</strong>
+                <span class="text-sm font-bold">080-022-8163</span>
+                <span class="text-2xs font-medium">상담 가능 시간 : 월~일 09:00~18:00</span>
+                <span class="text-2xs font-medium text-brown-0.7">(점심시간 12:00~13:00)</span>
+              </div>
+            </li>
+            <li class="contents">
+              <div class="consultation-container flex flex-col lg:flex-row gap-[.1875rem] p-[.9375rem] rounded-[.625rem] bg-brown-0.05">
+                <div class="flex flex-col">
+                  <strong class="text-xs font-bold">매장 / SITE 개설상담</strong>
+                  <span class="text-sm font-bold">02-6331-8344</span>
+                  <span class="text-2xs font-medium">상담 가능 시간 : 평일 오전 10시~오후 5시</span>
+                  <span class="text-2xs font-medium text-brown-0.7">(점심시간 12:00~13:00, 주말 공휴일 제외)</span>
+                </div>
+                <div class="flex-1 flex justify-end items-end">
+                  <button type="button" class="px-2.5 mt-2.5 rounded-[3.125rem] h-7.5 w-fit text-sm text-white bg-brown font-[Sandoll-GothicNeoRound]">가맹 모집안내 바로가기</button>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- footer 컴포넌트 넣어주세요. -->
+  </body>
+</html>
