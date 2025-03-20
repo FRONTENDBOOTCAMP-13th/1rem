@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>고객지원 상세</title>
+    <link rel="preload" as="font" href="/fonts/Sandoll-GothicNeoRound-400.woff" crossorigin="anonymous" />
+    <link rel="preload" as="font" href="/fonts/Sandoll-GothicNeoRound-700.woff" crossorigin="anonymous" />
+    <script type="module" src="/src/main.js"></script>
+  </head>
+  <body>
+    <!-- header 컴포넌트 넣어주세요. -->
+    <div class="wrapper px-5 pt-5 pb-22.5 md:p-7.5 lg:pt-10 lg:px-15 lg:pb-22.5">
+      <div class="inner max-w-[1620px] mx-auto">
+        <h2 class="hidden text-[2.125rem] text-brown text-center font-bold lg:block lg:mt-10 lg:mb-12.5">
+          <p class="text-brown-0.5 text-2xl mb-2.5">고객지원</p>
+          <span>킹오더</span>
+        </h2>
+
+        <!-- 타이틀 아래의 본문 내용은 여기서 작성해주세요. div말고 다른 태그 넣어도 됩니다.-->
+        <div class="text-brown">
+          <span class="inline-block p-[.375rem_.3125rem] mb-2.5 text-3xs bg-brown-0.1 rounded-[.3125rem]">킹오더</span>
+
+          <p class="text-sm lg:text-lg"><strong class="text-lg lg:text-2xl pr-[.3125rem] text-ci">Q</strong>주문한 메뉴를 찾기 위해 매장에 방문했습니다. 메뉴가 제조완료되었는지 어떻게 알 수 있나요?</p>
+
+          <p class="text-sm lg:text-lg mt-2.5 lg:mt-7.5">매장에서 제조 완료 시, 픽업요청 알림을 APP을 통해 1차 안내드리며 매장 방문 시 고객님의 킹오더 번호로 호출됩니다.</p>
+
+          <div class="flex justify-center items-center mt-7.5 lg:mt-10">
+            <button type="button" id="confirmButton" class="p-[.125rem_.625rem_.0625rem_.625rem] lg:p-[.3125rem_1rem_.1875rem_1rem] border border-brown rounded-[3.125rem] h-11 w-full md:w-77 text-sm">목록</button>
+          </div>
+
+          <div class="lg:hidden flex flex-row items-center justify-between rounded-[.625rem] p-[.9375rem] mt-[15px] md:mt-5 bg-brown-0.05">
+            <div>
+              <strong class="mb-[.1875rem] text-xs">문제를 해결하지 못하셨나요?</strong>
+              <p class="text-2xs">버거킹 앱으로 이동하신 후 1:1 문의를 이용해주세요.</p>
+            </div>
+            <button type="button" class="px-2.5 rounded-[3.125rem] text-sm text-white bg-brown h-[1.875rem]">앱 실행하기</button>
+          </div>
+
+          <div class="hidden lg:flex flex-row items-center justify-center rounded-3xl pr-10 max-w-[81.125rem] h-80 mx-auto my-10 bg-border">
+            <div class="relative bg-[image:url(/src/assets/customer/bg_appdown_phone.webp)] h-80 w-[25.3125rem]">
+              <div class="absolute flex top-[1.875rem] left-[8.1875rem] pt-[4.5625rem] w-[14.4375rem] h-[17.0625rem] justify-center bg-[image:url(/src/assets/customer/ico_logo_mini.svg)] bg-no-repeat bg-[top_32px_center] bg-[auto_2rem]">
+                <img src="/src/assets/customer/app_download_qr.svg" alt="" class="w-50" />
+              </div>
+            </div>
+            <div class="ml-[2.5rem] xl:ml-[4.5rem]">
+              <h2 class="font-black text-[1.875rem]">문제를 해결하지 못하셨나요?</h2>
+              <h3 class="text-3xl mt-2 mb-12">버거킹 앱으로 이동하신 후 1:1 문의를 이용해주세요.</h3>
+              <div class="flex flex-row gap-5">
+                <img src="/src/assets/customer/btn_down_aos.webp" alt="Google Play에서 다운로드" class="h-12" />
+                <img src="/src/assets/customer/btn_down_ios.webp" alt="App Store에서 다운로드" class="h-12" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer 컴포넌트 넣어주세요. -->
+  </body>
+</html>
