@@ -44,6 +44,8 @@
   --breakpoint-md: 39.9375rem;
   --breakpoint-lg: 64rem;
   --breakpoint-xl: 93.75rem;
+  --breakpoint-hd: 70.625rem;
+  --breakpoint-ad: 76.25rem;
 }
 
 /* BKBulMatPro 폰트 */
