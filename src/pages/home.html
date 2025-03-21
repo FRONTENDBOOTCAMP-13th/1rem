@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>버거퀸</title>
+    <link rel="preload" as="font" href="/fonts/Sandoll-GothicNeoRound-400.woff" crossorigin="anonymous" />
+    <link rel="preload" as="font" href="/fonts/Sandoll-GothicNeoRound-700.woff" crossorigin="anonymous" />
+    <script type="module" src="/src/main.js"></script>
+  </head>
+  <body>
+    <!-- ST: header  -->
+    <header class="includeJs z-2 sticky top-0" data-include-file="/src/components/component-header.html"></header>
+    <!-- ED: header  -->
+
+    <div class="wrapper px-5 pb-22.5 md:p-7.5 lg:pt-10 lg:pb-22.5">
+      <div class="inner max-w-[101.25rem] mx-auto">
+        <!-- ST:Top 배너 컴포넌트-->
+        <div class="mb-10">
+          <ul class="grid grid-cols-1 gap-2 md:grid-cols-2 lg:grid-cols-3">
+            <!-- ST:이벤트 배너 컴포넌트 -->
+            <li class="col-span-1 md:col-span-2 lg:col-span-2 row-span-2">
+              <a class="rounded-[1.25rem] h-full relative" href="/src/pages/news/newdetail.html">
+                <img class="rounded-[1.25rem] h-full" src="/src/assets/main/banner_7.webp" alt="통모짜와퍼" />
+                <div class="absolute inset-0 rounded-[1.25rem] bg-gradient-to-b from-transparent to-black opacity-30"></div>
+                <div class="relative">
+                  <ul class="absolute bottom-3 left-1/2 transform -translate-x-1/2 flex space-x-3 h-6 sm:space-x-4 lg:space-x-5 xl:space-x-6">
+                    <li class="w-6 h-2 bg-white rounded-full"></li>
+                    <li class="w-2 h-2 bg-gray-300 rounded-full"></li>
+                    <li class="w-2 h-2 bg-gray-300 rounded-full"></li>
+                    <li class="w-2 h-2 bg-gray-300 rounded-full"></li>
+                    <li class="w-2 h-2 bg-gray-300 rounded-full"></li>
+                    <li class="w-2 h-2 bg-gray-300 rounded-full"></li>
+                    <li class="w-2 h-2 bg-gray-300 rounded-full"></li>
+                    <li class="w-2 h-2 bg-gray-300 rounded-full"></li>
+                    <li class="w-2 h-2 bg-gray-300 rounded-full"></li>
+                    <li class="w-2 h-2 bg-gray-300 rounded-full"></li>
+                    <li class="w-2 h-2 bg-gray-300 rounded-full"></li>
+                    <li class="w-2 h-2 bg-gray-300 rounded-full"></li>
+                    <li class="w-2 h-2 bg-gray-300 rounded-full"></li>
+                    <li class="w-2 h-2 bg-gray-300 rounded-full"></li>
+                    <li class="w-0 h-0 -mt-[.1875rem] border-l-8 border-l-transparent border-r-8 border-r-transparent border-b-16 border-b-white transform rotate-90"></li>
+                  </ul>
+                </div>
+              </a>
+            </li>
+            <!-- ED:이벤트 배너 컴포넌트 -->
+
+            <!-- ST:앱 다운로드 컴포넌트 -->
+            <li class="col-span-1">
+              <div class="flex flex-col h-full min-h-45 sm:min-h-55 lg:min-h-55 lg:justify-center xl:text-[1.875rem] font-BKBulMatPro rounded-[1.25rem] text-center text-2xl sm:text-3xl lg:text-4xl leading-[1.23] bg-light-beige p-5 bg-[url('/src/assets/elements/bg_home_appdown.svg')] bg-no-repeat bg-[right_.75rem_bottom_1.25rem]">
+                <h2 class="text-brown sm:flex sm:items-center sm:justify-center lg:items-center lg:justify-center xl:min-h-auto">앱 다운로드 받고 <br />할인쿠폰 활용하기!</h2>
+                <div class="flex mt-auto items-center lg:relative lg:w-65 lg:block lg:m-[1.25rem_auto_0rem_auto] lg:pl-[6.875rem]">
+                  <div class="hidden lg:absolute lg:left-0 lg:top-0 lg:block">
+                    <img src="/src/assets/main/app_download_qr.svg" width="100" height="100" alt="App download" />
+                  </div>
+                  <a href="https://play.google.com/store/apps/details?id=kr.co.burgerkinghybrid" class="flex-1 h-[2.375rem] flex items-center cursor-pointer justify-center p-[.125rem_.3125rem_.0625rem_.3125rem] bg-beige rounded-[3.125rem] sm:w-[9.375rem] sm:h-[2.625rem] sm:m-[1.0625rem_.3125rem_0rem_.3125rem] lg:mt-0">
+                    <img src="/src/assets/main/btn_down_aos_w.svg" alt="Google Play에서 다운로드" />
+                  </a>
+                  <a href="https://apps.apple.com/kr/app/%EB%B2%84%EA%B1%B0%ED%82%B9-%ED%96%84%EB%B2%84%EA%B1%B0-%ED%82%B9%EC%98%A4%EB%8D%94-%EB%94%9C%EB%A6%AC%EB%B2%84%EB%A6%AC/id1017567032" class="flex-1 h-[2.375rem] flex items-center cursor-pointer justify-center p-[.125rem_.3125rem_.0625rem_.3125rem] bg-beige rounded-[3.125rem] ml-[.625rem] sm:w-[9.375rem] sm:h-[2.625rem] sm:m-[1.0625rem_.3125rem_0rem_.3125rem] sm:ml-0 lg:m-[1.0625rem_.3125rem_0rem_.3125rem]">
+                    <img src="/src/assets/main/btn_down_ios_w.svg" alt="App Store에서 다운로드" />
+                  </a>
+                </div>
+              </div>
+            </li>
+            <!-- ED:앱 다운로드 컴포넌트 -->
+
+            <!-- ST:버거킹 매장 찾기 컴포넌트 -->
+            <li class="col-span-1">
+              <div class="relative h-full flex flex-col min-h-45 sm:min-h-55 text-2xl lg:text-3xl xl:text-[1.875rem] xl-p-[1.875rem] text-center leading-[1.23] font-BKBulMatPro rounded-[1.25rem] p-[1.5625rem_1.25rem] text-light-beige bg-[url('/src/assets/elements/bg_home_search.svg')] bg-no-repeat bg-[center_bottom_1.25rem] bg-brown lg:bg-[center_bottom_1.875rem] lg:bg-[length:16.5625rem_auto] xl:bg-[length:auto_60%]">
+                <h2 class="min-h-6 sm:min-h-[2.9688rem] lg:min-h-[3.4375rem]">내 주변 버거킹 매장 찾기</h2>
+                <a href="/src/pages/store/storenear.html" class="absolute inset-0 border-0 bg-transparent cursor-pointer p-0 indent-[-999em;]"><span>버거킹 매장 찾기로 이동</span></a>
+              </div>
+            </li>
+            <!-- ED:버거킹 매장 찾기 컴포넌트 -->
+          </ul>
+        </div>
+        <!-- ED:Top 배너 컴포넌트-->
+
+        <!-- ST:광고영상 컴포넌트-->
+        <div class="my-[1.875rem] sm:my-10 lg:my-[3.125rem]">
+          <div class="mt-0 flex mb-[.625rem] lg:mb-5 flex-wrap items-center">
+            <h2 class="flex-1 min-w-0 text-4xl leading-[1] font-BKBulMatPro text-brown sm:text-5xl lg:text-6xl sm:leading-[1.39]">광고영상</h2>
+            <div class="flex items-center ml-auto pl-3 h-[.8125rem] sm:h-6">
+              <a href="/src/pages/story/adarchive.html" class="relative text-xs sm:text-3xl text-brown before:absolute before:left-[-0.3125rem] before:top-[-0.3125rem] before:w-[calc(100%+.625rem)] before:h-[calc(100%+.625rem)]"><span>더보기</span></a>
+            </div>
+          </div>
+          <div>
+            <ul class="grid grid-cols-1 gap-x-1 lg:grid-cols-3 lg:gap-3">
+              <li>
+                <figure class="rounded-[1.25rem] items-center relative sm:pb-[1.625rem]">
+                  <img class="rounded-[1.25rem] w-full h-full" src="/src/assets/main/ad_1.webp" alt="콰트로치즈 폴드비프 와퍼" />
+                  <a class="absolute top-[40%] left-[50%] -translate-x-[50%] -translate-y-[50%] w-[3.125rem] h-[3.125rem] lg:top-[35%] sm:w-[5.375rem] sm:h-[5.375rem] bg-cover bg-center bg-[url('/src/assets/elements/btn_play.svg')]" href="#"></a>
+                  <figcaption class="sm:h-[4.5625rem] sm:text-3xl text-center text-brown text-lg p-[1.25rem] font-bold">콰트로치즈 풀드비프 와퍼</figcaption>
+                </figure>
+              </li>
+              <li class="lg:block hidden">
+                <figure class="rounded-[1.25rem] items-center relative sm:pb-[1.625rem]">
+                  <img class="rounded-[1.25rem] w-full h-full" src="/src/assets/main/ad_2.webp" alt="불끈버거" />
+                  <a class="absolute top-[40%] left-[50%] -translate-x-[50%] -translate-y-[50%] w-[3.125rem] h-[3.125rem] lg:top-[35%] sm:w-[5.375rem] sm:h-[5.375rem] bg-cover bg-center bg-[url('/src/assets/elements/btn_play.svg')]" href="#"></a>
+                  <figcaption class="sm:h-[4.5625rem] sm:text-3xl text-center text-brown text-lg p-[1.25rem] font-bold">[불끈버거] 먹으면 불끈 힘이 나는, 불 끈 영웅들의 버거</figcaption>
+                </figure>
+              </li>
+              <li class="lg:block hidden">
+                <figure class="rounded-[1.25rem] items-center relative sm:pb-[1.625rem]">
+                  <img class="rounded-[1.25rem] w-full h-full" src="/src/assets/main/ad_3.webp" alt="스파이시 폴드비프 와퍼" />
+                  <a class="absolute top-[40%] left-[50%] -translate-x-[50%] -translate-y-[50%] w-[3.125rem] h-[3.125rem] lg:top-[35%] sm:w-[5.375rem] sm:h-[5.375rem] bg-cover bg-center bg-[url('/src/assets/elements/btn_play.svg')]" href="#"></a>
+                  <figcaption class="sm:h-[4.5625rem] sm:text-3xl text-center text-brown text-lg p-[1.25rem] font-bold">풀드비프 와퍼, 스파이시 풀드비프 와퍼</figcaption>
+                </figure>
+              </li>
+            </ul>
+            <div class="w-full h-[1.0625rem] sm:min-w-[36.25rem] sm:h-[2.3125rem] lg:hidden">
+              <ul class="h-full flex flex-row justify-center items-center space-x-2">
+                <li class="w-2 h-2 bg-brown rounded-full"></li>
+                <li class="w-2 h-2 bg-gray-500 rounded-full"></li>
+                <li class="w-2 h-2 bg-gray-500 rounded-full"></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- ED:광고영상 컴포넌트 -->
+
+        <!-- ST:메뉴와 매장소개, Why 버거킹 컴포넌트 -->
+        <div class="my-[1.875rem] sm:my-10 lg:my-[3.125rem]">
+          <div><h2 class="mb-3 text-4xl leading-[1] font-BKBulMatPro text-brown sm:mb-[1.125rem] sm:text-5xl sm:leading-[1.39] lg:text-6xl lg:mb-6">메뉴와 매장소개, Why 버거킹</h2></div>
+          <div>
+            <ul class="grid sm:grid-cols-2 lg:grid-cols-3 gap-[.625rem]">
+              <!-- ST:메뉴 소개 컴포넌트 -->
+              <li class="col-span-1">
+                <div class="rounded-[1.25rem] bg-white p-5">
+                  <div class="flex items-center text-2xs h-[1.3125rem] sm:h-9">
+                    <div class="min-w-10 h-full inline-block text-center whitespace-nowrap px-[.4375rem] pt-[.3125rem] pb-1 text-3xs sm:text-xs sm:px-4 sm:py-[.625rem] sm:h-9 rounded-lg bg-beige"><span class="text-brown">메뉴소개</span></div>
+                  </div>
+                  <h3 class="mt-[.625rem] sm:mt-[1.125rem] min-h-[3.3125rem] lg:min-h-[4.125rem] text-brown leading-[1.15] lg:leading-[1.5]"><span class="text-lg sm:text-2xl lg:text-3xl">버거킹만이 드릴 수 있는 특별한 맛을 소개합니다</span></h3>
+                  <div class="relative mt-[1.125rem]">
+                    <div class="flex justify-end items-center">
+                      <a href="/src/pages/menu/menu.html" class="flex items-center h-[1.125rem] sm:h-6 lg:h-[2.125rem] lg:bg-[length:1.5rem_1.5rem] py-0 pr-[1.375rem] pl-[.625rem] text-sm sm:text-lg text-brown bg-[url('/src/assets/elements/ico_move.svg')] bg-no-repeat bg-contain bg-right cursor-pointer"><span class="sm:mr-3 lg:mr-3">메뉴 둘러보기</span></a>
+                    </div>
+                  </div>
+                  <div class="mt-5 mr-[-1.25rem] ml-[-1.25rem] mb-[-1.25rem] sm:overflow-hidden"><img class="border-none border-t-0 border-r-0 rounded-bl-[1.25rem] rounded-br-[1.25rem]" src="/src/assets/main/whybk_2.webp" alt="메뉴 둘러보기" /></div>
+                </div>
+              </li>
+              <!-- ED:메뉴 소개 컴포넌트 -->
+
+              <!-- ST:매장 소개 컴포넌트-->
+              <li class="col-span-1">
+                <div class="rounded-[1.25rem] bg-white p-5">
+                  <div class="flex items-center text-2xs h-[1.3125rem] sm:h-9">
+                    <div class="min-w-10 h-full inline-block text-center whitespace-nowrap px-[.4375rem] pt-[.3125rem] pb-1 text-3xs sm:text-xs sm:px-4 sm:py-[.625rem] sm:h-9 rounded-lg bg-beige"><span class="text-brown">매장찾기</span></div>
+                  </div>
+                  <h3 class="mt-[.625rem] sm:mt-[1.125rem] min-h-[3.3125rem] lg:min-h-[4.125rem] text-brown leading-[1.15] lg:leading-[1.5]"><span class="text-lg sm:text-2xl lg:text-[1.3125rem]">가장 맛있는 버거를 제공하는 프리미엄 QSR 브랜드 매장</span></h3>
+                  <div class="relative mt-[1.125rem]">
+                    <div class="flex justify-end items-center">
+                      <a href="/src/pages/store/storenear.html" class="flex items-center h-[1.125rem] sm:h-6 lg:h-[2.125rem] lg:bg-[length:1.5rem_1.5rem] py-0 pr-[1.375rem] pl-[.625rem] text-sm sm:text-lg text-brown bg-[url('/src/assets/elements/ico_move.svg')] bg-no-repeat bg-contain bg-right cursor-pointer"><span class="sm:mr-3 lg:mr-3">가까운 매장 찾아보기</span></a>
+                    </div>
+                  </div>
+                  <div class="mt-5 mr-[-1.25rem] ml-[-1.25rem] mb-[-1.25rem] sm:overflow-hidden"><img class="border-none border-t-0 border-r-0 rounded-bl-[1.25rem] rounded-br-[1.25rem]" src="/src/assets/main/whybk_7.webp" alt="가까운 매장 찾아보기" /></div>
+                </div>
+              </li>
+              <!-- ED:매장 소개 컴포넌트-->
+
+              <!-- ST:Why 버거킹 컴포넌트-->
+              <li class="sm:col-span-2 lg:col-span-1 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 sm:max-w-[64rem] sm:min-h-55">
+                <div class="rounded-t-[1.25rem] sm:rounded-r-[1.25rem] sm:rounded-t-[0rem] lg:rounded-b-[0rem] lg:rounded-t-[1.25rem] bg-white relative block sm:col-span-1 order-1 sm:order-2 lg:order-1">
+                  <div class="absolute top-[20%] left-[50%] -translate-x-[50%] -translate-y-[50%]">
+                    <ul class="flex justify-center space-x-4 mb-4">
+                      <li class="w-6 h-2 bg-brown rounded-[3.125rem]"></li>
+                      <li class="w-2 h-2 bg-gray-300 rounded-full"></li>
+                      <li class="w-2 h-2 bg-gray-300 rounded-full"></li>
+                      <li class="w-2 h-2 bg-gray-300 rounded-full"></li>
+                      <li class="w-2 h-2 bg-gray-300 rounded-full"></li>
+                      <li class="w-2 h-2 bg-gray-300 rounded-full"></li>
+                      <li class="w-2 h-2 bg-gray-300 rounded-full"></li>
+                    </ul>
+                  </div>
+                  <div class="pt-16 sm:h-full px-5 pb-5 text-center lg:space-y-8 relative sm:flex sm:flex-col lg:flex lg:flex-col">
+                    <h3 class="min-h-[3.3125rem] leading-[1.15] sm:text-2xl -text-lg text-brown sm:leading-[1.47] lg:leading-[1.5] lg:text-3xl lg:min-h-[4.125rem]">
+                      신선한 원재료 사용 <br />
+                      패티와 야채, 소스
+                    </h3>
+                    <div class="flex justify-end mt-[.875rem] sm:mt-auto lg:mt-[0rem]">
+                      <a href="/src/pages/story/whyburgerking.html" class="text-brown flex items-center h-[1.125rem] text-sm sm:h-6 sm:text-2xl bg-[length:1.125rem_1.125rem] lg:h-[2.125rem] lg:bg-[length:1.5rem_1.5rem] sm:bg-[length:1.5rem_1.5rem] sm:left-[-.3125rem] sm:top-[-.3125rem] bg-[url('/src/assets/elements/ico_move.svg')] bg-no-repeat bg-right cursor-pointer">
+                        <span class="mr-6 sm:mr-8 lg:mr-8">Why 버거킹</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="relative w-full sm:col-span-1 order-2 sm:order-1 bg-white sm:rounded-l-[1.25rem] lg:rounded-t-[0rem] pt-[56.25%] lg:rounded-b-[1.25rem]">
+                  <img class="rounded-b-[1.25rem] lg:rounded-[.625rem] sm:rounded-t-[1.25rem] sm:rounded-b-[0rem] absolute top-0 left-0 w-full h-full object-cover" src="/src/assets/main/whybk_1.webp" alt="Why 버거킹" />
+                </div>
+              </li>
+              <!-- ED:Why 버거킹 컴포넌트-->
+            </ul>
+          </div>
+        </div>
+        <!-- ED:메뉴와 매장소개, Why 버거킹 컴포넌트 -->
+
+        <!-- ST:집에서 만나는 버거킹 -->
+        <div class="my-[1.875rem] sm:my-10 lg:my-[3.125rem ]">
+          <div class="relative p-5 text-white text-2xs bg-brown text-center rounded-[1.25rem] sm:p-[1.375rem_1.875rem_1.375rem_1.875rem] sm:text-left lg:text-xl">
+            <div class="sm:flex sm:items-center sm:justify-between lg:max-w-[56.4375rem] lg:m-[0rem_auto_0rem_auto]">
+              <div class="leading-[1.45]">
+                <h2 class="font-BKBulMatPro mb-2 text-[1.625rem] leading-[1.39] lg:mb-3 lg:text-5xl lg:leading-[1.38]">집에서 만나는 버거킹</h2>
+                <p class="text-2xs lg:text-xl">딜리버리 전화주문 안내 10:00 - 22:00 / 연중무휴<br /><span class="text-3xs lg:text-xl">(매장별로 상이할 수 있습니다.)</span></p>
+              </div>
+              <div class="inline-flex m-[1.25rem_auto_0rem_auto] pl-13 pt-[.1875rem] font-BKBulMatPro text-[1.875rem] bg-no-repeat bg-[length:2.9375rem_auto] bg-[left_center] text-[#fa0] bg-[url('/src/assets/elements/ico_delivery_home_banner.svg')] sm:m-0 lg:pl-25 lg:text-[3.375rem] lg:bg-auto"><strong class="text-[1.875rem] lg:text-[3.375rem]">1599-0505</strong></div>
+            </div>
+            <a href="#" class="absolute left-0 top-0 w-full h-full indent-[-999em] text-left"><span>detail</span></a>
+          </div>
+        </div>
+        <!-- ED:집에서 만나는 버거킹 -->
+
+        <!-- ST:고객과 함께 성장하는 버거킹 -->
+        <div class="my-[1.875rem] sm:my-10 lg:my-[3.125rem]">
+          <div><h2 class="mb-3 text-4xl leading-[1] font-BKBulMatPro text-brown sm:mb-[1.125rem] sm:text-5xl sm:leading-[1.39] lg:text-6xl lg:mb-6">고객과 함께 성장하는 버거킹</h2></div>
+          <div>
+            <ul class="grid sm:grid-cols-2 lg:grid-cols-3 gap-[.625rem]"></ul>
+          </div>
+
+          <div>
+            <ul class="grid grid-cols-1 gap-2 sm:grid-cols-2 lg:grid-cols-3 lg:grid-flow-col">
+              <!-- ST:브랜드 컴포넌트-->
+              <li class="col-span-1 lg:col-span-1 lg:row-span-1">
+                <a href="/src/pages/story/brand.html" class="bg-white rounded-[1.25rem] min-h-31 sm:min-h-[9.875rem] p-5 sm:flex sm:flex-col sm:mt-[0] h-full">
+                  <div class="mb-[1.125rem]">
+                    <span class="min-w-10 sm:h-9 sm:px-4 sm:py-[.625rem] sm:text-xs sm:leading-[1rem] inline-block text-center whitespace-nowrap pt-[.3125rem] px-[.4375rem] pb-1 text-3xs leading-[1.2] bg-beige rounded-[.5rem] text-brown">브랜드</span>
+                  </div>
+                  <div class="relative">
+                    <h3 class="leading-[1.15] lg:leading-[1.3] text-lg sm:text-2xl sm:leading-[1.47] xl:text-4xl lg:text-3xl text-brown">Since 1954, 전 세계 고객에게 사랑받는 글로벌 브랜드 버거킹!</h3>
+                  </div>
+                </a>
+              </li>
+              <!-- ED:브랜드 컴포넌트-->
+
+              <!-- ST:ESG 경영 컴포넌트-->
+              <li class="col-span-1 lg:col-span-1 lg:row-span-1">
+                <a href="/src/pages/story/esgbusiness.html" class="bg-white rounded-[1.25rem] min-h-31 sm:min-h-[9.875rem] p-5 sm:flex sm:flex-col sm:mt-[0] h-full">
+                  <div class="mb-[1.125rem]">
+                    <span class="min-w-10 sm:h-9 sm:px-4 sm:py-[.625rem] sm:text-xs sm:leading-[1rem] inline-block text-center whitespace-nowrap pt-[.3125rem] px-[.4375rem] pb-1 text-3xs leading-[1.2] bg-beige rounded-[.5rem] text-brown">ESG 경영</span>
+                  </div>
+                  <div class="relative">
+                    <h3 class="leading-[1.15] text-lg sm:text-2xl sm:leading-[1.47] xl:text-4xl lg:text-3xl text-brown">지속 가능한 사회를 위한 버거킹의 노력</h3>
+                  </div>
+                </a>
+              </li>
+              <!-- ED:ESG 경영 컴포넌트-->
+
+              <!-- ST:SMART QSR 컴포넌트-->
+              <li class="col-span-1 lg:row-span-2 lg:row-end-2">
+                <a href="/src/pages/story/smartqsr.html" class="flex min-h-76 flex-col rounded-[1.25rem] bg-white p-5">
+                  <div class="mb-[1.125rem]">
+                    <span class="min-w-10 sm:h-9 sm:px-4 sm:py-[.625rem] sm:text-xs sm:leading-[1rem] inline-block text-center whitespace-nowrap pt-[.3125rem] px-[.4375rem] pb-1 text-3xs leading-[1.2] bg-beige rounded-[.5rem] text-brown">SMART QSR</span>
+                  </div>
+                  <div class="relative pb-5">
+                    <h3 class="leading-[1.15] text-lg sm:text-2xl sm:leading-[1.47] xl:text-4xl lg:text-3xl text-brown">온, 오프라인에서 최상의 고객 경험을 제공하는 똑똑한 QSR</h3>
+                  </div>
+                  <div class="mt-auto mx-[-1.25rem] mb-[-1.25rem] rounded-b-[1.25rem] overflow-hidden relative"><img src="/src/assets/main/smartqsr.webp" alt="SMART QSR" /></div>
+                </a>
+              </li>
+              <!-- ED:SMART QSR 컴포넌트-->
+
+              <!-- ST:수상실적 컴포넌트-->
+              <li class="col-span-1 lg:row-span-2 lg:row-end-2">
+                <a href="/src/pages/story/awards.html" class="flex min-h-76 flex-col rounded-[1.25rem] bg-white p-5">
+                  <div class="mb-[1.125rem]">
+                    <span class="min-w-10 sm:h-9 sm:px-4 sm:py-[.625rem] sm:text-xs sm:leading-[1rem] inline-block text-center whitespace-nowrap pt-[.3125rem] px-[.4375rem] pb-1 text-3xs leading-[1.2] bg-beige rounded-[.5rem] text-brown">수상실적</span>
+                  </div>
+                  <div class="relative pb-5">
+                    <h3 class="leading-[1.15] text-lg sm:text-2xl sm:leading-[1.47] xl:text-4xl lg:text-3xl text-brown">1984년 한국 진출 이후 열심히 성장해온 버거킹 코리아!</h3>
+                  </div>
+                  <div class="mt-auto mx-[-1.25rem] mb-[-1.25rem] rounded-b-[1.25rem] overflow-hidden relative"><img src="/src/assets/main/growth.webp" alt="수상실적" /></div>
+                </a>
+              </li>
+              <!-- ED:수상실적 컴포넌트-->
+            </ul>
+          </div>
+        </div>
+        <!-- ED:고객과 함께 성장하는 버거킹 -->
+
+        <!-- ST: App down Card (WEB) -->
+        <div class="my-[3.125rem] hidden lg:block bg-[#e4d7c8] rounded-[1.25rem]">
+          <div class="flex flex-row max-w-[74.875rem] h-[23.5625rem] items-center mx-auto px-5">
+            <div class="relative w-[25.3125rem] h-full bg-[url('/src/assets/main/bg_appdown_phone.webp')] bg-no-repeat overflow-hidden">
+              <div class="absolute left-[8.1875rem] top-[2.8125rem] w-[14.4375rem] h-[20.75rem] rounded-[1.5rem_1.5rem_0rem_0rem] overflow-hidden">
+                <ul class="h-full">
+                  <li class="relative w-full h-full">
+                    <img class="absolute left: 0; top: 0 w-full h-full object-cover" src="/src/assets/main/img_home_phone_cont01.webp" alt="버거킹 앱 광고" />
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="ml-[4vw] ad:ml-18 flex-1 py-[1.875rem] text-[1.625rem] text-left">
+              <h2 class="text-[2.4vw] mb-6 leading-[1.25] ad:text-[1.875rem]">
+                <strong class="text-brown"><span class="text-ci text-[1em] leading-[1.4] inline">오직 버거킹 앱에서</span>만 가능한 <span class="text-ci inline text-[1em] leading-[1.4]">혜택</span><br />지금 앱 다운로드 받으시고 혜택을 누리세요!</strong>
+              </h2>
+              <div class="flex my-5 flex-wrap gap-y-[.3125rem] justify-start text-center h-[2.25rem]">
+                <strong class="p-[.3125rem_.8125rem_.25rem_.8125rem] text-[1.5vw] ad:text-2xl ad:leading-[1.6875rem] text-white bg-brown rounded-[.5rem] mr-2 inline-block min-h-auto">픽업오더</strong>
+                <strong class="p-[.3125rem_.8125rem_.25rem_.8125rem] text-[1.5vw] ad:text-2xl ad:leading-[1.6875rem] text-white bg-brown rounded-[.5rem] mr-2 inline-block min-h-auto">딜리버리 오더</strong>
+                <strong class="p-[.3125rem_.8125rem_.25rem_.8125rem] text-[1.5vw] ad:text-2xl ad:leading-[1.6875rem] text-white bg-brown rounded-[.5rem] mr-2 inline-block min-h-auto">멤버십 적립</strong>
+                <strong class="p-[.3125rem_.8125rem_.25rem_.8125rem] text-[1.5vw] ad:text-2xl ad:leading-[1.6875rem] text-white bg-brown rounded-[.5rem] mr-2 inline-block min-h-auto">할인쿠폰</strong>
+              </div>
+              <div class="mt-[1.875rem] flex">
+                <div class="mr-5 w-auto block">
+                  <img src="/src/assets/main/main_qr.webp" alt="app 다운로드 qr" />
+                </div>
+                <div class="flex flex-col justify-start h-[6.6875rem]">
+                  <a class="min-w-41 min-h-[calc(50%-.3125rem)] bg-[url('/src/assets/main/btn_down_ios.svg')] bg-no-repeat" href="https://apps.apple.com/kr/app/%EB%B2%84%EA%B1%B0%ED%82%B9-%ED%96%84%EB%B2%84%EA%B1%B0-%ED%82%B9%EC%98%A4%EB%8D%94-%EB%94%9C%EB%A6%AC%EB%B2%84%EB%A6%AC/id1017567032">
+                    <span class="sr-only">Google Play에서 다운로드</span>
+                  </a>
+                  <a class="mt-[.625rem] min-w-41 min-h-[calc(50%-.3125rem)] bg-[url('/src/assets/main/btn_down_aos.svg')] bg-no-repeat" href="https://play.google.com/store/apps/details?id=kr.co.burgerkinghybrid">
+                    <span class="sr-only">App Store에서 다운로드</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ED: App down Card (WEB) -->
+      </div>
+    </div>
+    <!-- ST: footer  -->
+    <footer class="includeJs" data-include-file="/src/components/component-footer.html"></footer>
+    <!-- ED: footer  -->
+  </body>
+</html>
