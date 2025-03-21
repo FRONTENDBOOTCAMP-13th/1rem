@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>[컴포넌트] 페이지 타이틀 영역</title>
+    <link rel="preload" as="font" href="/fonts/Sandoll-GothicNeoRound-400.woff" crossorigin="anonymous" />
+    <link rel="preload" as="font" href="/fonts/Sandoll-GothicNeoRound-700.woff" crossorigin="anonymous" />
+    <script type="module" src="/src/main.js"></script>
+  </head>
+  <body>
+    <!-- header 컴포넌트 넣어주세요. -->
+    <div class="wrapper px-5 pt-5 pb-22.5 md:p-7.5 lg:pt-10 lg:px-15 lg:pb-22.5">
+      <div class="inner max-w-[1620px] mx-auto">
+        <h2 class="hidden text-[2.125rem] text-brown text-center font-bold lg:block lg:mt-10 lg:mb-12.5">각 페이지 타이틀</h2>
+
+        <!-- 타이틀 아래의 본문 내용은 여기서 작성해주세요. div말고 다른 태그 넣어도 됩니다.-->
+
+           <span class="flex">
+                <h class="flex-1 justify-center items-center min-h-[1.5rem] text-brown">키워드 선택</h>
+                <svg class="flex-2"  width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_768_23460)">
+                    <path d="M21.97 13.7702C21.83 12.3202 20.29 11.4802 19.4 12.4002C18.82 12.9902 18.81 14.3502 18.54 15.2502C18.2 16.3502 17.38 17.2702 16.53 17.8702C14.65 19.1802 11.92 19.2802 9.72004 18.7902C8.66004 18.5502 7.74004 17.9402 6.97004 17.1802C5.03004 15.2702 4.96004 11.8202 6.26004 9.60021C7.25004 7.90021 9.11004 6.70021 11.08 6.64021C11.14 7.04021 11.05 7.46021 11.08 7.86021C11.1 8.27021 11.38 8.90021 12.07 8.86021C12.94 8.82021 15.67 7.08021 16.89 6.22021C17.18 6.01021 17.47 5.68021 17.36 5.35021C17.3 5.17021 16.84 4.72021 16.69 4.61021C15.32 3.57021 14.61 2.94021 13.24 1.90021C12.8 1.56021 11.89 1.09021 11.38 1.59021C10.97 1.98021 11.11 2.56021 11.16 3.20021C8.86004 3.32021 6.61004 4.30021 4.95004 5.91021C0.91004 9.81021 1.08004 16.6802 5.36004 20.3402C10.21 24.4802 19.56 22.9102 21.66 16.6802C21.96 15.7902 22.1 14.7302 22.01 13.7702" fill="#502314"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_768_23460">
+                    <rect width="24" height="24" fill="white"/>
+                    </clipPath>
+                    </defs>
+                    </svg>
+           </span>
+       <div class="relative flex-1 p-[0_20px_5px] leadi">
+        <p class="mt-0 m-[20px_0_10px] text-[0.8125rem] text-brown-0.5 leading-1">카테고리</p>
+        <label class="">
+            <button class="min-w-[3.75rem] flex justify-center h-[2.25rem] items-center bg-brown-0.05 text-[#89665b] m-0 p-[5px_10px_4px] rounded-[3.125rem] text-xs cursor-pointer verticla-middle leading-1.34"> 카테고리 전체</button>
+            <button class="min-w-[3.75rem] flex justify-center h-[2.25rem] items-center bg-brown-0.05 text-[#89665b] m-0 p-[5px_10px_4px] rounded-[3.125rem] text-xs cursor-pointer verticla-middle leading-1.34">#와퍼</button>
+            <button class="min-w-[3.75rem] flex justify-center h-[2.25rem] items-center bg-brown-0.05 text-[#89665b] m-0 p-[5px_10px_4px] rounded-[3.125rem] text-xs cursor-pointer verticla-middle leading-1.34">#와퍼주니어</button>
+            <button class="min-w-[3.75rem] flex justify-center h-[2.25rem] items-center bg-brown-0.05 text-[#89665b] m-0 p-[5px_10px_4px] rounded-[3.125rem] text-xs cursor-pointer verticla-middle leading-1.34">#맥시멈</button>
+            <button class="min-w-[3.75rem] flex justify-center h-[2.25rem] items-center bg-brown-0.05 text-[#89665b] m-0 p-[5px_10px_4px] rounded-[3.125rem] text-xs cursor-pointer verticla-middle leading-1.34">#올데이킹</button>
+            <button class="min-w-[3.75rem] flex justify-center h-[2.25rem] items-center bg-brown-0.05 text-[#89665b] m-0 p-[5px_10px_4px] rounded-[3.125rem] text-xs cursor-pointer verticla-middle leading-1.34">#신제품</button>
+            <button class="min-w-[3.75rem] flex justify-center h-[2.25rem] items-center bg-brown-0.05 text-[#89665b] m-0 p-[5px_10px_4px] rounded-[3.125rem] text-xs cursor-pointer verticla-middle leading-1.34">#스낵</button>
+            <button class="min-w-[3.75rem] flex justify-center h-[2.25rem] items-center bg-brown-0.05 text-[#89665b] m-0 p-[5px_10px_4px] rounded-[3.125rem] text-xs cursor-pointer verticla-middle leading-1.34">#디저트</button>
+            <button class="min-w-[3.75rem] flex justify-center h-[2.25rem] items-center bg-brown-0.05 text-[#89665b] m-0 p-[5px_10px_4px] rounded-[3.125rem] text-xs cursor-pointer verticla-middle leading-1.34">#팩</button>
+            <button class="min-w-[3.75rem] flex justify-center h-[2.25rem] items-center bg-brown-0.05 text-[#89665b] m-0 p-[5px_10px_4px] rounded-[3.125rem] text-xs cursor-pointer verticla-middle leading-1.34">#버거</button>
+            <button class="min-w-[3.75rem] flex justify-center h-[2.25rem] items-center bg-brown-0.05 text-[#89665b] m-0 p-[5px_10px_4px] rounded-[3.125rem] text-xs cursor-pointer verticla-middle leading-1.34">#기간한정</button>
+            <button class="min-w-[3.75rem] flex justify-center h-[2.25rem] items-center bg-brown-0.05 text-[#89665b] m-0 p-[5px_10px_4px] rounded-[3.125rem] text-xs cursor-pointer verticla-middle leading-1.34">#더블패티</button>
+            <button class="min-w-[3.75rem] flex justify-center h-[2.25rem] items-center bg-brown-0.05 text-[#89665b] m-0 p-[5px_10px_4px] rounded-[3.125rem] text-xs cursor-pointer verticla-middle leading-1.34">#콜라보</button>
+            <button class="min-w-[3.75rem] flex justify-center h-[2.25rem] items-center bg-brown-0.05 text-[#89665b] m-0 p-[5px_10px_4px] rounded-[3.125rem] text-xs cursor-pointer verticla-middle leading-1.34">#킹모닝</button>
+            <button class="min-w-[3.75rem] flex justify-center h-[2.25rem] items-center bg-brown-0.05 text-[#89665b] m-0 p-[5px_10px_4px] rounded-[3.125rem] text-xs cursor-pointer verticla-middle leading-1.34">#통모짜</button>
+            <button class="min-w-[3.75rem] flex justify-center h-[2.25rem] items-center bg-brown-0.05 text-[#89665b] m-0 p-[5px_10px_4px] rounded-[3.125rem] text-xs cursor-pointer verticla-middle leading-1.34">#디아블로</button>
+            <button class="min-w-[3.75rem] flex justify-center h-[2.25rem] items-center bg-brown-0.05 text-[#89665b] m-0 p-[5px_10px_4px] rounded-[3.125rem] text-xs cursor-pointer verticla-middle leading-1.34">#BBQ</button>
+        </label>
+       </div>
+    <!-- footer 컴포넌트 넣어주세요. -->
+  </body>
+</html>
