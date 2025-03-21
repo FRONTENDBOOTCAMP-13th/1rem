@@ -7,6 +7,7 @@
     <link rel="preload" as="font" href="/fonts/Sandoll-GothicNeoRound-400.woff" crossorigin="anonymous" />
     <link rel="preload" as="font" href="/fonts/Sandoll-GothicNeoRound-700.woff" crossorigin="anonymous" />
     <script type="module" src="/src/main.js"></script>
+    <script type="module" src="/src/js/accordian.js"></script>
   </head>
   <body>
     <!-- ST:Footer Wrapper -->
@@ -18,13 +19,49 @@
             <li class="relative after:absolute after:h-[.0625rem] after:bottom-0 after:left-[-1.25rem] after:right-[-1.25rem] after:bg-beige">
               <a href="/src/pages/menu.html" target="_self" class="block content-center h-[3.3125rem] text-2xs">MENU</a>
             </li>
-            <li class="relative flex justify-center items-center after:absolute after:h-[.0625rem] after:bottom-0 after:left-[-1.25rem] after:right-[-1.25rem] after:bg-beige">
-              <a href="/src/pages/story/brand.html" target="_self" class="flex-1 content-center h-[3.3125rem] text-2xs">STORY</a>
-              <button type="button" aria-label="STORY 하위 메뉴 펼치기" aria-expanded="false" class="w-12.5 h-[3.3125rem] bg-[url(/src/assets/elements/ico_darrow01.svg)] bg-no-repeat bg-[right_center]"></button>
+            <li>
+              <div class="relative flex justify-center items-center after:absolute after:h-[.0625rem] after:bottom-0 after:left-[-1.25rem] after:right-[-1.25rem] after:bg-beige">
+                <a href="/src/pages/story/brand.html" target="_self" class="flex-1 content-center h-[3.3125rem] text-2xs">STORY</a>
+                <button type="button" aria-label="STORY 하위 메뉴 펼치기" aria-expanded="false" class="accordion-button w-12.5 h-[3.3125rem] bg-[url(/src/assets/elements/ico_darrow01.svg)] bg-no-repeat bg-center relative"></button>
+              </div>
+              <div class="accordion-submenu h-0 invisible overflow-hidden transition-all duration-500 ease-in-out">
+                <ul>
+                  <li>
+                    <a href="/src/pages/story/brand.html" class="w-full py-[.625rem] px-5 text-left text-brown-0.5 text-[.75rem] h-8 block"><span>브랜드</span></a>
+                  </li>
+                  <li>
+                    <a href="/src/pages/story/whyburgerking.html" class="w-full py-[.625rem] px-5 text-left text-brown-0.5 text-[.75rem] h-8 block"><span>Why 버거킹</span></a>
+                  </li>
+                  <li>
+                    <a href="/src/pages/story/esgbusiness.html" class="w-full py-[.625rem] px-5 text-left text-brown-0.5 text-[.75rem] h-8 block"><span>ESG 경영</span></a>
+                  </li>
+                  <li>
+                    <a href="/src/pages/story/smartqsr.html" class="w-full py-[.625rem] px-5 text-left text-brown-0.5 text-[.75rem] h-8 block"><span>Smart QSR</span></a>
+                  </li>
+                  <li>
+                    <a href="/src/pages/story/awards.html" class="w-full py-[.625rem] px-5 text-left text-brown-0.5 text-[.75rem] h-8 block"><span>수상실적</span></a>
+                  </li>
+                  <li>
+                    <a href="/src/pages/story/adarchive.html" class="w-full py-[.625rem] px-5 text-left text-brown-0.5 text-[.75rem] h-8 block"><span>광고영상</span></a>
+                  </li>
+                </ul>
+              </div>
             </li>
-            <li class="relative flex justify-center items-center after:absolute after:h-[.0625rem] after:bottom-0 after:left-[-1.25rem] after:right-[-1.25rem] after:bg-beige">
-              <a href="/src/pages/news/event/ongoing.html" target="_self" class="flex-1 content-center h-[3.3125rem] text-2xs">NEWS</a>
-              <button type="button" aria-label="NEWS 하위 메뉴 펼치기" aria-expanded="false" class="w-12.5 h-[3.3125rem] bg-[url(/src/assets/elements/ico_darrow01.svg)] bg-no-repeat bg-[right_center]"></button>
+            <li>
+              <div class="relative flex justify-center items-center after:absolute after:h-[.0625rem] after:bottom-0 after:left-[-1.25rem] after:right-[-1.25rem] after:bg-beige">
+                <a href="/src/pages/news/event/ongoing.html" target="_self" class="flex-1 content-center h-[3.3125rem] text-2xs">NEWS</a>
+                <button type="button" aria-label="NEWS 하위 메뉴 펼치기" aria-expanded="false" class="accordion-button w-12.5 h-[3.3125rem] bg-[url(/src/assets/elements/ico_darrow01.svg)] bg-no-repeat bg-center relative"></button>
+              </div>
+              <div class="accordion-submenu h-0 invisible overflow-hidden transition-all duration-500 ease-in-out">
+                <ul>
+                  <li>
+                    <a href="/src/pages/news/ongoing.html" class="w-full py-[.625rem] px-5 text-left text-brown-0.5 text-[.75rem] h-8 block"><span>이벤트</span></a>
+                  </li>
+                  <li>
+                    <a href="" class="w-full py-[.625rem] px-5 text-left text-brown-0.5 text-[.75rem] h-8 block"><span>공지사항</span></a>
+                  </li>
+                </ul>
+              </div>
             </li>
             <li class="relative after:absolute after:h-[.0625rem] after:bottom-0 after:left-[-1.25rem] after:right-[-1.25rem] after:bg-beige">
               <a href="/src/pages/store/near.html" target="_self" class="block content-center h-[3.3125rem] text-2xs">STORE</a>
