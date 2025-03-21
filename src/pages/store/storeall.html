@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>[컴포넌트] 페이지 타이틀 영역</title>
+    <link rel="preload" as="font" href="/fonts/Sandoll-GothicNeoRound-400.woff" crossorigin="anonymous" />
+    <link rel="preload" as="font" href="/fonts/Sandoll-GothicNeoRound-700.woff" crossorigin="anonymous" />
+    <script type="module" src="/src/main.js"></script>
+  </head>
+  <body>
+    <!-- header 컴포넌트 넣어주세요. -->
+    <div class="wrapper px-5 pt-5 pb-22.5 md:p-7.5 lg:pt-10 lg:px-15 lg:pb-22.5">
+      <div class="inner max-w-[1620px] mx-auto">
+        <h2 class="hidden text-[2.125rem] text-brown text-center font-bold lg:block lg:mt-10 lg:mb-12.5">매장 찾기</h2>
+
+        <!-- 타이틀 아래의 본문 내용은 여기서 작성해주세요. div말고 다른 태그 넣어도 됩니다.-->
+        <nav class="sticky top-[-20px] mt-[-30px] m-[0_-20px] p-5 text-center mr-2 ml-2 z-20 bg-beige">
+          <ul class="grid grid-cols-2 border-b-1 items-cnter border-b-brown-0.05 lg:text-2xl">
+            <li class="relative p-1 text-brown-0.5 lg:text-2xl"><a href="/src/page/store/storenear.html">가까운 매장</a></li>
+            <li class="h-full tab-btn relative p-1 border-b-3 lg:text-2xl border-b-ci text-ci"><a href="/src/page/store/storeall.html">전체 매장</a></li>
+          </ul>
+        </nav>
+        <div class="flex relative items-center">
+          <input type="text" class="inline-block border border-border-form text-brown-0.5 bg-light-beige rounded-lg flex-1 h-[2.875rem] m-0 pt-[5px] pr-[.9375rem] pb-[5px] pl-[.9375rem]" placeholder="지역, 매장명을 입력해주세요" maxlength="30" />
+          <p class="font-xs relative p-[5px_10px] text-brown">취소</p>
+        </div>
+        <div class="flex flex-row flex-warp justify-between m-[10px_5px]">
+          <span class="flex flex-row flex-nowrap p-0 min-w-0 m-0 leading-1.2 text-sm text-[#89665b]"
+            ><p class="text-brown">513개</p>
+            의 매장이 있습니다</span
+          >
+          <div class="flex flex-row flex-nowrap items-center ml-auto pl-[.75rem]">
+            <a href="#" class="relative align-middle">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_303_6007)">
+                  <path
+                    d="M18.8833 7.55022C18.8583 8.41688 18.8416 9.28355 18.8666 10.1585C18.9166 11.9335 18.9999 13.7169 18.9916 15.4919C18.9916 16.3002 18.6416 16.9169 17.9333 17.3085C17.6833 17.4419 17.4083 17.5169 17.1333 17.6085C15.9666 18.0002 14.8083 18.3919 13.6416 18.7836C13.0166 18.9919 12.4583 18.8169 11.8666 18.6002C11.1499 18.3419 10.4333 18.1002 9.7166 17.8502C8.9416 17.5752 8.1166 17.1835 7.3166 17.0085C6.73327 16.8835 6.18327 17.2169 5.64994 17.4169C5.02494 17.6586 4.39994 17.9002 3.77494 18.1502C2.5666 18.6336 1.27493 17.9252 1.0416 16.6419C1.02493 16.5335 1.0166 16.4169 1.0166 16.3085C1.0166 14.4169 1.1916 12.4919 1.1416 10.5752C1.0916 8.54188 1.0166 6.50855 1.0166 4.47522C1.0166 3.60022 1.55827 2.84188 2.38327 2.56688C3.69993 2.12522 5.0166 1.67522 6.3416 1.23355C6.78327 1.08355 7.23327 1.08355 7.67493 1.24188C9.2666 1.80022 10.7083 2.56688 12.3833 2.91688C13.6749 3.18355 15.0666 2.30022 16.2499 1.84188C17.5999 1.31688 18.9833 2.26688 18.9916 3.71688C18.9916 5.00022 18.9249 6.26688 18.8833 7.54188V7.55022ZM7.03327 14.7585C7.24993 15.0002 7.8416 15.0919 8.0916 15.1835C8.63327 15.3919 9.17493 15.6002 9.70827 15.8085C10.7833 16.2169 11.8666 16.6086 12.9833 16.8836C13.1333 16.4836 12.9999 16.0002 12.9999 15.5836C12.9999 15.0669 12.9999 14.5502 12.9999 14.0335C12.9999 13.0252 12.9999 12.0169 12.9999 11.0085C12.9999 10.0335 12.9999 9.05855 12.9999 8.08355C12.9999 7.60022 12.9999 7.10855 12.9999 6.62522C12.9999 6.25855 13.0999 5.71688 12.9999 5.36688C12.9166 5.05022 12.1749 4.95022 11.9083 4.85022C11.4249 4.68355 10.9416 4.50855 10.4583 4.34188C9.4916 4.00022 8.52493 3.65855 7.55827 3.32522C7.2166 3.20022 6.9166 3.06688 6.93327 3.59188C6.95827 4.36688 6.9666 5.14188 6.97494 5.91688C6.97494 6.89188 6.99993 7.86688 6.99993 8.85022C6.99993 9.83355 6.99993 10.8585 6.99993 11.8669C6.99993 12.4085 6.98327 12.9502 6.9666 13.4836C6.95827 13.7919 6.79994 14.5169 7.02494 14.7669L7.03327 14.7585Z"
+                    fill="#502314"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_303_6007">
+                    <rect width="20" height="20" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
+            <a href="#" class="ml-[15px] relative">
+              <svg width="20" height="20" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_768_23250)">
+                  <path
+                    d="M2.79406 12.0577C2.78239 11.9527 2.77656 11.8419 2.77072 11.7369C2.77072 11.6727 2.79989 11.1244 2.77072 11.1069C2.18739 10.8385 1.72656 10.3252 1.52239 9.71853C1.27156 8.98353 1.49322 8.34186 1.89572 7.71186C2.02406 7.5077 2.16989 7.30936 2.34489 7.14603C2.51989 6.9827 2.77656 6.92436 2.79406 6.65603C2.81739 6.25936 2.79406 5.8452 2.83489 5.4427C2.88156 5.01686 2.89906 4.57353 2.89322 4.14186C2.88739 3.73936 2.79406 3.34853 2.79406 2.94603C2.79406 2.65436 2.78822 2.35686 2.77656 2.0652C2.77072 1.7502 2.75322 1.4177 2.92822 1.14353C3.10322 0.869362 3.41822 0.700195 3.73906 0.700195C4.26989 0.700195 4.70739 1.13186 4.70739 1.66853C4.67239 2.77686 4.59656 3.8852 4.64322 4.99353C4.66072 5.39603 4.67239 5.80436 4.68406 6.20686C4.68406 6.37603 4.59656 6.7377 4.73072 6.86603C4.85906 6.99436 5.09239 7.0702 5.23822 7.18103C5.42489 7.32686 5.59989 7.4902 5.73989 7.6827C6.52156 8.72686 5.83322 10.576 4.70156 11.0952L4.70156 12.1044C4.70156 12.6352 4.26989 13.2827 3.73322 13.2827C3.22572 13.2827 2.96322 12.886 2.85822 12.4369C2.82906 12.3085 2.81156 12.1802 2.79406 12.0519L2.79406 12.0577ZM3.73322 10.0219C3.91406 10.0277 4.08906 9.98686 4.24656 9.89936C4.45072 9.7827 4.60822 9.60186 4.70156 9.38603C4.75406 9.26353 4.78322 9.12936 4.78322 8.98936C4.78322 8.84936 4.75406 8.7152 4.70156 8.5927C4.54406 8.21353 4.17072 7.9452 3.73322 7.9452C3.29572 7.9452 2.92239 8.21353 2.76489 8.5927C2.71239 8.7152 2.68322 8.84936 2.68322 8.98936C2.68322 9.12936 2.71239 9.26353 2.76489 9.38603C2.92239 9.77103 3.33072 10.0044 3.73322 10.016L3.73322 10.0219Z"
+                    fill="#502314"
+                  />
+                  <path
+                    d="M11.2057 1.94229C11.2174 2.04729 11.2232 2.15812 11.2291 2.26312C11.2291 2.32729 11.1999 2.87562 11.2291 2.89312C11.8124 3.16145 12.2732 3.67479 12.4774 4.28145C12.7282 5.01645 12.5066 5.65812 12.1041 6.28812C11.9757 6.49229 11.8299 6.69062 11.6549 6.85395C11.4799 7.01729 11.2232 7.07562 11.2057 7.34395C11.1824 7.74062 11.2057 8.15479 11.1649 8.55729C11.1182 8.98312 11.1007 9.42645 11.1066 9.85812C11.1124 10.2606 11.2057 10.6515 11.2057 11.054C11.2057 11.3456 11.2116 11.6431 11.2232 11.9348C11.2291 12.2498 11.2466 12.5823 11.0716 12.8565C10.8966 13.1306 10.5816 13.2998 10.2607 13.2998C9.7299 13.2998 9.2924 12.8681 9.2924 12.3315C9.3274 11.2231 9.40323 10.1148 9.35657 9.00645C9.33907 8.60395 9.3274 8.19562 9.31573 7.79312C9.31573 7.62395 9.40323 7.26229 9.26906 7.13395C9.14073 7.00562 8.9074 6.92979 8.76156 6.81895C8.5749 6.67312 8.3999 6.50979 8.2599 6.31729C7.47823 5.27312 8.16656 3.42395 9.29823 2.90479L9.29823 1.89562C9.29823 1.36479 9.7299 0.717285 10.2666 0.717285C10.7741 0.717285 11.0366 1.11395 11.1416 1.56312C11.1707 1.69145 11.1882 1.81979 11.2057 1.94812L11.2057 1.94229ZM10.2666 3.97812C10.0857 3.97229 9.91073 4.01312 9.75323 4.10062C9.54906 4.21729 9.39156 4.39812 9.29823 4.61395C9.24573 4.73645 9.21656 4.87062 9.21656 5.01062C9.21656 5.15062 9.24573 5.28479 9.29823 5.40729C9.45573 5.78645 9.82906 6.05479 10.2666 6.05479C10.7041 6.05479 11.0774 5.78645 11.2349 5.40729C11.2874 5.28479 11.3166 5.15062 11.3166 5.01062C11.3166 4.87062 11.2874 4.73645 11.2349 4.61395C11.0774 4.22895 10.6691 3.99562 10.2666 3.98395L10.2666 3.97812Z"
+                    fill="#502314"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_768_23250">
+                    <rect width="14" height="14" fill="white" transform="matrix(4.37114e-08 1 1 -4.37114e-08 0 0)" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <ul class="grid md:grid-cols lg:grid-cols-2 gap-3 xl:grid-cols-3">
+          <li class="flex bg-light-beige relative mb-5 rounded-[.625rem] p-[15px]">
+            <a href="#" class="w-full">
+              <div class="flex justify-between relative min-h-20 mb-2.5">
+                <div class="relative pr-[5.9375rem]">
+                  <span class="flex flex-nowrap items-center gap-1 relative"
+                    ><p class="text-sm font-bold text-brown">천안 성성점</p>
+                    <p class="text-xs text-[#89665b]">538m</p></span
+                  >
+                  <p class="font-Pretendard text-2xs text-brown-0.7 mt-[.3125rem] mr-0 mb-0.5 ml-0">충청남도 천안시 서북구 성성8로 2-11</p>
+                  <p class="font-Pretendard m-0 text-2xs text-brown">연중무휴 (10:00~22:00)</p>
+                  <div class="flex flex-wrap mt-[5px] mr-[5px] mb-0 ml-0">
+                    <span class="inline-block min-w-[1.5625rem] h-4 pt-0.5 pr-[.3125rem] pb-0.5 pl-[.3125rem] text-[.5rem] text-[#89665b] text-center leading-3 bg-[#faf4ed] rounded-[20px]">킹오더</span>
+                    <span class="inline-block min-w-[1.5625rem] h-4 pt-0.5 pr-[.3125rem] pb-0.5 pl-[.3125rem] text-[.5rem] text-[#89665b] text-center leading-3 bg-[#faf4ed] rounded-[20px]">딜리버리 </span>
+                  </div>
+                </div>
+                <img src="/src/assets/store/store_1.webp" alt="" class="absolute right-0 top-0 w-[80px] h-[80px] rounded-[.625rem]" />
+              </div>
+              <div class="flex justify-between mt-auto mr-0 mb-auto ml-0 text-center relative">
+                <div class="flex items-center min-w-20 mb-[-5px]">
+                  <p class="text-left text-xs text-brown">매장정보</p>
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_108_2309)">
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M11.0659 6.58163L5.57375 1.34435C5.46279 1.23882 5.27871 1.16882 5.09412 1.16882C4.90953 1.16882 4.72493 1.23882 4.61449 1.34435L3.69153 2.22307C3.58108 2.3286 3.50693 2.50413 3.50693 2.67966C3.50693 2.85519 3.58108 2.99678 3.69153 3.13678L7.74582 7.00269L3.70034 10.8596C3.58938 10.9651 3.51575 11.1406 3.51575 11.3167C3.51575 11.4922 3.58938 11.6678 3.70034 11.7733L4.62279 12.652C4.73375 12.7575 4.91834 12.8275 5.10293 12.8275C5.28753 12.8275 5.43479 12.7575 5.58256 12.652L11.0545 7.43382C11.0545 7.43382 11.5372 7.02443 11.0659 6.58163Z"
+                        fill="#502314"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_108_2309">
+                        <rect width="11.6667" height="7.77778" fill="white" transform="translate(11.2778 1.16669) rotate(90)" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </div>
+                <span class="inline-block rounded-[1.875rem] bg-[url('/src/assets/elements/ico_crown.svg')] py-[.1563rem] bg-no-repeat text-2xs bg-brown-0.05 text-brown bg-[length:1rem] bg-[left_5px_center] pl-[25px] pr-[5px]">멤버십 적립매장</span>
+              </div>
+            </a>
+          </li>
+          <li class="flex bg-light-beige relative mb-5 rounded-[.625rem] p-[15px]">
+            <a href="#" class="w-full">
+              <div class="flex justify-between relative min-h-20 mb-2.5">
+                <div class="relative pr-[5.9375rem]">
+                  <span class="flex flex-nowrap items-center gap-1 relative"
+                    ><p class="text-sm font-bold text-brown">천안 성성점</p>
+                    <p class="text-xs text-[#89665b]">538m</p></span
+                  >
+                  <p class="font-Pretendard text-2xs text-brown-0.7 mt-[.3125rem] mr-0 mb-0.5 ml-0">충청남도 천안시 서북구 성성8로 2-11</p>
+                  <p class="font-Pretendard m-0 text-2xs text-brown">연중무휴 (10:00~22:00)</p>
+                  <div class="flex flex-wrap mt-[5px] mr-[5px] mb-0 ml-0">
+                    <span class="inline-block min-w-[1.5625rem] h-4 pt-0.5 pr-[.3125rem] pb-0.5 pl-[.3125rem] text-[.5rem] text-[#89665b] text-center leading-3 bg-[#faf4ed] rounded-[20px]">킹오더</span>
+                    <span class="inline-block min-w-[1.5625rem] h-4 pt-0.5 pr-[.3125rem] pb-0.5 pl-[.3125rem] text-[.5rem] text-[#89665b] text-center leading-3 bg-[#faf4ed] rounded-[20px]">딜리버리 </span>
+                  </div>
+                </div>
+                <img src="/src/assets/store/store_1.webp" alt="" class="absolute right-0 top-0 w-[80px] h-[80px] rounded-[.625rem]" />
+              </div>
+              <div class="flex justify-between mt-auto mr-0 mb-auto ml-0 text-center relative">
+                <div class="flex items-center min-w-20 mb-[-5px]">
+                  <p class="text-left text-xs text-brown">매장정보</p>
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_108_2309)">
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M11.0659 6.58163L5.57375 1.34435C5.46279 1.23882 5.27871 1.16882 5.09412 1.16882C4.90953 1.16882 4.72493 1.23882 4.61449 1.34435L3.69153 2.22307C3.58108 2.3286 3.50693 2.50413 3.50693 2.67966C3.50693 2.85519 3.58108 2.99678 3.69153 3.13678L7.74582 7.00269L3.70034 10.8596C3.58938 10.9651 3.51575 11.1406 3.51575 11.3167C3.51575 11.4922 3.58938 11.6678 3.70034 11.7733L4.62279 12.652C4.73375 12.7575 4.91834 12.8275 5.10293 12.8275C5.28753 12.8275 5.43479 12.7575 5.58256 12.652L11.0545 7.43382C11.0545 7.43382 11.5372 7.02443 11.0659 6.58163Z"
+                        fill="#502314"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_108_2309">
+                        <rect width="11.6667" height="7.77778" fill="white" transform="translate(11.2778 1.16669) rotate(90)" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </div>
+                <span class="inline-block rounded-[1.875rem] bg-[url('/src/assets/elements/ico_crown.svg')] py-[.1563rem] bg-no-repeat text-2xs bg-brown-0.05 text-brown bg-[length:1rem] bg-[left_5px_center] pl-[25px] pr-[5px]">멤버십 적립매장</span>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- footer 컴포넌트 넣어주세요. -->
+  </body>
+</html>
