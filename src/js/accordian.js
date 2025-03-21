@@ -17,7 +17,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
         submenu.classList.toggle('h-0');
         submenu.classList.toggle('invisible');
-        submenu.classList.toggle('py-[.625rem]');
       } else {
         console.error('Submenu not found for button:', button);
       }

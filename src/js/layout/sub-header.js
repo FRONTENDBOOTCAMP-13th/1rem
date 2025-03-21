@@ -1,14 +1,10 @@
-<!doctype html>
-<html lang="ko-KR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>[컴포넌트] 헤더</title>
-    <link rel="preload" as="font" href="/fonts/Sandoll-GothicNeoRound-400.woff" crossorigin="anonymous" />
-    <link rel="preload" as="font" href="/fonts/Sandoll-GothicNeoRound-700.woff" crossorigin="anonymous" />
-    <script type="module" src="/src/main.js"></script>
-  </head>
-  <body>
+class subHeader extends HTMLElement {
+  constructor() {
+    super();
+  }
+
+  connectedCallback() {
+    this.innerHTML = `
     <header class="top-0 sticky bg-beige z-1 lg:px-15">
       <div class="h-14 px-[3.125rem] text-lg lg:items-center lg:px-0 lg:flex lg:w-full lg:max-w-405 lg:h-[6.125rem] lg:mx-auto">
         <!-- ST:Logo -->
@@ -141,5 +137,25 @@
       </footer>
       <!-- ED:Open mobile menu-->
     </div>
-  </body>
-</html>
+    `;
+
+    let body = document.querySelector('body');
+
+    const moGnbOpen = document.querySelector('.mognb-open');
+    const moGnb = document.querySelector('#moGnb');
+    const moGnbClose = document.querySelector('.mognb-close');
+
+    moGnbOpen.addEventListener('click', () => {
+      moGnb.style.left = '0';
+      body.style.overflow = 'hidden';
+    });
+
+    moGnbClose.addEventListener('click', () => {
+      moGnb.style.left = '-100%';
+      body.style.overflow = 'auto';
+    });
+  }
+}
+
+// 웹 컴포넌트 등록
+customElements.define('sub-header', subHeader);
