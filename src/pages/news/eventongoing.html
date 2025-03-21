@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>[컴포넌트] 페이지 타이틀 영역</title>
+    <link rel="preload" as="font" href="/fonts/Sandoll-GothicNeoRound-400.woff" crossorigin="anonymous" />
+    <link rel="preload" as="font" href="/fonts/Sandoll-GothicNeoRound-700.woff" crossorigin="anonymous" />
+    <script type="module" src="/src/main.js"></script>
+  </head>
+  <body>
+    <!-- header 컴포넌트 넣어주세요. -->
+    <div class="wrapper px-5 pt-5 pb-22.5 md:p-7.5 lg:pt-10 lg:px-15 lg:pb-22.5">
+      <div class="inner max-w-[1620px] mx-auto">
+        <h2 class="hidden text-[2.125rem] text-brown text-center font-bold lg:block lg:mt-10 lg:mb-12.5">이벤트</h2>
+
+        <!-- 타이틀 아래의 본문 내용은 여기서 작성해주세요. div말고 다른 태그 넣어도 됩니다.-->
+        <nav class="sticky top-[-20px] mt-[-30px] z-20 bg-beige m-[0_-20px] p-5 text-center mr-2 ml-2">
+          <ul class="grid grid-cols-2 border-b-1 items-cnter border-b-brown-0.05 z-10 bg-beige lg:text-2xl">
+            <li class="h-full tab-btn relative p-1 border-b-3 border-b-ci text-ci"><a href="/src/page/news/newsongoing.html">진행 중</a></li>
+            <li class="tab-btn relative p-1 text-brown-0.5"><a href="/src/page/news/newsend.html">종료</a></li>
+          </ul>
+        </nav>
+        <ul class="mr-5 ml-5 grid md:grid-cols-2 lg:grid-cols-3 gap-3 xl:grid-cols-4s">
+          <li class="flex relative mb-[1.875rem]">
+            <a href="/src/page/news/newsdetail.html" class="">
+              <img src="/src/assets/event/ongoing/event_banner_ongoing_1.webp" alt="" class="relative m-0 border-1 rounded-xl border-border overflow-hidden max-w-full" />
+              <div class="flex mt-3 items-center">
+                <span class="mr-[5px] h-[1.375rem] text-center leading-[23px] inline-block rounded-[.3125rem] text-brown bg-brown-0.1 p-[0_5px] text-3xs">일반</span>
+                <p class="mt-2.5text-sm text-brown">25년 2월 불끈 버거 출시</p>
+              </div>
+            </a>
+          </li>
+          <li class="flex relative mb-[1.875rem]">
+            <a href="/src/page/news/newsdetail.html" class="">
+              <div class="relative">
+                <strong class="absolute border-none left-[.3125rem] top-[.3125rem] min-w-[3.125rem] p-[6px_5px_5px] rounded-[0.3125rem] text-2xs text-light-beige text-center opacity-90 bg-ci border-[.3125rem] z-5">n일 남았어요!</strong>
+                <img src="/src/assets/event/ongoing/event_banner_ongoing_12.webp" alt="" class="relative m-0 border-1 rounded-xl border-border overflow-hidden max-w-full" />
+              </div>
+              <div class="flex mt-3 items-center">
+                <span class="mr-[5px] h-[1.375rem] text-center leading-[23px] inline-block rounded-[.3125rem] text-brown bg-brown-0.1 p-[0_5px] text-3xs">일반</span>
+                <p class="mt-2.5text-sm text-brown">25년 2월 불끈 버거 출시</p>
+              </div>
+            </a>
+          </li>
+          <li class="flex relative mb-[1.875rem]">
+            <a href="/src/page/news/newsdetail.html" class="">
+              <img src="/src/assets/event/ongoing/event_banner_ongoing_1.webp" alt="" class="relative m-0 border-1 rounded-xl border-border overflow-hidden max-w-full" />
+              <div class="flex mt-3 items-center">
+                <span class="mr-[5px] h-[1.375rem] text-center leading-[23px] inline-block rounded-[.3125rem] text-brown bg-brown-0.1 p-[0_5px] text-3xs">일반</span>
+                <p class="mt-2.5text-sm text-brown">25년 2월 불끈 버거 출시</p>
+              </div>
+            </a>
+          </li>
+          <li class="flex relative mb-[1.875rem]">
+            <a href="/src/page/news/newsdetail.html" class="">
+              <div class="relative">
+                <strong class="absolute border-none left-[.3125rem] top-[.3125rem] min-w-[3.125rem] p-[6px_5px_5px] rounded-[0.3125rem] text-2xs text-light-beige text-center opacity-90 bg-ci border-[.3125rem] z-5">n일 남았어요!</strong>
+                <img src="/src/assets/event/ongoing/event_banner_ongoing_12.webp" alt="" class="relative m-0 border-1 rounded-xl border-border overflow-hidden max-w-full" />
+              </div>
+              <div class="flex mt-3 items-center">
+                <span class="mr-[5px] h-[1.375rem] text-center leading-[23px] inline-block rounded-[.3125rem] text-brown bg-brown-0.1 p-[0_5px] text-3xs">일반</span>
+                <p class="mt-2.5text-sm text-brown">25년 2월 불끈 버거 출시</p>
+              </div>
+            </a>
+          </li>
+          <li class="flex relative mb-[1.875rem]">
+            <a href="/src/page/news/newsdetail.html" class="">
+              <img src="/src/assets/event/ongoing/event_banner_ongoing_1.webp" alt="" class="relative m-0 border-1 rounded-xl border-border overflow-hidden max-w-full" />
+              <div class="flex mt-3 items-center">
+                <span class="mr-[5px] h-[1.375rem] text-center leading-[23px] inline-block rounded-[.3125rem] text-brown bg-brown-0.1 p-[0_5px] text-3xs">일반</span>
+                <p class="mt-2.5text-sm text-brown">25년 2월 불끈 버거 출시</p>
+              </div>
+            </a>
+          </li>
+          <li class="flex relative mb-[1.875rem]">
+            <a href="/src/page/news/newsdetail.html" class="">
+              <div class="relative">
+                <strong class="absolute border-none left-[.3125rem] top-[.3125rem] min-w-[3.125rem] p-[6px_5px_5px] rounded-[0.3125rem] text-2xs text-light-beige text-center opacity-90 bg-ci border-[.3125rem] z-5">n일 남았어요!</strong>
+                <img src="/src/assets/event/ongoing/event_banner_ongoing_12.webp" alt="" class="relative m-0 border-1 rounded-xl border-border overflow-hidden max-w-full" />
+              </div>
+              <div class="flex mt-3 items-center">
+                <span class="mr-[5px] h-[1.375rem] text-center leading-[23px] inline-block rounded-[.3125rem] text-brown bg-brown-0.1 p-[0_5px] text-3xs">일반</span>
+                <p class="mt-2.5text-sm text-brown">25년 2월 불끈 버거 출시</p>
+              </div>
+            </a>
+          </li>
+          <li class="flex relative mb-[1.875rem]">
+            <a href="/src/page/news/newsdetail.html" class="">
+              <img src="/src/assets/event/ongoing/event_banner_ongoing_1.webp" alt="" class="relative m-0 border-1 rounded-xl border-border overflow-hidden max-w-full" />
+              <div class="flex mt-3 items-center">
+                <span class="mr-[5px] h-[1.375rem] text-center leading-[23px] inline-block rounded-[.3125rem] text-brown bg-brown-0.1 p-[0_5px] text-3xs">일반</span>
+                <p class="mt-2.5text-sm text-brown">25년 2월 불끈 버거 출시</p>
+              </div>
+            </a>
+          </li>
+          <li class="flex relative mb-[1.875rem]">
+            <a href="/src/page/news/newsdetail.html" class="">
+              <div class="relative">
+                <strong class="absolute border-none left-[.3125rem] top-[.3125rem] min-w-[3.125rem] p-[6px_5px_5px] rounded-[0.3125rem] text-2xs text-light-beige text-center opacity-90 bg-ci border-[.3125rem] z-5">n일 남았어요!</strong>
+                <img src="/src/assets/event/ongoing/event_banner_ongoing_12.webp" alt="" class="relative m-0 border-1 rounded-xl border-border overflow-hidden max-w-full" />
+              </div>
+              <div class="flex mt-3 items-center">
+                <span class="mr-[5px] h-[1.375rem] text-center leading-[23px] inline-block rounded-[.3125rem] text-brown bg-brown-0.1 p-[0_5px] text-3xs">일반</span>
+                <p class="mt-2.5text-sm text-brown">25년 2월 불끈 버거 출시</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- footer 컴포넌트 넣어주세요. -->
+  </body>
+</html>
