@@ -3,45 +3,83 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>[컴포넌트] 공통 버튼 및 라벨</title>
+    <title>모바일 헤더</title>
     <link rel="preload" as="font" href="/fonts/Sandoll-GothicNeoRound-400.woff" crossorigin="anonymous" />
     <link rel="preload" as="font" href="/fonts/Sandoll-GothicNeoRound-700.woff" crossorigin="anonymous" />
+    <script type="module" src="/src/js/accordian.js"></script>
     <script type="module" src="/src/main.js"></script>
   </head>
   <button type="button" class="mognb-open">햄버거 버튼</button>
   <body>
-    <div id="moGnb" class="absolute top-0 left-[-100%] bg-beige w-screen h-screen px-5 translate duration-[400ms]">
+    <!-- ST:Open mobile menu-->
+    <div id="moGnb" class="z-[2] absolute top-0 left-[-110%] bg-beige w-screen h-screen px-5 translate duration-[400ms]">
       <header class="h-[3.5rem] flex justify-between items-center">
-        <!-- 이미지 이동 및 경로 수정 필요 -->
-        <a href="#" target="_self" aria-label="BURGER KING 홈으로 이동" class="block w-[9.375rem] h-4 bg-[url(/src/assets/elements/bg_logo.svg)] bg-no-repeat bg-contain"></a>
-        <button type="button" aria-label="모바일 메뉴 닫기" class="mognb-close w-[34px] h-full bg-[url(/src/assets/elements/btn_pop_close.svg)] bg-no-repeat bg-center"></button>
+        <a href="/src/pages/home.html" target="_self" aria-label="BURGER KING 홈으로 이동" class="block w-[9.375rem] h-4 bg-[url(/src/assets/elements/bg_logo.svg)] bg-no-repeat bg-contain"></a>
+        <button type="button" aria-label="모바일 메뉴 닫기" class="mognb-close w-[2.125rem] h-full bg-[url(/src/assets/elements/btn_pop_close.svg)] bg-no-repeat bg-center"></button>
       </header>
-      <nav class="h-[calc(100%-130px)]">
+      <nav class="h-[calc(100%-8.125rem)]">
         <ul>
-          <li><a href="" class="block content-center h-21 p-5 pl-18.5 font-BKBulMatPro text-4xl text-brown font-bold bg-[url(/src/assets/elements/ico_gnb_menu01.svg)] bg-no-repeat bg-[left_center]">MENU</a></li>
-          <li class="flex justify-center items-center">
-            <a href="" class="flex-1 content-center h-21 p-5 pl-18.5 font-BKBulMatPro text-4xl text-brown font-bold bg-[url(/src/assets/elements/ico_gnb_menu02.svg)] bg-no-repeat bg-[left_center]">STORY</a>
-            <button type="button" aria-label="STORY 하위 메뉴 펼치기" aria-expanded="false" class="w-[3.625rem] h-21 bg-[url(/src/assets/elements/btn_acc_gnb.svg)] bg-no-repeat bg-center"></button>
+          <li><a href="/src/pages/menu/menu.html" class="block content-center h-21 p-5 pl-18.5 font-BKBulMatPro text-4xl text-brown font-bold bg-[url(/src/assets/elements/ico_gnb_menu01.svg)] bg-no-repeat bg-[left_center]">MENU</a></li>
+          <li>
+            <div class="flex justify-center items-center">
+              <a href="/src/pages/story/brand.html" class="flex-1 content-center h-21 p-5 pl-18.5 font-BKBulMatPro text-4xl text-brown font-bold bg-[url(/src/assets/elements/ico_gnb_menu02.svg)] bg-no-repeat bg-[left_center]">STORY</a>
+              <button type="button" aria-label="STORY 하위 메뉴 펼치기" aria-expanded="false" class="accordion-button w-[3.625rem] h-21 bg-[url(/src/assets/elements/btn_acc_gnb.svg)] bg-no-repeat bg-center"></button>
+            </div>
+            <div class="accordion-submenu -mx-5 h-0 invisible overflow-hidden transition-all ease-in-out">
+              <ul class="h-auto py-[.625rem] bg-[#e4d7c8] text-lg overflow-hidden">
+                <li class="h-[2.375rem]">
+                  <a href="/src/pages/story/brand.html " class="h-[2.375rem] p-[.625rem_1.25rem_.625rem_5.875rem] text-brown whitespace-nowrap block"><span>브랜드</span></a>
+                </li>
+                <li class="h-[2.375rem]">
+                  <a href="/src/pages/story/whyburgerking.html" class="h-[2.375rem] p-[.625rem_1.25rem_.625rem_5.875rem] text-brown whitespace-nowrap block"><span>Why 버거킹</span></a>
+                </li>
+                <li class="h-[2.375rem]">
+                  <a href="/src/pages/story/esgbusiness.html" class="h-[2.375rem] p-[.625rem_1.25rem_.625rem_5.875rem] text-brown whitespace-nowrap block"><span>ESG 경영</span></a>
+                </li>
+                <li class="h-[2.375rem]">
+                  <a href="/src/pages/story/smartqsr.html" class="w-full h-[2.375rem] p-[.625rem_1.25rem_.625rem_5.875rem] text-brown whitespace-nowrap block"><span>Smart QSR</span></a>
+                </li>
+                <li class="h-[2.375rem]">
+                  <a href="/src/pages/story/awards.html" class="h-[2.375rem] p-[.625rem_1.25rem_.625rem_5.875rem] text-brown whitespace-nowrap block"><span>수상실적</span></a>
+                </li>
+                <li class="h-[2.375rem]">
+                  <a href="/src/pages/story/adarchive.html" class="h-[2.375rem] p-[.625rem_1.25rem_.625rem_5.875rem] text-brown whitespace-nowrap block"><span>광고영상</span></a>
+                </li>
+              </ul>
+            </div>
           </li>
-          <li class="flex justify-center items-center">
-            <a href="" class="flex-1 content-center h-21 p-5 pl-18.5 font-BKBulMatPro text-4xl text-brown font-bold bg-[url(/src/assets/elements/ico_gnb_menu04.svg)] bg-no-repeat bg-[left_center]">NEWS</a>
-            <button type="button" aria-label="NEWS 하위 메뉴 펼치기" aria-expanded="false" class="w-[3.625rem] h-21 bg-[url(/src/assets/elements/btn_acc_gnb.svg)] bg-no-repeat bg-center"></button>
+          <li>
+            <div class="flex justify-center items-center">
+              <a href="/src/pages/news/ongoing.html" class="flex-1 content-center h-21 p-5 pl-18.5 font-BKBulMatPro text-4xl text-brown font-bold bg-[url(/src/assets/elements/ico_gnb_menu04.svg)] bg-no-repeat bg-[left_center]">NEWS</a>
+              <button type="button" aria-label="NEWS 하위 메뉴 펼치기" aria-expanded="false" class="accordion-button w-[3.625rem] h-21 bg-[url(/src/assets/elements/btn_acc_gnb.svg)] bg-no-repeat bg-center"></button>
+            </div>
+            <div class="accordion-submenu -mx-5 h-0 invisible overflow-hidden transition-all ease-in-out">
+              <ul class="h-auto py-[.625rem] bg-[#e4d7c8] text-lg overflow-hidden">
+                <li class="h-[2.375rem]">
+                  <a href="/src/pages/news/eventongoing.html " class="h-[2.375rem] p-[.625rem_1.25rem_.625rem_5.875rem] text-brown whitespace-nowrap block"><span>이벤트</span></a>
+                </li>
+                <li class="h-[2.375rem]">
+                  <a href="/src/pages/news/notice.html" class="h-[2.375rem] p-[.625rem_1.25rem_.625rem_5.875rem] text-brown whitespace-nowrap block"><span>공지사항</span></a>
+                </li>
+              </ul>
+            </div>
           </li>
-          <li><a href="" class="block content-center h-21 p-5 pl-18.5 font-BKBulMatPro text-4xl text-brown font-bold bg-[url(/src/assets/elements/ico_gnb_menu03.svg)] bg-no-repeat bg-[left_center]">STORE</a></li>
-          <li><a href="" class="block content-center h-21 p-5 pl-18.5 font-BKBulMatPro text-4xl text-brown font-bold bg-[url(/src/assets/elements/ico_gnb_menu05.svg)] bg-no-repeat bg-[left_center]">CUSTOMER</a></li>
+          <li><a href="/src/pages/store/storenear.html" class="block content-center h-21 p-5 pl-18.5 font-BKBulMatPro text-4xl text-brown font-bold bg-[url(/src/assets/elements/ico_gnb_menu03.svg)] bg-no-repeat bg-[left_center]">STORE</a></li>
+          <li><a href="/src/pages/customer/customer.html" class="block content-center h-21 p-5 pl-18.5 font-BKBulMatPro text-4xl text-brown font-bold bg-[url(/src/assets/elements/ico_gnb_menu05.svg)] bg-no-repeat bg-[left_center]">CUSTOMER</a></li>
         </ul>
-        <a href="#" class="inline-block mt-[1.5625rem] pt-[.5625rem] pb-2 pr-4 pl-[2.125rem] text-xs text-brown text-center rounded-[3.125rem] bg-brown-0.05 bg-[url('/src/assets/elements/ico_tit_store.svg')] bg-no-repeat bg-[left_14px_center] bg-[length:14px]">가맹점 모집</a>
+        <a href="/src/pages/franchise/franchise.html" class="inline-block mt-[1.5625rem] pt-[.5625rem] pb-2 pr-4 pl-[2.125rem] text-xs text-brown text-center rounded-[3.125rem] bg-brown-0.05 bg-[url('/src/assets/elements/ico_tit_store.svg')] bg-no-repeat bg-[left_.875rem_center] bg-[length:.875rem]">가맹점 모집</a>
       </nav>
       <footer class="flex justify-between items-center h-18.5">
-        <a href="#" class="py-[.3125rem] pr-[2.375rem] pl-3 text-sm text-brown text-center rounded-[3.125rem] bg-brown-0.05 bg-[url('/src/assets/elements/ico_bt_link.svg')] bg-no-repeat bg-[right_12px_center]">인재채용</a>
+        <a href="#" class="py-[.3125rem] pr-[2.375rem] pl-3 text-sm text-brown text-center rounded-[3.125rem] bg-brown-0.05 bg-[url('/src/assets/elements/ico_bt_link.svg')] bg-no-repeat bg-[right_.75rem_center]">인재채용</a>
         <ul class="flex gap-5">
-          <li><a href="https://www.instagram.com/burgerkingkorea/" target="_blank" title="버거킹 인스타그램으로 새창 열림 링크" rel="noopener noreferrer" class="block w-8 h-8 rounded-full bg-[url(/src/assets/elements/ico_sns_instagram.svg)] bg-no-repeat bg-cover"></a></li>
-          <li><a href="https://www.facebook.com/burgerkingkorea" target="_blank" title="버거킹 페이스북으로 새창 열림 링크" rel="noopener noreferrer" class="block w-8 h-8 rounded-full bg-[url(/src/assets/elements/ico_sns_facebook.svg)] bg-no-repeat bg-cover"></a></li>
-          <li><a href="https://x.com/BurgerKing_KOR" target="_blank" title="버거킹 X로 새창 열림 링크" rel="noopener noreferrer" class="block w-8 h-8 rounded-full bg-[url(/src/assets/elements/ico_sns_x.svg)] bg-no-repeat bg-cover"></a></li>
-          <li><a href="https://www.youtube.com/@burgerking_korea" target="_blank" title="버거킹 유튜브로 새창 열림 링크" rel="noopener noreferrer" class="block w-8 h-8 rounded-full bg-[url(/src/assets/elements/ico_sns_youtube.svg)] bg-no-repeat bg-cover"></a></li>
+          <li><a href="#" class="block w-8 h-8 rounded-full bg-[url(/src/assets/elements/ico_sns_instagram.svg)] bg-no-repeat bg-cover"></a></li>
+          <li><a href="#" class="block w-8 h-8 rounded-full bg-[url(/src/assets/elements/ico_sns_facebook.svg)] bg-no-repeat bg-cover"></a></li>
+          <li><a href="#" class="block w-8 h-8 rounded-full bg-[url(/src/assets/elements/ico_sns_x.svg)] bg-no-repeat bg-cover"></a></li>
+          <li><a href="#" class="block w-8 h-8 rounded-full bg-[url(/src/assets/elements/ico_sns_youtube.svg)] bg-no-repeat bg-cover"></a></li>
         </ul>
       </footer>
     </div>
+    <!-- ED:Open mobile menu-->
   </body>
   <script type="module">
     document.addEventListener('DOMContentLoaded', () => {
