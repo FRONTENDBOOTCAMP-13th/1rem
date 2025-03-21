@@ -21,27 +21,27 @@
             <li>
               <div class="relative flex justify-center items-center after:absolute after:h-[.0625rem] after:bottom-0 after:left-[-1.25rem] after:right-[-1.25rem] after:bg-beige">
                 <a href="/src/pages/story/brand.html" target="_self" class="flex-1 content-center h-[3.3125rem] text-2xs">STORY</a>
-                <button type="button" aria-label="STORY 하위 메뉴 펼치기" aria-expanded="false" class="w-12.5 h-[3.3125rem] bg-[url(/src/assets/elements/ico_darrow01.svg)] bg-no-repeat bg-[right_center] transition-transform duration-300 origin-center" onclick="toggleMenu(event)"></button>
+                <button type="button" aria-label="STORY 하위 메뉴 펼치기" aria-expanded="false" class="accordion-button w-12.5 h-[3.3125rem] bg-[url(/src/assets/elements/ico_darrow01.svg)] bg-no-repeat bg-center relative"></button>
               </div>
-              <div class="submenu transition-all duration-500 ease-in-out overflow-hidden max-h-0 opacity-0">
+              <div class="accordion-submenu h-0 invisible overflow-hidden transition-all duration-500 ease-in-out">
                 <ul>
                   <li>
-                    <a href="#" class="w-full py-[.625rem] px-10 text-left text-brown-0.3 text-[.75rem] h-8"><span>브랜드</span></a>
+                    <a href="/src/pages/story/brand.html" class="w-full py-[.625rem] px-5 text-left text-brown-0.5 text-[.75rem] h-8 block"><span>브랜드</span></a>
                   </li>
                   <li>
-                    <button class="w-full py-[.625rem] px-10 text-left text-brown-0.3 text-[.75rem] h-8"><span>Why 버거킹</span></button>
+                    <a href="/src/pages/story/whyburgerking.html" class="w-full py-[.625rem] px-5 text-left text-brown-0.5 text-[.75rem] h-8 block"><span>Why 버거킹</span></a>
                   </li>
                   <li>
-                    <button class="w-full py-[.625rem] px-10 text-left text-brown-0.3 text-[.75rem] h-8"><span>ESG 경영</span></button>
+                    <a href="/src/pages/story/esgbusiness.html" class="w-full py-[.625rem] px-5 text-left text-brown-0.5 text-[.75rem] h-8 block"><span>ESG 경영</span></a>
                   </li>
                   <li>
-                    <button class="w-full py-[.625rem] px-10 text-left text-brown-0.3 text-[.75rem] h-8"><span>Smart QSR</span></button>
+                    <a href="/src/pages/story/smartqsr.html" class="w-full py-[.625rem] px-5 text-left text-brown-0.5 text-[.75rem] h-8 block"><span>Smart QSR</span></a>
                   </li>
                   <li>
-                    <button class="w-full py-[.625rem] px-10 text-left text-brown-0.3 text-[.75rem] h-8"><span>수상실적</span></button>
+                    <a href="/src/pages/story/awards.html" class="w-full py-[.625rem] px-5 text-left text-brown-0.5 text-[.75rem] h-8 block"><span>수상실적</span></a>
                   </li>
                   <li>
-                    <button class="w-full py-[.625rem] px-10 text-left text-brown-0.3 text-[.75rem] h-8"><span>광고영상</span></button>
+                    <a href="/src/pages/story/adarchive.html" class="w-full py-[.625rem] px-5 text-left text-brown-0.5 text-[.75rem] h-8 block"><span>광고영상</span></a>
                   </li>
                 </ul>
               </div>
@@ -49,15 +49,15 @@
             <li>
               <div class="relative flex justify-center items-center after:absolute after:h-[.0625rem] after:bottom-0 after:left-[-1.25rem] after:right-[-1.25rem] after:bg-beige">
                 <a href="/src/pages/news/event/ongoing.html" target="_self" class="flex-1 content-center h-[3.3125rem] text-2xs">NEWS</a>
-                <button type="button" aria-label="NEWS 하위 메뉴 펼치기" aria-expanded="false" class="w-12.5 h-[3.3125rem] bg-[url(/src/assets/elements/ico_darrow01.svg)] bg-no-repeat bg-[right_center]"></button>
+                <button type="button" aria-label="NEWS 하위 메뉴 펼치기" aria-expanded="false" class="accordion-button w-12.5 h-[3.3125rem] bg-[url(/src/assets/elements/ico_darrow01.svg)] bg-no-repeat bg-center relative"></button>
               </div>
-              <div class="h-auto opacity-100 py-[.625rem]">
+              <div class="accordion-submenu h-0 invisible overflow-hidden transition-all duration-500 ease-in-out">
                 <ul>
                   <li>
-                    <button class="w-full py-[.625rem] px-10 text-left text-brown-0.3 text-[.75rem] h-8"><span>브랜드</span></button>
+                    <a href="/src/pages/news/ongoing.html" class="w-full py-[.625rem] px-5 text-left text-brown-0.5 text-[.75rem] h-8 block"><span>이벤트</span></a>
                   </li>
                   <li>
-                    <button class="w-full py-[.625rem] px-10 text-left text-brown-0.3 text-[.75rem] h-8"><span>Why 버거킹</span></button>
+                    <a href="" class="w-full py-[.625rem] px-5 text-left text-brown-0.5 text-[.75rem] h-8 block"><span>공지사항</span></a>
                   </li>
                 </ul>
               </div>
@@ -73,7 +73,7 @@
         <!-- ED:모바일용 리스트 -->
 
         <!-- ST:PC 약관 리스트 -->
-        <div class="mt-5 lg:flex lg:justify-between text-brown-0.3 lg:items-center lg:pl-[14.1875rem]">
+        <div class="mt-5 lg:flex lg:justify-between text-brown-0.5 lg:items-center lg:pl-[14.1875rem]">
           <ul class="flex flex-col gap-3 md:flex-row md:justify-center md:gap-9">
             <li class="leading-[1.1]"><button type="button" class="text-2xs">이용약관</button></li>
             <li class="leading-[1.1]"><button type="button" class="text-2xs text-brown-0.7 underline">개인정보처리방침</button></li>
@@ -86,7 +86,7 @@
         <!-- ED:PC 약관 리스트 -->
 
         <!-- ST:PC 주소 -->
-        <div class="mt-10 text-brown-0.3 md:flex md:flex-row md:justify-between md:items-start">
+        <div class="mt-10 text-brown-0.5 md:flex md:flex-row md:justify-between md:items-start">
           <div class="lg:flex lg:gap-[1.6875rem]">
             <a href="#" target="_self" title="BURGER KING 홈으로 이동" class="block w-25 h-3 bg-[url(/src/assets/elements/bg_logo_b.svg)] bg-no-repeat bg-contain lg:w-50 lg:h-6"></a>
             <address class="mt-4 text-2xs not-italic lg:mt-0">
@@ -114,24 +114,4 @@
     </footer>
     <!-- ED:Footer Wrapper -->
   </body>
-  <script>
-    function toggleMenu(event) {
-      const button = event.currentTarget;
-      const submenu = button.closest('li').querySelector('.submenu');
-      const isExpanded = button.getAttribute('aria-expanded') === 'true';
-
-      // 메뉴 토글
-      if (!isExpanded) {
-        submenu.classList.remove('max-h-0', 'opacity-0');
-        submenu.classList.add('max-h-screen', 'opacity-100');
-        button.setAttribute('aria-expanded', 'true');
-        button.classList.add('rotate-180'); // 화살표 회전
-      } else {
-        submenu.classList.remove('max-h-screen', 'opacity-100');
-        submenu.classList.add('max-h-0', 'opacity-0');
-        button.setAttribute('aria-expanded', 'false');
-        button.classList.remove('rotate-180'); // 화살표 원래대로
-      }
-    }
-  </script>
 </html>
