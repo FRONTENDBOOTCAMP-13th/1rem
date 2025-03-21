@@ -7,11 +7,12 @@
     <link rel="preload" as="font" href="/fonts/Sandoll-GothicNeoRound-400.woff" crossorigin="anonymous" />
     <link rel="preload" as="font" href="/fonts/Sandoll-GothicNeoRound-700.woff" crossorigin="anonymous" />
     <script type="module" src="/src/main.js"></script>
-    <script src="/src/js/layout/header.js"></script>
+    <script src="/src/js/layout/sub-header.js"></script>
+    <script src="/src/js/layout/footer.js"></script>
     <script src="/src/js/ad_modal.js"></script>
   </head>
   <body>
-    <common-header></common-header>
+    <sub-header></sub-header>
     <div class="wrapper px-5 pt-5 pb-22.5 md:p-7.5 lg:pt-10 lg:px-15 lg:pb-22.5">
       <div class="inner max-w-[1620px] mx-auto">
         <h2 class="hidden text-[2.125rem] text-brown text-center font-bold lg:block lg:mt-10 lg:mb-12.5">광고영상</h2>
@@ -194,7 +195,7 @@
         <!-- ED: 컨텐츠 Wrapper -->
       </div>
     </div>
-    <!-- footer 컴포넌트 넣어주세요. -->
+    <common-footer></common-footer>
 
     <!-- ST: 광고영상 modal -->
     <dialog class="modal top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] justify-center items-center w-full h-full bg-transparent [&::backdrop]:bg-brown [&::backdrop]:opacity-80">
