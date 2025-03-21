@@ -7,9 +7,44 @@
     <link rel="preload" as="font" href="/fonts/Sandoll-GothicNeoRound-400.woff" crossorigin="anonymous" />
     <link rel="preload" as="font" href="/fonts/Sandoll-GothicNeoRound-700.woff" crossorigin="anonymous" />
     <script type="module" src="/src/main.js"></script>
+    <script type="module">
+      // DOM 선택 부분
+      const buttons = document.querySelectorAll('button[id^="goTo"]');
+      const sections = document.querySelectorAll('section + div[id]');
+      const navItems = document.querySelectorAll('nav ul li');
+
+      // 함수 구현 부분
+      const scrollToSection = (event) => {
+        event.preventDefault();
+        const targetId = event.target.id.replace('goTo', '').toLowerCase();
+        const targetSection = document.getElementById(targetId);
+
+        if (targetSection) {
+          const offsetTop = targetSection.getBoundingClientRect().top + window.pageYOffset - 20; // 20px 여백 추가
+          window.scrollTo({ top: offsetTop, behavior: 'smooth' });
+
+          // 활성화 상태 업데이트
+          navItems.forEach((item) => {
+            item.classList.add('after:hidden');
+            item.querySelector('button').classList.remove('text-ci');
+            item.querySelector('button').classList.add('text-brown-0.5');
+          });
+
+          const activeItem = event.target.closest('li');
+          activeItem.classList.remove('after:hidden');
+          activeItem.querySelector('button').classList.add('text-ci');
+          activeItem.querySelector('button').classList.remove('text-brown-0.5');
+        }
+      };
+
+      // 이벤트 바인딩 부분
+      buttons.forEach((button) => button.addEventListener('click', scrollToSection));
+    </script>
   </head>
   <body>
     <!-- header 컴포넌트 넣어주세요. -->
+    <common-header></common-header>
+
     <div class="wrapper px-5 pt-5 pb-22.5 md:p-7.5 lg:pt-10 lg:px-15 lg:pb-22.5">
       <div class="inner max-w-[1620px] mx-auto">
         <h2 class="hidden text-[2.125rem] text-brown text-center font-bold lg:block lg:mt-10 lg:mb-12.5">고객지원</h2>
@@ -19,35 +54,35 @@
           <!-- top header에 따라 수정 -->
           <section class="sticky top-0 mx-[-1.25rem] md:mx-[-1.875rem] lg:mx-[-3.75rem] p-5 md:px-7.5 lg:p-[1.875rem_3.75rem] bg-clip-padding bg-beige z-10">
             <nav class="mx-[-1.25rem] md:mx-[-1.875rem] lg:mx-0 border-b border-border">
-              <ul class="flex px-5 text-center overflow-x-scroll min-h-fit">
+              <ul class="flex px-5 text-center overflow-x-scroll min-h-fit text-brown-0.5">
                 <li class="grow-1 shrink-0 relative p-[.3125rem_.4375rem] md:px-2.5 text-ci h-[2.3125rem] md:h-[3.125rem] after:absolute after:h-[3px] after:w-full after:bg-ci after:bottom-0 after:left-0">
-                  <button class="text-sm md:text-lg lg:text-2xl lg:font-bold">딜리버리</button>
+                  <button id="goToDelivery" class="text-sm md:text-lg lg:text-2xl lg:font-bold">딜리버리</button>
                 </li>
                 <li class="grow-1 shrink-0 relative p-[.3125rem_.4375rem] md:px-2.5 h-[2.3125rem] md:h-[3.125rem] after:absolute after:h-[3px] after:w-full after:bg-ci after:bottom-0 after:left-0 after:hidden">
-                  <button class="text-sm md:text-lg lg:text-2xl lg:font-bold">킹오더</button>
+                  <button id="goToKingorder" class="text-sm md:text-lg lg:text-2xl lg:font-bold">킹오더</button>
                 </li>
                 <li class="grow-1 shrink-0 relative p-[.3125rem_.4375rem] md:px-2.5 h-[2.3125rem] md:h-[3.125rem] after:absolute after:h-[3px] after:w-full after:bg-ci after:bottom-0 after:left-0 after:hidden">
-                  <button class="text-sm md:text-lg lg:text-2xl lg:font-bold">쿠폰</button>
+                  <button id="goToCoupon" class="text-sm md:text-lg lg:text-2xl lg:font-bold">쿠폰</button>
                 </li>
                 <li class="grow-1 shrink-0 relative p-[.3125rem_.4375rem] md:px-2.5 h-[2.3125rem] md:h-[3.125rem] after:absolute after:h-[3px] after:w-full after:bg-ci after:bottom-0 after:left-0 after:hidden">
-                  <button class="text-sm md:text-lg lg:text-2xl lg:font-bold">멤버십</button>
+                  <button id="goToMembership" class="text-sm md:text-lg lg:text-2xl lg:font-bold">멤버십</button>
                 </li>
                 <li class="grow-1 shrink-0 relative p-[.3125rem_.4375rem] md:px-2.5 h-[2.3125rem] md:h-[3.125rem] after:absolute after:h-[3px] after:w-full after:bg-ci after:bottom-0 after:left-0 after:hidden">
-                  <button class="text-sm md:text-lg lg:text-2xl lg:font-bold">매장/상품/서비스</button>
+                  <button id="goToService" class="text-sm md:text-lg lg:text-2xl lg:font-bold">매장/상품/서비스</button>
                 </li>
                 <li class="grow-1 shrink-0 relative p-[.3125rem_.4375rem] md:px-2.5 h-[2.3125rem] md:h-[3.125rem] after:absolute after:h-[3px] after:w-full after:bg-ci after:bottom-0 after:left-0 after:hidden">
-                  <button class="text-sm md:text-lg lg:text-2xl lg:font-bold">기타</button>
+                  <button id="goToEtc" class="text-sm md:text-lg lg:text-2xl lg:font-bold">기타</button>
                 </li>
               </ul>
             </nav>
           </section>
 
           <!-- ST: 딜리버리 -->
-          <div class="mx-[-1.25rem] md:mx-[-1.875rem] lg:m-0 p-[.9375rem_1.25rem_.625rem_1.25rem] md:p-[.9375rem_1.875rem] lg:py-[1.875rem_0]">
+          <div id="delivery" class="mx-[-1.25rem] md:mx-[-1.875rem] lg:m-0 p-[.9375rem_1.25rem_.625rem_1.25rem] md:p-[.9375rem_1.875rem] lg:py-[1.875rem_0]">
             <h3 class="text-base md:text-sm lg:text-3xl font-bold md:font-normal">딜리버리</h3>
             <ul>
               <li class="relative p-[.9375rem_2.5rem_.9375rem_0] lg:py-[1.875rem] border-b border-brown-0.1">
-                <a href="" class="block"
+                <a href="./customerdetail04.html" class="block"
                   ><p class="text-xs lg:text-lg">비회원으로 구매한 딜리버리 영수증을 회원 구매로 적립할 수 있나요?</p>
                   <span class="absolute top-0 right-0 bg-no-repeat bg-[image:url(/src/assets/elements/ico_more_arrow.svg)] bg-right w-10 h-full"></span
                 ></a>
@@ -57,11 +92,11 @@
           <!-- ED: 딜리버리 -->
 
           <!-- ST: 킹오더 -->
-          <div class="mx-[-1.25rem] md:mx-[-1.875rem] lg:m-0 p-[.9375rem_1.25rem_.625rem_1.25rem] md:p-[.9375rem_1.875rem] lg:py-[1.875rem_0] border-t-[.3125rem] border-brown-0.1">
+          <div id="kingorder" class="mx-[-1.25rem] md:mx-[-1.875rem] lg:m-0 p-[.9375rem_1.25rem_.625rem_1.25rem] md:p-[.9375rem_1.875rem] lg:py-[1.875rem_0] border-t-[.3125rem] border-brown-0.1">
             <h3 class="text-base md:text-sm lg:text-3xl font-bold md:font-normal">킹오더</h3>
             <ul>
               <li class="relative p-[.9375rem_2.5rem_.9375rem_0] lg:py-[1.875rem] border-b border-brown-0.1">
-                <a href="" class="block"
+                <a href="./customerdetail05.html" class="block"
                   ><p class="text-xs lg:text-lg">주문한 메뉴를 찾기 위해 매장에 방문했습니다. 메뉴가 제조완료되었는지 어떻게 알 수 있나요?</p>
                   <span class="absolute top-0 right-0 bg-no-repeat bg-[image:url(/src/assets/elements/ico_more_arrow.svg)] bg-right w-10 h-full"></span
                 ></a>
@@ -71,7 +106,7 @@
           <!-- ED: 킹오더 -->
 
           <!-- ST: 쿠폰 -->
-          <div class="mx-[-1.25rem] md:mx-[-1.875rem] lg:m-0 p-[.9375rem_1.25rem_.625rem_1.25rem] md:p-[.9375rem_1.875rem] lg:py-[1.875rem_0] border-t-[.3125rem] border-brown-0.1">
+          <div id="coupon" class="mx-[-1.25rem] md:mx-[-1.875rem] lg:m-0 p-[.9375rem_1.25rem_.625rem_1.25rem] md:p-[.9375rem_1.875rem] lg:py-[1.875rem_0] border-t-[.3125rem] border-brown-0.1">
             <h3 class="text-base md:text-sm lg:text-3xl font-bold md:font-normal">쿠폰</h3>
             <ul>
               <li class="relative p-[.9375rem_2.5rem_.9375rem_0] lg:py-[1.875rem] border-b border-brown-0.1">
@@ -81,7 +116,7 @@
                 ></a>
               </li>
               <li class="relative p-[.9375rem_2.5rem_.9375rem_0] lg:py-[1.875rem] border-b border-brown-0.1">
-                <a href="" class="block"
+                <a href="./customerdetail01.html" class="block"
                   ><p class="text-xs lg:text-lg">쿠폰은 어떻게 사용하나요?</p>
                   <span class="absolute top-0 right-0 bg-no-repeat bg-[image:url(/src/assets/elements/ico_more_arrow.svg)] bg-right w-10 h-full"></span
                 ></a>
@@ -115,7 +150,7 @@
           <!-- ED: 쿠폰 -->
 
           <!-- ST: 멤버십 -->
-          <div class="mx-[-1.25rem] md:mx-[-1.875rem] lg:m-0 p-[.9375rem_1.25rem_.625rem_1.25rem] md:p-[.9375rem_1.875rem] lg:py-[1.875rem_0] border-t-[.3125rem] border-brown-0.1">
+          <div id="membership" class="mx-[-1.25rem] md:mx-[-1.875rem] lg:m-0 p-[.9375rem_1.25rem_.625rem_1.25rem] md:p-[.9375rem_1.875rem] lg:py-[1.875rem_0] border-t-[.3125rem] border-brown-0.1">
             <h3 class="text-base md:text-sm lg:text-3xl font-bold md:font-normal">멤버십</h3>
             <ul>
               <li class="relative p-[.9375rem_2.5rem_.9375rem_0] lg:py-[1.875rem] border-b border-brown-0.1">
@@ -129,7 +164,7 @@
           <!-- ED: 멤버십 -->
 
           <!-- ST: 매장/상품/서비스 -->
-          <div class="mx-[-1.25rem] md:mx-[-1.875rem] lg:m-0 p-[.9375rem_1.25rem_.625rem_1.25rem] md:p-[.9375rem_1.875rem] lg:py-[1.875rem_0] border-t-[.3125rem] border-brown-0.1">
+          <div id="service" class="mx-[-1.25rem] md:mx-[-1.875rem] lg:m-0 p-[.9375rem_1.25rem_.625rem_1.25rem] md:p-[.9375rem_1.875rem] lg:py-[1.875rem_0] border-t-[.3125rem] border-brown-0.1">
             <h3 class="text-base md:text-sm lg:text-3xl font-bold md:font-normal">매장/상품/서비스</h3>
             <ul>
               <li class="relative p-[.9375rem_2.5rem_.9375rem_0] lg:py-[1.875rem] border-b border-brown-0.1">
@@ -139,7 +174,7 @@
                 ></a>
               </li>
               <li class="relative p-[.9375rem_2.5rem_.9375rem_0] lg:py-[1.875rem] border-b border-brown-0.1">
-                <a href="" class="block"
+                <a href="./customerdetail03.html" class="block"
                   ><p class="text-xs lg:text-lg">푸시 알림 및 주문하기 서비스 알림이 오지 않아요.</p>
                   <span class="absolute top-0 right-0 bg-no-repeat bg-[image:url(/src/assets/elements/ico_more_arrow.svg)] bg-right w-10 h-full"></span
                 ></a>
@@ -215,7 +250,7 @@
           <!-- ED: 매장/상품/서비스 -->
 
           <!-- ST: 기타 -->
-          <div class="mx-[-1.25rem] md:mx-[-1.875rem] lg:m-0 p-[.9375rem_1.25rem_.625rem_1.25rem] md:p-[.9375rem_1.875rem] lg:py-[1.875rem_0] border-t-[.3125rem] border-brown-0.1">
+          <div id="etc" class="mx-[-1.25rem] md:mx-[-1.875rem] lg:m-0 p-[.9375rem_1.25rem_.625rem_1.25rem] md:p-[.9375rem_1.875rem] lg:py-[1.875rem_0] border-t-[.3125rem] border-brown-0.1">
             <h3 class="text-base md:text-sm lg:text-3xl font-bold md:font-normal">기타</h3>
             <ul>
               <li class="relative p-[.9375rem_2.5rem_.9375rem_0] lg:py-[1.875rem] border-b border-brown-0.1">
@@ -311,5 +346,6 @@
       </div>
     </div>
     <!-- footer 컴포넌트 넣어주세요. -->
+    <common-footer></common-footer>
   </body>
 </html>

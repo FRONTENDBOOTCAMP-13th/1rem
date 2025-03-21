@@ -8,6 +8,35 @@
     <link rel="preload" as="font" href="/fonts/Sandoll-GothicNeoRound-700.woff" crossorigin="anonymous" />
     <script type="module" src="/src/main.js"></script>
     <script type="module">
+      // 메뉴 이동
+      // DOM 선택 부분
+      const goToMenu1 = document.querySelector('#goToMenu1');
+      const menu1 = document.querySelector('#menu1');
+      const goToMenu2 = document.querySelector('#goToMenu2');
+      const menu2 = document.querySelector('#menu2');
+      const goToMenu3 = document.querySelector('#goToMenu3');
+      const menu3 = document.querySelector('#menu3');
+
+      // 함수 구현 부분
+      const scrollToMenu1 = (event) => {
+        event.preventDefault();
+        menu1.scrollIntoView({ behavior: 'smooth' });
+      };
+      const scrollToMenu2 = (event) => {
+        event.preventDefault();
+        menu2.scrollIntoView({ behavior: 'smooth' });
+      };
+      const scrollToMenu3 = (event) => {
+        event.preventDefault();
+        menu3.scrollIntoView({ behavior: 'smooth' });
+      };
+
+      // 이벤트 바인딩 부분
+      goToMenu1.addEventListener('click', scrollToMenu1);
+      goToMenu2.addEventListener('click', scrollToMenu2);
+      goToMenu3.addEventListener('click', scrollToMenu3);
+
+      // 가맹 신청서 (모달창)
       // DOM 선택 부분
       const showApplicationForm = document.querySelector('#showApplicationForm');
       const closeApplicationForm = document.querySelector('#closeApplicationForm');
@@ -26,6 +55,8 @@
   </head>
   <body>
     <!-- header 컴포넌트 넣어주세요. -->
+    <common-header></common-header>
+
     <div class="wrapper px-5 pt-5 pb-22.5 md:p-7.5 lg:pt-10 lg:px-15 lg:pb-22.5">
       <div class="inner max-w-[1620px] mx-auto">
         <h2 class="hidden text-[2.125rem] text-brown text-center font-bold lg:block lg:mt-10 lg:mb-12.5">버거킹 가맹점 모집</h2>
@@ -34,7 +65,7 @@
         <div class="text-brown">
           <!-- ST: 가맹점 모집 안내 -->
           <div class="flex flex-col gap-5 rounded-[10px] p-5 md:p-7.5 bg-light-beige">
-            <h3 class="text-lg md:text-3xl lg:text-5xl font-bold font-BKBulMatPro text-center">가맹정 모집 안내</h3>
+            <h3 class="text-lg md:text-3xl lg:text-5xl font-bold font-BKBulMatPro text-center">가맹점 모집 안내</h3>
             <p class="text-sm text-center">
               세계 100개국 이상에서 사업 전개중인
               <br />
@@ -60,21 +91,21 @@
               <li class="flex items-center gap-[.3125rem] p-[.625rem_.9375rem] rounded-[.625rem] h-[54px] bg-beige text-sm">
                 <img src="/src/assets/elements/ico_tick.svg" alt="" class="px-1" />
                 <strong class="flex-1">입지 조건 및 임대 면적</strong>
-                <button type="button" class="w-6">
+                <button id="goToMenu1" type="button" class="w-6">
                   <img src="/src/assets/elements/btn_collapse.svg" alt="" class="m-auto" />
                 </button>
               </li>
               <li class="flex items-center gap-[.3125rem] p-[.625rem_.9375rem] rounded-[.625rem] h-[54px] bg-beige text-sm">
                 <img src="/src/assets/elements/ico_tick.svg" alt="" class="px-1" />
-                <strong class="flex-1">입지 조건 및 임대 면적</strong>
-                <button type="button" class="w-6">
+                <strong class="flex-1">개설 비용 안내</strong>
+                <button id="goToMenu2" type="button" class="w-6">
                   <img src="/src/assets/elements/btn_collapse.svg" alt="" class="m-auto" />
                 </button>
               </li>
               <li class="flex items-center gap-[.3125rem] p-[.625rem_.9375rem] rounded-[.625rem] h-[54px] bg-beige text-sm">
                 <img src="/src/assets/elements/ico_tick.svg" alt="" class="px-1" />
                 <strong class="flex-1">가맹 신청하기</strong>
-                <button type="button" class="w-6">
+                <button id="goToMenu3" type="button" class="w-6">
                   <img src="/src/assets/elements/btn_collapse.svg" alt="" class="m-auto" />
                 </button>
               </li>
@@ -83,7 +114,7 @@
           <!-- ED: 가맹점 모집 안내 -->
 
           <!-- ST: 입지 조건 및 임대 면적 -->
-          <h4 class="py-[1.875rem_1.25rem] text-3xl text-center">입지 조건 및 임대 면적</h4>
+          <h4 id="menu1" class="py-[1.875rem_1.25rem] text-3xl text-center">입지 조건 및 임대 면적</h4>
           <div class="flex flex-col gap-5 text-center rounded-[10px] p-5 md:p-7.5 bg-light-beige">
             <h5 class="text-lg md:text-3xl lg:text-5xl font-bold font-BKBulMatPro">입지 조건</h5>
             <ul class="grid gap-2.5 lg:grid-cols-3">
@@ -120,7 +151,7 @@
           <!-- ED: 입지 조건 및 임대 면적 -->
 
           <!-- ST: 개설비용 안내 -->
-          <h4 class="py-[1.875rem_1.25rem] text-3xl text-center">개설비용 안내</h4>
+          <h4 id="menu2" class="py-[1.875rem_1.25rem] text-3xl text-center">개설비용 안내</h4>
           <div class="flex flex-col gap-5 text-center rounded-[10px] p-5 md:p-7.5 bg-light-beige">
             <h5 class="text-lg md:text-3xl lg:text-5xl font-bold font-BKBulMatPro">예치 가맹점</h5>
             <div class="font-Pretendard">
@@ -252,7 +283,7 @@
           <!-- ED: 개설비용 안내 -->
 
           <!-- ST: 가맹 신청하기 -->
-          <h4 class="py-[1.875rem_1.25rem] text-3xl text-center">가맹 신청하기</h4>
+          <h4 id="menu3" class="py-[1.875rem_1.25rem] text-3xl text-center">가맹 신청하기</h4>
           <div class="flex flex-col gap-5 text-center rounded-[10px] p-5 md:p-7.5 bg-light-beige">
             <h5 class="text-lg md:text-3xl lg:text-5xl font-bold font-BKBulMatPro">신청 절차</h5>
             <ul class="grid grid-cols-2 gap-2.5 md:grid-cols-4">
@@ -576,7 +607,7 @@
                   <p class="ml-[.3125rem]">유</p>
                 </label>
                 <label class="flex items-center w-[5.125rem]">
-                  <input type="radio" checked value="n" name="rentalProperty" class="appearance-none bg-[image:url(/src/assets/customer/radio_off.svg)] checked:bg-[image:url(/src/assets/customer/radio_on.svg)] w-6 aspect-1/1" />
+                  <input type="radio" value="n" name="rentalProperty" class="appearance-none bg-[image:url(/src/assets/customer/radio_off.svg)] checked:bg-[image:url(/src/assets/customer/radio_on.svg)] w-6 aspect-1/1" />
                   <p class="ml-[.3125rem]">무</p>
                 </label>
               </div>
@@ -689,5 +720,6 @@
     </dialog>
     <!-- ED: 가맹 신청서 -->
     <!-- footer 컴포넌트 넣어주세요. -->
+    <common-footer></common-footer>
   </body>
 </html>
