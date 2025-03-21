@@ -1,0 +1,501 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>[컴포넌트] CUSTOMER</title>
+    <link rel="preload" as="font" href="/fonts/Sandoll-GothicNeoRound-400.woff" crossorigin="anonymous" />
+    <link rel="preload" as="font" href="/fonts/Sandoll-GothicNeoRound-700.woff" crossorigin="anonymous" />
+    <script type="module" src="/src/main.js"></script>
+    <script type="module">
+      // DOM 선택 부분
+      const showPrivacyPolicy = document.querySelector('#showPrivacyPolicy');
+      const closePrivacyPolicy = document.querySelector('#closePrivacyPolicy');
+      const closePrivacyPolicy2 = document.querySelector('#confirmButton');
+      const privacyPolicy = document.querySelector('#privacyPolicy');
+
+      // 함수 구현 부분
+      const openDialog = () => privacyPolicy.showModal();
+      const closeDialog = () => privacyPolicy.close();
+
+      // 이벤트 바인딩 부분
+      showPrivacyPolicy.addEventListener('click', openDialog);
+      closePrivacyPolicy.addEventListener('click', closeDialog);
+      closePrivacyPolicy2.addEventListener('click', closeDialog);
+    </script>
+  </head>
+  <body class="text-brown m-10 space-y-10">
+    <!-- ------------------------------------------- -->
+
+    <!-- ST: customer - 고객지원 -->
+    <h1 class="text-center text-xl uppercase">customer : 고객지원</h1>
+
+    <!-- ST: 검색 input -->
+    <div>
+      <h2 class="mb-4">검색</h2>
+
+      <form action="" method="post" class="relative block my-2.5 w-full">
+        <label for="search" class="sr-only">궁금한 내용 검색</label>
+        <input type="text" placeholder="궁금한 내용을 검색해주세요" name="search" id="search" class="p-[.3125rem_2.1875rem_.1875rem_.9375rem] border-1 border-border-form rounded-[.625rem] text-sm bg-light-beige box-border h-[2.875rem] w-full placeholder:text-brown-0.3" />
+        <button type="submit" class="flex items-center justify-center absolute right-0 top-0 h-full aspect-1/1">
+          <img src="/src/assets/elements/btn_form_search.svg" alt="검색하기" class="" />
+        </button>
+      </form>
+    </div>
+    <!-- ED: 검색 input -->
+
+    <!-- ST: 메뉴 버튼 -->
+    <div>
+      <h2 class="mb-4">메뉴</h2>
+
+      <ul class="grid grid-cols-3 md:grid-cols-6 max-w-[60.25rem] gap-2.5">
+        <li class="">
+          <button type="button" class="flex flex-col justify-center items-center border-1 border-border rounded-[.625rem] bg-light-beige w-[100%] h-[5.0625rem]">
+            <span class="contents text-2xs">
+              <img src="/src/assets/faq/ico_faq_delivery.svg" alt="딜리버리" />
+              딜리버리
+            </span>
+          </button>
+        </li>
+      </ul>
+    </div>
+    <!-- ED: 메뉴 버튼 -->
+
+    <!-- ST: 많이 물어본 질문 링크 -->
+    <div>
+      <h2 class="mb-4">많이 물어본 질문</h2>
+      <ul>
+        <li class="border-b-1 border-border py-[.9375rem] w-full">
+          <a href="/" class="flex flex-row justify-between">
+            <span class="text-xs">쿠폰은 어떻게 사용하나요?</span>
+            <img src="/src/assets/elements/ico_more_arrow.svg" alt="더보기" class="" />
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- ED: 많이 물어본 질문 링크 -->
+
+    <!-- ST: 상담 안내 컨테이너 -->
+    <div>
+      <h2 class="mb-4">상담 안내</h2>
+      <ul class="grid lg:grid-cols-2 gap-2.5 font-Pretendard">
+        <li class="contents">
+          <div class="consultation-container flex flex-col gap-[.1875rem] p-[.9375rem] rounded-[.625rem] bg-brown-0.05">
+            <strong class="text-xs font-bold">대표 소비자 상담</strong>
+            <span class="text-sm font-bold">080-022-8163</span>
+            <span class="text-2xs font-medium">상담 가능 시간 : 월~일 09:00~18:00</span>
+            <span class="text-2xs text-brown-0.7">(점심시간 12:00~13:00)</span>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <!-- ED: 상담 안내 컨테이너 -->
+    <!-- ED: customer - 고객지원 -->
+
+    <hr />
+
+    <!-- ST: customer - 질문 -->
+    <h1 class="text-center text-xl uppercase">customer : 질문</h1>
+
+    <!-- ST: 질문 리스트 -->
+    <div>
+      <h2 class="mb-4">질문 리스트</h2>
+
+      <div>
+        <h3 class="text-base lg:text-3xl font-bold">딜리버리</h3>
+        <ul>
+          <li class="relative p-[.9375rem_2.5rem_.9375rem_0] border-b border-border">
+            <p class="text-xs lg:text-lg">비회원으로 구매한 딜리버리 영수증을 회원 구매로 적립할 수 있나요?</p>
+            <button class="absolute top-0 right-0 bg-no-repeat bg-[image:url(/src/assets/elements/ico_more_arrow.svg)] bg-center bg-right w-10 h-full"></button>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- ED: 질문 리스트 -->
+    <!-- ED: customer - 질문 -->
+
+    <hr />
+
+    <!-- ST: customer - 답변 -->
+    <h1 class="text-center text-xl uppercase">customer : 답변</h1>
+
+    <!-- ST: 카테고리 -->
+    <div>
+      <h2 class="mb-4">카테고리 (only lg:)</h2>
+      <h2 class="hidden lg:block text-center">
+        <p class="mb-2.5 text-2xl text-brown-0.7">고객지원</p>
+        <strong class="text-[2.125rem]">쿠폰</strong>
+      </h2>
+    </div>
+    <!-- ED: 카테고리 -->
+
+    <!-- ST: QNA -->
+    <div>
+      <h2 class="mb-4">QNA</h2>
+
+      <p class="text-sm lg:text-lg"><strong class="pr-[.3125rem] text-ci">Q</strong>비회원으로 구매한 딜리버리 영수증을 회원 구매로 적립할 수 있나요?</p>
+
+      <p class="text-sm lg:text-lg mt-2.5">배달의민족, 쿠팡이츠, 요기요 등 외부채널 딜리버리 서비스를 통한 주문의 영수증을 회원 구매로 적립할 수 있습니다. <br />APP에서 멤버십 > 우측 상단 "영수증 적립" 기능을 통해 영수증의 바코드를 스캔하거나, 바코드 번호를 직접 입력하면 회원 적립 처리됩니다. <br />다만, 주문이 완료 처리되어야 적립이 가능하므로 제품 수령 후 최소 2시간이 경과한 시점에 영수증 적립 진행을 부탁드립니다.</p>
+    </div>
+    <!-- ED: QNA -->
+
+    <!-- ST: APP 이동 QR(sm, md) -->
+    <div>
+      <h2 class="mb-4">APP 이동 QR(sm, md)</h2>
+
+      <div class="lg:hidden flex flex-row items-center justify-between rounded-[.625rem] p-[.9375rem] bg-brown-0.05">
+        <div>
+          <strong class="mb-[.1875rem]">문제를 해결하지 못하셨나요?</strong>
+          <p>버거킹 앱으로 이동하신 후 1:1 문의를 이용해주세요.</p>
+        </div>
+        <button type="button" class="px-2.5 rounded-[3.125rem] text-sm text-white bg-brown h-[1.875rem]">앱 실행하기</button>
+      </div>
+    </div>
+    <!-- ED: APP 이동 QR(sm, md) -->
+
+    <!-- ST: APP 이동 QR(lg) -->
+    <div>
+      <h2 class="mb-4">APP 이동 QR(lg)</h2>
+
+      <div class="hidden lg:flex flex-row items-center justify-center rounded-3xl pr-[2.5rem] xl:px-[3.75rem] max-w-[81.125rem] h-80 mx-auto bg-border">
+        <div class="relative bg-[image:url(/src/assets/customer/bg_appdown_phone.webp)] h-80 w-[25.3125rem]">
+          <div class="absolute flex top-[1.875rem] left-[8.1875rem] pt-[4.5625rem] w-[14.4375rem] h-[17.0625rem] justify-center bg-[image:url(/src/assets/customer/ico_logo_mini.svg)] bg-no-repeat bg-[top_32px_center] bg-[auto_2rem]">
+            <img src="/src/assets/customer/app_download_qr.svg" alt="" class="w-50" />
+          </div>
+        </div>
+        <div class="ml-[2.5rem] xl:ml-[4.5rem]">
+          <h2 class="font-black text-[1.875rem]">문제를 해결하지 못하셨나요?</h2>
+          <h3 class="text-3xl mt-2 mb-12">버거킹 앱으로 이동하신 후 1:1 문의를 이용해주세요.</h3>
+          <div class="flex flex-row gap-5">
+            <img src="/src/assets/customer/btn_down_aos.webp" alt="Google Play에서 다운로드" class="h-12" />
+            <img src="/src/assets/customer/btn_down_ios.webp" alt="App Store에서 다운로드" class="h-12" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ED: APP 이동 QR(lg) -->
+    <!-- ED: customer - 답변 -->
+
+    <hr />
+
+    <!-- ST: franchise - 가맹점 모집 -->
+    <h1 class="text-center text-xl uppercase">franchise : 가맹점 모집</h1>
+
+    <!-- ST: 메뉴(목차) -->
+    <div>
+      <h2 class="mb-4">메뉴(목차)</h2>
+
+      <div class="bg-white p-2">
+        <ul class="grid gap-2.5 lg:grid-cols-3">
+          <li class="flex gap-2.5 p-[.625rem_.9375rem] rounded-[.625rem] bg-beige text-sm">
+            <img src="/src/assets/elements/ico_tick.svg" alt="" />
+            <strong class="flex-1">입지 조건 및 임대 면적</strong>
+            <button type="button">
+              <img src="/src/assets/elements/btn_collapse.svg" alt="" />
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- ED: 메뉴(목차) -->
+
+    <!-- ST: 설명 -->
+    <div>
+      <h2 class="mb-4">입지 조건 및 임대 면적 설명</h2>
+
+      <div class="bg-white p-2">
+        <ul class="grid gap-2.5 lg:grid-cols-3">
+          <li class="p-[.625rem_.9375rem] rounded-[.625rem] bg-beige">
+            <p class="flex-1 text-center text-sm text-brown-0.7 font-bold">역세권에 위치하여 유동인원이 풍부하고 배후에 사무실 및 아파트 밀집 지역</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- ED: 설명 -->
+
+    <!-- ST: 테이블 -->
+    <div>
+      <h2 class="mb-4">개설비용 안내 테이블</h2>
+
+      <!-- 배경 임시 설정 -->
+      <div class="bg-white p-2">
+        <div class="overflow-scroll">
+          <table class="rounded-[.625rem] border border-separate border-spacing-0 border-border m-2.5 font-Pretendard text-center w-auto **:p-2.5 **:border-border">
+            <caption class="sr-only p-0">
+              예치 가맹점|구분, 금액, 비고로 구성
+            </caption>
+            <colgroup>
+              <col class="min-w-[11.25rem]" />
+              <col class="min-w-[11.25rem]" />
+              <col class="min-w-[48rem]" />
+            </colgroup>
+            <thead>
+              <tr class="font-['Sandoll-GothicNeoRound'] *:font-medium *:border-b">
+                <th scope="col" class="">구분</th>
+                <th scope="col" class="border-x">금액</th>
+                <th scope="col" class="">비고</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="*:border-b">
+                <td class="">가맹비</td>
+                <td class="border-x">34,031</td>
+                <td class="text-left">미화 27,500달러(USD)를 한화(KRW)로 환산 적용</td>
+              </tr>
+              <tr class="*:border-b">
+                <td class="">최초교육비</td>
+                <td class="border-x">3,315</td>
+                <td class="text-left">직원 교육비</td>
+              </tr>
+              <tr class="*:border-b">
+                <td>계약 전 사전심사비</td>
+                <td class="border-x">2,859</td>
+                <td class="text-left">1인기준, 미화 최소 2,310달러 (USD)를 한화 (KRW)로 환산 적용</td>
+              </tr>
+              <tr>
+                <td>보증금</td>
+                <td class="border-x">6,300 이상</td>
+                <td class="text-left">현금기준 (부동산담보 또는 보증보험증권 대체 가능)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <!-- ED: 테이블 -->
+
+    <!-- ST: 신청 절차 -->
+    <div>
+      <h2 class="mb-4">신청 절차</h2>
+
+      <ul class="grid grid-cols-2 gap-2.5 md:grid-cols-4">
+        <li class="flex flex-col items-center justify-center relative border border-border-form rounded-[.625rem] h-[5.1875rem] text-sm">
+          <span class="border absolute top-2 left-2.5 border-current rounded-[50%] w-[1.375rem] h-[1.375rem] text-center content-center">1</span>
+          <span class="pt-[1.9375rem] bg-no-repeat bg-top bg-[image:url(/src/assets/customer/ico_process_fill.svg)]">
+            <span>신청서 작성</span>
+          </span>
+        </li>
+      </ul>
+    </div>
+    <!-- ED: 신청 절차 -->
+    <!-- ED: franchise - 가맹점 모집 -->
+
+    <hr />
+
+    <!-- ST: franchise - 가맹 신청서 -->
+    <h1 class="text-center text-xl uppercase">franchise : 가맹점 모집</h1>
+
+    <div>
+      <h2 class="mb-4">가맹 신청서 form</h2>
+
+      <form action="" method="" class="flex flex-col gap-[1.25rem] overflow-auto">
+        <!-- ST: input - component -->
+        <!-- 성명 / 전화번호 / 이메일 / 현재 종사 직업 -->
+        <!-- for / label / type / placeholder / id 수정해서 사용  -->
+        <div>
+          <label for="ID" class="block mb-[.3125rem] text-xs"> input component <span class="text-ci pl-[.3125rem]">(필수)</span></label>
+          <input type="text" required placeholder="placeholder" name="NAME" id="ID" class="p-[.3125rem_2.1875rem_.1875rem_.9375rem] border-1 border-border-form rounded-[.625rem] text-sm bg-light-beige box-border h-[2.875rem] w-full placeholder:text-brown-0.3" />
+        </div>
+        <!-- ED: input - component -->
+
+        <!-- ST: input - 성명 -->
+        <div>
+          <label for="name" class="block mb-[.3125rem] text-xs"> 성명 <span class="text-ci pl-[.3125rem]">(필수)</span></label>
+          <input type="text" required placeholder="이름을 입력해 주세요" name="name" id="name" class="p-[.3125rem_2.1875rem_.1875rem_.9375rem] border-1 border-border-form rounded-[.625rem] text-sm bg-light-beige box-border h-[2.875rem] w-full placeholder:text-brown-0.3" />
+        </div>
+        <!-- ED: input - 성명 -->
+
+        <!-- ST: input - 전회번호(연락처) -->
+        <div>
+          <label for="phone" class="block mb-[.3125rem] text-xs"> 전화번호(연락처) <span class="text-ci pl-[.3125rem]">(필수)</span></label>
+          <input type="tel" required placeholder="'-'없이 입력해주세요" name="phone" id="phone" class="p-[.3125rem_2.1875rem_.1875rem_.9375rem] border-1 border-border-form rounded-[.625rem] text-sm bg-light-beige box-border h-[2.875rem] w-full placeholder:text-brown-0.3" />
+        </div>
+        <!-- ED: input - 전회번호(연락처) -->
+
+        <!-- ST: input - 이메일 -->
+        <div>
+          <label for="email" class="block mb-[.3125rem] text-xs"> 이메일 <span class="text-ci pl-[.3125rem]">(필수)</span></label>
+          <input type="email" required placeholder="이메일을 입력해주세요" name="email" id="email" class="p-[.3125rem_2.1875rem_.1875rem_.9375rem] border-1 border-border-form rounded-[.625rem] text-sm bg-light-beige box-border h-[2.875rem] w-full placeholder:text-brown-0.3" />
+        </div>
+        <!-- ED: input - 이메일 -->
+
+        <!-- ST: input - 현재 종사 직업 -->
+        <div>
+          <label for="job" class="block mb-[.3125rem] text-xs"> 현재 종사 직업 <span class="text-ci pl-[.3125rem]">(필수)</span></label>
+          <input type="text" required placeholder="현재 종사 직업을 입력해주세요" name="job" id="job" class="p-[.3125rem_2.1875rem_.1875rem_.9375rem] border-1 border-border-form rounded-[.625rem] text-sm bg-light-beige box-border h-[2.875rem] w-full placeholder:text-brown-0.3" />
+        </div>
+        <!-- ED: input - 현재 종사 직업 -->
+
+        <!-- ST: textarea - 추가 의견  -->
+        <div>
+          <label for="comment" class="relative block mb-[.3125rem] text-xs">추가 의견<span class="absolute right-0 text-brown-0.7">최대 500자</span></label>
+          <textarea placeholder="내용 입력해 주세요" name="comment" id="comment" maxlength="500" class="p-[.875rem_.9375rem] border-1 border-border-form rounded-[.625rem] text-sm bg-light-beige box-border h-[8.75rem] w-full placeholder:text-brown-0.3"></textarea>
+        </div>
+        <!-- ED: textarea - 추가 의견  -->
+
+        <!-- ST: select - component -->
+        <div>
+          <label for="selectComponent" class="block mb-[.3125rem] text-xs">select component<span class="text-ci pl-[.3125rem]">(필수)</span></label>
+          <div class="flex gap-2.5">
+            <select name="selectComponent" id="selectComponent" class="flex-1 appearance-none p-[.4375rem_2.5rem_.3125rem_.625rem] border-1 border-border-form rounded-[.625rem] bg-light-beige bg-no-repeat bg-[right_.875rem_center] bg-[image:url(/src/assets/elements/select_arrow.svg)] text-sm box-border h-[2.875rem] w-[50%]">
+              <option value="" hidden>분류</option>
+              <option value="">1</option>
+              <option value="">2</option>
+              <option value="">3</option>
+            </select>
+          </div>
+        </div>
+        <!-- ED: select - component -->
+
+        <!-- ST: select - 희망개설지역 -->
+        <div>
+          <label for="location" class="block mb-[.3125rem] text-xs">희망개설지역<span class="text-ci pl-[.3125rem]">(필수)</span></label>
+          <div class="flex gap-2.5">
+            <select name="location" id="location" class="flex-1 appearance-none p-[.4375rem_2.5rem_.3125rem_.625rem] border-1 border-border-form rounded-[.625rem] bg-light-beige bg-no-repeat bg-[right_.875rem_center] bg-[image:url(/src/assets/elements/select_arrow.svg)] text-sm box-border h-[2.875rem] w-[50%]">
+              <option value="seoul">서울특별시</option>
+              <option value="busan">부산광역시</option>
+              <option value="daegu">대구광역시</option>
+            </select>
+            <select name="locationDetail" id="locationDetail" class="flex-1 appearance-none p-[.4375rem_2.5rem_.3125rem_.625rem] border-1 border-border-form rounded-[.625rem] bg-light-beige bg-no-repeat bg-[right_.875rem_center] bg-[image:url(/src/assets/elements/select_arrow.svg)] text-sm box-border h-[2.875rem] w-[50%]">
+              <option value="gangnam">강남구</option>
+              <option value="gangdong">강동구</option>
+              <option value="gangbuk">강북구</option>
+            </select>
+          </div>
+        </div>
+        <!-- ED: select - 희망개설지역 -->
+
+        <!-- ST: select - 생년월일 -->
+        <div>
+          <div class="block mb-[.3125rem] text-xs">생년월일<span class="text-ci pl-[.3125rem]">(필수)</span></div>
+          <div class="flex gap-2.5">
+            <label for="birthYear" class="sr-only">출생 연도 선택</label>
+            <select name="birthYear" id="birthYear" class="flex-1 appearance-none p-[.4375rem_2.5rem_.3125rem_.625rem] border-1 border-border-form rounded-[.625rem] bg-light-beige bg-no-repeat bg-[right_.875rem_center] bg-[image:url(/src/assets/elements/select_arrow.svg)] text-sm box-border h-[2.875rem] w-[50%]">
+              <option value="" hidden>년</option>
+              <option value="1990">1990</option>
+              <option value="1989">1989</option>
+              <option value="1988">1988</option>
+            </select>
+            <label for="birthMonth" class="sr-only">출생 월 선택</label>
+            <select name="birthMonth" id="birthMonth" class="flex-1 appearance-none p-[.4375rem_2.5rem_.3125rem_.625rem] border-1 border-border-form rounded-[.625rem] bg-light-beige bg-no-repeat bg-[right_.875rem_center] bg-[image:url(/src/assets/elements/select_arrow.svg)] text-sm box-border h-[2.875rem] w-[50%]">
+              <option value="" hidden>월</option>
+              <option value="1">1월</option>
+              <option value="2">2월</option>
+              <option value="3">3월</option>
+            </select>
+            <label for="birthDay" class="sr-only">출생 일 선택</label>
+            <select name="birthDay" id="birthDay" class="flex-1 appearance-none p-[.4375rem_2.5rem_.3125rem_.625rem] border-1 border-border-form rounded-[.625rem] bg-light-beige bg-no-repeat bg-[right_.875rem_center] bg-[image:url(/src/assets/elements/select_arrow.svg)] text-sm box-border h-[2.875rem] w-[50%]">
+              <option value="" hidden>일</option>
+              <option value="1">1일</option>
+              <option value="2">2일</option>
+              <option value="3">3일</option>
+            </select>
+          </div>
+        </div>
+        <!-- ED: select - 생년월일 -->
+
+        <!-- ST: select & input - 보유 시 임대차 목적물 면적 -->
+        <div>
+          <label for="rentalArea" class="block mb-[.3125rem] text-xs">보유 시 임대차 목적물 면적<span class="text-ci pl-[.3125rem]">(필수)</span></label>
+          <div class="flex gap-2.5">
+            <input type="number" required min="0" placeholder="숫자입력" name="rentalArea" id="rentalArea" class="flex-1 p-[.3125rem_2.1875rem_.1875rem_.9375rem] border-1 border-border-form rounded-[.625rem] text-sm bg-light-beige box-border h-[2.875rem] w-[50%] placeholder:text-brown-0.3" />
+            <label for="rentalAreaUnit" class="sr-only">출생 일 선택</label>
+            <select name="rentalAreaUnit" id="rentalAreaUnit" class="flex-1 appearance-none p-[.4375rem_2.5rem_.3125rem_.625rem] border-1 border-border-form rounded-[.625rem] bg-light-beige bg-no-repeat bg-[right_.875rem_center] bg-[image:url(/src/assets/elements/select_arrow.svg)] text-sm box-border h-[2.875rem] w-[50%]">
+              <option value="">제곱미터 (m²)</option>
+            </select>
+          </div>
+        </div>
+        <!-- ED: select & input - 보유 시 임대차 목적물 면적 -->
+
+        <!-- ST: input(radio) - 임대차 목적물 보유 유무 -->
+        <div>
+          <div class="block mb-[.3125rem] text-xs">보유 시 임대차 목적물 면적<span class="text-ci pl-[.3125rem]">(필수)</span></div>
+          <div class="flex gap-[1.875rem] items-center h-12">
+            <label class="flex items-center w-[5.125rem]">
+              <input type="radio" checked value="y" name="rentalProperty" class="appearance-none bg-[image:url(/src/assets/customer/radio_off.svg)] checked:bg-[image:url(/src/assets/customer/radio_on.svg)] w-6 aspect-1/1" />
+              <p class="ml-[.3125rem]">유</p>
+            </label>
+            <label class="flex items-center w-[5.125rem]">
+              <input type="radio" checked value="n" name="rentalProperty" class="appearance-none bg-[image:url(/src/assets/customer/radio_off.svg)] checked:bg-[image:url(/src/assets/customer/radio_on.svg)] w-6 aspect-1/1" />
+              <p class="ml-[.3125rem]">무</p>
+            </label>
+          </div>
+        </div>
+        <!-- ED: input(radio) - 임대차 목적물 보유 유무 -->
+
+        <!-- ST: input(checkbox) - 개인정보 수집 동의 -->
+        <div class="relative flex flex-col min-h-15 bg-brown-0.05 p-[.9375rem_1.25rem]">
+          <label class="flex items-center w-fit min-w-70">
+            <input type="checkbox" value="y" name="chkPrivacy" class="appearance-none bg-[image:url(/src/assets/customer/checkbox_off.svg)] checked:bg-[image:url(/src/assets/customer/checkbox_on.svg)] w-6 aspect-1/1" />
+            <p class="ml-[.3125rem] text-2xs">개인정보 수집 및 활용에 동의합니다.</p>
+          </label>
+
+          <details class="open:*:first:after:content-['약관닫기']">
+            <summary class="after:content-['약관보기'] cursor-pointer list-none absolute top-[15px] right-5 px-2.5 rounded-[3.125rem] text-xs lg:text-sm text-brown text-center content-center w-[4.5625rem] lg:w-40 h-7.5 bg-brown-0.05"></summary>
+            <div class="font-Pretendard pt-[.9375rem] text-2xs">
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam tenetur ea praesentium deleniti amet officia impedit aut, perferendis laudantium accusantium animi optio possimus, eos accusamus fugit architecto consectetur reiciendis ratione.</p>
+              <p>
+                AI 코딩 도구를 활용하면 코드 생성 및 자동화, 개발 워크플로우와의 통합 등이 가능하며 기존 개발 환경 대비 생산성을 높일 수 있습니다. 그러나 개발자를 꿈꾸며 학습을하는 예비 개발자에게 AI 코딩 도구는 양날의 검이 될 수 있습니다. AI 코딩 도구에만 의존하는 주니어 개발자는 경쟁력을 갖출 수 없기 때문입니다. 오히려 더 깊이 있게 언어를 학습하고 좋은 질문을 할 수 있도록 문해력(Literacy)을 기르는 것이 필요합니다. 다만 AI 도구를 완전히 배제하는 것이 아닌 학습을 위한 파트너로서 활용할 것을
+                추천합니다.
+              </p>
+            </div>
+          </details>
+        </div>
+        <!-- ED: input(checkbox) - 개인정보 수집 동의 -->
+      </form>
+    </div>
+    <!-- ED: franchise - 가맹 신청서 -->
+
+    <hr />
+
+    <!-- ST: 약관 컴포넌트 -->
+    <h1 class="text-center text-xl uppercase">약관</h1>
+
+    <!-- ST: 개인정보처리방침 modal -->
+    <div>
+      <h2 class="mb-4">개인정보처리방침 modal</h2>
+
+      <!-- 임시 버튼 -->
+      <button type="button" id="showPrivacyPolicy" class="bg-white border border-brown rounded-xl p-2">개인정보 처리방침</button>
+      <!-- dialog -->
+      <dialog id="privacyPolicy" aria-label="개인정보 처리방침" class="bg-beige lg:backdrop:bg-brown-0.7 m-auto lg:rounded-[1.25rem] max-lg:min-w-dvw max-lg:min-h-dvh lg:w-160 lg:h-[90vh] text-brown">
+        <!-- class="fixed inset-0 flex flex-col" -->
+        <article class="flex flex-col">
+          <header class="relative p-[.9375rem_2.5rem] md:p-[1.875rem_3.75rem] h-[3.375rem] md:h-22 text-center text-lg md:text-2xl">
+            <p>개인정보 처리방침</p>
+            <button type="button" id="closePrivacyPolicy" class="absolute top-0 right-0 bg-center bg-no-repeat bg-[image:url(/src/assets/elements/btn_pop_close.svg)] w-[3.375rem] h-full"></button>
+          </header>
+          <div class="px-7.5 pb-3.75 h-[3.1875rem] text-end">
+            <label for="startDate" class="pr-2.5 text-xs md:text-sm">시행일자</label>
+            <select name="startDate" id="startDate" class="appearance-none p-[.4375rem_2.5rem_.3125rem_.625rem] border-1 border-border-form rounded-[.625rem] bg-light-beige bg-no-repeat bg-[right_.875rem_center] bg-[image:url(/src/assets/elements/select_arrow.svg)] text-sm box-border h-9 w-[8.1875rem]">
+              <option value="2025.02.26">2025.02.26</option>
+              <option value="2024.11.20">2024.11.20</option>
+              <option value="2024.10.29">2024.10.29</option>
+              <option value="2024.04.01">2024.04.01</option>
+            </select>
+          </div>
+          <div class="px-0 lg:px-7.5 h-[calc(100vh-11.8125rem)] md:h-[calc(100vh-13.9375rem)] lg:h-[calc(90vh-13.9375rem)] overflow-scroll">
+            <div class="p-5">
+              <ul class="">
+                <li>1. 개인정보 수집</li>
+                <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta qui, non quia labore animi eum, voluptatem voluptatibus aut molestias ea cum! Eos, incidunt repudiandae ducimus maiores vero sit modi aspernatur.</li>
+
+                <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit dignissimos rem praesentium nemo, qui esse sapiente quos unde ad tempore sequi totam optio provident quod ab accusamus nihil voluptatibus asperiores.</li>
+                <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit dignissimos rem praesentium nemo, qui esse sapiente quos unde ad tempore sequi totam optio provident quod ab accusamus nihil voluptatibus asperiores.</li>
+                <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit dignissimos rem praesentium nemo, qui esse sapiente quos unde ad tempore sequi totam optio provident quod ab accusamus nihil voluptatibus asperiores.</li>
+                <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit dignissimos rem praesentium nemo, qui esse sapiente quos unde ad tempore sequi totam optio provident quod ab accusamus nihil voluptatibus asperiores.</li>
+                <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit dignissimos rem praesentium nemo, qui esse sapiente quos unde ad tempore sequi totam optio provident quod ab accusamus nihil voluptatibus asperiores.</li>
+                <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit dignissimos rem praesentium nemo, qui esse sapiente quos unde ad tempore sequi totam optio provident quod ab accusamus nihil voluptatibus asperiores.</li>
+              </ul>
+            </div>
+          </div>
+          <footer class="p-[.625rem_0.9375rem_0.9375rem_0.9375rem] lg:p-[1.25rem_1.875rem] h-21">
+            <button type="button" id="confirmButton" class="pt-[.6563rem] pb-[.5938rem] px-5 rounded-[3.125rem] w-full h-11 text-sm text-white bg-brown">확인</button>
+          </footer>
+        </article>
+      </dialog>
+    </div>
+    <!-- ED: 개인정보처리방침 modal -->
+    <!-- ED: 약관 컴포넌트 -->
+  </body>
+</html>
