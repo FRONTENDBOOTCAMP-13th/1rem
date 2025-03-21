@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>서비스 이용약관</title>
+    <link rel="preload" as="font" href="/fonts/Sandoll-GothicNeoRound-400.woff" crossorigin="anonymous" />
+    <link rel="preload" as="font" href="/fonts/Sandoll-GothicNeoRound-700.woff" crossorigin="anonymous" />
+    <script type="module" src="/src/main.js"></script>
+    <!-- modal script -->
+    <script type="module">
+      // DOM 선택 부분
+      const showCctv = document.querySelector('#showCctv');
+      const closeCctv = document.querySelector('#closeCctv');
+      const closeCctv2 = document.querySelector('#confirmButton');
+      const cctv = document.querySelector('#cctv');
+
+      // 함수 구현 부분
+      const openDialog = () => cctv.showModal();
+      const closeDialog = () => cctv.close();
+
+      // 이벤트 바인딩 부분
+      showCctv.addEventListener('click', openDialog);
+      closeCctv.addEventListener('click', closeDialog);
+      closeCctv2.addEventListener('click', closeDialog);
+    </script>
+  </head>
+  <body class="">
+    <!-- ST: 임시 버튼 - 삭제하고 사용해 주세요! -->
+    <button type="button" id="showCctv" class="border border-brown rounded-xl p-2 m-2">이용약관</button>
+    <!-- ED: 임시 버튼 -->
+
+    <!-- ST: dialog -->
+    <dialog id="cctv" aria-label="서비스 이용약관" class="bg-beige lg:backdrop:bg-brown-0.7 m-auto lg:rounded-[1.25rem] max-lg:min-w-dvw max-lg:min-h-dvh lg:w-160 lg:h-[90vh] text-brown">
+      <article class="flex flex-col">
+        <header class="relative p-[.9375rem_2.5rem] md:p-[1.875rem_3.75rem] h-[3.375rem] md:h-22 text-center text-lg md:text-2xl">
+          <p>서비스 이용약관</p>
+          <button type="button" id="closeCctv" class="absolute top-0 right-0 bg-center bg-no-repeat bg-[image:url(/src/assets/elements/btn_pop_close.svg)] w-[3.375rem] h-full"></button>
+        </header>
+        <div class="px-7.5 pb-3.75 h-[3.1875rem] text-end">
+          <label for="startDate" class="pr-2.5 text-xs md:text-sm">시행일자</label>
+          <select name="startDate" id="startDate" class="appearance-none p-[.4375rem_2.5rem_.3125rem_.625rem] border-1 border-border-form rounded-[.625rem] bg-light-beige bg-no-repeat bg-[right_.875rem_center] bg-[image:url(/src/assets/elements/select_arrow.svg)] text-sm box-border h-9 w-[8.1875rem]">
+            <option value="2025.02.26">2023.12.13</option>
+          </select>
+        </div>
+        <div class="p-5 lg:px-7.5 h-[calc(100vh-11.8125rem)] md:h-[calc(100vh-13.9375rem)] lg:h-[calc(90vh-13.9375rem)] overflow-scroll font-Pretendard text-sm">
+          <h1 class="mb-2.5 lg:text-[0.875rem] font-bold">영상정보처리기기운영관리방침</h1>
+          <h2 class="mb-2.5 lg:text-[0.875rem] font-bold">1. 영상정보처리기기의 설치 근거 및 설치 목적</h2>
+          <p class="mb-2.5 lg:text-[0.875rem]">'회사'는 개인정보보호법 제25조 1항에 따라 다음과 같은 목적으로 영상정보처리기기를 설치/운영 합니다.</p>
+          <p class="mb-2.5 lg:text-[0.875rem]">
+            - 시설안전 및 화재예방 <br />
+            - 고객 및 직원의 안전을 위한 범죄예방
+          </p>
+          <h2 class="mb-2.5 lg:text-[0.875rem] font-bold">2. 영상정보처리기기의 설치 대수, 설치 위치 및 촬영범위</h2>
+
+          <p class="mb-2.5 lg:text-[0.875rem]">
+            - 설치 대수 : 버거킹 전 매장 (매장별 수량 상이) <br />
+            - 설치 위치 : 매장 출입구 상단 및 범죄 예방구역 <br />
+            - 촬영 범위 : 매장 홀 전체
+          </p>
+
+          <h2 class="mb-2.5 lg:text-[0.875rem] font-bold">3. 관리책임자 및 접근권한조치</h2>
+          <p class="mb-2.5 lg:text-[0.875rem]">'회사'는 개인영상정보를 보호하고 개인영상정보와 관련된 불만을 처리하기 위해 아래와 같이 개인영상정보 보호책임자를 두고 있습니다.</p>
+
+          <p class="mb-2.5 lg:text-[0.875rem]">
+            [버거킹] <br />
+            - 관리책임자: 해당 매장 점장 <br />
+            - 담당부서 : 해당 매장 또는 버거킹 운영지원팀(02-6331-8358) <br />
+            - 접근권한자 : 각 매장 직원 및 관련 부서 임직원
+          </p>
+
+          <h2 class="mb-2.5 lg:text-[0.875rem] font-bold">4. 영상정보의 촬영시간, 보관기간, 보관장소 및 처리방법</h2>
+
+          <p class="mb-2.5 lg:text-[0.875rem]">(수정 중)</p>
+        </div>
+
+        <footer class="flex justify-center items-center p-[.625rem_0.9375rem_0.9375rem_0.9375rem] lg:p-[1.25rem_1.875rem] h-21">
+          <button type="button" id="confirmButton" class="p-[.3125rem] rounded-[2.5rem] w-full md:w-80 h-11 text-sm text-white bg-brown">확인</button>
+        </footer>
+      </article>
+    </dialog>
+    <!-- ED: dialog -->
+  </body>
+</html>
