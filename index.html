@@ -10,6 +10,132 @@
     <script type="module" src="/src/main.js"></script>
   </head>
   <body>
+    <div class="grid lg:grid-cols-2 items-center bg-[image:url(/src/assets/index-img/backgroundImg_mobile.png)] lg:bg-[image:url(/src/assets/index-img/backgroundImg.png)] w-full h-screen bg-center bg-cover">
+      <div class="relative font-BKBulMatPro text-[200px] m-auto text-light-beige">
+        <p class="absolute top-7 left-14 lg:top-13 lg:left-20 text-xl lg:text-6xl">멋쟁이 사자처럼 16팀</p>
+        <h1 class="text-[100px] lg:text-[200px]">1rem</h1>
+      </div>
+      <div class="grid grid-cols-2 gap-5 px-10 lg:px-20">
+        <div class="flex flex-col gap-2.5 items-center justify-center">
+          <img src="/src/assets/index-img/face1.webp" alt="" class="border-2 lg:border-5 border-border w-20 lg:w-30 aspect-1/1 rounded-[50%]" />
+          <p class="text-lg lg:text-3xl text-light-beige">김00</p>
+          <p class="text-2xs lg:text-base text-light-beige">한줄소개/역할/기타등등..</p>
+          <span class="inline-block py-[.3125rem] px-1 text-3xs sm:px-[.625rem] sm:py-2 sm:text-xs bg-border text-brown rounded-lg">GitHub 바로가기</span>
+        </div>
+        <div class="flex flex-col gap-2.5 items-center justify-center">
+          <img src="/src/assets/index-img/face1.webp" alt="" class="border-2 lg:border-5 border-border w-20 lg:w-30 aspect-1/1 rounded-[50%]" />
+          <p class="text-lg lg:text-3xl text-brown">김00</p>
+          <p class="text-2xs lg:text-base text-brown">한줄소개/역할/기타등등..</p>
+          <span class="inline-block py-[.3125rem] px-1 text-3xs sm:px-[.625rem] sm:py-2 sm:text-xs bg-border text-brown rounded-lg">GitHub 바로가기</span>
+        </div>
+        <div class="flex flex-col gap-2.5 items-center justify-center">
+          <img src="/src/assets/index-img/face1.webp" alt="" class="border-2 lg:border-5 border-border w-20 lg:w-30 aspect-1/1 rounded-[50%]" />
+          <p class="text-lg lg:text-3xl text-brown">김00</p>
+          <p class="text-2xs lg:text-base text-brown">한줄소개/역할/기타등등..</p>
+          <span class="inline-block py-[.3125rem] px-1 text-3xs sm:px-[.625rem] sm:py-2 sm:text-xs bg-border text-brown rounded-lg">GitHub 바로가기</span>
+        </div>
+        <div class="flex flex-col gap-2.5 items-center justify-center">
+          <img src="/src/assets/index-img/face1.webp" alt="" class="border-2 lg:border-5 border-border w-20 lg:w-30 aspect-1/1 rounded-[50%]" />
+          <p class="text-lg lg:text-3xl text-brown">김00</p>
+          <p class="text-2xs lg:text-base text-brown">한줄소개/역할/기타등등..</p>
+          <span class="inline-block py-[.3125rem] px-1 text-3xs sm:px-[.625rem] sm:py-2 sm:text-xs bg-border text-brown rounded-lg">GitHub 바로가기</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex justify-center my-10">
+      <img src="/src/assets/index-img/pages.svg" alt="파일 구조" />
+    </div>
+
+    <div class="wrapper px-5 pt-5 pb-22.5 md:p-7.5 lg:pt-10 lg:px-15 lg:pb-22.5">
+      <div class="flex flex-col items-center inner max-w-[1620px] mx-auto">
+        <h2 class="hidden text-[2.125rem] text-brown text-center font-bold lg:block lg:mt-10 lg:mb-12.5">문서화...</h2>
+        <div class="grid grid-cols-2 gap-5 text-brown">
+          <div class="bg-brown-0.1 rounded-[10px] p-5">
+            <h3 class="my-5 text-3xl text-center font-bold">커밋 컨벤션(Commit Convention)</h3>
+            <p class="font-Pretendard">
+              Feat: 새로운 기능 추가 <br />
+              BugFix: 버그 수정 <br />
+              Docs: 문서의 수정 <br />
+              Modify: 코드 변경 <br />
+              Refactor: 리팩토링 <br />
+              Design: CSS 등 사용자 UI 디자인 변경 <br />
+              Comment: 필요한 주석 추가 및 변경 <br />
+              Style: 코드 포맷팅, 세미콜론 누락, 코드 변경이 없는 경우 <br />
+              Test: 테스트(테스트 코드 추가, 수정, 삭제, 비즈니스 로직에 변경이 없는 경우) <br />
+              Chore: 빌드 수정, 패키지 매니저 설정, 운영 코드 변경이 없는 경우(assets image, 패키지 매니저 등) <br />
+              Init: 프로젝트 초기 생성 <br />
+              Rename: 파일 혹은 폴더명 수정하거나 옮기는 경우 <br />
+              Remove: 파일을 삭제하는 작업만 수행하는 경우 <br />
+              Merge: Pull 과정 중 현재 commit과 자동 병합이 일어날 때 <br />
+              Build: 새로운 라이브러리 혹은 패키지
+            </p>
+          </div>
+          <div class="bg-brown-0.1 rounded-[10px] p-5">
+            <h3 class="my-5 text-3xl text-center font-bold">코딩 컨벤션(Coding Convention)</h3>
+            <p class="font-Pretendard">
+              각 구역별 가독성을 위해 시작 / 끝 영역을 표시해준다. <br />
+              4px 단위가 아닌 수치들은 [rem]로 작성한다. <br />
+              파일 명 :  component-header.index/  component-메뉴명.index
+            </p>
+          </div>
+          <div class="bg-brown-0.1 rounded-[10px] p-5">
+            <h3 class="my-5 text-3xl text-center font-bold">폴더 구조</h3>
+          </div>
+          <div class="bg-brown-0.1 rounded-[10px] p-5">
+            <h3 class="my-5 text-3xl text-center font-bold">커밋 컨벤션(Commit Convention)</h3>
+            <table class="break-keep border-y border-brown-0.1 w-full **:p-2.5 **:text-[.875rem] **:font-Pretendard">
+              <caption class="sr-only top-0">
+                폴더구조|으로 구성
+              </caption>
+              <colgroup>
+                <col class="" />
+                <col class="border-l border-brown-0.1" />
+              </colgroup>
+              <thead class="bg-brown-0.05">
+                <tr class="font-bold border-b border-brown-0.1">
+                  <th>태그..?</th>
+                  <th>설명</th>
+                </tr>
+              </thead>
+              <tbody class="text-center">
+                <tr class="border-b border-brown-0.1">
+                  <td>Feat:</td>
+                  <td>새로운 기능 추가</td>
+                </tr>
+                <tr class="border-b border-brown-0.1">
+                  <td>BugFix:</td>
+                  <td>버그 수정</td>
+                </tr>
+                <tr class="border-b border-brown-0.1">
+                  <td>Docs:</td>
+                  <td>문서의 수정</td>
+                </tr>
+                <tr class="border-b border-brown-0.1">
+                  <td>Modify:</td>
+                  <td>코드 변경</td>
+                </tr>
+                <tr class="border-b border-brown-0.1">
+                  <td>Refactor:</td>
+                  <td>리팩토링</td>
+                </tr>
+                <tr class="border-b border-brown-0.1">
+                  <td>Design:</td>
+                  <td>CSS 등 사용자 UI 디자인 변경</td>
+                </tr>
+                <tr class="border-b border-brown-0.1">
+                  <td>Comment:</td>
+                  <td>필요한 주석 추가 및 변경</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="bg-[image:url(src/assets/index-img/timeline.png)] rounded-[10px] p-5 mx-10 w-full h-100 bg-cover"></div>
+      </div>
+    </div>
+
     <p>남유지, 유시원, 임한길, 황유빈 Let's go!</p>
     <p>1rem 화이팅!</p>
 
