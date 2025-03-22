@@ -7,34 +7,19 @@
     <link rel="preload" as="font" href="/fonts/Sandoll-GothicNeoRound-400.woff" crossorigin="anonymous" />
     <link rel="preload" as="font" href="/fonts/Sandoll-GothicNeoRound-700.woff" crossorigin="anonymous" />
     <script type="module" src="/src/main.js"></script>
-    <script type="module">
-      // DOM 선택 부분
-      const showApplicationForm = document.querySelector('#showApplicationForm');
-      const closeApplicationForm = document.querySelector('#closeApplicationForm');
-      const closeApplicationForm2 = document.querySelector('#cancelButton');
-      const applicationForm = document.querySelector('#applicationForm');
-
-      // 함수 구현 부분
-      const openDialog = () => applicationForm.showModal();
-      const closeDialog = () => applicationForm.close();
-
-      // 이벤트 바인딩 부분
-      showApplicationForm.addEventListener('click', openDialog);
-      closeApplicationForm.addEventListener('click', closeDialog);
-      closeApplicationForm2.addEventListener('click', closeDialog);
-    </script>
+    <script type="module" src="/src/js/franchise.js"></script>
   </head>
   <body>
-    <!-- header 컴포넌트 넣어주세요. -->
+    <sub-header page-title="가맹점 모집"></sub-header>
+
     <div class="wrapper px-5 pt-5 pb-22.5 md:p-7.5 lg:pt-10 lg:px-15 lg:pb-22.5">
       <div class="inner max-w-[1620px] mx-auto">
         <h2 class="hidden text-[2.125rem] text-brown text-center font-bold lg:block lg:mt-10 lg:mb-12.5">버거킹 가맹점 모집</h2>
 
-        <!-- 타이틀 아래의 본문 내용은 여기서 작성해주세요. div말고 다른 태그 넣어도 됩니다.-->
         <div class="text-brown">
           <!-- ST: 가맹점 모집 안내 -->
           <div class="flex flex-col gap-5 rounded-[10px] p-5 md:p-7.5 bg-light-beige">
-            <h3 class="text-lg md:text-3xl lg:text-5xl font-bold font-BKBulMatPro text-center">가맹정 모집 안내</h3>
+            <h3 class="text-lg md:text-3xl lg:text-5xl font-bold font-BKBulMatPro text-center">가맹점 모집 안내</h3>
             <p class="text-sm text-center">
               세계 100개국 이상에서 사업 전개중인
               <br />
@@ -60,21 +45,21 @@
               <li class="flex items-center gap-[.3125rem] p-[.625rem_.9375rem] rounded-[.625rem] h-[54px] bg-beige text-sm">
                 <img src="/src/assets/elements/ico_tick.svg" alt="" class="px-1" />
                 <strong class="flex-1">입지 조건 및 임대 면적</strong>
-                <button type="button" class="w-6">
+                <button id="goToMenu1" type="button" class="w-6">
                   <img src="/src/assets/elements/btn_collapse.svg" alt="" class="m-auto" />
                 </button>
               </li>
               <li class="flex items-center gap-[.3125rem] p-[.625rem_.9375rem] rounded-[.625rem] h-[54px] bg-beige text-sm">
                 <img src="/src/assets/elements/ico_tick.svg" alt="" class="px-1" />
-                <strong class="flex-1">입지 조건 및 임대 면적</strong>
-                <button type="button" class="w-6">
+                <strong class="flex-1">개설 비용 안내</strong>
+                <button id="goToMenu2" type="button" class="w-6">
                   <img src="/src/assets/elements/btn_collapse.svg" alt="" class="m-auto" />
                 </button>
               </li>
               <li class="flex items-center gap-[.3125rem] p-[.625rem_.9375rem] rounded-[.625rem] h-[54px] bg-beige text-sm">
                 <img src="/src/assets/elements/ico_tick.svg" alt="" class="px-1" />
                 <strong class="flex-1">가맹 신청하기</strong>
-                <button type="button" class="w-6">
+                <button id="goToMenu3" type="button" class="w-6">
                   <img src="/src/assets/elements/btn_collapse.svg" alt="" class="m-auto" />
                 </button>
               </li>
@@ -83,44 +68,44 @@
           <!-- ED: 가맹점 모집 안내 -->
 
           <!-- ST: 입지 조건 및 임대 면적 -->
-          <h4 class="py-[1.875rem_1.25rem] text-3xl text-center">입지 조건 및 임대 면적</h4>
+          <h4 id="menu1" class="py-[1.875rem_1.25rem] text-3xl text-center">입지 조건 및 임대 면적</h4>
           <div class="flex flex-col gap-5 text-center rounded-[10px] p-5 md:p-7.5 bg-light-beige">
             <h5 class="text-lg md:text-3xl lg:text-5xl font-bold font-BKBulMatPro">입지 조건</h5>
             <ul class="grid gap-2.5 lg:grid-cols-3">
               <li class="p-[.625rem_.9375rem] rounded-[.625rem] bg-beige">
-                <p class="flex-1 text-center text-sm text-brown-0.7 font-bold font-Pretendard">
+                <p class="text-center text-sm text-brown-0.7 font-bold font-Pretendard">
                   역세권에 위치하여 유동인원이 풍부하고
                   <br />
                   배후에 사무실 및 아파트 밀집 지역
                 </p>
               </li>
               <li class="p-[.625rem_.9375rem] rounded-[.625rem] bg-beige">
-                <p class="flex-1 text-center text-sm text-brown-0.7 font-bold font-Pretendard">서울을 중심으로 수도권이 우선이며 그 외 지역은 광역시 중심 주거 인구 증가 지역</p>
+                <p class="text-center text-sm text-brown-0.7 font-bold font-Pretendard">서울을 중심으로 수도권이 우선이며 그 외 지역은 광역시 중심 주거 인구 증가 지역</p>
               </li>
               <li class="p-[.625rem_.9375rem] rounded-[.625rem] bg-beige">
-                <p class="flex-1 text-center text-sm text-brown-0.7 font-bold font-Pretendard">도로변이며 접근성과 가시성이 좋은 지역</p>
+                <p class="text-center text-sm text-brown-0.7 font-bold font-Pretendard">도로변이며 접근성과 가시성이 좋은 지역</p>
               </li>
               <li class="p-[.625rem_.9375rem] rounded-[.625rem] bg-beige">
-                <p class="flex-1 text-center text-sm text-brown-0.7 font-bold font-Pretendard">교통 및 유동인구 통행량이 많은 지역</p>
+                <p class="text-center text-sm text-brown-0.7 font-bold font-Pretendard">교통 및 유동인구 통행량이 많은 지역</p>
               </li>
               <li class="p-[.625rem_.9375rem] rounded-[.625rem] bg-beige">
-                <p class="flex-1 text-center text-sm text-brown-0.7 font-bold font-Pretendard">중·소·신도시 및 군소재지 지역</p>
+                <p class="text-center text-sm text-brown-0.7 font-bold font-Pretendard">중·소·신도시 및 군소재지 지역</p>
               </li>
             </ul>
             <h5 class="text-lg md:text-3xl lg:text-5xl font-bold font-BKBulMatPro">임대 면적</h5>
             <ul class="grid gap-2.5 lg:grid-cols-3">
               <li class="p-[.625rem_.9375rem] rounded-[.625rem] bg-beige">
-                <p class="flex-1 text-center text-sm text-brown-0.7 font-bold font-Pretendard">실 평수 40평 이상 (1 - 2층일 경우 1층 30평 이상)</p>
+                <p class="text-center text-sm text-brown-0.7 font-bold font-Pretendard">실 평수 40평 이상 (1 - 2층일 경우 1층 30평 이상)</p>
               </li>
               <li class="p-[.625rem_.9375rem] rounded-[.625rem] bg-beige">
-                <p class="flex-1 text-center text-sm text-brown-0.7 font-bold font-Pretendard">Drive Thru, Food court, 특수상권 내 면적은 상담 협의</p>
+                <p class="text-center text-sm text-brown-0.7 font-bold font-Pretendard">Drive Thru, Food court, 특수상권 내 면적은 상담 협의</p>
               </li>
             </ul>
           </div>
           <!-- ED: 입지 조건 및 임대 면적 -->
 
           <!-- ST: 개설비용 안내 -->
-          <h4 class="py-[1.875rem_1.25rem] text-3xl text-center">개설비용 안내</h4>
+          <h4 id="menu2" class="py-[1.875rem_1.25rem] text-3xl text-center">개설비용 안내</h4>
           <div class="flex flex-col gap-5 text-center rounded-[10px] p-5 md:p-7.5 bg-light-beige">
             <h5 class="text-lg md:text-3xl lg:text-5xl font-bold font-BKBulMatPro">예치 가맹점</h5>
             <div class="font-Pretendard">
@@ -252,7 +237,7 @@
           <!-- ED: 개설비용 안내 -->
 
           <!-- ST: 가맹 신청하기 -->
-          <h4 class="py-[1.875rem_1.25rem] text-3xl text-center">가맹 신청하기</h4>
+          <h4 id="menu3" class="py-[1.875rem_1.25rem] text-3xl text-center">가맹 신청하기</h4>
           <div class="flex flex-col gap-5 text-center rounded-[10px] p-5 md:p-7.5 bg-light-beige">
             <h5 class="text-lg md:text-3xl lg:text-5xl font-bold font-BKBulMatPro">신청 절차</h5>
             <ul class="grid grid-cols-2 gap-2.5 md:grid-cols-4">
@@ -576,7 +561,7 @@
                   <p class="ml-[.3125rem]">유</p>
                 </label>
                 <label class="flex items-center w-[5.125rem]">
-                  <input type="radio" checked value="n" name="rentalProperty" class="appearance-none bg-[image:url(/src/assets/customer/radio_off.svg)] checked:bg-[image:url(/src/assets/customer/radio_on.svg)] w-6 aspect-1/1" />
+                  <input type="radio" value="n" name="rentalProperty" class="appearance-none bg-[image:url(/src/assets/customer/radio_off.svg)] checked:bg-[image:url(/src/assets/customer/radio_on.svg)] w-6 aspect-1/1" />
                   <p class="ml-[.3125rem]">무</p>
                 </label>
               </div>
@@ -686,8 +671,9 @@
           </form>
         </div>
       </article>
+      <common-footer class="lg:hidden"></common-footer>
     </dialog>
     <!-- ED: 가맹 신청서 -->
-    <!-- footer 컴포넌트 넣어주세요. -->
+    <common-footer></common-footer>
   </body>
 </html>

@@ -10,32 +10,32 @@
     <!-- modal script -->
     <script type="module">
       // DOM 선택 부분
-      const showTerms = document.querySelector('#showTerms');
-      const closeTerms = document.querySelector('#closeTerms');
-      const closeTerms2 = document.querySelector('#confirmButton');
-      const terms = document.querySelector('#terms');
+      const showLocation = document.querySelector('#showLocation');
+      const closeLocation = document.querySelector('#closeLocation');
+      const closeLocation2 = document.querySelector('#confirmButton');
+      const location = document.querySelector('#location');
 
       // 함수 구현 부분
-      const openDialog = () => terms.showModal();
-      const closeDialog = () => terms.close();
+      const openDialog = () => location.showModal();
+      const closeDialog = () => location.close();
 
       // 이벤트 바인딩 부분
-      showTerms.addEventListener('click', openDialog);
-      closeTerms.addEventListener('click', closeDialog);
-      closeTerms2.addEventListener('click', closeDialog);
+      showLocation.addEventListener('click', openDialog);
+      closeLocation.addEventListener('click', closeDialog);
+      closeLocation2.addEventListener('click', closeDialog);
     </script>
   </head>
   <body class="">
     <!-- ST: 임시 버튼 - 삭제하고 사용해 주세요! -->
-    <button type="button" id="showTerms" class="border border-brown rounded-xl p-2 m-2">위치기반 서비스 이용약관</button>
+    <button type="button" id="showLocation" class="border border-brown rounded-xl p-2 m-2">위치기반 서비스 이용약관</button>
     <!-- ED: 임시 버튼 -->
 
     <!-- ST: dialog -->
-    <dialog id="terms" aria-label="위치기반 서비스 이용약관" class="bg-beige lg:backdrop:bg-brown-0.7 m-auto lg:rounded-[1.25rem] max-lg:min-w-dvw max-lg:min-h-dvh lg:w-160 lg:h-[90vh] text-brown">
+    <dialog id="location" aria-label="위치기반 서비스 이용약관" class="bg-beige lg:backdrop:bg-brown-0.7 m-auto lg:rounded-[1.25rem] max-lg:min-w-dvw max-lg:min-h-dvh lg:w-160 lg:h-[90vh] text-brown">
       <article class="flex flex-col">
         <header class="relative p-[.9375rem_2.5rem] md:p-[1.875rem_3.75rem] h-[3.375rem] md:h-22 text-center text-lg md:text-2xl">
           <p>위치기반 서비스 이용약관</p>
-          <button type="button" id="closeTerms" class="absolute top-0 right-0 bg-center bg-no-repeat bg-[image:url(/src/assets/elements/btn_pop_close.svg)] w-[3.375rem] h-full"></button>
+          <button type="button" id="closeLocation" class="absolute top-0 right-0 bg-center bg-no-repeat bg-[image:url(/src/assets/elements/btn_pop_close.svg)] w-[3.375rem] h-full"></button>
         </header>
 
         <div class="px-7.5 pb-3.75 h-[3.1875rem] text-end">
@@ -70,7 +70,7 @@
               ① 회사가 제공하는 위치기반서비스 및 개인위치정보의 보유목적과 기간은 아래와 같습니다.
               <div class="my-5">
                 <table class="break-keep border-y border-brown-0.1 w-full **:p-2.5 **:text-[.875rem]">
-                  <caption class="sr-only">
+                  <caption class="sr-only top-0">
                     위치기반서비스 및 개인위치정보의 보유목적과 기간|서비스명, 서비스 내용 및 (보유)목적, 개인위치정보 보유기간으로 구성
                   </caption>
                   <colgroup>
