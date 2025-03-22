@@ -15,10 +15,17 @@ document.addEventListener('DOMContentLoaded', () => {
         button.setAttribute('aria-expanded', !isExpanded);
         button.style.transform = !isExpanded ? 'rotate(180deg)' : 'rotate(0deg)';
 
-        submenu.classList.toggle('h-0');
-        submenu.classList.toggle('invisible');
-      } else {
-        console.error('Submenu not found for button:', button);
+        if (!isExpanded) {
+          // 요소의 실제 높이를 계산
+          const height = submenu.scrollHeight;
+          // 실제 높이로 설정
+          submenu.style.height = `${height}px`;
+          submenu.classList.remove('h-0');
+        } else {
+          // 닫기: 우선 높이를 0으로 설정
+          submenu.style.height = '0px';
+          submenu.classList.add('h-0');
+        }
       }
     });
   });

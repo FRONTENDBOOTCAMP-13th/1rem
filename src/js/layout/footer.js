@@ -19,7 +19,7 @@ class Footer extends HTMLElement {
                 <a href="/src/pages/story/brand.html" target="_self" class="flex-1 content-center h-[3.3125rem] text-2xs">STORY</a>
                 <button type="button" aria-label="STORY 하위 메뉴 펼치기" aria-expanded="false" class="accordion-button w-12.5 h-[3.3125rem] bg-[url(/src/assets/elements/ico_darrow01.svg)] bg-no-repeat bg-center relative"></button>
               </div>
-              <div class="accordion-submenu h-0 invisible overflow-hidden transition-all duration-500 ease-in-out">
+              <div class="accordion-submenu h-0 overflow-hidden transition-all duration-500 ease-in-out">
                 <ul>
                   <li>
                     <a href="/src/pages/story/brand.html" class="w-full py-[.625rem] px-5 text-left text-brown-0.5 text-[.75rem] h-8 block"><span>브랜드</span></a>
@@ -47,7 +47,7 @@ class Footer extends HTMLElement {
                 <a href="/src/pages/news/event/ongoing.html" target="_self" class="flex-1 content-center h-[3.3125rem] text-2xs">NEWS</a>
                 <button type="button" aria-label="NEWS 하위 메뉴 펼치기" aria-expanded="false" class="accordion-button w-12.5 h-[3.3125rem] bg-[url(/src/assets/elements/ico_darrow01.svg)] bg-no-repeat bg-center relative"></button>
               </div>
-              <div class="accordion-submenu h-0 invisible overflow-hidden transition-all duration-500 ease-in-out">
+              <div class="accordion-submenu h-0 overflow-hidden transition-all duration-500 ease-in-out">
                 <ul>
                   <li>
                     <a href="/src/pages/news/eventongoing.html" class="w-full py-[.625rem] px-5 text-left text-brown-0.5 text-[.75rem] h-8 block"><span>이벤트</span></a>
@@ -108,6 +108,9 @@ class Footer extends HTMLElement {
         <!-- ED:PC 주소 -->
       </div>
     </footer>
+    <dialog id="policyModal" class="bg-beige lg:backdrop:bg-brown-0.7 m-auto lg:rounded-[1.25rem] max-lg:min-w-dvw max-lg:min-h-dvh lg:w-160 lg:h-[90vh] text-brown">
+      <div id="modalContent"></div>
+    </dialog>
     <!-- ED:Footer Wrapper -->
     `;
   }
