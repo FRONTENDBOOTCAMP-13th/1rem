@@ -3,23 +3,39 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>[컴포넌트] 페이지 타이틀 영역</title>
+    <title>메뉴 > 메뉴상세페이지</title>
     <link rel="preload" as="font" href="/fonts/Sandoll-GothicNeoRound-400.woff" crossorigin="anonymous" />
     <link rel="preload" as="font" href="/fonts/Sandoll-GothicNeoRound-700.woff" crossorigin="anonymous" />
     <script type="module" src="/src/main.js"></script>
+    <script type="module">
+      // DOM 선택 부분
+      const showApplicationForm = document.querySelector('#showApplicationForm');
+      const closeApplicationForm = document.querySelector('#closeApplicationForm');
+      const closeApplicationForm2 = document.querySelector('#cancelButton');
+      const applicationForm = document.querySelector('#applicationForm');
+
+      // 함수 구현 부분
+      const openDialog = () => applicationForm.showModal();
+      const closeDialog = () => applicationForm.close();
+
+      // 이벤트 바인딩 부분
+      showApplicationForm.addEventListener('click', openDialog);
+      closeApplicationForm.addEventListener('click', closeDialog);
+      closeApplicationForm2.addEventListener('click', closeDialog);
+    </script>
   </head>
   <body>
-    <!-- header 컴포넌트 넣어주세요. -->
+    <sub-header page-title=" "></sub-header>
     <div class="wrapper px-5 pt-5 pb-22.5 md:p-7.5 lg:pt-10 lg:px-15 lg:pb-22.5">
       <div class="inner max-w-[1620px] mx-auto">
         <h2 class="hidden text-[2.125rem] text-brown text-center font-bold lg:block lg:mt-10 lg:mb-12.5"></h2>
 
-        <!-- 타이틀 아래의 본문 내용은 여기서 작성해주세요. div말고 다른 태그 넣어도 됩니다.-->
-        <figure class="relative m-[0_-20px_15px] p-[0_20px_15px]">
+        <!-- st : 메뉴 상세 페이지 -->
+        <figure class="relative flex flex-col lg:flex-row lg:mb-[4rem] lg:m-[0rem]">
           <img src="/src/assets/menu/burger/burger_1.webp" alt="" class="mx-auto w-full max-w-[20rem] min-w-[20rem] lg:relative lg:h-auto lg:min-h-[13.125remd] lg:min-w-[20rem] lg:max-w-[36.25rem] lg:m-0 lg:p-[0px_36px] lg:mt-40px lg:mb-50px" />
           <figcaption class="lg:flex-1 lg:flex lg:flex-col lg:pl-10">
             <div class="mt-2.5 flex flex-nowrap items-baseline">
-              <h3 class="font-BKBulMatPro text-4xl text-brown lg:text-6xl">몬스터 와퍼</h3>
+              <h1 class="font-BKBulMatPro text-4xl text-brown lg:text-6xl">몬스터 와퍼</h1>
               <p class="ml-[5px] font-Pretendard text-2xs text-brown-0.7 lg:text-sm">1110 kal</p>
             </div>
             <p class="text-2xs text-brown-0.7 lg: text-left lg:m-[30px_0] lg:w-auto lg:text-[0.875rem]">불맛 가득한 순쇠고기, 치킨, 베이컨에 화끈한 디아블로 소스의 압도적인 맛</p>
@@ -69,11 +85,12 @@
             </div>
           </figcaption>
         </figure>
-        <!-- 추가 메뉴 소개 -->
-        <div class="">
-          <p class="text-sm text-brown font-bold ]">이런 메뉴도 있어요</p>
-          <ul class="w-full h-full z-1 flex flex-row flex-nowrap p-[10px_0]">
-            <li class="w-[163.5px]] mr-2 h-auto overflow-hidden flex-shrink-0 relative trnasform block bg-light-beige shadow-[0_0_10px_rgba(0,0,0,0.05)] p-[28px_8px_10px] rounded-[10px]">
+        <!-- ed : 메뉴 상세 페이지 -->
+        <!-- st :추가 메뉴 소개 -->
+        <div class="flex flex-col lg:">
+          <p class="text-sm text-brown font-bold]">이런 메뉴도 있어요</p>
+          <ul class="w-full h-full z-1 flex flex-nowrap p-[10px_0]">
+            <li class="w-[163.5px]] mr-2 h-auto overflow-hidden flex-shrink-0 relative trnasform block bg-light-beige shadow-[0_0_10px_rgba(0,0,0,0.05)] p-[28px_8px_10px] rounded-[10px] lg:p-[38px_18px_20px]">
               <strong class="absolute top-[8px] left-[12px] font-Flame rounded-[.3125rem] text-white bg-ci py-[.0625rem] px-1 text-[.6875rem] lg:top-5 lg:left-4.5">NEW</strong>
               <img src="/src/assets/menu/burger/burger_1.webp" alt="몬스터와퍼" class="max-h-[105px] mx-auto" />
               <h3 class="mt-[5px] text-sm text-center text-brown">몬스터와퍼</h3>
@@ -89,16 +106,20 @@
               <h3 class="mt-[5px] text-sm text-center text-brown">몬스터와퍼</h3>
             </li>
           </ul>
+          <div class="flex">
+            <a href="/src/pages/menu/menu.html" class="bg-brown-0.1 h-[2.75rem] text-sm p-[5px_20px] rounded-[3.125rem] text-brown max-w-[20rem] flex-[1_1_0%] cursor-pointer w-1/4 min-w-320">목록</a>
+          </div>
         </div>
       </div>
     </div>
+    <!-- ed: 추가 메뉴 소개 -->
     <!-- 모바일 하단 주문 부분 -->
-    <div class="sticky mb-0 l-0 b-0 w-full p-[.9375rem] bg-light-beige shadow-[0_-5px_10px_rgba(0,0,0,0.15)] z-40 max-w-[63.9375rem]">
+    <div class="lg:hidden sticky mb-0 l-0 b-0 w-full p-[.9375rem] bg-light-beige shadow-[0_-5px_10px_rgba(0,0,0,0.15)] z-40 max-w-[63.9375rem]">
       <div class="flex items-center justify-center">
         <a href="#" class="flex-none min-w-[5em] flex items-center justify-center h-[2.75rem] text-sm text-brown rounded-[3.125rem] bg-brown-0.05 p-[.3125rem_1.25rem]">목록</a>
         <a href="#" class="flex-1 flex items-center justify-center ml-3 p-[.3125rem_0.625rem] text-white bg-ci min-w-[5em] h-[2.75rem] text-sm rounded-[3.125rem]">앱으로 주문</a>
       </div>
     </div>
-    <!-- footer 컴포넌트 넣어주세요. -->
+    <common-footer></common-footer>
   </body>
 </html>
