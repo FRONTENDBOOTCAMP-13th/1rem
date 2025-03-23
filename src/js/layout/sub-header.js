@@ -17,7 +17,7 @@ class subHeader extends HTMLElement {
         <!-- ED:Logo -->
 
         <!-- ST:Menu list -->
-        <nav class="hidden lg:flex flex-1 h-full justify-center px-5">
+        <nav id="gnb" class="hidden lg:flex flex-1 h-full justify-center px-5">
           <ul class="flex">
             <!-- ST:MENU -->
             <li class="relative">
@@ -109,7 +109,7 @@ class subHeader extends HTMLElement {
     </header>
 
     <!-- ST:Open mobile menu-->
-    <div id="moGnb" class="z-[2] fixed top-0 left-[-110%] bg-beige w-screen h-screen px-5 translate duration-[400ms] lg:hidden">
+    <div id="moGnb" class="z-[999] fixed top-0 left-[-110%] bg-beige w-screen h-screen px-5 translate duration-[400ms] lg:hidden">
       <header class="h-[3.5rem] flex justify-between items-center">
         <a href="/src/pages/home.html" target="_self" aria-label="BURGER KING 홈으로 이동" class="block w-[9.375rem] h-4 bg-[url(/src/assets/elements/bg_logo.svg)] bg-no-repeat bg-contain"></a>
         <button type="button" aria-label="모바일 메뉴 닫기" class="mognb-close w-[2.125rem] h-full bg-[url(/src/assets/elements/btn_pop_close.svg)] bg-no-repeat bg-center"></button>

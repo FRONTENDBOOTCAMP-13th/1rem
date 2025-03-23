@@ -5,10 +5,17 @@ document.addEventListener('DOMContentLoaded', function () {
   const closeApplicationForm = document.querySelector('#closeApplicationForm');
   const closeApplicationForm2 = document.querySelector('#cancelButton');
   const applicationForm = document.querySelector('#applicationForm');
+  let body = document.querySelector('body');
 
   // 함수 구현 부분
-  const openDialog = () => applicationForm.showModal();
-  const closeDialog = () => applicationForm.close();
+  const openDialog = () => {
+    applicationForm.showModal();
+    body.style.overflow = 'hidden';
+  };
+  const closeDialog = () => {
+    applicationForm.close();
+    body.style.overflow = 'auto';
+  };
 
   // 이벤트 바인딩 부분
   showApplicationForm.addEventListener('click', openDialog);
