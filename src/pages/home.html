@@ -9,15 +9,16 @@
     <script type="module" src="/src/main.js"></script>
   </head>
   <body>
+    <skip-nav></skip-nav>
     <main-header></main-header>
-    <div class="wrapper px-5 pb-22.5 md:p-7.5 md:pb-10 md:pt-0 lg:px-15 lg:pb-22.5">
+    <div id="container" class="wrapper px-5 pb-22.5 md:p-7.5 md:pb-10 md:pt-0 lg:px-15 lg:pb-22.5">
       <div class="inner max-w-[101.25rem] mx-auto">
         <!-- ST: Top 배너-->
         <div class="mb-10">
           <ul class="grid grid-cols-1 gap-2 md:grid-cols-2 lg:grid-cols-3">
             <!-- ST: 이벤트 배너 -->
             <li class="col-span-1 md:col-span-2 lg:col-span-2 row-span-2">
-              <a class="rounded-[1.25rem] h-full relative" href="/src/pages/news/newdetail.html">
+              <a class="rounded-[1.25rem] h-full relative" href="/src/pages/news/eventdetail.html">
                 <img class="rounded-[1.25rem] h-full" src="/src/assets/main/banner_7.webp" alt="통모짜와퍼" />
                 <div class="absolute inset-0 rounded-[1.25rem] bg-gradient-to-b from-transparent to-black opacity-30"></div>
                 <div class="relative">
@@ -211,14 +212,10 @@
         <div class="mt-[1.875rem] lg:mt-[3.125rem]">
           <div><h2 class="mb-3 text-4xl leading-[1] font-BKBulMatPro text-brown sm:mb-[1.125rem] sm:text-5xl sm:leading-[1.39] lg:text-6xl lg:mb-6">고객과 함께 성장하는 버거킹</h2></div>
           <div>
-            <ul class="grid sm:grid-cols-2 lg:grid-cols-3 gap-[.625rem]"></ul>
-          </div>
-
-          <div>
             <ul class="grid grid-cols-1 gap-2 sm:grid-cols-2 lg:grid-cols-3 lg:grid-flow-col">
               <!-- ST: 브랜드 -->
               <li class="col-span-1 lg:col-span-1 lg:row-span-1">
-                <a href="/src/pages/story/brand.html" class="bg-white rounded-[1.25rem] min-h-31 sm:min-h-[9.875rem] p-5 sm:flex sm:flex-col sm:mt-[0] h-full">
+                <a href="/src/pages/story/brand.html" class="block bg-white rounded-[1.25rem] min-h-31 sm:min-h-[9.875rem] p-5 sm:flex sm:flex-col sm:mt-[0] h-full">
                   <div class="mb-[1.125rem]">
                     <span class="min-w-10 sm:h-9 sm:px-4 sm:py-[.625rem] sm:text-xs sm:leading-[1rem] inline-block text-center whitespace-nowrap pt-[.3125rem] px-[.4375rem] pb-1 text-3xs leading-[1.2] bg-beige rounded-[.5rem] text-brown">브랜드</span>
                   </div>
@@ -231,7 +228,7 @@
 
               <!-- ST: ESG 경영 -->
               <li class="col-span-1 lg:col-span-1 lg:row-span-1">
-                <a href="/src/pages/story/esgbusiness.html" class="bg-white rounded-[1.25rem] min-h-31 sm:min-h-[9.875rem] p-5 sm:flex sm:flex-col sm:mt-[0] h-full">
+                <a href="/src/pages/story/esgbusiness.html" class="block bg-white rounded-[1.25rem] min-h-31 sm:min-h-[9.875rem] p-5 sm:flex sm:flex-col sm:mt-[0] h-full">
                   <div class="mb-[1.125rem]">
                     <span class="min-w-10 sm:h-9 sm:px-4 sm:py-[.625rem] sm:text-xs sm:leading-[1rem] inline-block text-center whitespace-nowrap pt-[.3125rem] px-[.4375rem] pb-1 text-3xs leading-[1.2] bg-beige rounded-[.5rem] text-brown">ESG 경영</span>
                   </div>

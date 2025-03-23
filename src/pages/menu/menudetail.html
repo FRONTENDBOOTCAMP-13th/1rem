@@ -10,7 +10,7 @@
     <script type="module" src="/src/js/menudetail.js"></script>
   </head>
   <body>
-    <sub-header page-title=" "></sub-header>
+    <sub-header page-title="통모짜와퍼"></sub-header>
     <div class="wrapper px-5 pt-5 pb-22.5 md:p-7.5 lg:pt-10 lg:px-15 lg:pb-22.5">
       <div class="inner max-w-[1620px] mx-auto">
         <h2 class="hidden text-[2.125rem] text-brown text-center font-bold lg:block lg:mt-10 lg:mb-12.5"></h2>
@@ -93,7 +93,7 @@
         <!-- st :추가 메뉴 소개 -->
         <div class="flex flex-col mt-5">
           <p class="text-sm text-brown mb-2.5 font-bold lg:m-[30px_0_16px] lg:text-2xl">이런 메뉴도 있어요</p>
-          <ul class="w-full h-full md:pt-4 z-1 flex flex-nowrap max-w-full overflow-auto scrollbar-hide lg:mr-5">
+          <ul class="w-full h-full md:pt-4  flex flex-nowrap max-w-full overflow-auto scrollbar-hide lg:mr-5">
             <li class="w-[163.5px]] md:w-[278.5px] md:mr-lg:mr-5 mr-2 h-auto flex-shrink-0 relative trnasform block bg-light-beige shadow-[0_0_10px_rgba(0,0,0,0.05)] p-[28px_8px_10px] rounded-[10px] md:p-[28px_12px_10px] lg:p-[38px_18px_20px]">
               <strong class="absolute top-[8px] left-[12px] font-Flame rounded-[.3125rem] text-white bg-ci py-[.0625rem] px-1 text-[.6875rem] lg:top-5 lg:left-4.5">NEW</strong>
               <img src="/src/assets/menu/burger/burger_1.webp" alt="몬스터와퍼" class="max-h-[105px] md:w-[8.75rem] mx-auto" />
@@ -128,7 +128,7 @@
     </div>
     <!-- ed: 추가 메뉴 소개 -->
      <!-- st: 영양성분 모달창 -->
-     <dialog id="coamodal" aria-label="원산지, 영양성분, 알레르기 유발성분" class="bg-beige  lg:backdrop:bg-brown-0.7 m-auto lg:rounded-[1.25rem] max-lg:min-w-dvw max-lg:min-h-dvh lg:w-160 lg:h-[90vh] text-brown">
+     <dialog id="coamodal" aria-label="원산지, 영양성분, 알레르기 유발성분" class="bg-beige overflow-y-auto overflow-x-hidden lg:backdrop:bg-brown-0.7 m-auto lg:rounded-[1.25rem] max-lg:min-w-dvw max-lg:min-h-dvh lg:w-160 lg:h-[90vh] text-brown">
       <h2 class="flex text-brown p-[20px_45px] justify-center items-center min-h-6 text-lg">원산지, 영양성분, 알레르기 유발성분</h2>
     <div class="">
         <div class="p-[0.3125rem_0.9375rem] m-[20px_40px_20px] shadow-[0_0_10px_rgba(0,0,0,0.05)] bg-light-beige rounded-[.625rem]">
@@ -250,9 +250,10 @@
             </tbody>
           </table>
         </div>
+
     </div>
     </div>
-  </div>
+
   <!-- 하단 확인버튼 -->
   <div class="sticky mb-0 l-0 b-0 w-full p-[.9375rem] bg-beige z-40 max-w-[63.9375rem]">
     <div class="flex items-center justify-center">
@@ -261,13 +262,12 @@
   </div>
       </dialog>
     <!-- 모바일 하단 주문 부분 -->
-    <div class="fixed lg:hidden md:hidden mb-0 left-0 bottom-0 w-full p-[.9375rem] bg-light-beige shadow-[0_-5px_10px_rgba(0,0,0,0.15)] z-40 max-w-[63.9375rem]">
+    <div class="fixed lg:hidden md:hidden mb-0 left-0 bottom-0 w-full p-[.9375rem] bg-light-beige shadow-[0_-5px_10px_rgba(0,0,0,0.15)] z-1 max-w-[63.9375rem]">
       <div class="flex items-center justify-center">
         <a href="/src/pages/menu/menu.html" class="flex-none min-w-[5em] flex items-center justify-center h-[2.75rem] text-sm text-brown rounded-[3.125rem] bg-brown-0.05 p-[.3125rem_1.25rem]">목록</a>
         <a href="#" class="flex-1 flex items-center justify-center ml-3 p-[.3125rem_0.625rem] text-white bg-ci min-w-[5em] h-[2.75rem] text-sm rounded-[3.125rem]">앱으로 주문</a>
       </div>
     </div>
-
     <common-footer></common-footer>
   </body>
 </html>

@@ -1,46 +1,38 @@
 document.addEventListener('DOMContentLoaded', function () {
-  // 필요한 요소들 가져오기
-  const body = document.querySelector('body');
-  const modal = document.querySelector('dialog.modal');
-  const modalIframe = modal.querySelector('iframe');
-  const modalTitle = modal.querySelector('.modal-footer h4');
-  const modalCloseBtn = modal.querySelector('.modal-close');
-  const modalOpenBtns = document.querySelectorAll('.modal-open');
+  // 버튼 역할을 하는 div 요소 선택
+  const showCoaModal = document.querySelector('#showcoamodal');
+  // 모달 요소 선택
+  const coaModal = document.querySelector('#coamodal');
 
-  // 모달 열기 버튼에 이벤트 리스너 추가
-  modalOpenBtns.forEach((btn) => {
-    btn.addEventListener('click', function () {
-      // 비디오 ID 가져오기 (rel 속성에서)
-      const videoId = this.getAttribute('rel');
-
-      // 비디오 제목 가져오기 (버튼의 부모의 형제요소인 h4에서)
-      const videoTitle = this.closest('li').querySelector('h4').textContent;
-
-      // iframe src 설정 (YouTube 임베드 URL)
-
-      modalIframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&amp;mute=1`;
-
-      // 모달 제목과 iframe title 설정
-      modalTitle.textContent = videoTitle;
-      modalIframe.title = videoTitle;
-
+  // showCoaModal이 존재하면 이벤트 리스너 추가
+  if (showCoaModal && coaModal) {
+    showCoaModal.addEventListener('click', function () {
+      // 모달 열기 전에 body의 스크롤 방지
+      document.body.style.overflow = 'hidden';
+      // 모달 내부 스크롤 위치 상단으로 초기화
+      coaModal.scrollTop = 0;
       // 모달 열기
-      modal.showModal();
-      modal.style.display = 'flex';
-      body.style.overflow = 'hidden';
+      coaModal.showModal();
     });
-  });
 
-  // 모달 닫기 버튼에 이벤트 리스너 추가
-  modalCloseBtn.addEventListener('click', function () {
-    // 모달 닫기
-    modal.close();
-    modal.style.display = 'none';
-    body.style.overflow = 'auto';
+    // 모달의 확인 버튼 선택 및 이벤트 추가
+    const confirmButton = coaModal.querySelector('a');
+    if (confirmButton) {
+      confirmButton.addEventListener('click', function (event) {
+        event.preventDefault();
+        // 모달 닫기
+        coaModal.close();
+        // 모달이 닫힐 때 body 스크롤 다시 활성화
+        document.body.style.overflow = '';
+      });
+    }
 
-    // iframe src 초기화 (리소스 절약 및 비디오 정지를 위함)
-    setTimeout(() => {
-      modalIframe.src = '';
-    }, 100);
-  });
+    // 모달이 닫힐 때 (확인 버튼 외의 방법으로 닫힐 경우도 대비)
+    coaModal.addEventListener('close', function () {
+      // body 스크롤 다시 활성화
+      document.body.style.overflow = '';
+    });
+  } else {
+    console.error('모달 또는 버튼 요소를 찾을 수 없습니다.');
+  }
 });
