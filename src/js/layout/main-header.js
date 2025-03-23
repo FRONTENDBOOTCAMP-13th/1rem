@@ -57,7 +57,7 @@ class mainHeader extends HTMLElement {
             <!-- ST:NEWS -->
             <li class="relative group">
               <div class="h-full">
-                <a class="text-brown font-BKBulMatPro items-center p-[.625rem_.875rem_.625rem_.875rem] justify-center flex h-full hd:p-[.625rem_1.25rem_.625rem_1.25rem] focus:text-ci hover:text-ci" href="/src/pages/news/newsongoing.html"><span class="text-3xl h-[1.625rem] hd:text-4xl">NEWS</span></a>
+                <a class="text-brown font-BKBulMatPro items-center p-[.625rem_.875rem_.625rem_.875rem] justify-center flex h-full hd:p-[.625rem_1.25rem_.625rem_1.25rem] focus:text-ci hover:text-ci" href="/src/pages/news/eventongoing.html"><span class="text-3xl h-[1.625rem] hd:text-4xl">NEWS</span></a>
               </div>
               <!-- ST:NEWS List -->
               <ul class="flex top-[100%] left-[50%] h-[3.625rem] mt-[-1.25rem] p-[.3125rem_1.25rem_.3125rem_1.25rem] rounded-[3.125rem] transform translate-x-[-50%] translate-y-1 absolute pl-[1.5625rem] text-lg overflow-hidden opacity-0 invisible z-20 ease-linear bg-brown transition-all duration-200 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 group-focus-within:opacity-100 group-focus-within:visible group-focus-within:translate-y-0">
@@ -141,7 +141,7 @@ class mainHeader extends HTMLElement {
           </li>
           <li>
             <div class="flex justify-center items-center">
-              <a href="/src/pages/news/ongoing.html" class="flex-1 content-center h-21 p-5 pl-18.5 font-BKBulMatPro text-4xl text-brown font-bold bg-[url(/src/assets/elements/ico_gnb_menu04.svg)] bg-no-repeat bg-[left_center]">NEWS</a>
+              <a href="/src/pages/news/eventongoing.html" class="flex-1 content-center h-21 p-5 pl-18.5 font-BKBulMatPro text-4xl text-brown font-bold bg-[url(/src/assets/elements/ico_gnb_menu04.svg)] bg-no-repeat bg-[left_center]">NEWS</a>
               <button type="button" aria-label="NEWS 하위 메뉴 펼치기" aria-expanded="false" class="accordion-button w-[3.625rem] h-21 bg-[url(/src/assets/elements/btn_acc_gnb.svg)] bg-no-repeat bg-center"></button>
             </div>
             <div class="accordion-submenu -mx-5 h-0 overflow-hidden transition-all ease-in-out">
