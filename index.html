@@ -57,14 +57,175 @@
       </div>
     </div>
 
-    <div class="px-5 pt-5 pb-22.5 md:p-7.5 lg:pt-10 lg:px-15 lg:pb-22.5 text-center text-brown">
+    <div class="text-center text-brown">
       여기 프로젝트 소개가 있으면 어떨까요.. <br />
       안녕하세요, 팀 1rem 입니다. <br />
       저희 팀은 버거킹 사이트 어쩌구... <br />
       컴포넌트화랑 tailwindcss 사용한 내용..?
     </div>
 
-    <div class="px-5 pt-5 pb-22.5 md:p-7.5 lg:pt-10 lg:px-15 lg:pb-22.5 text-center text-brown">여기 컴포넌트랑 사이트 바로가기</div>
+    <!-- ST:Main 페이지 가는 버튼 -->
+    <div class="flex items-center justify-center text-brown">
+      <a href="/src/pages/home.html" class="px-3 py-1.5 sm:px-4 sm:py-2 lg:px-5 lg:py-2.5 rounded-full flex items-center gap-2 text-sm sm:text-base lg:text-lg text-brown shadow-[-5px_-5px_10px_rgba(255,_255,_255,_0.8),_5px_5px_10px_rgba(0,_0,_0,_0.25)] transition-all hover:shadow-[-1px_-1px_5px_rgba(255,_255,_255,_0.6),_1px_1px_5px_rgba(0,_0,_0,_0.3),inset_-2px_-2px_5px_rgba(255,_255,_255,_1),inset_2px_2px_4px_rgba(0,_0,_0,_0.3)] hover:text-ci">
+        <img src="/src/assets/elements/ico_bt_link.svg" alt="메인페이지들어가기" class="w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6" />
+        <span>Main 페이지</span>
+      </a>
+    </div>
+    <!-- ED:Main 페이지 가는 버튼 -->
+
+    <!-- ST:컴포넌트 페이지 소개 -->
+    <div class="px-5 pt-5 md:p-7.5 lg:pt-10 lg:px-15">
+      <div class="max-w-[1620px] mx-auto">
+        <div><h2 class="mb-3 text-4xl leading-[1] font-BKBulMatPro text-brown sm:mb-[1.125rem] sm:text-5xl sm:leading-[1.39] lg:text-6xl lg:mb-6">컴포넌트</h2></div>
+        <ul class="grid grid-cols-3 grid-rows-5 sm:grid-cols-4 sm:grid-rows-4 lg:grid-cols-5 lg:grid-rows-3 w-full h-full gap-0 [&>li]:aspect-square [&>li]:w-full [&>li]:h-full auto-rows-[1fr]">
+          <li>
+            <a href="/src/components/common-btns.html" class="block w-full h-full relative group">
+              <div class="bg-[url('/src/assets/index-img/mobile/logo0-0.webp')] sm:bg-[url('/src/assets/index-img/tablet/logo0-0.webp')] lg:bg-[url('/src/assets/index-img/pc/logo0-0.webp')] bg-[length:100%_100%] aspect-square bg-no-repeat bg-center border-1 border-white w-full h-full">
+                <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-60 transition-all duration-300 ease-in-out flex items-center justify-center opacity-0 group-hover:opacity-100">
+                  <span class="text-white font-BKBulMatPro text-lg sm:text-2xl lg:text-2xl font-bold transform scale-0 group-hover:scale-100 transition-transform duration-300 ease-in-out"> 공통 버튼 </span>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="/src/components/common-labels.html" class="block w-full h-full relative group">
+              <div class="bg-[url('/src/assets/index-img/mobile/logo0-1.webp')] sm:bg-[url('/src/assets/index-img/tablet/logo0-1.webp')] lg:bg-[url('/src/assets/index-img/pc/logo0-1.webp')] bg-[length:100%_100%] aspect-square bg-no-repeat bg-center border-1 border-white w-full h-full">
+                <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-60 transition-all duration-300 ease-in-out flex items-center justify-center opacity-0 group-hover:opacity-100">
+                  <span class="text-white font-BKBulMatPro text-lg sm:text-2xl lg:text-2xl font-bold transform scale-0 group-hover:scale-100 transition-transform duration-300 ease-in-out"> 공통 라벨 </span>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="/src/components/common-title.html" class="block w-full h-full relative group">
+              <div class="bg-[url('/src/assets/index-img/mobile/logo0-2.webp')] sm:bg-[url('/src/assets/index-img/tablet/logo0-2.webp')] lg:bg-[url('/src/assets/index-img/pc/logo0-2.webp')] bg-[length:100%_100%] aspect-square bg-no-repeat bg-center border-1 border-white w-full h-full">
+                <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-60 transition-all duration-300 ease-in-out flex items-center justify-center opacity-0 group-hover:opacity-100">
+                  <span class="text-white font-BKBulMatPro text-lg sm:text-2xl lg:text-2xl font-bold transform scale-0 group-hover:scale-100 transition-transform duration-300 ease-in-out"> 공통 타이틀 </span>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="/src/components/component-header.html" class="block w-full h-full relative group">
+              <div class="bg-[url('/src/assets/index-img/mobile/logo1-0.webp')] sm:bg-[url('/src/assets/index-img/tablet/logo0-3.webp')] lg:bg-[url('/src/assets/index-img/pc/logo0-3.webp')] bg-[length:100%_100%] aspect-square bg-no-repeat bg-center border-1 border-white w-full h-full">
+                <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-60 transition-all duration-300 ease-in-out flex items-center justify-center opacity-0 group-hover:opacity-100">
+                  <span class="text-white font-BKBulMatPro text-lg sm:text-2xl lg:text-2xl font-bold transform scale-0 group-hover:scale-100 transition-transform duration-300 ease-in-out"> header 컴포넌트 </span>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="/src/components/component-footer.html" class="block w-full h-full relative group">
+              <div class="bg-[url('/src/assets/index-img/mobile/logo1-1.webp')] sm:bg-[url('/src/assets/index-img/tablet/logo1-0.webp')] lg:bg-[url('/src/assets/index-img/pc/logo0-4.webp')] bg-[length:100%_100%] aspect-square bg-no-repeat bg-center border-1 border-white w-full h-full">
+                <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-60 transition-all duration-300 ease-in-out flex items-center justify-center opacity-0 group-hover:opacity-100">
+                  <span class="text-white font-BKBulMatPro text-lg sm:text-2xl lg:text-2xl font-bold transform scale-0 group-hover:scale-100 transition-transform duration-300 ease-in-out"> footer 컴포넌트 </span>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="/src/components/component-main.html" class="block w-full h-full relative group">
+              <div class="bg-[url('/src/assets/index-img/mobile/logo1-2.webp')] sm:bg-[url('/src/assets/index-img/tablet/logo1-1.webp')] lg:bg-[url('/src/assets/index-img/pc/logo1-0.webp')] bg-[length:100%_100%] aspect-square bg-no-repeat bg-center border-1 border-white w-full h-full">
+                <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-60 transition-all duration-300 ease-in-out flex items-center justify-center opacity-0 group-hover:opacity-100">
+                  <span class="text-white font-BKBulMatPro text-lg sm:text-2xl lg:text-2xl font-bold transform scale-0 group-hover:scale-100 transition-transform duration-300 ease-in-out"> main 컴포넌트 </span>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="/src/components/component-menu.html" class="block w-full h-full relative group">
+              <div class="bg-[url('/src/assets/index-img/mobile/logo2-0.webp')] sm:bg-[url('/src/assets/index-img/tablet/logo1-2.webp')] lg:bg-[url('/src/assets/index-img/pc/logo1-1.webp')] bg-[length:100%_100%] aspect-square bg-no-repeat bg-center border-1 border-white w-full h-full">
+                <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-60 transition-all duration-300 ease-in-out flex items-center justify-center opacity-0 group-hover:opacity-100">
+                  <span class="text-white font-BKBulMatPro text-lg sm:text-2xl lg:text-2xl font-bold transform scale-0 group-hover:scale-100 transition-transform duration-300 ease-in-out"> menu 컴포넌트 </span>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="/src/components/component-menudetail.html" class="block w-full h-full relative group">
+              <div class="bg-[url('/src/assets/index-img/mobile/logo2-1.webp')] sm:bg-[url('/src/assets/index-img/tablet/logo1-3.webp')] lg:bg-[url('/src/assets/index-img/pc/logo1-2.webp')] bg-[length:100%_100%] aspect-square bg-no-repeat bg-center border-1 border-white w-full h-full">
+                <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-60 transition-all duration-300 ease-in-out flex items-center justify-center opacity-0 group-hover:opacity-100">
+                  <span class="text-white font-BKBulMatPro text-lg sm:text-2xl lg:text-2xl font-bold transform scale-0 group-hover:scale-100 transition-transform duration-300 ease-in-out"> menu 상세 컴포넌트 </span>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="/src/components/component-mognb.html" class="block w-full h-full relative group">
+              <div class="bg-[url('/src/assets/index-img/mobile/logo2-2.webp')] sm:bg-[url('/src/assets/index-img/tablet/logo2-0.webp')] lg:bg-[url('/src/assets/index-img/pc/logo1-3.webp')] bg-[length:100%_100%] aspect-square bg-no-repeat bg-center border-1 border-white w-full h-full">
+                <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-60 transition-all duration-300 ease-in-out flex items-center justify-center opacity-0 group-hover:opacity-100">
+                  <span class="text-white font-BKBulMatPro text-lg sm:text-2xl lg:text-2xl font-bold transform scale-0 group-hover:scale-100 transition-transform duration-300 ease-in-out"> mobile 헤더 컴포넌트 </span>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="/src/components/component-news.html" class="block w-full h-full relative group">
+              <div class="bg-[url('/src/assets/index-img/mobile/logo3-0.webp')] sm:bg-[url('/src/assets/index-img/tablet/logo2-1.webp')] lg:bg-[url('/src/assets/index-img/pc/logo1-4.webp')] bg-[length:100%_100%] aspect-square bg-no-repeat bg-center border-1 border-white w-full h-full">
+                <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-60 transition-all duration-300 ease-in-out flex items-center justify-center opacity-0 group-hover:opacity-100">
+                  <span class="text-white font-BKBulMatPro text-lg sm:text-2xl lg:text-2xl font-bold transform scale-0 group-hover:scale-100 transition-transform duration-300 ease-in-out"> news 컴포넌트 </span>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="/src/components/component-store.html" class="block w-full h-full relative group">
+              <div class="bg-[url('/src/assets/index-img/mobile/logo3-1.webp')] sm:bg-[url('/src/assets/index-img/tablet/logo2-2.webp')] lg:bg-[url('/src/assets/index-img/pc/logo2-0.webp')] bg-[length:100%_100%] aspect-square bg-no-repeat bg-center border-1 border-white w-full h-full">
+                <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-60 transition-all duration-300 ease-in-out flex items-center justify-center opacity-0 group-hover:opacity-100">
+                  <span class="text-white font-BKBulMatPro text-lg sm:text-2xl lg:text-2xl font-bold transform scale-0 group-hover:scale-100 transition-transform duration-300 ease-in-out"> store 컴포넌트 </span>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="/src/components/component-story.html" class="block w-full h-full relative group">
+              <div class="bg-[url('/src/assets/index-img/mobile/logo3-2.webp')] sm:bg-[url('/src/assets/index-img/tablet/logo2-3.webp')] lg:bg-[url('/src/assets/index-img/pc/logo2-1.webp')] bg-[length:100%_100%] aspect-square bg-no-repeat bg-center border-1 border-white w-full h-full">
+                <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-60 transition-all duration-300 ease-in-out flex items-center justify-center opacity-0 group-hover:opacity-100">
+                  <span class="text-white font-BKBulMatPro text-lg sm:text-2xl lg:text-2xl font-bold transform scale-0 group-hover:scale-100 transition-transform duration-300 ease-in-out"> story 컴포넌트 </span>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="/src/components/component-customer.html" class="block w-full h-full relative group">
+              <div class="bg-[url('/src/assets/index-img/mobile/logo4-0.webp')] sm:bg-[url('/src/assets/index-img/tablet/logo3-0.webp')] lg:bg-[url('/src/assets/index-img/pc/logo2-2.webp')] bg-[length:100%_100%] aspect-square bg-no-repeat bg-center border-1 border-white w-full h-full">
+                <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-60 transition-all duration-300 ease-in-out flex items-center justify-center opacity-0 group-hover:opacity-100">
+                  <span class="text-white font-BKBulMatPro text-lg sm:text-2xl lg:text-2xl font-bold transform scale-0 group-hover:scale-100 transition-transform duration-300 ease-in-out"> customer 컴포넌트 </span>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="/src/components/component-sub-header.html" class="block w-full h-full relative group">
+              <div class="bg-[url('/src/assets/index-img/mobile/logo4-1.webp')] sm:bg-[url('/src/assets/index-img/tablet/logo3-1.webp')] lg:bg-[url('/src/assets/index-img/pc/logo2-3.webp')] bg-[length:100%_100%] aspect-square bg-no-repeat bg-center border-1 border-white w-full h-full">
+                <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-60 transition-all duration-300 ease-in-out flex items-center justify-center opacity-0 group-hover:opacity-100">
+                  <span class="text-white font-BKBulMatPro text-lg sm:text-2xl lg:text-2xl font-bold transform scale-0 group-hover:scale-100 transition-transform duration-300 ease-in-out"> sub header 컴포넌트 </span>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="block w-full h-full relative group">
+              <div class="bg-[url('/src/assets/index-img/mobile/logo4-2.webp')] sm:bg-[url('/src/assets/index-img/tablet/logo3-2.webp')] lg:bg-[url('/src/assets/index-img/pc/logo2-4.webp')] bg-[length:100%_100%] aspect-square bg-no-repeat bg-center border-1 border-white w-full h-full">
+                <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-60 transition-all duration-300 ease-in-out flex items-center justify-center opacity-0 group-hover:opacity-100">
+                  <span class="text-white font-BKBulMatPro text-lg sm:text-2xl lg:text-3xl font-bold transform scale-0 group-hover:scale-100 transition-transform duration-300 ease-in-out"> 여기에 텍스트 </span>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="hidden sm:block lg:hidden">
+            <a href="#" class="w-full h-full relative group">
+              <div class="sm:bg-[url('/src/assets/index-img/tablet/logo3-3.webp')] bg-cover aspect-square bg-no-repeat bg-center border-1 border-white w-full h-full">
+                <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-60 transition-all duration-300 ease-in-out flex items-center justify-center opacity-0 group-hover:opacity-100">
+                  <span class="text-white font-BKBulMatPro text-lg sm:text-2xl lg:text-2xl font-bold transform scale-0 group-hover:scale-100 transition-transform duration-300 ease-in-out"> 여기에 텍스트 </span>
+                </div>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- ED:컴포넌트 페이지 소개 -->
 
     <h2 class="font-BKBulMatPro text-[2.125rem] text-brown text-center font-bold mt-10 mb-12.5">폴더 구조..?</h2>
     <div class="px-5 pt-5 pb-22.5 md:p-7.5 lg:pt-10 lg:px-15 lg:pb-22.5">
@@ -316,7 +477,7 @@
       </div>
     </footer>
 
-    <dialog id="notice" aria-label="비상업적 용도 알림" class="flex items-center justify-center bg-beige ackdrop:bg-brown-0.7 m-auto rounded-[1.25rem] w-160 h-fit text-brown">
+    <!-- <dialog id="notice" aria-label="비상업적 용도 알림" class="flex items-center justify-center bg-beige ackdrop:bg-brown-0.7 m-auto rounded-[1.25rem] w-160 h-fit text-brown">
       <article class="">
         <header class="p-[.9375rem_2.5rem] md:p-[1.875rem_3.75rem] h-[3.375rem] md:h-22 text-center text-lg md:text-2xl">
           <p>안내</p>
@@ -335,6 +496,6 @@
           <button type="button" id="confirmButton" class="p-[.3125rem] rounded-[2.5rem] w-full md:w-80 h-11 text-sm text-white bg-brown">확인</button>
         </footer>
       </article>
-    </dialog>
+    </dialog> -->
   </body>
 </html>
