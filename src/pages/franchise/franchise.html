@@ -23,24 +23,17 @@
           <div class="flex flex-col gap-5 rounded-[10px] p-5 md:p-7.5 bg-light-beige">
             <h3 class="text-lg md:text-3xl lg:text-5xl font-bold font-BKBulMatPro text-center">가맹점 모집 안내</h3>
             <p class="text-sm text-center">
-              세계 100개국 이상에서 사업 전개중인
+              세계 100개국 이상에서 사업 전개중인 <br />
+              햄버거 체인 버거킹 프랜차이즈 사업에 <br />
+              관심을 가져 주셔서 감사합니다. <br />
               <br />
-              햄버거 체인 버거킹 프랜차이즈 사업에
+              버거킹®은 1954년 미국 마이애미에서 <br />
+              개업한 패스트푸드 햄버거 체인입니다. <br />
+              100개국 이상의 국가와 미국에서 19,500개 이상의 매장을 운영하고 있습니다. <br />
               <br />
-              관심을 가져 주셔서 감사합니다.
-              <br /><br />
-              버거킹®은 1954년 미국 마이애미에서
-              <br />
-              개업한 패스트푸드 햄버거 체인입니다.
-              <br />
-              100개국 이상의 국가와 미국에서 19,500개 이상의 매장을 운영하고 있습니다.
-              <br /><br />
-              "MOST PROFITABLE(최대한의 수익 창출)", "THE BEST BURGERS(최고의 햄버거)"를 비전으로 삼아 고객에게 사랑받는
-              <br />
-              브랜드를 지향하고 있습니다.
-              <br />
-              버거킹과 함께 새로운 성공 파트너가
-              <br />
+              "MOST PROFITABLE(최대한의 수익 창출)", "THE BEST BURGERS(최고의 햄버거)"를 비전으로 삼아 고객에게 사랑받는 <br />
+              브랜드를 지향하고 있습니다. <br />
+              버거킹과 함께 새로운 성공 파트너가 <br />
               되시길 기원합니다.
             </p>
             <ul class="grid gap-2.5 lg:grid-cols-3">
@@ -112,7 +105,7 @@
             <h5 class="text-lg md:text-3xl lg:text-5xl font-bold font-BKBulMatPro">예치 가맹점</h5>
             <div class="font-Pretendard">
               <p class="text-3xs text-right text-brown-0.7 font-medium">[단위: 천원, 부가세포함]</p>
-              <div class="overflow-scroll">
+              <div class="overflow-auto">
                 <table class="rounded-[.625rem] border border-separate border-spacing-0 border-border my-2.5 bg-white text-center w-full **:p-2.5 **:border-border">
                   <caption class="sr-only">
                     예치 가맹점|구분, 금액, 비고로 구성
@@ -159,7 +152,7 @@
             <h5 class="text-lg md:text-3xl lg:text-5xl font-bold font-BKBulMatPro">시설 투자비</h5>
             <div class="font-Pretendard">
               <p class="text-3xs text-right text-brown-0.7 font-medium">[단위: 천원, 부가세포함]</p>
-              <div class="overflow-scroll">
+              <div class="overflow-auto">
                 <table class="rounded-[.625rem] border border-separate border-spacing-0 border-border my-2.5 bg-white text-center w-full **:p-2.5 **:border-border">
                   <caption class="sr-only">
                     시설 투자비|구분, 금액, 면적 3.3제곱미터 당 금액, 비고로 구성
@@ -283,7 +276,7 @@
     <!-- ST: 가맹 신청서 -->
     <dialog id="applicationForm" aria-label="가맹 신청서" class="bg-beige lg:backdrop:bg-brown-0.7 m-auto lg:rounded-[1.25rem] max-lg:min-w-dvw max-lg:min-h-dvh lg:w-160 lg:h-[90vh] text-brown">
       <article class="flex flex-col">
-        <header class="sticky top-0 bg-beige p-[.9375rem_2.5rem] md:p-[1.875rem_3.75rem] h-[3.375rem] md:h-22 text-center text-lg md:text-2xl">
+        <header class="sticky top-0 z-1 bg-beige p-[.9375rem_2.5rem] md:p-[1.875rem_3.75rem] h-[3.375rem] md:h-22 text-center text-lg md:text-2xl">
           <p>가맹 신청서</p>
           <button type="button" id="closeApplicationForm" class="absolute top-0 right-[1.5625rem] bg-center bg-no-repeat bg-[image:url(/src/assets/elements/btn_pop_close.svg)] w-6 h-full"></button>
         </header>
@@ -557,13 +550,13 @@
             <!-- ST: input(radio) - 임대차 목적물 보유 유무 -->
             <div>
               <div class="block mb-[.3125rem] text-xs">보유 시 임대차 목적물 면적<span class="text-ci pl-[.3125rem]">(필수)</span></div>
-              <div class="flex gap-[1.875rem] items-center h-12">
+              <div class="flex gap-[1.875rem] items-center">
                 <label class="flex items-center w-[5.125rem]">
-                  <input type="radio" checked value="y" name="rentalProperty" class="appearance-none bg-[image:url(/src/assets/customer/radio_off.svg)] checked:bg-[image:url(/src/assets/customer/radio_on.svg)] w-6 aspect-1/1" />
+                  <input type="radio" checked value="y" name="rentalProperty" class="p-3 appearance-none bg-no-repeat bg-[image:url(/src/assets/customer/radio_off.svg)] checked:bg-[image:url(/src/assets/customer/radio_on.svg)] w-6 aspect-1/1" />
                   <p class="ml-[.3125rem]">유</p>
                 </label>
                 <label class="flex items-center w-[5.125rem]">
-                  <input type="radio" value="n" name="rentalProperty" class="appearance-none bg-[image:url(/src/assets/customer/radio_off.svg)] checked:bg-[image:url(/src/assets/customer/radio_on.svg)] w-6 aspect-1/1" />
+                  <input type="radio" value="n" name="rentalProperty" class="p-3 appearance-none bg-[image:url(/src/assets/customer/radio_off.svg)] checked:bg-[image:url(/src/assets/customer/radio_on.svg)] w-6 aspect-1/1" />
                   <p class="ml-[.3125rem]">무</p>
                 </label>
               </div>
@@ -600,7 +593,7 @@
             <!-- ST: input(checkbox) - 개인정보 수집 동의 -->
             <div class="relative flex flex-col min-h-15 bg-brown-0.05 p-[.9375rem_1.25rem] m-[1.25rem_-1.25rem_0_-1.25rem] md:mx-[-1.875rem_-1.875rem]">
               <label class="flex items-center w-fit min-w-70">
-                <input type="checkbox" required value="y" name="chkPrivacy" class="appearance-none bg-[image:url(/src/assets/customer/checkbox_off.svg)] checked:bg-[image:url(/src/assets/customer/checkbox_on.svg)] w-6 aspect-1/1" />
+                <input type="checkbox" required value="y" name="chkPrivacy" class="p-3 appearance-none bg-[image:url(/src/assets/customer/checkbox_off.svg)] checked:bg-[image:url(/src/assets/customer/checkbox_on.svg)] w-6 aspect-1/1" />
                 <p class="ml-[.3125rem] text-2xs">개인정보 수집 및 활용에 동의합니다.</p>
               </label>
 

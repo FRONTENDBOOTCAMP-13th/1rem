@@ -9,7 +9,7 @@
 
 ## 배포 사이트
 
-🍔 [BurgerQueen? 바로가기](https://1rem.netlify.app)
+🍔 [KingBurger 바로가기](https://1rem.netlify.app)
 
 ## 팀원 소개
 

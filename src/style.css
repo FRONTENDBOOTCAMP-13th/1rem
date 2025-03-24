@@ -182,3 +182,7 @@ body {
   /* focus 색상 변경*/
   outline-color: var(--color-ci);
 }
+
+details summary::-webkit-details-marker {
+  display: none; /* iOS Safari의 기본 삼각형 제거 */
+}
