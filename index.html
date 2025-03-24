@@ -161,7 +161,7 @@
 
           <!-- ST:mobile row 3 -->
           <li>
-            <a href="/src/components/component-menu.html" target="_self" class="block w-full h-full relative">
+            <a href="/src/components/component-menu.html" target="_self" class="block w-full h-full relative group">
               <div class="bg-[url('/src/assets/index-img/mobile/logo2-0.webp')] sm:bg-[url('/src/assets/index-img/tablet/logo1-2.webp')] lg:bg-[url('/src/assets/index-img/pc/logo1-1.webp')] bg-[length:100%_100%] aspect-square bg-no-repeat bg-center border-1 border-white w-full h-full transition-all duration-300 ease-in-out">
                 <div class="hidden absolute inset-0 bg-brown-0.7 bg-opacity-0 group-hover:bg-opacity-60 transition-all duration-300 ease-in-out sm:flex items-center justify-center opacity-0 group-hover:opacity-100">
                   <span class="text-white text-lg sm:text-2xl lg:text-2xl xl:text-3xl font-bold transform scale-0 group-hover:scale-100 transition-transform duration-300 ease-in-out"> main 컴포넌트 </span>
@@ -170,7 +170,7 @@
             </a>
           </li>
           <li>
-            <a href="/src/components/component-menudetail.html" target="_self" class="block w-full h-full relative">
+            <a href="/src/components/component-menudetail.html" target="_self" class="block w-full h-full relative group">
               <div class="bg-[url('/src/assets/index-img/mobile/logo2-1.webp')] sm:bg-[url('/src/assets/index-img/tablet/logo1-3.webp')] lg:bg-[url('/src/assets/index-img/pc/logo1-2.webp')] bg-[length:100%_100%] aspect-square bg-no-repeat bg-center border-1 border-white w-full h-full transition-all duration-300 ease-in-out">
                 <div class="hidden absolute inset-0 bg-brown-0.7 bg-opacity-0 group-hover:bg-opacity-60 transition-all duration-300 ease-in-out sm:flex items-center justify-center opacity-0 group-hover:opacity-100">
                   <span class="text-white text-lg sm:text-2xl lg:text-2xl xl:text-3xl font-bold transform scale-0 group-hover:scale-100 transition-transform duration-300 ease-in-out"> main 컴포넌트 </span>
@@ -179,7 +179,7 @@
             </a>
           </li>
           <li>
-            <a href="/src/components/component-mognb.html" target="_self" class="block w-full h-full relative">
+            <a href="/src/components/component-mognb.html" target="_self" class="block w-full h-full relative group">
               <div class="bg-[url('/src/assets/index-img/mobile/logo2-2.webp')] sm:bg-[url('/src/assets/index-img/tablet/logo2-0.webp')] lg:bg-[url('/src/assets/index-img/pc/logo1-3.webp')] bg-[length:100%_100%] aspect-square bg-no-repeat bg-center border-1 border-white w-full h-full transition-all duration-300 ease-in-out">
                 <div class="hidden absolute inset-0 bg-brown-0.7 bg-opacity-0 group-hover:bg-opacity-60 transition-all duration-300 ease-in-out sm:flex items-center justify-center opacity-0 group-hover:opacity-100">
                   <span class="text-white text-lg sm:text-2xl lg:text-2xl xl:text-3xl font-bold transform scale-0 group-hover:scale-100 transition-transform duration-300 ease-in-out"> main 컴포넌트 </span>
@@ -263,16 +263,9 @@
     </div>
     <!-- ED:컴포넌트 페이지 소개 -->
 
-    <h2 class="font-BKBulMatPro text-[2.125rem] text-brown text-center font-bold mt-10 mb-12.5">폴더 구조..?</h2>
-    <div class="px-5 pt-5 pb-22.5 md:p-7.5 lg:pt-10 lg:px-15 lg:pb-22.5">
-      <div class="overflow-auto">
-        <img src="/src/assets/index-img/pages.svg " alt="폴더 및 파일 구조" class="max-w-full m-auto" />
-      </div>
-    </div>
-
     <div class="wrapper px-5 pt-5 pb-22.5 md:p-7.5 lg:pt-10 lg:px-15 lg:pb-22.5">
       <div class="flex flex-col items-center inner max-w-[1620px] mx-auto">
-        <h2 class="font-BKBulMatPro text-[2.125rem] text-brown text-center font-bold mt-10 mb-12.5">프로젝트 규칙..?</h2>
+        <h2 class="font-BKBulMatPro text-[2.125rem] text-brown text-center font-bold mt-10 mb-12.5">프로젝트 규칙</h2>
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 text-brown">
           <div class="bg-brown-0.1 rounded-[.625rem] p-5">
             <h3 class="my-5 text-base lg:text-3xl text-center font-bold">커밋 컨벤션(Commit Convention)</h3>
@@ -358,13 +351,15 @@
                 </tr>
               </tbody>
             </table>
-            <p class="mb-5 text-2xs lg:text-base font-Pretendard">
+            <p class="text-2xs lg:text-base font-Pretendard">
               모바일 퍼스트로 작업한다. <br />
               반응형 breakpoint
             </p>
             <pre class="mb-5 p-2 m-1 bg-brown-0.05 text-brown-0.7">
-              - md: 640px ~ 1023px / lg: 1024px ~ 1499px / xl: 1500px ~
-            </pre>
+- md: 640px ~ 1023px  
+- lg: 1024px ~ 1499px 
+- xl: 1500px ~</pre
+            >
           </div>
 
           <div class="bg-brown-0.1 rounded-[.625rem] p-5">
@@ -378,6 +373,33 @@
   &lt;!&#45;&#45; ST: 메뉴 리스트 &#45;&#45;&gt;
   &lt;!&#45;&#45; ED: 메뉴 리스트 &#45;&#45;&gt;</pre
               >
+              <p>4px 단위가 아닌 수치들은 [rem]로 작성한다.</p>
+              <pre class="mb-5 p-2 m-1 bg-brown-0.05 text-brown-0.7">
+  m-4
+  py-[.3125rem]</pre
+              >
+              <p class="mb-5">
+                컴포넌트 파일은 src/components 폴더 하위에 생성하며 `component-메뉴명(컴포넌트명).html`으로 네이밍한다. <br />
+                페이지 파일은 src/pages 폴더 하위에 생성하며 페이지명으로 네이밍한다.
+              </p>
+              <p class="mb-5">컴포넌트 및 전체 페이지는 flex, 섹션별 레이아웃은 grid를 적용한다.</p>
+            </div>
+          </div>
+
+          <div class="bg-brown-0.1 rounded-[10px] p-5">
+            <h3 class="my-5 text-base lg:text-3xl text-center font-bold">기본 구조</h3>
+            <div class="text-2xs lg:text-base font-Pretendard">
+              <p>public 정적 파일</p>
+              <div class="mb-5 p-2 m-1 bg-brown-0.05 text-brown-0.7">
+                &nbsp;&nbsp;- fonts폴더 -> 메인 폰트, 서브 폰트<br />
+                &nbsp;&nbsp;- asset 폴더 -> 파비콘, 로고
+              </div>
+              <p>src 동적 파일</p>
+              <div class="mb-5 p-2 m-1 bg-brown-0.05 text-brown-0.7">
+                &nbsp;&nbsp;- asset 폴더 -> 이미지 파일<br />
+                &nbsp;&nbsp;- components 폴더 -> 컴포넌트<br />
+                &nbsp;&nbsp;- pages 폴더 -> 페이지
+              </div>
               <pre class="mb-5 p-2 m-1 bg-brown-0.05 text-brown-0.7">
 📂 1rem  
 ├─ 📂 public
@@ -411,46 +433,12 @@
       └─ 📃 home.html 
                 </pre
               >
-              <p>4px 단위가 아닌 수치들은 [rem]로 작성한다.</p>
-              <pre class="mb-5 p-2 m-1 bg-brown-0.05 text-brown-0.7">
-  m-4
-  py-[.3125rem]</pre
-              >
-              <p class="mb-5">파일 명 :  component-header.index/  component-메뉴명.index</p>
             </div>
           </div>
 
           <div class="bg-brown-0.1 rounded-[10px] p-5">
-            <h3 class="my-5 text-base lg:text-3xl text-center font-bold">기본 구조</h3>
-            <div class="text-2xs lg:text-base font-Pretendard">
-              <p>public 정적 파일</p>
-              <div class="mb-5 p-2 m-1 bg-brown-0.05 text-brown-0.7">
-                &nbsp;&nbsp;- fonts폴더 -> 메인 폰트, 서브 폰트<br />
-                &nbsp;&nbsp;- asset 폴더 -> 파비콘, 로고
-              </div>
-              <p>src 동적 파일</p>
-              <div class="mb-5 p-2 m-1 bg-brown-0.05 text-brown-0.7">
-                &nbsp;&nbsp;- asset 폴더 -> 이미지 파일<br />
-                &nbsp;&nbsp;- components 폴더 -> 컴포넌트<br />
-                &nbsp;&nbsp;- pages 폴더 -> 페이지
-              </div>
-              <p class="mb-5">컴포넌트 파일은 src/components 폴더 하위에 생성하며 component-메뉴명(컴포넌트명)으로 네이밍 한다.</p>
-              <p class="mb-5">페이지 파일은 src/pages 폴더 하위에 생성하며 페이지명으로 네이밍 한다.</p>
-            </div>
-          </div>
-
-          <div class="bg-brown-0.1 rounded-[10px] p-5">
-            <h3 class="my-5 text-base lg:text-3xl text-center font-bold">기타..?</h3>
-            <div class="text-2xs lg:text-base font-Pretendard">
-              <p class="mb-5">모바일 퍼스트로 작업한다.</p>
-              <p>반응형 breakpoint는 다음과 같다.</p>
-              <div class="mb-5 p-2 m-1 bg-brown-0.05 text-brown-0.7">
-                &nbsp;&nbsp;- md: 640px ~ 1023px <br />
-                &nbsp;&nbsp;- lg: 1024px ~ 1499px <br />
-                &nbsp;&nbsp;- xl: 1500px ~
-              </div>
-              <p>매일 오전 9시 30분에 모여 각자 진행률을 공유한다. (요청사항 공유/이슈 상황 공유)</p>
-            </div>
+            <h3 class="my-5 text-base lg:text-3xl text-center font-bold">기타 규칙</h3>
+            <p>매일 오전 9시 30분에 모여 각자 진행률을 공유한다. (요청사항 공유/이슈 상황 공유)</p>
           </div>
 
           <div class="lg:col-span-2 bg-brown-0.1 rounded-[10px] p-5 text-2xs lg:text-base">
