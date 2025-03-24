@@ -16,10 +16,10 @@
 <table>
   <tbody>
     <tr>
-      <td align="center"><a href="https://github.com/onewayay"><img src="/face1.webp" width="150" height="150" alt=""/><br /><sub><b> @onewayay </b></a></td>
-      <td align="center"><a href="https://github.com/mumuyuji"><img src="/face1.webp" width="150" height="150" alt=""/><br /><sub><b> @mumuyuji </b></a></td>
-      <td align="center"><a href="https://github.com/SiwonYoo"><img src="/face1.webp" width="150" height="150" alt=""/><br /><sub><b> @SiwonYoo </b></a></td>
-      <td align="center"><a href="https://github.com/YouVin"><img src="/face1.webp" width="150" height="150" alt=""/><br /><sub><b> @YouVin </b></a></td>
+      <td align="center"><a href="https://github.com/onewayay"><img src="/src/assets/index-img/team/oneway.webp" width="150" height="150" alt=""/><br /><sub><b> @onewayay </b></a></td>
+      <td align="center"><a href="https://github.com/mumuyuji"><img src="/src/assets/index-img/team/mumu29.webp" width="150" height="150" alt=""/><br /><sub><b> @mumuyuji </b></a></td>
+      <td align="center"><a href="https://github.com/SiwonYoo"><img src="/src/assets/index-img/team/siwon_622.webp" width="150" height="150" alt=""/><br /><sub><b> @SiwonYoo </b></a></td>
+      <td align="center"><a href="https://github.com/YouVin"><img src="/src/assets/index-img/team/yuvin99.webp" width="150" height="150" alt=""/><br /><sub><b> @YouVin </b></a></td>
     </tr>
     <tr>
       <td align="center">임한길</td>
