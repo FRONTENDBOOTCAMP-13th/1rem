@@ -3,13 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>[컴포넌트] 공통 버튼 및 라벨</title>
+    <title>[컴포넌트] STORE</title>
     <link rel="preload" as="font" href="/fonts/Sandoll-GothicNeoRound-400.woff" crossorigin="anonymous" />
     <link rel="preload" as="font" href="/fonts/Sandoll-GothicNeoRound-700.woff" crossorigin="anonymous" />
     <script type="module" src="/src/main.js"></script>
   </head>
-  <body>
-    <!-- st : 매장 정보 카드 컴포넌트 -->
+  <body class="m-5 space-y-10">
+    <h1 class="text-3xl font-bold">[컴포넌트] STORE</h1>
+    <!-- ST : 매장 정보 카드 컴포넌트 -->
+    <div>
+      <h2 class="mb-4 2xl font-bold">매장 정보 카드 컴포넌트</h2>
       <ul>
         <li class="flex bg-light-beige relative mb-5 rounded-[.625rem] p-[15px]">
           <a href="#" class="w-full">
@@ -93,14 +96,15 @@
         </li>
       </ul>
     </div>
+    <!-- ED : 매장 정보 카드 컴포넌트 -->
 
-    <!-- Ed : 매장 정보 카드 컴포넌트 -->
-    <!-- st : input 컴포넌트 -->
+    <!-- ST : input 컴포넌트 -->
+    <h2 class="mb-4 2xl font-bold">input 컴포넌트</h2>
     <div class="m-4 flex relative items-center">
       <input type="text" class="inline-block border border-border-form text-brown-0.5 bg-light-beige rounded-lg flex-1 h-[2.875rem] m-0 pt-[5px] pr-[.9375rem] pb-[5px] pl-[.9375rem]" placeholder="지역, 매장명을 입력해주세요" maxlength="30" />
       <p class="font-xs relative p-[5px_10px] text-brown">취소</p>
     </div>
 
-    <!-- ed : input 컴포넌트 -->
+    <!-- ED : input 컴포넌트 -->
   </body>
 </html>

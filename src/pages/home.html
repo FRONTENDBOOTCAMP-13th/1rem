@@ -7,6 +7,7 @@
     <link rel="preload" as="font" href="/fonts/Sandoll-GothicNeoRound-400.woff" crossorigin="anonymous" />
     <link rel="preload" as="font" href="/fonts/Sandoll-GothicNeoRound-700.woff" crossorigin="anonymous" />
     <script type="module" src="/src/main.js"></script>
+    <script type="module" src="/src/js/ad_modal.js"></script>
   </head>
   <body>
     <skip-nav></skip-nav>
@@ -88,21 +89,21 @@
               <li>
                 <figure class="rounded-[1.25rem] items-center relative sm:pb-[1.625rem]">
                   <img class="rounded-[1.25rem] w-full h-full" src="/src/assets/main/ad_1.webp" alt="콰트로치즈 폴드비프 와퍼" />
-                  <a class="absolute top-[40%] left-[50%] -translate-x-[50%] -translate-y-[50%] w-[3.125rem] h-[3.125rem] lg:top-[35%] sm:w-[5.375rem] sm:h-[5.375rem] bg-cover bg-center bg-[url('/src/assets/elements/btn_play.svg')]" href="#"></a>
-                  <figcaption class="sm:h-[4.5625rem] sm:text-3xl text-center text-brown text-lg p-[1.25rem] font-bold">콰트로치즈 풀드비프 와퍼</figcaption>
+                  <button type="button" aria-label="'콰트로치즈 풀드비프 와퍼' 광고 영상 팝업 열기" rel="6LbnTsNSZWM" class="modal-open absolute top-[40%] left-[50%] -translate-x-[50%] -translate-y-[50%] w-[3.125rem] h-[3.125rem] lg:top-[35%] sm:w-[5.375rem] sm:h-[5.375rem] bg-cover bg-center bg-[url('/src/assets/elements/btn_play.svg')]"></button>
+                  <figcaption class="sm:h-[4.5625rem] sm:text-3xl text-center text-brown text-lg p-[1.25rem] font-bold"><h4>콰트로치즈 풀드비프 와퍼</h4></figcaption>
                 </figure>
               </li>
               <li class="lg:block hidden">
                 <figure class="rounded-[1.25rem] items-center relative sm:pb-[1.625rem]">
                   <img class="rounded-[1.25rem] w-full h-full" src="/src/assets/main/ad_2.webp" alt="불끈버거" />
-                  <a class="absolute top-[40%] left-[50%] -translate-x-[50%] -translate-y-[50%] w-[3.125rem] h-[3.125rem] lg:top-[35%] sm:w-[5.375rem] sm:h-[5.375rem] bg-cover bg-center bg-[url('/src/assets/elements/btn_play.svg')]" href="#"></a>
+                  <button type="button" aria-label="'[불끈버거] 먹으면 불끈 힘이 나는, 불 끈 영웅들의 버거' 광고 영상 팝업 열기" rel="nVOEjyOQyIg" class="modal-open absolute top-[40%] left-[50%] -translate-x-[50%] -translate-y-[50%] w-[3.125rem] h-[3.125rem] lg:top-[35%] sm:w-[5.375rem] sm:h-[5.375rem] bg-cover bg-center bg-[url('/src/assets/elements/btn_play.svg')]"></button>
                   <figcaption class="sm:h-[4.5625rem] sm:text-3xl text-center text-brown text-lg p-[1.25rem] font-bold">[불끈버거] 먹으면 불끈 힘이 나는, 불 끈 영웅들의 버거</figcaption>
                 </figure>
               </li>
               <li class="lg:block hidden">
                 <figure class="rounded-[1.25rem] items-center relative sm:pb-[1.625rem]">
                   <img class="rounded-[1.25rem] w-full h-full" src="/src/assets/main/ad_3.webp" alt="스파이시 폴드비프 와퍼" />
-                  <a class="absolute top-[40%] left-[50%] -translate-x-[50%] -translate-y-[50%] w-[3.125rem] h-[3.125rem] lg:top-[35%] sm:w-[5.375rem] sm:h-[5.375rem] bg-cover bg-center bg-[url('/src/assets/elements/btn_play.svg')]" href="#"></a>
+                  <button type="button" aria-label="'풀드비프 와퍼, 스파이시 풀드비프 와퍼' 광고 영상 팝업 열기" rel="BAGwEzx8zy4" class="modal-open absolute top-[40%] left-[50%] -translate-x-[50%] -translate-y-[50%] w-[3.125rem] h-[3.125rem] lg:top-[35%] sm:w-[5.375rem] sm:h-[5.375rem] bg-cover bg-center bg-[url('/src/assets/elements/btn_play.svg')]"></button>
                   <figcaption class="sm:h-[4.5625rem] sm:text-3xl text-center text-brown text-lg p-[1.25rem] font-bold">풀드비프 와퍼, 스파이시 풀드비프 와퍼</figcaption>
                 </figure>
               </li>
@@ -313,5 +314,20 @@
       </div>
     </div>
     <common-footer></common-footer>
+    <!-- ST: 광고영상 modal -->
+    <dialog class="modal top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] justify-center items-center w-full h-full bg-transparent [&::backdrop]:bg-brown [&::backdrop]:opacity-80">
+      <div class="max-w-125 w-full min-h-37.5 rounded-[1.25rem] bg-beige lg:max-w-none lg:w-[60vw] lg:min-w-160">
+        <header class="flex justify-end">
+          <button type="button" aria-label="광고 영상 모달창 닫기" class="modal-close block w-[3.375rem] h-[3.375rem] bg-[url(/src/assets/elements/btn_pop_close.svg)] bg-no-repeat bg-center"></button>
+        </header>
+        <div>
+          <iframe data-v-2e28f2b0="" class="w-full h-[70vh]" src="" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+        </div>
+        <footer class="modal-footer p-[.9375rem] lg:pt-5 lg:px-7.5 lg:pb-[1.5625rem]">
+          <h4 class="text-lg text-brown font-bold leading-[1.2]"></h4>
+        </footer>
+      </div>
+    </dialog>
+    <!-- ED: 광고영상 modal -->
   </body>
 </html>
