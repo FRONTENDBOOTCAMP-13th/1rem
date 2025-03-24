@@ -49,7 +49,7 @@
               <div class="mt-[.3125rem] mr-[15px] mb-[5px] ml-0">#매콤한 맛</div>
             </label>
             <div class="p-[.625rem_0] lg:mt-2 lg:gap-1 lg:w-auto md:mt-10">
-              <button id="showcoamodal" type="button" class="flex items-center justify-between w-full rounded-[.625rem] text-2xs text-[#89665b] bg-brown-0.05 px-3 lg:h-[3.625rem]" aria-label="원산지, 영양성분, 알레르기 유발 성분 정보 보기" tabindex="0" role="button">
+              <button id="showcoamodal" type="button" class="flex items-center justify-between w-full h-[2.75rem] rounded-[.625rem] text-2xs text-[#89665b] bg-brown-0.05 px-3 lg:h-[3.625rem]" aria-label="원산지, 영양성분, 알레르기 유발 성분 정보 보기" tabindex="0" role="button">
                 <div class="flex gap-2.5 relative items-center">
                   <svg class="w-[18px] h-full top-0" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" class="mr-2" role="img" aria-hidden="true">
                     <g clip-path="url(#clip0_768_23752)">
@@ -138,12 +138,12 @@
     <common-footer></common-footer>
     <!-- st: 영양성분 모달창 -->
     <dialog id="coamodal" aria-label="원산지, 영양성분, 알레르기 유발성분" class="bg-beige text-brown rounded-[1.25rem] w-[40rem] m-auto flex-col h-full max-h-[calc(90vh-6.25rem)] [&::backdrop]:bg-brown [&::backdrop]:opacity-80">
-      <header class="relative p-[.9375rem_2.5rem] min-h-[2.6875rem] md:h-22 text-center text-lg md:text-2xl">
+      <header class="relatives m-[.625rem_0_.635rem_0] h-[2.375rem] text-center text-lg md:text-2xl">
         <p class="text-xl">원산지, 영양성분, 알레르기 유발성분</p>
       </header>
       <div class="flex-1 overflow-y-auto px-5">
-        <div class="p-[0.3125rem_0.9375rem] m-[0_40px_20px] shadow-[0_0_10px_rgba(0,0,0,0.05)] bg-light-beige rounded-[.625rem]">
-          <h3 class="m-[1.25rem_0_0.625rem] text-sm text-brown">원산지</h3>
+        <div class="p-[0.3125rem_0.9375rem] m-[.9375rem] shadow-[0_0_10px_rgba(0,0,0,0.05)] bg-light-beige rounded-[.625rem]">
+          <h3 class="m-[1.25rem_0_0.625rem] lg:text-2xl text-sm text-brown">원산지</h3>
           <figure class="mb-5 flex flex-row gap-5 flex-1 justify-center items-start">
             <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0_628_21528)">
@@ -232,8 +232,8 @@
           </figure>
         </div>
         <!-- 영양성분 -->
-        <div class="p-[0.3125rem_0.9375rem] m-[10px_40px_20px] shadow-[0_0_10px_rgba(0,0,0,0.05)] bg-light-beige rounded-[.625rem]">
-          <h3 class="m-[1.25rem_0_0.625rem] text-sm text-brown">영양성분</h3>
+        <div class="p-[0.625rem_0.9375rem] m-[.9375rem] shadow-[0_0_10px_rgba(0,0,0,0.05)] bg-light-beige rounded-[.625rem]">
+          <h3 class="text-sm text-brown">영양성분</h3>
           <table class="p-[.9375rem] m-[1.25rem_0_0.625rem] font-Pretendard border-spacing-[.125rem] border-gray-500 text-brown text-[9px] text-center leading-[140%] w-full">
             <thead>
               <tr>
@@ -262,9 +262,9 @@
           </table>
         </div>
         <!-- 안내사항 -->
-        <div class="p-[0.3125rem_0.9375rem] m-[10px_40px_20px] shadow-[0_0_10px_rgba(0,0,0,0.05)] bg-light-beige rounded-[.625rem]">
-          <h3 class="m-[1.25rem_0_0.625rem] text-sm text-brown">안내사항</h3>
-          <ol class="text-3xs text-brown">
+        <div class="p-[0.625rem_0.9375rem] m-[.9375rem] shadow-[0_0_10px_rgba(0,0,0,0.05)] bg-light-beige rounded-[.625rem]">
+          <h3 class="text-sm text-brown">안내사항</h3>
+          <ol class="p-[.625rem] text-3xs text-brown">
             <li>1. 각 제품은 원재료의 수급 상황에 따라 구성숭분이 다소 변경될 수도 있습니다.</li>
             <li>2. 표시된 영양성분표는 매장에서 판매되고 있는 모든 제품의 영양성분을 포함하지 못할 수도 있습니다.(신제품/ 특정계절 한시판매 제품/일부 판매 특별 판매 제품)</li>
             <li>3. 표시된 영양 구성성분은 실험방법 등에 따라 차이가 있을 수도 있습니다.</li>
@@ -274,19 +274,19 @@
             <li>7. 판매되는 일부 메뉴는 밀, 대두 우유, 돼지고기, 토마토, 닭고기, 쇠고기, 조개류, 난류, 게, 새우, 땅콩, 복숭아, 아황산류, 호두, 오징어, 잣 알레르기 유발 가능성이 있음을 안내드립니다.</li>
           </ol>
         </div>
-        <div class="p-[0.3125rem_0.9375rem] m-[20px_40px_20px] shadow-[0_0_10px_rgba(0,0,0,0.05)] bg-light-beige rounded-[.625rem]">
-          <h3 class="m-[1.25rem_0_0.625rem] text-sm text-brown">알레르기 유발 성분</h3>
-          <table>
+        <div class="p-[0.625rem_0.9375rem] m-[.9375rem] shadow-[0_0_10px_rgba(0,0,0,0.05)] bg-light-beige rounded-[.625rem]">
+          <h3 class="pt-[10px] pb-[.625rem] text-sm text-brown">알레르기 유발 성분</h3>
+          <table class="flex text-center border-collapse">
             <tbody>
               <tr>
-                <th class="text-3xs">통모짜와퍼</th>
-                <td class="text-3xs">밀,대두,우유,토마토,쇠고기,난류</td>
+                <th class="text-3xs border-b border-gray-300 p-2">통모짜와퍼</th>
+                <td class="text-3xs border-b border-gray-300 p-2">밀,대두,우유,토마토,쇠고기,난류</td>
               </tr>
             </tbody>
           </table>
         </div>
-        <div class="p-[0.3125rem_0.9375rem] m-[20px_40px_20px] shadow-[0_0_10px_rgba(0,0,0,0.05)] bg-light-beige rounded-[.625rem]">
-          <h3 class="m-[1.25rem_0_0.625rem] text-sm text-brown">재료 영양성분 및 알레르기 유발 성분</h3>
+        <div class="p-[0.3125rem_0.9375rem] m-[.9375rem] shadow-[0_0_10px_rgba(0,0,0,0.05)] bg-light-beige rounded-[.625rem]">
+          <h3 class="pt-2.5 pb-2.5 text-sm text-brown">재료 영양성분 및 알레르기 유발 성분</h3>
         </div>
       </div>
       <footer class="flex justify-center items-center p-[.625rem_0.9375rem_0.9375rem_0.9375rem] lg:p-[1.25rem_1.875rem] h-21">
