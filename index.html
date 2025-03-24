@@ -11,13 +11,26 @@
     <script type="module">
       document.addEventListener('DOMContentLoaded', () => {
         const modal = document.getElementById('notice');
-        const closeModal = document.getElementById('confirmButton');
+        const closeModal = document.getElementById('closeButton');
+        const dontShowTodayButton = document.getElementById('dontShowTodayButton');
 
-        // 페이지 로드 시 자동으로 모달 열기
-        modal.showModal();
+        // 현재 날짜를 기준으로 하루 동안 모달을 열지 않도록 설정
+        const today = new Date().toISOString().split('T')[0]; // YYYY-MM-DD 형식
+        const dontShowToday = localStorage.getItem('dontShowToday');
+
+        // 페이지 로드 시 모달 열기 여부 확인
+        if (dontShowToday !== today) {
+          modal.showModal();
+        }
 
         // 닫기 버튼 클릭 시 모달 닫기
         closeModal.addEventListener('click', () => {
+          modal.close();
+        });
+
+        // "오늘 하루 안보기" 버튼 클릭 시 로컬 스토리지에 날짜 저장
+        dontShowTodayButton.addEventListener('click', () => {
+          localStorage.setItem('dontShowToday', today);
           modal.close();
         });
       });
@@ -351,15 +364,6 @@
                 </tr>
               </tbody>
             </table>
-            <p class="text-2xs lg:text-base font-Pretendard">
-              모바일 퍼스트로 작업한다. <br />
-              반응형 breakpoint
-            </p>
-            <pre class="mb-5 p-2 m-1 bg-brown-0.05 text-brown-0.7">
-- md: 640px ~ 1023px  
-- lg: 1024px ~ 1499px 
-- xl: 1500px ~</pre
-            >
           </div>
 
           <div class="bg-brown-0.1 rounded-[.625rem] p-5">
@@ -383,6 +387,23 @@
                 페이지 파일은 src/pages 폴더 하위에 생성하며 페이지명으로 네이밍한다.
               </p>
               <p class="mb-5">컴포넌트 및 전체 페이지는 flex, 섹션별 레이아웃은 grid를 적용한다.</p>
+              <p class="text-2xs lg:text-base font-Pretendard">
+                모바일 퍼스트로 작업한다. <br />
+                반응형 breakpoint
+              </p>
+              <pre class="mb-5 p-2 m-1 bg-brown-0.05 text-brown-0.7">
+  - md: 640px ~ 1023px  
+  - lg: 1024px ~ 1499px 
+  - xl: 1500px ~</pre
+              >
+              <p>JS 주석: 함수나 중요한 로직에 대해서는 주석을 추가한다.</p>
+              <pre class="mb-5 p-2 m-1 bg-brown-0.05 text-brown-0.7">
+  // 스크롤 이벤트 일시 중지 (1초 동안)
+  isScrollingDisabled = true;
+  setTimeout(() => {
+    isScrollingDisabled = false;
+  }, 1000);</pre
+              >
             </div>
           </div>
 
@@ -400,45 +421,54 @@
                 &nbsp;&nbsp;- components 폴더 -> 컴포넌트<br />
                 &nbsp;&nbsp;- pages 폴더 -> 페이지
               </div>
+
               <pre class="mb-5 p-2 m-1 bg-brown-0.05 text-brown-0.7">
-📂 1rem  
-├─ 📂 public
-│   ├─ 📂 fonts
-│   |  ├─ 📃 BKBulMatPro-Bold.woff
-│   |  └─ 📃 Flame-Regular.woff
+<img src="/src/assets/index-img/ico_folder.svg" alt="폴더" class="inline w-[1.4em]" /> 1rem  
+├─ <img src="/src/assets/index-img/ico_folder.svg" alt="폴더" class="inline w-[1.4em]" /> public
+│   ├─ <img src="/src/assets/index-img/ico_folder.svg" alt="폴더" class="inline w-[1.4em]" /> fonts
+│   |  ├─ 📋 BKBulMatPro-Bold.woff
+│   |  └─ 📋 Sandoll-GothicNeoRound-400.woff
 |   |     ...
-|   └─ 📂 
-└─ 📂 src  
-    ├─ 📂 assets  
-    ├─ 📂 components  
-    │  └─ 📃 common-btns.html  
-    │  └─ 📃 common-labels.html  
-    │  └─ 📃 common-title.html  
-    │  └─ 📃 component-customer.html  
-    │  └─ 📃 component-footer.html  
+|   └─ <img src="/src/assets/index-img/ico_folder.svg" alt="폴더" class="inline w-[1.4em]" /> 
+└─ <img src="/src/assets/index-img/ico_folder.svg" alt="폴더" class="inline w-[1.4em]" /> src  
+    ├─ <img src="/src/assets/index-img/ico_folder.svg" alt="폴더" class="inline w-[1.4em]" /> assets  
+    ├─ <img src="/src/assets/index-img/ico_folder.svg" alt="폴더" class="inline w-[1.4em]" /> components  
+    │  └─ 📋 common-btns.html  
+    │  └─ 📋 common-labels.html  
+    │  └─ 📋 common-title.html  
+    │  └─ 📋 component-customer.html  
+    │  └─ 📋 component-footer.html  
     │     ...
-    ├─ 📂 js  
-    │  └─ 📂 layout  
-    │      ├─ 📃 footer.js  
-    │      └─ 📃 main-header.js  
-              ...
-    └─ 📂 pages  
-      ├─ 📂 customer  
-      ├─ 📂 franchise  
-      ├─ 📂 menu  
-      ├─ 📂 news  
-      ├─ 📂 policies  
-      ├─ 📂 store  
-      ├─ 📂 story
-      └─ 📃 home.html 
-                </pre
-              >
+    ├─ <img src="/src/assets/index-img/ico_folder.svg" alt="폴더" class="inline w-[1.4em]" /> js  
+    │  └─ <img src="/src/assets/index-img/ico_folder.svg" alt="폴더" class="inline w-[1.4em]" /> layout  
+    │      ├─ 📋 footer.js  
+    │      └─ 📋 main-header.js  
+    |         ...
+    └─ <img src="/src/assets/index-img/ico_folder.svg" alt="폴더" class="inline w-[1.4em]" /> pages  
+      ├─ <img src="/src/assets/index-img/ico_folder.svg" alt="폴더" class="inline w-[1.4em]" /> customer  
+      ├─ <img src="/src/assets/index-img/ico_folder.svg" alt="폴더" class="inline w-[1.4em]" /> franchise  
+      ├─ <img src="/src/assets/index-img/ico_folder.svg" alt="폴더" class="inline w-[1.4em]" /> menu  
+      ├─ <img src="/src/assets/index-img/ico_folder.svg" alt="폴더" class="inline w-[1.4em]" /> news  
+      ├─ <img src="/src/assets/index-img/ico_folder.svg" alt="폴더" class="inline w-[1.4em]" /> policies  
+      ├─ <img src="/src/assets/index-img/ico_folder.svg" alt="폴더" class="inline w-[1.4em]" /> store  
+      ├─ <img src="/src/assets/index-img/ico_folder.svg" alt="폴더" class="inline w-[1.4em]" /> story
+      └─ 📋 home.html 
+                </pre>
             </div>
           </div>
 
           <div class="bg-brown-0.1 rounded-[10px] p-5">
-            <h3 class="my-5 text-base lg:text-3xl text-center font-bold">기타 규칙</h3>
-            <p>매일 오전 9시 30분에 모여 각자 진행률을 공유한다. (요청사항 공유/이슈 상황 공유)</p>
+            <h3 class="my-5 text-base lg:text-3xl text-center font-bold">팀 내 규칙</h3>
+            <div class="text-2xs lg:text-base font-Pretendard">
+              <p class="mb-5">매일 오전 9시 30분에 모여 각자 진행률과 요청 사항, 이슈를 공유한다.</p>
+              <p class="mb-5">매일 오후 5시 30분에 모여 회고를 진행한다.</p>
+              <p class="mb-5">각자의 작업을 완료한 후 코드 리뷰를 요청한다.</p>
+              <p class="mb-5">Git을 사용하여 코드 변경 사항을 커밋하고 푸시한다.</p>
+              <p class="mb-5">각자 맡은 업무의 우선순위를 명확히 하고, 그에 따라 진행한다.</p>
+              <p class="mb-5">팀 내에서 발생한 문제는 즉시 공유하고, 해결 방안을 함께 모색한다.</p>
+              <p class="mb-5">기능 추가나 변경 사항은 반드시 문서화하여 공유한다.</p>
+              <p class="mb-5">프로젝트 일정에 맞춰 작업을 진행하고, 지연이 발생할 경우 미리 알려준다.</p>
+            </div>
           </div>
 
           <div class="lg:col-span-2 bg-brown-0.1 rounded-[10px] p-5 text-2xs lg:text-base">
@@ -474,7 +504,7 @@
 
           <div class="lg:col-span-2 bg-brown-0.1 rounded-[10px] p-5">
             <h3 class="my-5 text-base lg:text-3xl text-center font-bold">데일리 스크럼</h3>
-            <div class="grid lg:grid-cols-3 gap-2.5 text-2xs lg:text-base font-Pretendard">
+            <div class="container grid lg:grid-cols-3 gap-2.5 text-2xs lg:text-base font-Pretendard">
               <details>
                 <summary>2025.03.14. 회의록</summary>
                 <div class="mb-5 p-2 bg-brown-0.05 text-brown-0.7">
@@ -543,7 +573,13 @@
                       <li>3. 공통 버튼 스타일 (크기, 컬러, 인터랙션) 정리</li>
                       <li>
                         4. 담당 페이지 분배 기준 (기능별 vs. 디자인 난이도별) 논의
-                        <p class="ml-2.5">⇒ 유사 페이지 및 난이도를 고려하여 분배함 메인 페이지 / ****MENU, NEWS, STORE / CUSTOMER, 가맹점 모집, 약관 컴포넌트 작업 / STORY 하위 메뉴 페이지</p>
+                        <p class="ml-2.5">
+                          ⇒ 유사 페이지 및 난이도를 고려하여 분배함 <br />
+                          a. 메인 페이지 <br />
+                          b. MENU, NEWS, STORE <br />
+                          c. CUSTOMER, 가맹점 모집, 약관 컴포넌트 작업 <br />
+                          d. STORY 하위 메뉴 페이지
+                        </p>
                       </li>
                     </ul>
                     <br />
@@ -572,7 +608,6 @@
 
                       <p class="ml-2.5">
                         담당할 페이지 나누기 → 팀원별 작업 분배<br />
-
                         공통 버튼 컴포넌트 만들기 → 일관된 UI 적용
                       </p>
                     </li>
@@ -580,7 +615,6 @@
                       4. 배포 사이트 대문 페이지 레퍼런스 조사
                       <p class="ml-2.5">
                         참고할 디자인 및 레이아웃 찾기 <br />
-
                         필수 포함 요소: 메인 페이지, 컴포넌트 모음 페이지, 안내 모달창
                       </p>
                     </li>
@@ -691,7 +725,11 @@
                     </li>
                     <li>
                       황유빈
-                      <p class="ml-2.5">- 메인 페이지 광고영상 컴포넌트 작업 완료 - 메뉴 및 매장 소개, Why 버거킹 컴포넌트 작업 완료 - 고객과 함께 성장하는 버거킹 컴포넌트 작업 완료</p>
+                      <p class="ml-2.5">
+                        - 메인 페이지 광고영상 컴포넌트 작업 완료<br />
+                        - 메뉴 및 매장 소개, Why 버거킹 컴포넌트 작업 완료<br />
+                        - 고객과 함께 성장하는 버거킹 컴포넌트 작업 완료
+                      </p>
                     </li>
                   </ul>
                   <br />
@@ -998,6 +1036,10 @@
     <footer class="wrapper p-5 bg-light-beige md:px-7.5 lg:px-15 lg:py-10">
       <div class="inner max-w-[1620px] mx-auto font-Pretendard text-brown text-center">
         <p class="text-2xs lg:text-base">Copyright © 2025 1rem. All rights reserved.</p>
+        <p class="text-2xs lg:text-base">
+          <a href="https://github.com/FRONTENDBOOTCAMP-13th/1rem" target="_blank" rel="noopener noreferrer" class="hover:underline">GitHub</a><span> | </span>
+          <a href="https://neon-megaraptor-6a4.notion.site/1rem-project-team-1b60bd97ed348075b93ff39b51cec8f7" target="_blank" rel="noopener noreferrer" class="hover:underline">Notion</a>
+        </p>
       </div>
     </footer>
 
@@ -1016,8 +1058,9 @@
           </p>
         </div>
 
-        <footer class="flex justify-center items-center p-[.625rem_0.9375rem_0.9375rem_0.9375rem] lg:p-[1.25rem_1.875rem] h-21">
-          <button type="button" id="confirmButton" class="p-[.3125rem] rounded-[2.5rem] w-full md:w-80 h-11 text-sm text-white bg-brown">확인</button>
+        <footer class="flex justify-center items-center gap-2.5 p-[.625rem_0.9375rem_0.9375rem_0.9375rem] lg:p-[1.25rem_1.875rem] h-21">
+          <button type="button" id="dontShowTodayButton" class="p-[.3125rem] rounded-[2.5rem] w-full md:w-60 h-11 text-sm text-white bg-brown-0.5">오늘 하루 안보기</button>
+          <button type="button" id="closeButton" class="p-[.3125rem] rounded-[2.5rem] w-full md:w-60 h-11 text-sm text-white bg-brown">닫기</button>
           <a href=""></a>
         </footer>
       </article>
