@@ -85,183 +85,397 @@
       컴포넌트화랑 tailwindcss 사용한 내용..?
     </div>
 
-    <!-- ST:Main 페이지 가는 버튼 -->
+    <!-- ST: Main 페이지 가는 버튼 -->
     <div class="flex items-center justify-center text-brown">
       <a href="/src/pages/home.html" class="px-3 py-1.5 sm:px-4 sm:py-2 lg:px-5 lg:py-2.5 rounded-full flex items-center gap-2 text-sm sm:text-base lg:text-lg text-brown shadow-[-5px_-5px_10px_rgba(255,_255,_255,_0.8),_5px_5px_10px_rgba(0,_0,_0,_0.25)] transition-all hover:shadow-[-1px_-1px_5px_rgba(255,_255,_255,_0.6),_1px_1px_5px_rgba(0,_0,_0,_0.3),inset_-2px_-2px_5px_rgba(255,_255,_255,_1),inset_2px_2px_4px_rgba(0,_0,_0,_0.3)] hover:text-ci">
         <img src="/src/assets/elements/ico_bt_link.svg" alt="메인페이지들어가기" class="w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6" />
         <span>Main 페이지</span>
       </a>
     </div>
-    <!-- ED:Main 페이지 가는 버튼 -->
+    <!-- ED: Main 페이지 가는 버튼 -->
 
-    <!-- ST:컴포넌트 페이지 소개 -->
+    <!-- ST: 컴포넌트 페이지 소개 -->
     <div class="px-5 pt-5 md:p-7.5 lg:pt-10 lg:px-15">
       <div class="max-w-[1620px] mx-auto">
         <div><h2 class="mb-3 text-4xl leading-[1] font-BKBulMatPro text-brown sm:mb-[1.125rem] sm:text-5xl sm:leading-[1.39] lg:text-6xl lg:mb-6">컴포넌트</h2></div>
-        <ul class="grid grid-cols-3 grid-rows-5 sm:grid-cols-4 sm:grid-rows-4 lg:grid-cols-5 lg:grid-rows-3 w-full h-full gap-0 [&>li]:aspect-square [&>li]:w-full [&>li]:h-full auto-rows-[1fr]">
-          <!-- ST:mobile row 1 -->
-          <li>
-            <a href="/src/components/common-btns.html" target="_self" class="block w-full h-full relative group">
-              <div class="bg-[url('/src/assets/index-img/mobile/logo0-0.webp')] sm:bg-[url('/src/assets/index-img/tablet/logo0-0.webp')] lg:bg-[url('/src/assets/index-img/pc/logo0-0.webp')] bg-[length:100%_100%] aspect-square bg-no-repeat bg-center border-1 border-white w-full h-full">
-                <div class="absolute inset-0 bg-brown-0.7 bg-opacity-0 group-hover:bg-opacity-60 transition-all duration-300 ease-in-out flex items-center justify-center opacity-0 group-hover:opacity-100">
-                  <span class="text-white text-lg sm:text-2xl lg:text-2xl xl:text-3xl font-bold transform scale-0 group-hover:scale-100 transition-transform duration-300 ease-in-out"> 공통 버튼 </span>
+        <!-- ST: ~ 640px -->
+        <div class="md:hidden w-full max-w-250 aspect-square mx-auto bg-[url(/assets/burger_king_logo.svg)] bg-no-repeat bg-cover bg-center">
+          <ul class="grid grid-cols-3 grid-rows-5 w-full h-full">
+            <li class="border-1 border-white">
+              <a href="/src/components/common-btns.html" target="_self" class="block relative h-full">
+                <div class="absolute inset-0 p-2.5 bg-brown-0.7 text-center content-center bg-opacity-60">
+                  <span class="block leading-[1.5] text-white text-[2.5vw]"
+                    >공통 링크 버튼<br />
+                    컴포넌트
+                  </span>
                 </div>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="/src/components/common-labels.html" target="_self" class="block w-full h-full relative group">
-              <div class="bg-[url('/src/assets/index-img/mobile/logo0-1.webp')] sm:bg-[url('/src/assets/index-img/tablet/logo0-1.webp')] lg:bg-[url('/src/assets/index-img/pc/logo0-1.webp')] bg-[length:100%_100%] aspect-square bg-no-repeat bg-center border-1 border-white w-full h-full">
-                <div class="absolute inset-0 bg-brown-0.7 bg-opacity-0 group-hover:bg-opacity-60 transition-all duration-300 ease-in-out flex items-center justify-center opacity-0 group-hover:opacity-100">
-                  <span class="text-white text-lg sm:text-2xl lg:text-2xl xl:text-3xl font-bold transform scale-0 group-hover:scale-100 transition-transform duration-300 ease-in-out"> 공통 라벨 </span>
+              </a>
+            </li>
+            <li class="border-1 border-white">
+              <a href="/src/components/common-labels.html" target="_self" class="block relative h-full">
+                <div class="absolute inset-0 p-2.5 bg-brown-0.7 text-center content-center bg-opacity-60">
+                  <span class="block leading-[1.5] text-white text-[2.5vw]"
+                    >공통 라벨<br />
+                    컴포넌트</span
+                  >
                 </div>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="/src/components/common-title.html" target="_self" class="block w-full h-full relative group">
-              <div class="bg-[url('/src/assets/index-img/mobile/logo0-2.webp')] sm:bg-[url('/src/assets/index-img/tablet/logo0-2.webp')] lg:bg-[url('/src/assets/index-img/pc/logo0-2.webp')] bg-[length:100%_100%] aspect-square bg-no-repeat bg-center border-1 border-white w-full h-full">
-                <div class="absolute inset-0 bg-brown-0.7 bg-opacity-0 group-hover:bg-opacity-60 transition-all duration-300 ease-in-out flex items-center justify-center opacity-0 group-hover:opacity-100">
-                  <span class="text-white text-lg sm:text-2xl lg:text-2xl xl:text-3xl font-bold transform scale-0 group-hover:scale-100 transition-transform duration-300 ease-in-out"> 공통 타이틀 </span>
+              </a>
+            </li>
+            <li class="border-1 border-white">
+              <a href="/src/components/common-title.html" target="_self" class="block relative h-full">
+                <div class="absolute inset-0 p-2.5 bg-brown-0.7 text-center content-center bg-opacity-60">
+                  <span class="block leading-[1.5] text-white text-[2.5vw]"
+                    >공통 여백 및 페이지<br />
+                    타이틀 컴포넌트</span
+                  >
                 </div>
-              </div>
-            </a>
-          </li>
-          <!-- ED:mobile row 1 -->
+              </a>
+            </li>
+            <li class="border-1 border-white">
+              <a href="/src/components/component-header.html" target="_self" class="block relative h-full">
+                <div class="absolute inset-0 p-2.5 bg-brown-0.7 text-center content-center bg-opacity-60">
+                  <span class="block leading-[1.5] text-white text-[2.5vw]"
+                    >메인 header<br />
+                    컴포넌트</span
+                  >
+                </div>
+              </a>
+            </li>
+            <li class="border-1 border-white">
+              <a href="/src/components/component-sub-header.html" target="_self" class="block relative h-full">
+                <div class="absolute inset-0 p-2.5 bg-brown-0.7 text-center content-center bg-opacity-60">
+                  <span class="block leading-[1.5] text-white text-[2.5vw]"
+                    >서브 header<br />
+                    컴포넌트</span
+                  >
+                </div>
+              </a>
+            </li>
+            <li class="border-1 border-white">
+              <a href="/src/components/component-footer.html" target="_self" class="block relative h-full">
+                <div class="absolute inset-0 p-2.5 bg-brown-0.7 text-center content-center bg-opacity-60">
+                  <span class="block leading-[1.5] text-white text-[2.5vw]"
+                    >footer<br />
+                    컴포넌트
+                  </span>
+                </div>
+              </a>
+            </li>
 
-          <!-- ST:mobile row 2 -->
-          <li>
-            <a href="/src/components/component-header.html" target="_self" class="block w-full h-full relative group">
-              <div class="bg-[url('/src/assets/index-img/mobile/logo1-0.webp')] sm:bg-[url('/src/assets/index-img/tablet/logo0-3.webp')] lg:bg-[url('/src/assets/index-img/pc/logo0-3.webp')] bg-[length:100%_100%] aspect-square bg-no-repeat bg-center border-1 border-white w-full h-full">
-                <div class="absolute inset-0 bg-brown-0.7 bg-opacity-0 group-hover:bg-opacity-60 transition-all duration-300 ease-in-out flex items-center justify-center opacity-0 group-hover:opacity-100">
-                  <span class="text-white text-lg sm:text-2xl lg:text-2xl xl:text-3xl font-bold transform scale-0 group-hover:scale-100 transition-transform duration-300 ease-in-out"> header 컴포넌트 </span>
+            <li class="border-1 border-white col-span-3">
+              <a href="/src/pages/home.html" target="_self" class="block relative h-full">
+                <div class="absolute inset-0 p-2.5 bg-brown-0.7 text-center content-center bg-opacity-60">
+                  <span class="block leading-[1.5] text-white text-[2.5vw]">킹버거 페이지</span>
                 </div>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="/src/components/component-footer.html" target="_self" class="block w-full h-full relative group">
-              <div class="bg-[url('/src/assets/index-img/mobile/logo1-1.webp')] sm:bg-[url('/src/assets/index-img/tablet/logo1-0.webp')] lg:bg-[url('/src/assets/index-img/pc/logo0-4.webp')] bg-[length:100%_100%] aspect-square bg-no-repeat bg-center border-1 border-white w-full h-full">
-                <div class="absolute inset-0 bg-brown-0.7 bg-opacity-0 group-hover:bg-opacity-60 transition-all duration-300 ease-in-out flex items-center justify-center opacity-0 group-hover:opacity-100">
-                  <span class="text-white text-lg sm:text-2xl lg:text-2xl xl:text-3xl font-bold transform scale-0 group-hover:scale-100 transition-transform duration-300 ease-in-out"> footer 컴포넌트 </span>
-                </div>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="/src/components/component-main.html" target="_self" class="block w-full h-full relative group">
-              <div class="bg-[url('/src/assets/index-img/mobile/logo1-2.webp')] sm:bg-[url('/src/assets/index-img/tablet/logo1-1.webp')] lg:bg-[url('/src/assets/index-img/pc/logo1-0.webp')] bg-[length:100%_100%] aspect-square bg-no-repeat bg-center border-1 border-white w-full h-full">
-                <div class="absolute inset-0 bg-brown-0.7 bg-opacity-0 group-hover:bg-opacity-60 transition-all duration-300 ease-in-out flex items-center justify-center opacity-0 group-hover:opacity-100">
-                  <span class="text-white text-lg sm:text-2xl lg:text-2xl xl:text-3xl font-bold transform scale-0 group-hover:scale-100 transition-transform duration-300 ease-in-out"> main 컴포넌트 </span>
-                </div>
-              </div>
-            </a>
-          </li>
-          <!-- ED:mobile row 2 -->
+              </a>
+            </li>
 
-          <!-- ST:mobile row 3 -->
-          <li>
-            <a href="/src/components/component-menu.html" target="_self" class="block w-full h-full relative group">
-              <div class="bg-[url('/src/assets/index-img/mobile/logo2-0.webp')] sm:bg-[url('/src/assets/index-img/tablet/logo1-2.webp')] lg:bg-[url('/src/assets/index-img/pc/logo1-1.webp')] bg-[length:100%_100%] aspect-square bg-no-repeat bg-center border-1 border-white w-full h-full transition-all duration-300 ease-in-out">
-                <div class="hidden absolute inset-0 bg-brown-0.7 bg-opacity-0 group-hover:bg-opacity-60 transition-all duration-300 ease-in-out sm:flex items-center justify-center opacity-0 group-hover:opacity-100">
-                  <span class="text-white text-lg sm:text-2xl lg:text-2xl xl:text-3xl font-bold transform scale-0 group-hover:scale-100 transition-transform duration-300 ease-in-out"> main 컴포넌트 </span>
+            <li class="border-1 border-white">
+              <a href="/src/components/component-main.html" target="_self" class="block relative h-full">
+                <div class="absolute inset-0 p-2.5 bg-brown-0.7 text-center content-center bg-opacity-60">
+                  <span class="block leading-[1.5] text-white text-[2.5vw]"
+                    >메인 페이지<br />
+                    컴포넌트
+                  </span>
                 </div>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="/src/components/component-menudetail.html" target="_self" class="block w-full h-full relative group">
-              <div class="bg-[url('/src/assets/index-img/mobile/logo2-1.webp')] sm:bg-[url('/src/assets/index-img/tablet/logo1-3.webp')] lg:bg-[url('/src/assets/index-img/pc/logo1-2.webp')] bg-[length:100%_100%] aspect-square bg-no-repeat bg-center border-1 border-white w-full h-full transition-all duration-300 ease-in-out">
-                <div class="hidden absolute inset-0 bg-brown-0.7 bg-opacity-0 group-hover:bg-opacity-60 transition-all duration-300 ease-in-out sm:flex items-center justify-center opacity-0 group-hover:opacity-100">
-                  <span class="text-white text-lg sm:text-2xl lg:text-2xl xl:text-3xl font-bold transform scale-0 group-hover:scale-100 transition-transform duration-300 ease-in-out"> main 컴포넌트 </span>
+              </a>
+            </li>
+            <li class="border-1 border-white">
+              <a href="/src/components/component-menu.html" target="_self" class="block relative h-full">
+                <div class="absolute inset-0 p-2.5 bg-brown-0.7 text-center content-center bg-opacity-60">
+                  <span class="block leading-[1.5] text-white text-[2.5vw]"
+                    >메뉴 페이지<br />
+                    컴포넌트
+                  </span>
                 </div>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="/src/components/component-mognb.html" target="_self" class="block w-full h-full relative group">
-              <div class="bg-[url('/src/assets/index-img/mobile/logo2-2.webp')] sm:bg-[url('/src/assets/index-img/tablet/logo2-0.webp')] lg:bg-[url('/src/assets/index-img/pc/logo1-3.webp')] bg-[length:100%_100%] aspect-square bg-no-repeat bg-center border-1 border-white w-full h-full transition-all duration-300 ease-in-out">
-                <div class="hidden absolute inset-0 bg-brown-0.7 bg-opacity-0 group-hover:bg-opacity-60 transition-all duration-300 ease-in-out sm:flex items-center justify-center opacity-0 group-hover:opacity-100">
-                  <span class="text-white text-lg sm:text-2xl lg:text-2xl xl:text-3xl font-bold transform scale-0 group-hover:scale-100 transition-transform duration-300 ease-in-out"> main 컴포넌트 </span>
+              </a>
+            </li>
+            <li class="border-1 border-white">
+              <a href="/src/components/component-mognb.html" target="_self" class="block relative h-full">
+                <div class="absolute inset-0 p-2.5 bg-brown-0.7 text-center content-center bg-opacity-60">
+                  <span class="block leading-[1.5] text-white text-[2.5vw]"
+                    >모바일 GNB<br />
+                    컴포넌트
+                  </span>
                 </div>
-              </div>
-            </a>
-          </li>
-          <!-- ED:mobile row 3 -->
+              </a>
+            </li>
+            <li class="border-1 border-white">
+              <a href="/src/components/component-story.html" target="_self" class="block relative h-full">
+                <div class="absolute inset-0 p-2.5 bg-brown-0.7 text-center content-center bg-opacity-60">
+                  <span class="block leading-[1.5] text-white text-[2.5vw]"
+                    >STORY 페이지<br />
+                    컴포넌트
+                  </span>
+                </div>
+              </a>
+            </li>
+            <li class="border-1 border-white">
+              <a href="/src/components/component-news.html" target="_self" class="block relative h-full">
+                <div class="absolute inset-0 p-2.5 bg-brown-0.7 text-center content-center bg-opacity-60">
+                  <span class="block leading-[1.5] text-white text-[2.5vw]"
+                    >NEWS 페이지<br />
+                    컴포넌트</span
+                  >
+                </div>
+              </a>
+            </li>
+            <li class="border-1 border-white">
+              <a href="/src/components/component-story.html" target="_self" class="block relative h-full">
+                <div class="absolute inset-0 p-2.5 bg-brown-0.7 text-center content-center bg-opacity-60">
+                  <span class="block leading-[1.5] text-white text-[2.5vw]"
+                    >STORE 페이지<br />
+                    컴포넌트
+                  </span>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- ED: ~ 640px -->
 
-          <!-- ST:mobile row 4 -->
-          <li>
-            <a href="/src/components/component-news.html" target="_self" class="block w-full h-full relative group">
-              <div class="bg-[url('/src/assets/index-img/mobile/logo3-0.webp')] sm:bg-[url('/src/assets/index-img/tablet/logo2-1.webp')] lg:bg-[url('/src/assets/index-img/pc/logo1-4.webp')] bg-[length:100%_100%] aspect-square bg-no-repeat bg-center border-1 border-white w-full h-full">
-                <div class="absolute inset-0 bg-brown-0.7 bg-opacity-0 group-hover:bg-opacity-60 transition-all duration-300 ease-in-out flex items-center justify-center opacity-0 group-hover:opacity-100">
-                  <span class="text-white text-lg sm:text-2xl lg:text-2xl xl:text-3xl font-bold transform scale-0 group-hover:scale-100 transition-transform duration-300 ease-in-out"> news 컴포넌트 </span>
+        <!-- ST: 640px ~ 1024px -->
+        <div class="hidden md:block lg:hidden w-full max-w-250 aspect-square mx-auto bg-[url(/assets/burger_king_logo.svg)] bg-no-repeat bg-cover bg-center">
+          <ul class="grid grid-cols-4 grid-rows-4 w-full h-full">
+            <li class="border-1 border-white">
+              <a href="/src/components/common-btns.html" target="_self" class="block relative h-full group">
+                <div class="absolute inset-0 p-5 bg-brown-0.7 text-center content-center bg-opacity-60">
+                  <span class="block leading-[1.5] text-white"
+                    >공통 링크 버튼<br />
+                    컴포넌트
+                  </span>
                 </div>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="/src/components/component-store.html" target="_self" class="block w-full h-full relative group">
-              <div class="bg-[url('/src/assets/index-img/mobile/logo3-1.webp')] sm:bg-[url('/src/assets/index-img/tablet/logo2-2.webp')] lg:bg-[url('/src/assets/index-img/pc/logo2-0.webp')] bg-[length:100%_100%] aspect-square bg-no-repeat bg-center border-1 border-white w-full h-full">
-                <div class="absolute inset-0 bg-brown-0.7 bg-opacity-0 group-hover:bg-opacity-60 transition-all duration-300 ease-in-out flex items-center justify-center opacity-0 group-hover:opacity-100">
-                  <span class="text-white text-lg sm:text-2xl lg:text-2xl xl:text-3xl font-bold transform scale-0 group-hover:scale-100 transition-transform duration-300 ease-in-out"> store 컴포넌트 </span>
+              </a>
+            </li>
+            <li class="border-1 border-white">
+              <a href="/src/components/common-labels.html" target="_self" class="block relative h-full group">
+                <div class="absolute inset-0 p-5 bg-brown-0.7 text-center content-center bg-opacity-60">
+                  <span class="block leading-[1.5] text-white"
+                    >공통 라벨<br />
+                    컴포넌트</span
+                  >
                 </div>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="/src/components/component-story.html" target="_self" class="block w-full h-full relative group">
-              <div class="bg-[url('/src/assets/index-img/mobile/logo3-2.webp')] sm:bg-[url('/src/assets/index-img/tablet/logo2-3.webp')] lg:bg-[url('/src/assets/index-img/pc/logo2-1.webp')] bg-[length:100%_100%] aspect-square bg-no-repeat bg-center border-1 border-white w-full h-full">
-                <div class="absolute inset-0 bg-brown-0.7 bg-opacity-0 group-hover:bg-opacity-60 transition-all duration-300 ease-in-out flex items-center justify-center opacity-0 group-hover:opacity-100">
-                  <span class="text-white text-lg sm:text-2xl lg:text-2xl xl:text-3xl font-bold transform scale-0 group-hover:scale-100 transition-transform duration-300 ease-in-out"> story 컴포넌트 </span>
+              </a>
+            </li>
+            <li class="border-1 border-white">
+              <a href="/src/components/common-title.html" target="_self" class="block relative h-full group">
+                <div class="absolute inset-0 p-5 bg-brown-0.7 text-center content-center bg-opacity-60">
+                  <span class="block leading-[1.5] text-white"
+                    >공통 여백 및<br />
+                    페이지 타이틀<br />
+                    컴포넌트</span
+                  >
                 </div>
-              </div>
-            </a>
-          </li>
-          <!-- ED:mobile row 4 -->
+              </a>
+            </li>
+            <li class="border-1 border-white">
+              <a href="/src/components/component-header.html" target="_self" class="block relative h-full group">
+                <div class="absolute inset-0 p-5 bg-brown-0.7 text-center content-center bg-opacity-60">
+                  <span class="block leading-[1.5] text-white"
+                    >메인 header<br />
+                    컴포넌트</span
+                  >
+                </div>
+              </a>
+            </li>
+            <li class="border-1 border-white">
+              <a href="/src/components/component-sub-header.html" target="_self" class="block relative h-full group">
+                <div class="absolute inset-0 p-5 bg-brown-0.7 text-center content-center bg-opacity-60">
+                  <span class="block leading-[1.5] text-white"
+                    >서브 header<br />
+                    컴포넌트</span
+                  >
+                </div>
+              </a>
+            </li>
 
-          <!-- ST:mobile row 5 -->
-          <li>
-            <a href="/src/components/component-customer.html" target="_self" class="block w-full h-full relative group">
-              <div class="bg-[url('/src/assets/index-img/mobile/logo4-0.webp')] sm:bg-[url('/src/assets/index-img/tablet/logo3-0.webp')] lg:bg-[url('/src/assets/index-img/pc/logo2-2.webp')] bg-[length:100%_100%] aspect-square bg-no-repeat bg-center border-1 border-white w-full h-full">
-                <div class="absolute inset-0 bg-brown-0.7 bg-opacity-0 group-hover:bg-opacity-60 transition-all duration-300 ease-in-out flex items-center justify-center opacity-0 group-hover:opacity-100">
-                  <span class="text-white text-lg sm:text-2xl lg:text-2xl xl:text-3xl font-bold transform scale-0 group-hover:scale-100 transition-transform duration-300 ease-in-out"> customer 컴포넌트 </span>
+            <li class="border-1 border-white col-span-2 row-span-2">
+              <a href="/src/pages/home.html" target="_self" class="block relative h-full group">
+                <div class="absolute inset-0 p-5 bg-brown-0.7 text-center content-center bg-opacity-60">
+                  <span class="block leading-[1.5] text-white">킹버거 페이지</span>
                 </div>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="/src/components/component-sub-header.html" target="_self" class="block w-full h-full relative group">
-              <div class="bg-[url('/src/assets/index-img/mobile/logo4-1.webp')] sm:bg-[url('/src/assets/index-img/tablet/logo3-1.webp')] lg:bg-[url('/src/assets/index-img/pc/logo2-3.webp')] bg-[length:100%_100%] aspect-square bg-no-repeat bg-center border-1 border-white w-full h-full">
-                <div class="absolute inset-0 bg-brown-0.7 bg-opacity-0 group-hover:bg-opacity-60 transition-all duration-300 ease-in-out flex items-center justify-center opacity-0 group-hover:opacity-100">
-                  <span class="text-white text-lg sm:text-2xl lg:text-2xl xl:text-3xl font-bold transform scale-0 group-hover:scale-100 transition-transform duration-300 ease-in-out"> sub header 컴포넌트 </span>
-                </div>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="#" target="_self" class="block w-full h-full relative group">
-              <div class="bg-[url('/src/assets/index-img/mobile/logo4-2.webp')] sm:bg-[url('/src/assets/index-img/tablet/logo3-2.webp')] lg:bg-[url('/src/assets/index-img/pc/logo2-4.webp')] bg-[length:100%_100%] aspect-square bg-no-repeat bg-center border-1 border-white w-full h-full">
-                <div class="absolute inset-0 bg-brown-0.7 bg-opacity-0 group-hover:bg-opacity-60 transition-all duration-300 ease-in-out flex items-center justify-center opacity-0 group-hover:opacity-100">
-                  <span class="text-white text-lg sm:text-2xl lg:text-3xl xl:text-3xl font-bold transform scale-0 group-hover:scale-100 transition-transform duration-300 ease-in-out"> 여기에 텍스트 </span>
-                </div>
-              </div>
-            </a>
-          </li>
-          <!-- ED:mobile row 5 -->
+              </a>
+            </li>
 
-          <li class="hidden sm:block lg:hidden">
-            <a href="#" target="_self" class="w-full h-full relative group">
-              <div class="sm:bg-[url('/src/assets/index-img/tablet/logo3-3.webp')] aspect-square bg-no-repeat bg-center border-1 border-white w-full h-full bg-[length:100%_100%]">
-                <div class="absolute inset-0 bg-brown-0.7 bg-opacity-0 group-hover:bg-opacity-60 transition-all duration-300 ease-in-out flex items-center justify-center opacity-0 group-hover:opacity-100">
-                  <span class="text-white text-lg sm:text-2xl lg:text-2xl xl:text-3xl font-bold transform scale-0 group-hover:scale-100 transition-transform duration-300 ease-in-out"> 여기에 텍스트 </span>
+            <li class="border-1 border-white">
+              <a href="/src/components/component-footer.html" target="_self" class="block relative h-full group">
+                <div class="absolute inset-0 p-5 bg-brown-0.7 text-center content-center bg-opacity-60">
+                  <span class="block leading-[1.5] text-white"
+                    >footer<br />
+                    컴포넌트
+                  </span>
                 </div>
-              </div>
-            </a>
-          </li>
-        </ul>
+              </a>
+            </li>
+            <li class="border-1 border-white">
+              <a href="/src/components/component-main.html" target="_self" class="block relative h-full group">
+                <div class="absolute inset-0 p-5 bg-brown-0.7 text-center content-center bg-opacity-60">
+                  <span class="block leading-[1.5] text-white"
+                    >메인 페이지<br />
+                    컴포넌트
+                  </span>
+                </div>
+              </a>
+            </li>
+            <li class="border-1 border-white">
+              <a href="/src/components/component-menu.html" target="_self" class="block relative h-full group">
+                <div class="absolute inset-0 p-5 bg-brown-0.7 text-center content-center bg-opacity-60">
+                  <span class="block leading-[1.5] text-white"
+                    >메뉴 페이지<br />
+                    컴포넌트
+                  </span>
+                </div>
+              </a>
+            </li>
+            <li class="border-1 border-white">
+              <a href="/src/components/component-mognb.html" target="_self" class="block relative h-full group">
+                <div class="absolute inset-0 p-5 bg-brown-0.7 text-center content-center bg-opacity-60">
+                  <span class="block leading-[1.5] text-white"
+                    >모바일 GNB<br />
+                    컴포넌트
+                  </span>
+                </div>
+              </a>
+            </li>
+            <li class="border-1 border-white">
+              <a href="/src/components/component-story.html" target="_self" class="block relative h-full group">
+                <div class="absolute inset-0 p-5 bg-brown-0.7 text-center content-center bg-opacity-60">
+                  <span class="block leading-[1.5] text-white"
+                    >STORY 페이지<br />
+                    컴포넌트
+                  </span>
+                </div>
+              </a>
+            </li>
+            <li class="border-1 border-white">
+              <a href="/src/components/component-news.html" target="_self" class="block relative h-full group">
+                <div class="absolute inset-0 p-5 bg-brown-0.7 text-center content-center bg-opacity-60">
+                  <span class="block leading-[1.5] text-white"
+                    >NEWS 페이지<br />
+                    컴포넌트</span
+                  >
+                </div>
+              </a>
+            </li>
+            <li class="border-1 border-white">
+              <a href="/src/components/component-story.html" target="_self" class="block relative h-full group">
+                <div class="absolute inset-0 p-5 bg-brown-0.7 text-center content-center bg-opacity-60">
+                  <span class="block leading-[1.5] text-white"
+                    >STORE 페이지<br />
+                    컴포넌트
+                  </span>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- ED: 640px ~ 1024px -->
+
+        <!-- ST: 1024px ~ -->
+        <div class="hidden lg:block w-full max-w-250 aspect-square mx-auto bg-[url(/assets/burger_king_logo.svg)] bg-no-repeat bg-cover bg-center">
+          <ul class="grid grid-cols-3 grid-rows-5 w-full h-full">
+            <li class="border-1 border-white">
+              <a href="/src/components/common-btns.html" target="_self" class="block relative h-full group">
+                <div class="absolute inset-0 p-5 bg-brown-0.7 text-center content-center transition-all duration-300 ease-in-out opacity-0 group-hover:opacity-100 bg-opacity-0 group-hover:bg-opacity-60">
+                  <span class="text-white lg:text-2xl transform scale-0 group-hover:scale-100 transition-transform duration-300 ease-in-out">공통 링크 버튼 컴포넌트 </span>
+                </div>
+              </a>
+            </li>
+            <li class="border-1 border-white">
+              <a href="/src/components/common-labels.html" target="_self" class="block relative h-full group">
+                <div class="absolute inset-0 p-5 bg-brown-0.7 text-center content-center bg-opacity-60 opacity-100 transition-all duration-300 ease-in-out lg:opacity-0 lg:group-hover:opacity-100 lg:bg-opacity-0 lg:group-hover:bg-opacity-60">
+                  <span class="text-white lg:text-2xl transform scale-0 group-hover:scale-100 transition-transform duration-300 ease-in-out">공통 라벨 컴포넌트</span>
+                </div>
+              </a>
+            </li>
+            <li class="border-1 border-white">
+              <a href="/src/components/common-title.html" target="_self" class="block relative h-full group">
+                <div class="absolute inset-0 p-5 bg-brown-0.7 text-center content-center bg-opacity-60 opacity-100 transition-all duration-300 ease-in-out lg:opacity-0 lg:group-hover:opacity-100 lg:bg-opacity-0 lg:group-hover:bg-opacity-60">
+                  <span class="text-white lg:text-2xl transform scale-0 group-hover:scale-100 transition-transform duration-300 ease-in-out"
+                    >공통 여백 및 페이지 타이틀<br />
+                    컴포넌트</span
+                  >
+                </div>
+              </a>
+            </li>
+            <li class="border-1 border-white">
+              <a href="/src/components/component-header.html" target="_self" class="block relative h-full group">
+                <div class="absolute inset-0 p-5 bg-brown-0.7 text-center content-center bg-opacity-60 opacity-100 transition-all duration-300 ease-in-out lg:opacity-0 lg:group-hover:opacity-100 lg:bg-opacity-0 lg:group-hover:bg-opacity-60">
+                  <span class="text-white lg:text-2xl transform scale-0 group-hover:scale-100 transition-transform duration-300 ease-in-out">메인 header 컴포넌트</span>
+                </div>
+              </a>
+            </li>
+            <li class="border-1 border-white">
+              <a href="/src/components/component-sub-header.html" target="_self" class="block relative h-full group">
+                <div class="absolute inset-0 p-5 bg-brown-0.7 text-center content-center bg-opacity-60 opacity-100 transition-all duration-300 ease-in-out lg:opacity-0 lg:group-hover:opacity-100 lg:bg-opacity-0 lg:group-hover:bg-opacity-60">
+                  <span class="text-white lg:text-2xl transform scale-0 group-hover:scale-100 transition-transform duration-300 ease-in-out">서브 header 컴포넌트</span>
+                </div>
+              </a>
+            </li>
+            <li class="border-1 border-white">
+              <a href="/src/components/component-footer.html" target="_self" class="block relative h-full group">
+                <div class="absolute inset-0 p-5 bg-brown-0.7 text-center content-center bg-opacity-60 opacity-100 transition-all duration-300 ease-in-out lg:opacity-0 lg:group-hover:opacity-100 lg:bg-opacity-0 lg:group-hover:bg-opacity-60">
+                  <span class="text-white lg:text-2xl transform scale-0 group-hover:scale-100 transition-transform duration-300 ease-in-out">footer 컴포넌트 </span>
+                </div>
+              </a>
+            </li>
+
+            <li class="border-1 border-white col-span-3">
+              <a href="/src/pages/home.html" target="_self" class="block relative h-full group">
+                <div class="absolute inset-0 p-5 bg-brown-0.7 text-center content-center bg-opacity-60 opacity-100 transition-all duration-300 ease-in-out lg:opacity-0 lg:group-hover:opacity-100 lg:bg-opacity-0 lg:group-hover:bg-opacity-60">
+                  <span class="text-white lg:text-2xl transform scale-0 group-hover:scale-100 transition-transform duration-300 ease-in-out">킹버거 페이지</span>
+                </div>
+              </a>
+            </li>
+
+            <li class="border-1 border-white">
+              <a href="/src/components/component-main.html" target="_self" class="block relative h-full group">
+                <div class="absolute inset-0 p-5 bg-brown-0.7 text-center content-center bg-opacity-60 opacity-100 transition-all duration-300 ease-in-out lg:opacity-0 lg:group-hover:opacity-100 lg:bg-opacity-0 lg:group-hover:bg-opacity-60">
+                  <span class="text-white lg:text-2xl transform scale-0 group-hover:scale-100 transition-transform duration-300 ease-in-out">메인 페이지 컴포넌트 </span>
+                </div>
+              </a>
+            </li>
+            <li class="border-1 border-white">
+              <a href="/src/components/component-menu.html" target="_self" class="block relative h-full group">
+                <div class="absolute inset-0 p-5 bg-brown-0.7 text-center content-center bg-opacity-60 opacity-100 transition-all duration-300 ease-in-out lg:opacity-0 lg:group-hover:opacity-100 lg:bg-opacity-0 lg:group-hover:bg-opacity-60">
+                  <span class="text-white lg:text-2xl transform scale-0 group-hover:scale-100 transition-transform duration-300 ease-in-out">메뉴 페이지 컴포넌트 </span>
+                </div>
+              </a>
+            </li>
+            <li class="border-1 border-white">
+              <a href="/src/components/component-mognb.html" target="_self" class="block relative h-full group">
+                <div class="absolute inset-0 p-5 bg-brown-0.7 text-center content-center bg-opacity-60 opacity-100 transition-all duration-300 ease-in-out lg:opacity-0 lg:group-hover:opacity-100 lg:bg-opacity-0 lg:group-hover:bg-opacity-60">
+                  <span class="text-white lg:text-2xl transform scale-0 group-hover:scale-100 transition-transform duration-300 ease-in-out">모바일 gnb 컴포넌트 </span>
+                </div>
+              </a>
+            </li>
+            <li class="border-1 border-white">
+              <a href="/src/components/component-story.html" target="_self" class="block relative h-full group">
+                <div class="absolute inset-0 p-5 bg-brown-0.7 text-center content-center bg-opacity-60 opacity-100 transition-all duration-300 ease-in-out lg:opacity-0 lg:group-hover:opacity-100 lg:bg-opacity-0 lg:group-hover:bg-opacity-60">
+                  <span class="text-white lg:text-2xl transform scale-0 group-hover:scale-100 transition-transform duration-300 ease-in-out">STORY 페이지 컴포넌트 </span>
+                </div>
+              </a>
+            </li>
+            <li class="border-1 border-white">
+              <a href="/src/components/component-news.html" target="_self" class="block relative h-full group">
+                <div class="absolute inset-0 p-5 bg-brown-0.7 text-center content-center bg-opacity-60 opacity-100 transition-all duration-300 ease-in-out lg:opacity-0 lg:group-hover:opacity-100 lg:bg-opacity-0 lg:group-hover:bg-opacity-60">
+                  <span class="text-white lg:text-2xl transform scale-0 group-hover:scale-100 transition-transform duration-300 ease-in-out">NEWS 페이지 컴포넌트</span>
+                </div>
+              </a>
+            </li>
+            <li class="border-1 border-white">
+              <a href="/src/components/component-story.html" target="_self" class="block relative h-full group">
+                <div class="absolute inset-0 p-5 bg-brown-0.7 text-center content-center bg-opacity-60 opacity-100 transition-all duration-300 ease-in-out lg:opacity-0 lg:group-hover:opacity-100 lg:bg-opacity-0 lg:group-hover:bg-opacity-60">
+                  <span class="text-white lg:text-2xl transform scale-0 group-hover:scale-100 transition-transform duration-300 ease-in-out">STORE 페이지 컴포넌트 </span>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- ED: 1024px ~ -->
       </div>
     </div>
-    <!-- ED:컴포넌트 페이지 소개 -->
+    <!-- ED: 컴포넌트 페이지 소개 -->
 
     <div class="wrapper px-5 pt-5 pb-22.5 md:p-7.5 lg:pt-10 lg:px-15 lg:pb-22.5">
       <div class="flex flex-col items-center inner max-w-[1620px] mx-auto">
@@ -1001,7 +1215,7 @@
       </div>
     </footer>
 
-    <dialog id="notice" aria-label="비상업적 용도 알림" class="not-open:hidden flex items-center justify-center bg-beige ackdrop:bg-brown-0.7 m-auto rounded-[1.25rem] w-160 h-fit text-brown">
+    <!-- <dialog id="notice" aria-label="비상업적 용도 알림" class="not-open:hidden flex items-center justify-center bg-beige ackdrop:bg-brown-0.7 m-auto rounded-[1.25rem] w-160 h-fit text-brown">
       <article class="">
         <header class="p-[.9375rem_2.5rem] md:p-[1.875rem_3.75rem] h-[3.375rem] md:h-22 text-center text-lg md:text-2xl">
           <p>안내</p>
@@ -1021,6 +1235,6 @@
           <a href=""></a>
         </footer>
       </article>
-    </dialog>
+    </dialog> -->
   </body>
 </html>
