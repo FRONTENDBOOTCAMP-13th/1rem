@@ -8,85 +8,275 @@
     <link rel="preload" as="font" href="/fonts/Sandoll-GothicNeoRound-400.woff" crossorigin="anonymous" />
     <link rel="preload" as="font" href="/fonts/Sandoll-GothicNeoRound-700.woff" crossorigin="anonymous" />
     <script type="module" src="/src/main.js"></script>
+    <script type="module">
+      document.addEventListener('DOMContentLoaded', () => {
+        const modal = document.getElementById('notice');
+        const closeModal = document.getElementById('confirmButton');
+
+        // 페이지 로드 시 자동으로 모달 열기
+        modal.showModal();
+
+        // 닫기 버튼 클릭 시 모달 닫기
+        closeModal.addEventListener('click', () => {
+          modal.close();
+        });
+      });
+    </script>
   </head>
   <body>
     <div class="grid lg:grid-cols-2 items-center bg-[image:url(/src/assets/index-img/backgroundImg_mobile.png)] lg:bg-[image:url(/src/assets/index-img/backgroundImg.png)] w-full h-screen bg-center bg-cover">
-      <div class="relative font-BKBulMatPro text-[200px] m-auto text-light-beige">
+      <div class="relative font-BKBulMatPro text-[200px] m-auto text-light-beige leading-relaxed tracking-normal">
         <p class="absolute top-7 left-14 lg:top-13 lg:left-20 text-xl lg:text-6xl">멋쟁이 사자처럼 16팀</p>
         <h1 class="text-[100px] lg:text-[200px]">1rem</h1>
       </div>
+
       <div class="grid grid-cols-2 gap-5 px-10 lg:px-20">
-        <div class="flex flex-col gap-2.5 items-center justify-center">
-          <img src="/src/assets/index-img/face1.webp" alt="" class="border-2 lg:border-5 border-border w-20 lg:w-30 aspect-1/1 rounded-[50%]" />
-          <p class="text-lg lg:text-3xl text-light-beige">김00</p>
-          <p class="text-2xs lg:text-base text-light-beige">한줄소개/역할/기타등등..</p>
-          <span class="inline-block py-[.3125rem] px-1 text-3xs sm:px-[.625rem] sm:py-2 sm:text-xs bg-border text-brown rounded-lg">GitHub 바로가기</span>
+        <div class="flex flex-col gap-3 py-3 items-center justify-center rounded-2xl">
+          <img src="/src/assets/index-img/team/oneway.webp" alt="임한길" class="border-2 lg:border-5 border-border w-20 lg:w-30 xl:w-40 aspect-1/1 rounded-[50%]" />
+          <div class="flex flex-col items-center gap-y-2 mt-2 w-full">
+            <p class="bg-brown-0.3 py-1 min-w-[8.75rem] lg:min-w-[9.375rem] xl:min-w-40 lg:py-1.5 xl:py-2 text-center text-lg rounded-t-3xl lg:text-3xl xl:text-4xl text-light-beige">임한길</p>
+            <p class="bg-brown-0.3 py-1 min-w-[8.75rem] lg:min-w-[9.375rem] xl:min-w-40 lg:py-1.5 xl:py-2 text-2xs lg:text-base text-light-beige text-center">
+              Scrum Master <br />
+              Team Leader
+            </p>
+            <span class="bg-brown-0.3 py-1 min-w-[8.75rem] lg:min-w-[9.375rem] xl:min-w-40 lg:py-1.5 xl:py-2 text-center inline-block px-1 text-3xs sm:px-[.625rem] sm:py-2 xl:pb-2 xl:pt-2.5 sm:text-xs xl:text-sm text-light-beige rounded-b-2xl">GitHub 바로가기</span>
+          </div>
         </div>
-        <div class="flex flex-col gap-2.5 items-center justify-center">
-          <img src="/src/assets/index-img/face1.webp" alt="" class="border-2 lg:border-5 border-border w-20 lg:w-30 aspect-1/1 rounded-[50%]" />
-          <p class="text-lg lg:text-3xl text-brown">김00</p>
-          <p class="text-2xs lg:text-base text-brown">한줄소개/역할/기타등등..</p>
-          <span class="inline-block py-[.3125rem] px-1 text-3xs sm:px-[.625rem] sm:py-2 sm:text-xs bg-border text-brown rounded-lg">GitHub 바로가기</span>
+        <div class="flex flex-col gap-3 py-3 items-center justify-center rounded-2xl">
+          <img src="/src/assets/index-img/face1.webp" alt="" class="border-2 lg:border-5 border-border w-20 lg:w-30 xl:w-40 aspect-1/1 rounded-[50%]" />
+          <div class="flex flex-col items-center gap-y-2 mt-2 w-full">
+            <p class="bg-brown-0.3 py-1 min-w-[8.75rem] lg:min-w-[9.375rem] xl:min-w-40 lg:py-1.5 xl:py-2 text-center text-lg rounded-t-3xl lg:text-3xl xl:text-4xl text-light-beige">남유지</p>
+            <p class="bg-brown-0.3 py-1 min-w-[8.75rem] lg:min-w-[9.375rem] xl:min-w-40 lg:py-1.5 xl:py-2 text-2xs lg:text-base text-light-beige text-center">
+              Markup Developer <br />
+              Team Member
+            </p>
+            <span class="bg-brown-0.3 py-1 min-w-[8.75rem] lg:min-w-[9.375rem] xl:min-w-40 lg:py-1.5 xl:py-2 text-center inline-block px-1 text-3xs sm:px-[.625rem] sm:py-2 xl:pb-2 xl:pt-2.5 sm:text-xs xl:text-sm text-light-beige rounded-b-2xl">GitHub 바로가기</span>
+          </div>
         </div>
-        <div class="flex flex-col gap-2.5 items-center justify-center">
-          <img src="/src/assets/index-img/face1.webp" alt="" class="border-2 lg:border-5 border-border w-20 lg:w-30 aspect-1/1 rounded-[50%]" />
-          <p class="text-lg lg:text-3xl text-brown">김00</p>
-          <p class="text-2xs lg:text-base text-brown">한줄소개/역할/기타등등..</p>
-          <span class="inline-block py-[.3125rem] px-1 text-3xs sm:px-[.625rem] sm:py-2 sm:text-xs bg-border text-brown rounded-lg">GitHub 바로가기</span>
+        <div class="flex flex-col gap-3 py-3 items-center justify-center rounded-2xl">
+          <img src="/src/assets/index-img/face1.webp" alt="" class="border-2 lg:border-5 border-border w-20 lg:w-30 xl:w-40 aspect-1/1 rounded-[50%]" />
+          <div class="flex flex-col items-center gap-y-2 mt-2 w-full">
+            <p class="bg-brown-0.3 py-1 min-w-[8.75rem] lg:min-w-[9.375rem] xl:min-w-40 lg:py-1.5 xl:py-2 text-center text-lg rounded-t-3xl lg:text-3xl xl:text-4xl text-light-beige">유시원</p>
+            <p class="bg-brown-0.3 py-1 min-w-[8.75rem] lg:min-w-[9.375rem] xl:min-w-40 lg:py-1.5 xl:py-2 text-2xs lg:text-base text-light-beige text-center">
+              Web Designer <br />
+              Team Member
+            </p>
+            <span class="bg-brown-0.3 py-1 min-w-[8.75rem] lg:min-w-[9.375rem] xl:min-w-40 lg:py-1.5 xl:py-2 text-center inline-block px-1 text-3xs sm:px-[.625rem] sm:py-2 xl:pb-2 xl:pt-2.5 sm:text-xs xl:text-sm text-light-beige rounded-b-2xl">GitHub 바로가기</span>
+          </div>
         </div>
-        <div class="flex flex-col gap-2.5 items-center justify-center">
-          <img src="/src/assets/index-img/face1.webp" alt="" class="border-2 lg:border-5 border-border w-20 lg:w-30 aspect-1/1 rounded-[50%]" />
-          <p class="text-lg lg:text-3xl text-brown">김00</p>
-          <p class="text-2xs lg:text-base text-brown">한줄소개/역할/기타등등..</p>
-          <span class="inline-block py-[.3125rem] px-1 text-3xs sm:px-[.625rem] sm:py-2 sm:text-xs bg-border text-brown rounded-lg">GitHub 바로가기</span>
+        <div class="flex flex-col items-center justify-center">
+          <img src="/src/assets/index-img/face1.webp" alt="" class="border-2 lg:border-5 border-border w-20 lg:w-30 xl:w-40 aspect-1/1 rounded-[50%]" />
+          <div class="flex flex-col items-center gap-y-2 mt-2 w-full">
+            <p class="bg-brown-0.3 py-1 min-w-[8.75rem] lg:min-w-[9.375rem] xl:min-w-40 lg:py-1.5 xl:py-2 text-center text-lg rounded-t-3xl lg:text-3xl xl:text-4xl text-light-beige">황유빈</p>
+            <p class="bg-brown-0.3 py-1 min-w-[8.75rem] lg:min-w-[9.375rem] xl:min-w-40 lg:py-1.5 xl:py-2 text-2xs lg:text-base text-light-beige text-center">
+              Style Developer <br />
+              Team Member
+            </p>
+            <span class="bg-brown-0.3 py-1 min-w-[8.75rem] lg:min-w-[9.375rem] xl:min-w-40 lg:py-1.5 xl:py-2 text-center inline-block text-3xs sm:px-[.625rem] sm:py-2 xl:pb-2 xl:pt-2.5 sm:text-xs xl:text-sm text-light-beige rounded-b-2xl">GitHub 바로가기</span>
+          </div>
         </div>
       </div>
     </div>
 
-    <div class="flex justify-center my-10">
-      <img src="/src/assets/index-img/pages.svg" alt="파일 구조" />
+    <div class="text-center text-brown">
+      여기 프로젝트 소개가 있으면 어떨까요.. <br />
+      안녕하세요, 팀 1rem 입니다. <br />
+      저희 팀은 버거킹 사이트 어쩌구... <br />
+      컴포넌트화랑 tailwindcss 사용한 내용..?
     </div>
+
+    <!-- ST:Main 페이지 가는 버튼 -->
+    <div class="flex items-center justify-center text-brown">
+      <a href="/src/pages/home.html" class="px-3 py-1.5 sm:px-4 sm:py-2 lg:px-5 lg:py-2.5 rounded-full flex items-center gap-2 text-sm sm:text-base lg:text-lg text-brown shadow-[-5px_-5px_10px_rgba(255,_255,_255,_0.8),_5px_5px_10px_rgba(0,_0,_0,_0.25)] transition-all hover:shadow-[-1px_-1px_5px_rgba(255,_255,_255,_0.6),_1px_1px_5px_rgba(0,_0,_0,_0.3),inset_-2px_-2px_5px_rgba(255,_255,_255,_1),inset_2px_2px_4px_rgba(0,_0,_0,_0.3)] hover:text-ci">
+        <img src="/src/assets/elements/ico_bt_link.svg" alt="메인페이지들어가기" class="w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6" />
+        <span>Main 페이지</span>
+      </a>
+    </div>
+    <!-- ED:Main 페이지 가는 버튼 -->
+
+    <!-- ST:컴포넌트 페이지 소개 -->
+    <div class="px-5 pt-5 md:p-7.5 lg:pt-10 lg:px-15">
+      <div class="max-w-[1620px] mx-auto">
+        <div><h2 class="mb-3 text-4xl leading-[1] font-BKBulMatPro text-brown sm:mb-[1.125rem] sm:text-5xl sm:leading-[1.39] lg:text-6xl lg:mb-6">컴포넌트</h2></div>
+        <ul class="grid grid-cols-3 grid-rows-5 sm:grid-cols-4 sm:grid-rows-4 lg:grid-cols-5 lg:grid-rows-3 w-full h-full gap-0 [&>li]:aspect-square [&>li]:w-full [&>li]:h-full auto-rows-[1fr]">
+          <!-- ST:mobile row 1 -->
+          <li>
+            <a href="/src/components/common-btns.html" target="_self" class="block w-full h-full relative group">
+              <div class="bg-[url('/src/assets/index-img/mobile/logo0-0.webp')] sm:bg-[url('/src/assets/index-img/tablet/logo0-0.webp')] lg:bg-[url('/src/assets/index-img/pc/logo0-0.webp')] bg-[length:100%_100%] aspect-square bg-no-repeat bg-center border-1 border-white w-full h-full">
+                <div class="absolute inset-0 bg-brown-0.7 bg-opacity-0 group-hover:bg-opacity-60 transition-all duration-300 ease-in-out flex items-center justify-center opacity-0 group-hover:opacity-100">
+                  <span class="text-white text-lg sm:text-2xl lg:text-2xl xl:text-3xl font-bold transform scale-0 group-hover:scale-100 transition-transform duration-300 ease-in-out"> 공통 버튼 </span>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="/src/components/common-labels.html" target="_self" class="block w-full h-full relative group">
+              <div class="bg-[url('/src/assets/index-img/mobile/logo0-1.webp')] sm:bg-[url('/src/assets/index-img/tablet/logo0-1.webp')] lg:bg-[url('/src/assets/index-img/pc/logo0-1.webp')] bg-[length:100%_100%] aspect-square bg-no-repeat bg-center border-1 border-white w-full h-full">
+                <div class="absolute inset-0 bg-brown-0.7 bg-opacity-0 group-hover:bg-opacity-60 transition-all duration-300 ease-in-out flex items-center justify-center opacity-0 group-hover:opacity-100">
+                  <span class="text-white text-lg sm:text-2xl lg:text-2xl xl:text-3xl font-bold transform scale-0 group-hover:scale-100 transition-transform duration-300 ease-in-out"> 공통 라벨 </span>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="/src/components/common-title.html" target="_self" class="block w-full h-full relative group">
+              <div class="bg-[url('/src/assets/index-img/mobile/logo0-2.webp')] sm:bg-[url('/src/assets/index-img/tablet/logo0-2.webp')] lg:bg-[url('/src/assets/index-img/pc/logo0-2.webp')] bg-[length:100%_100%] aspect-square bg-no-repeat bg-center border-1 border-white w-full h-full">
+                <div class="absolute inset-0 bg-brown-0.7 bg-opacity-0 group-hover:bg-opacity-60 transition-all duration-300 ease-in-out flex items-center justify-center opacity-0 group-hover:opacity-100">
+                  <span class="text-white text-lg sm:text-2xl lg:text-2xl xl:text-3xl font-bold transform scale-0 group-hover:scale-100 transition-transform duration-300 ease-in-out"> 공통 타이틀 </span>
+                </div>
+              </div>
+            </a>
+          </li>
+          <!-- ED:mobile row 1 -->
+
+          <!-- ST:mobile row 2 -->
+          <li>
+            <a href="/src/components/component-header.html" target="_self" class="block w-full h-full relative group">
+              <div class="bg-[url('/src/assets/index-img/mobile/logo1-0.webp')] sm:bg-[url('/src/assets/index-img/tablet/logo0-3.webp')] lg:bg-[url('/src/assets/index-img/pc/logo0-3.webp')] bg-[length:100%_100%] aspect-square bg-no-repeat bg-center border-1 border-white w-full h-full">
+                <div class="absolute inset-0 bg-brown-0.7 bg-opacity-0 group-hover:bg-opacity-60 transition-all duration-300 ease-in-out flex items-center justify-center opacity-0 group-hover:opacity-100">
+                  <span class="text-white text-lg sm:text-2xl lg:text-2xl xl:text-3xl font-bold transform scale-0 group-hover:scale-100 transition-transform duration-300 ease-in-out"> header 컴포넌트 </span>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="/src/components/component-footer.html" target="_self" class="block w-full h-full relative group">
+              <div class="bg-[url('/src/assets/index-img/mobile/logo1-1.webp')] sm:bg-[url('/src/assets/index-img/tablet/logo1-0.webp')] lg:bg-[url('/src/assets/index-img/pc/logo0-4.webp')] bg-[length:100%_100%] aspect-square bg-no-repeat bg-center border-1 border-white w-full h-full">
+                <div class="absolute inset-0 bg-brown-0.7 bg-opacity-0 group-hover:bg-opacity-60 transition-all duration-300 ease-in-out flex items-center justify-center opacity-0 group-hover:opacity-100">
+                  <span class="text-white text-lg sm:text-2xl lg:text-2xl xl:text-3xl font-bold transform scale-0 group-hover:scale-100 transition-transform duration-300 ease-in-out"> footer 컴포넌트 </span>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="/src/components/component-main.html" target="_self" class="block w-full h-full relative group">
+              <div class="bg-[url('/src/assets/index-img/mobile/logo1-2.webp')] sm:bg-[url('/src/assets/index-img/tablet/logo1-1.webp')] lg:bg-[url('/src/assets/index-img/pc/logo1-0.webp')] bg-[length:100%_100%] aspect-square bg-no-repeat bg-center border-1 border-white w-full h-full">
+                <div class="absolute inset-0 bg-brown-0.7 bg-opacity-0 group-hover:bg-opacity-60 transition-all duration-300 ease-in-out flex items-center justify-center opacity-0 group-hover:opacity-100">
+                  <span class="text-white text-lg sm:text-2xl lg:text-2xl xl:text-3xl font-bold transform scale-0 group-hover:scale-100 transition-transform duration-300 ease-in-out"> main 컴포넌트 </span>
+                </div>
+              </div>
+            </a>
+          </li>
+          <!-- ED:mobile row 2 -->
+
+          <!-- ST:mobile row 3 -->
+          <li>
+            <a href="/src/components/component-menu.html" target="_self" class="block w-full h-full relative group">
+              <div class="bg-[url('/src/assets/index-img/mobile/logo2-0.webp')] sm:bg-[url('/src/assets/index-img/tablet/logo1-2.webp')] lg:bg-[url('/src/assets/index-img/pc/logo1-1.webp')] bg-[length:100%_100%] aspect-square bg-no-repeat bg-center border-1 border-white w-full h-full transition-all duration-300 ease-in-out">
+                <div class="hidden absolute inset-0 bg-brown-0.7 bg-opacity-0 group-hover:bg-opacity-60 transition-all duration-300 ease-in-out sm:flex items-center justify-center opacity-0 group-hover:opacity-100">
+                  <span class="text-white text-lg sm:text-2xl lg:text-2xl xl:text-3xl font-bold transform scale-0 group-hover:scale-100 transition-transform duration-300 ease-in-out"> main 컴포넌트 </span>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="/src/components/component-menudetail.html" target="_self" class="block w-full h-full relative group">
+              <div class="bg-[url('/src/assets/index-img/mobile/logo2-1.webp')] sm:bg-[url('/src/assets/index-img/tablet/logo1-3.webp')] lg:bg-[url('/src/assets/index-img/pc/logo1-2.webp')] bg-[length:100%_100%] aspect-square bg-no-repeat bg-center border-1 border-white w-full h-full transition-all duration-300 ease-in-out">
+                <div class="hidden absolute inset-0 bg-brown-0.7 bg-opacity-0 group-hover:bg-opacity-60 transition-all duration-300 ease-in-out sm:flex items-center justify-center opacity-0 group-hover:opacity-100">
+                  <span class="text-white text-lg sm:text-2xl lg:text-2xl xl:text-3xl font-bold transform scale-0 group-hover:scale-100 transition-transform duration-300 ease-in-out"> main 컴포넌트 </span>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="/src/components/component-mognb.html" target="_self" class="block w-full h-full relative group">
+              <div class="bg-[url('/src/assets/index-img/mobile/logo2-2.webp')] sm:bg-[url('/src/assets/index-img/tablet/logo2-0.webp')] lg:bg-[url('/src/assets/index-img/pc/logo1-3.webp')] bg-[length:100%_100%] aspect-square bg-no-repeat bg-center border-1 border-white w-full h-full transition-all duration-300 ease-in-out">
+                <div class="hidden absolute inset-0 bg-brown-0.7 bg-opacity-0 group-hover:bg-opacity-60 transition-all duration-300 ease-in-out sm:flex items-center justify-center opacity-0 group-hover:opacity-100">
+                  <span class="text-white text-lg sm:text-2xl lg:text-2xl xl:text-3xl font-bold transform scale-0 group-hover:scale-100 transition-transform duration-300 ease-in-out"> main 컴포넌트 </span>
+                </div>
+              </div>
+            </a>
+          </li>
+          <!-- ED:mobile row 3 -->
+
+          <!-- ST:mobile row 4 -->
+          <li>
+            <a href="/src/components/component-news.html" target="_self" class="block w-full h-full relative group">
+              <div class="bg-[url('/src/assets/index-img/mobile/logo3-0.webp')] sm:bg-[url('/src/assets/index-img/tablet/logo2-1.webp')] lg:bg-[url('/src/assets/index-img/pc/logo1-4.webp')] bg-[length:100%_100%] aspect-square bg-no-repeat bg-center border-1 border-white w-full h-full">
+                <div class="absolute inset-0 bg-brown-0.7 bg-opacity-0 group-hover:bg-opacity-60 transition-all duration-300 ease-in-out flex items-center justify-center opacity-0 group-hover:opacity-100">
+                  <span class="text-white text-lg sm:text-2xl lg:text-2xl xl:text-3xl font-bold transform scale-0 group-hover:scale-100 transition-transform duration-300 ease-in-out"> news 컴포넌트 </span>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="/src/components/component-store.html" target="_self" class="block w-full h-full relative group">
+              <div class="bg-[url('/src/assets/index-img/mobile/logo3-1.webp')] sm:bg-[url('/src/assets/index-img/tablet/logo2-2.webp')] lg:bg-[url('/src/assets/index-img/pc/logo2-0.webp')] bg-[length:100%_100%] aspect-square bg-no-repeat bg-center border-1 border-white w-full h-full">
+                <div class="absolute inset-0 bg-brown-0.7 bg-opacity-0 group-hover:bg-opacity-60 transition-all duration-300 ease-in-out flex items-center justify-center opacity-0 group-hover:opacity-100">
+                  <span class="text-white text-lg sm:text-2xl lg:text-2xl xl:text-3xl font-bold transform scale-0 group-hover:scale-100 transition-transform duration-300 ease-in-out"> store 컴포넌트 </span>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="/src/components/component-story.html" target="_self" class="block w-full h-full relative group">
+              <div class="bg-[url('/src/assets/index-img/mobile/logo3-2.webp')] sm:bg-[url('/src/assets/index-img/tablet/logo2-3.webp')] lg:bg-[url('/src/assets/index-img/pc/logo2-1.webp')] bg-[length:100%_100%] aspect-square bg-no-repeat bg-center border-1 border-white w-full h-full">
+                <div class="absolute inset-0 bg-brown-0.7 bg-opacity-0 group-hover:bg-opacity-60 transition-all duration-300 ease-in-out flex items-center justify-center opacity-0 group-hover:opacity-100">
+                  <span class="text-white text-lg sm:text-2xl lg:text-2xl xl:text-3xl font-bold transform scale-0 group-hover:scale-100 transition-transform duration-300 ease-in-out"> story 컴포넌트 </span>
+                </div>
+              </div>
+            </a>
+          </li>
+          <!-- ED:mobile row 4 -->
+
+          <!-- ST:mobile row 5 -->
+          <li>
+            <a href="/src/components/component-customer.html" target="_self" class="block w-full h-full relative group">
+              <div class="bg-[url('/src/assets/index-img/mobile/logo4-0.webp')] sm:bg-[url('/src/assets/index-img/tablet/logo3-0.webp')] lg:bg-[url('/src/assets/index-img/pc/logo2-2.webp')] bg-[length:100%_100%] aspect-square bg-no-repeat bg-center border-1 border-white w-full h-full">
+                <div class="absolute inset-0 bg-brown-0.7 bg-opacity-0 group-hover:bg-opacity-60 transition-all duration-300 ease-in-out flex items-center justify-center opacity-0 group-hover:opacity-100">
+                  <span class="text-white text-lg sm:text-2xl lg:text-2xl xl:text-3xl font-bold transform scale-0 group-hover:scale-100 transition-transform duration-300 ease-in-out"> customer 컴포넌트 </span>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="/src/components/component-sub-header.html" target="_self" class="block w-full h-full relative group">
+              <div class="bg-[url('/src/assets/index-img/mobile/logo4-1.webp')] sm:bg-[url('/src/assets/index-img/tablet/logo3-1.webp')] lg:bg-[url('/src/assets/index-img/pc/logo2-3.webp')] bg-[length:100%_100%] aspect-square bg-no-repeat bg-center border-1 border-white w-full h-full">
+                <div class="absolute inset-0 bg-brown-0.7 bg-opacity-0 group-hover:bg-opacity-60 transition-all duration-300 ease-in-out flex items-center justify-center opacity-0 group-hover:opacity-100">
+                  <span class="text-white text-lg sm:text-2xl lg:text-2xl xl:text-3xl font-bold transform scale-0 group-hover:scale-100 transition-transform duration-300 ease-in-out"> sub header 컴포넌트 </span>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_self" class="block w-full h-full relative group">
+              <div class="bg-[url('/src/assets/index-img/mobile/logo4-2.webp')] sm:bg-[url('/src/assets/index-img/tablet/logo3-2.webp')] lg:bg-[url('/src/assets/index-img/pc/logo2-4.webp')] bg-[length:100%_100%] aspect-square bg-no-repeat bg-center border-1 border-white w-full h-full">
+                <div class="absolute inset-0 bg-brown-0.7 bg-opacity-0 group-hover:bg-opacity-60 transition-all duration-300 ease-in-out flex items-center justify-center opacity-0 group-hover:opacity-100">
+                  <span class="text-white text-lg sm:text-2xl lg:text-3xl xl:text-3xl font-bold transform scale-0 group-hover:scale-100 transition-transform duration-300 ease-in-out"> 여기에 텍스트 </span>
+                </div>
+              </div>
+            </a>
+          </li>
+          <!-- ED:mobile row 5 -->
+
+          <li class="hidden sm:block lg:hidden">
+            <a href="#" target="_self" class="w-full h-full relative group">
+              <div class="sm:bg-[url('/src/assets/index-img/tablet/logo3-3.webp')] aspect-square bg-no-repeat bg-center border-1 border-white w-full h-full bg-[length:100%_100%]">
+                <div class="absolute inset-0 bg-brown-0.7 bg-opacity-0 group-hover:bg-opacity-60 transition-all duration-300 ease-in-out flex items-center justify-center opacity-0 group-hover:opacity-100">
+                  <span class="text-white text-lg sm:text-2xl lg:text-2xl xl:text-3xl font-bold transform scale-0 group-hover:scale-100 transition-transform duration-300 ease-in-out"> 여기에 텍스트 </span>
+                </div>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- ED:컴포넌트 페이지 소개 -->
 
     <div class="wrapper px-5 pt-5 pb-22.5 md:p-7.5 lg:pt-10 lg:px-15 lg:pb-22.5">
       <div class="flex flex-col items-center inner max-w-[1620px] mx-auto">
-        <h2 class="hidden text-[2.125rem] text-brown text-center font-bold lg:block lg:mt-10 lg:mb-12.5">문서화...</h2>
-        <div class="grid grid-cols-2 gap-5 text-brown">
-          <div class="bg-brown-0.1 rounded-[10px] p-5">
-            <h3 class="my-5 text-3xl text-center font-bold">커밋 컨벤션(Commit Convention)</h3>
-            <p class="font-Pretendard">
-              Feat: 새로운 기능 추가 <br />
-              BugFix: 버그 수정 <br />
-              Docs: 문서의 수정 <br />
-              Modify: 코드 변경 <br />
-              Refactor: 리팩토링 <br />
-              Design: CSS 등 사용자 UI 디자인 변경 <br />
-              Comment: 필요한 주석 추가 및 변경 <br />
-              Style: 코드 포맷팅, 세미콜론 누락, 코드 변경이 없는 경우 <br />
-              Test: 테스트(테스트 코드 추가, 수정, 삭제, 비즈니스 로직에 변경이 없는 경우) <br />
-              Chore: 빌드 수정, 패키지 매니저 설정, 운영 코드 변경이 없는 경우(assets image, 패키지 매니저 등) <br />
-              Init: 프로젝트 초기 생성 <br />
-              Rename: 파일 혹은 폴더명 수정하거나 옮기는 경우 <br />
-              Remove: 파일을 삭제하는 작업만 수행하는 경우 <br />
-              Merge: Pull 과정 중 현재 commit과 자동 병합이 일어날 때 <br />
-              Build: 새로운 라이브러리 혹은 패키지
+        <h2 class="font-BKBulMatPro text-[2.125rem] text-brown text-center font-bold mt-10 mb-12.5">프로젝트 규칙</h2>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 text-brown">
+          <div class="bg-brown-0.1 rounded-[.625rem] p-5">
+            <h3 class="my-5 text-base lg:text-3xl text-center font-bold">커밋 컨벤션(Commit Convention)</h3>
+            <p class="mb-5 text-2xs lg:text-base font-Pretendard">
+              `[타입] 이름 / 내용`으로 작성한다. <br />
+              세부 내역이 필요하다면 한 줄 띄어서 작성한다. <br />
+              -로 각 항목을 구분하여 작성한다.
             </p>
-          </div>
-          <div class="bg-brown-0.1 rounded-[10px] p-5">
-            <h3 class="my-5 text-3xl text-center font-bold">코딩 컨벤션(Coding Convention)</h3>
-            <p class="font-Pretendard">
-              각 구역별 가독성을 위해 시작 / 끝 영역을 표시해준다. <br />
-              4px 단위가 아닌 수치들은 [rem]로 작성한다. <br />
-              파일 명 :  component-header.index/  component-메뉴명.index
-            </p>
-          </div>
-          <div class="bg-brown-0.1 rounded-[10px] p-5">
-            <h3 class="my-5 text-3xl text-center font-bold">폴더 구조</h3>
-          </div>
-          <div class="bg-brown-0.1 rounded-[10px] p-5">
-            <h3 class="my-5 text-3xl text-center font-bold">커밋 컨벤션(Commit Convention)</h3>
-            <table class="break-keep border-y border-brown-0.1 w-full **:p-2.5 **:text-[.875rem] **:font-Pretendard">
+            <table class="break-keep border-y border-brown-0.1 mb-5 w-full **:p-2.5 **:text-2xs lg:**:text-base **:font-Pretendard">
               <caption class="sr-only top-0">
-                폴더구조|으로 구성
+                커밋컨벤션|타입과 설명으로 구성
               </caption>
               <colgroup>
                 <col class="" />
@@ -94,63 +284,743 @@
               </colgroup>
               <thead class="bg-brown-0.05">
                 <tr class="font-bold border-b border-brown-0.1">
-                  <th>태그..?</th>
-                  <th>설명</th>
+                  <th>type</th>
+                  <th>description</th>
                 </tr>
               </thead>
-              <tbody class="text-center">
+              <tbody class="">
                 <tr class="border-b border-brown-0.1">
-                  <td>Feat:</td>
+                  <td>[feat]</td>
                   <td>새로운 기능 추가</td>
                 </tr>
                 <tr class="border-b border-brown-0.1">
-                  <td>BugFix:</td>
+                  <td>[bugFix]</td>
                   <td>버그 수정</td>
                 </tr>
                 <tr class="border-b border-brown-0.1">
-                  <td>Docs:</td>
+                  <td>[docs]</td>
                   <td>문서의 수정</td>
                 </tr>
                 <tr class="border-b border-brown-0.1">
-                  <td>Modify:</td>
+                  <td>[modify]</td>
                   <td>코드 변경</td>
                 </tr>
                 <tr class="border-b border-brown-0.1">
-                  <td>Refactor:</td>
+                  <td>[refactor</td>
                   <td>리팩토링</td>
                 </tr>
                 <tr class="border-b border-brown-0.1">
-                  <td>Design:</td>
+                  <td>[design]</td>
                   <td>CSS 등 사용자 UI 디자인 변경</td>
                 </tr>
                 <tr class="border-b border-brown-0.1">
-                  <td>Comment:</td>
+                  <td>[comment]</td>
                   <td>필요한 주석 추가 및 변경</td>
+                </tr>
+                <tr class="border-b border-brown-0.1">
+                  <td>[style]</td>
+                  <td>코드 포맷팅, 세미콜론 누락, 코드 변경이 없는 경우</td>
+                </tr>
+                <tr class="border-b border-brown-0.1">
+                  <td>[test]</td>
+                  <td>테스트(테스트 코드 추가, 수정, 삭제, 비즈니스 로직에 변경이 없는 경우)</td>
+                </tr>
+                <tr class="border-b border-brown-0.1">
+                  <td>[chore]</td>
+                  <td>빌드 수정, 패키지 매니저 설정, 운영 코드 변경이 없는 경우(assets image, 패키지 매니저 등)</td>
+                </tr>
+                <tr class="border-b border-brown-0.1">
+                  <td>[init]</td>
+                  <td>프로젝트 초기 생성</td>
+                </tr>
+                <tr class="border-b border-brown-0.1">
+                  <td>[rename]</td>
+                  <td>파일 혹은 폴더명 수정하거나 옮기는 경우</td>
+                </tr>
+                <tr class="border-b border-brown-0.1">
+                  <td>[remove]</td>
+                  <td>파일을 삭제하는 작업만 수행하는 경우</td>
+                </tr>
+                <tr class="border-b border-brown-0.1">
+                  <td>[merge]</td>
+                  <td>Pull 과정 중 현재 commit과 자동 병합이 일어날 때</td>
+                </tr>
+                <tr class="">
+                  <td>[build]</td>
+                  <td>새로운 라이브러리 혹은 패키지</td>
                 </tr>
               </tbody>
             </table>
+            <p class="text-2xs lg:text-base font-Pretendard">
+              모바일 퍼스트로 작업한다. <br />
+              반응형 breakpoint
+            </p>
+            <pre class="mb-5 p-2 m-1 bg-brown-0.05 text-brown-0.7">
+- md: 640px ~ 1023px  
+- lg: 1024px ~ 1499px 
+- xl: 1500px ~</pre
+            >
+          </div>
+
+          <div class="bg-brown-0.1 rounded-[.625rem] p-5">
+            <h3 class="my-5 text-base lg:text-3xl text-center font-bold">코딩 컨벤션(Coding Convention)</h3>
+            <div class="text-2xs lg:text-base font-Pretendard">
+              <p>각 구역별 가독성을 위해 시작 / 끝 영역을 표시해준다.</p>
+              <pre class="mb-5 p-2 m-1 bg-brown-0.05 text-brown-0.7">
+  &lt;!&#45;&#45; ST: header &#45;&#45;&gt;
+  &lt;!&#45;&#45; ED: header &#45;&#45;&gt;
+
+  &lt;!&#45;&#45; ST: 메뉴 리스트 &#45;&#45;&gt;
+  &lt;!&#45;&#45; ED: 메뉴 리스트 &#45;&#45;&gt;</pre
+              >
+              <p>4px 단위가 아닌 수치들은 [rem]로 작성한다.</p>
+              <pre class="mb-5 p-2 m-1 bg-brown-0.05 text-brown-0.7">
+  m-4
+  py-[.3125rem]</pre
+              >
+              <p class="mb-5">
+                컴포넌트 파일은 src/components 폴더 하위에 생성하며 `component-메뉴명(컴포넌트명).html`으로 네이밍한다. <br />
+                페이지 파일은 src/pages 폴더 하위에 생성하며 페이지명으로 네이밍한다.
+              </p>
+              <p class="mb-5">컴포넌트 및 전체 페이지는 flex, 섹션별 레이아웃은 grid를 적용한다.</p>
+            </div>
+          </div>
+
+          <div class="bg-brown-0.1 rounded-[10px] p-5">
+            <h3 class="my-5 text-base lg:text-3xl text-center font-bold">기본 구조</h3>
+            <div class="text-2xs lg:text-base font-Pretendard">
+              <p>public 정적 파일</p>
+              <div class="mb-5 p-2 m-1 bg-brown-0.05 text-brown-0.7">
+                &nbsp;&nbsp;- fonts폴더 -> 메인 폰트, 서브 폰트<br />
+                &nbsp;&nbsp;- asset 폴더 -> 파비콘, 로고
+              </div>
+              <p>src 동적 파일</p>
+              <div class="mb-5 p-2 m-1 bg-brown-0.05 text-brown-0.7">
+                &nbsp;&nbsp;- asset 폴더 -> 이미지 파일<br />
+                &nbsp;&nbsp;- components 폴더 -> 컴포넌트<br />
+                &nbsp;&nbsp;- pages 폴더 -> 페이지
+              </div>
+              <pre class="mb-5 p-2 m-1 bg-brown-0.05 text-brown-0.7">
+📂 1rem  
+├─ 📂 public
+│   ├─ 📂 fonts
+│   |  ├─ 📃 BKBulMatPro-Bold.woff
+│   |  └─ 📃 Flame-Regular.woff
+|   |     ...
+|   └─ 📂 
+└─ 📂 src  
+    ├─ 📂 assets  
+    ├─ 📂 components  
+    │  └─ 📃 common-btns.html  
+    │  └─ 📃 common-labels.html  
+    │  └─ 📃 common-title.html  
+    │  └─ 📃 component-customer.html  
+    │  └─ 📃 component-footer.html  
+    │     ...
+    ├─ 📂 js  
+    │  └─ 📂 layout  
+    │      ├─ 📃 footer.js  
+    │      └─ 📃 main-header.js  
+              ...
+    └─ 📂 pages  
+      ├─ 📂 customer  
+      ├─ 📂 franchise  
+      ├─ 📂 menu  
+      ├─ 📂 news  
+      ├─ 📂 policies  
+      ├─ 📂 store  
+      ├─ 📂 story
+      └─ 📃 home.html 
+                </pre
+              >
+            </div>
+          </div>
+
+          <div class="bg-brown-0.1 rounded-[10px] p-5">
+            <h3 class="my-5 text-base lg:text-3xl text-center font-bold">기타 규칙</h3>
+            <p>매일 오전 9시 30분에 모여 각자 진행률을 공유한다. (요청사항 공유/이슈 상황 공유)</p>
+          </div>
+
+          <div class="lg:col-span-2 bg-brown-0.1 rounded-[10px] p-5 text-2xs lg:text-base">
+            <h3 class="my-5 text-base lg:text-3xl text-center font-bold">타임라인</h3>
+            <p class="text-start mb-2.5 font-Pretendard">2025년 3월</p>
+            <div class="grid grid-cols-6 lg:grid-cols-12 gap-0.5 text-center font-Pretendard">
+              <div class="col-span-6 grid grid-cols-subgrid">
+                <span>14일</span>
+                <span>15일</span>
+                <span>16일</span>
+                <span>17일</span>
+                <span>18일</span>
+                <span>19일</span>
+                <span class="col-span-2 border border-border rounded-md bg-light-beige">초기 설정</span>
+                <span class="col-span-2 border border-border rounded-md bg-light-beige">컴포넌트 작업</span>
+                <span class="col-span-2 border border-border rounded-md bg-light-beige">페이지 UI 구현</span>
+              </div>
+              <div class="col-span-6 grid grid-cols-subgrid">
+                <span>20일</span>
+                <span>20일</span>
+                <span>21일</span>
+                <span>22일</span>
+                <span>23일</span>
+                <span>24일</span>
+                <span class="border border-border rounded-md bg-light-beige">1차 배포</span>
+                <span class="col-span-2 border border-border rounded-md bg-light-beige">수정 및 테스트</span>
+                <span class="border border-border rounded-md bg-light-beige">페이지 병합</span>
+                <span class="border border-border rounded-md bg-light-beige">문서화</span>
+                <span class="border border-border rounded-md bg-light-beige">최종 배포</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:col-span-2 bg-brown-0.1 rounded-[10px] p-5">
+            <h3 class="my-5 text-base lg:text-3xl text-center font-bold">데일리 스크럼</h3>
+            <div class="grid lg:grid-cols-3 gap-2.5 text-2xs lg:text-base font-Pretendard">
+              <details>
+                <summary>2025.03.14. 회의록</summary>
+                <div class="mb-5 p-2 bg-brown-0.05 text-brown-0.7">
+                  <strong class="block text-lg text-center font-bold">- 논의 사항 -</strong>
+                  <ul>
+                    <li>
+                      1. 프로젝트 컨셉 및 레퍼런스
+                      <p class="ml-2.5">
+                        29cm → 카드 형식 페이지 <br />
+
+                        캐치테이블 → 카드 형식 + 반응형 디자인 적용 <br />
+                        구글 플레이 → 카드형식 폼 활용 (빠른 완성 가능) <br />
+                        인프런 → 공통 컴포넌트 활용 (커뮤니티, 로그인 모달, 이벤트 페이지) <br />
+                        버거킹 → 시각적 요소 참고 (모달창, 유튜브 영상 삽입, 모달 버튼 디자인) <br />
+                        코스트코 → 카드 컴포넌트, 폰트 수정 (투박한 느낌 개선) <br />
+                        텀블버그 → 컴포넌트 방식 참고 (단, 임팩트가 부족) <br />
+                        Sonder → 목업 이미지 및 영상 필요 <br />
+                        여행 서비스 → 레이아웃 구현 용이 (멀티 컬럼 구조 적용) <br />
+
+                        ⇒ 버거킹 사이트로 결정
+                      </p>
+                    </li>
+                    <li>2. 컴포넌트 스타일 및 통일된 디자인 적용 필요</li>
+                    <li>3. 모바일 & 데스크톱 반응형 대응 방법 구체화</li>
+                    <li>4. 목업 이미지 및 동영상 활용 여부 검토</li>
+                  </ul>
+                  <br />
+                  <strong class="block text-lg text-center font-bold">- 오늘의 목표 -</strong>
+                  <ul>
+                    <li>
+                      1. 디자인 및 기획
+                      <p class="ml-2.5">
+                        피그마 생성 → 프로젝트 UI 설계 시작 <br />
+                        페이지 정리 → 구성 요소 및 레이아웃 정리<br />
+                        컴포넌트 단위 나누기 → 재사용 가능한 UI 설계<br />
+                      </p>
+                    </li>
+                    <li>
+                      2. 개발 준비
+                      <p class="ml-2.5">
+                        변수 정리 및 확인 → Tailwind CSS 변수, 전역 스타일 정의<br />
+                        피그마 시안 작업 → 실제 구현할 디자인 확정<br />
+                        스프린트 작성 → 작업 일정 및 목표 설정<br />
+                      </p>
+                    </li>
+                    <li>
+                      3. 배포 준비
+                      <p class="ml-2.5">
+                        테일윈드 정리 → 클래스 구조 최적화 및 유지보수성 향상<br />
+                        커밋 컨벤션 정리 → Git 커밋 규칙 수립 및 적용<br />
+                        배포 연습 → 실제 배포 환경 테스트<br />
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </details>
+
+              <details>
+                <summary>2025.03.15. 회의록</summary>
+                <div class="mb-5 p-2 bg-brown-0.05 text-brown-0.7">
+                  <strong class="block text-lg text-center font-bold">- 논의 사항 -</strong>
+                  <ul>
+                    <ul>
+                      <li>1. webp 변환 시 품질 저하 없는지 확인 필요</li>
+                      <li>2. 배포 페이지에 들어갈 주요 내용 및 디자인 방향 결정</li>
+                      <li>3. 공통 버튼 스타일 (크기, 컬러, 인터랙션) 정리</li>
+                      <li>
+                        4. 담당 페이지 분배 기준 (기능별 vs. 디자인 난이도별) 논의
+                        <p class="ml-2.5">⇒ 유사 페이지 및 난이도를 고려하여 분배함 메인 페이지 / ****MENU, NEWS, STORE / CUSTOMER, 가맹점 모집, 약관 컴포넌트 작업 / STORY 하위 메뉴 페이지</p>
+                      </li>
+                    </ul>
+                    <br />
+                    <strong class="block text-lg text-center font-bold">- 오늘의 목표 -</strong>
+                    <li>
+                      1. 최적화 및 이미지 작업
+                      <p class="ml-2.5">
+                        webp 포맷 최적화 검토 → 투명도 유지 여부 확인<br />
+
+                        이미지 파일 형식 변경 → SVG 제외 모든 이미지 webp 변환<br />
+
+                        이미지 파일명 통일 → 규칙 정해서 정리
+                      </p>
+                    </li>
+                    <li>
+                      2. 스타일 및 개발 환경 설정
+
+                      <p class="ml-2.5">
+                        폰트 및 색상 변수 설정 → font-size, color 전역 변수 생성<br />
+
+                        Prettier 초기 설정 → 코드 스타일 규칙 정리 및 적용
+                      </p>
+                    </li>
+                    <li>
+                      3. 컴포넌트 및 페이지 작업
+
+                      <p class="ml-2.5">
+                        담당할 페이지 나누기 → 팀원별 작업 분배<br />
+
+                        공통 버튼 컴포넌트 만들기 → 일관된 UI 적용
+                      </p>
+                    </li>
+                    <li>
+                      4. 배포 사이트 대문 페이지 레퍼런스 조사
+                      <p class="ml-2.5">
+                        참고할 디자인 및 레이아웃 찾기 <br />
+
+                        필수 포함 요소: 메인 페이지, 컴포넌트 모음 페이지, 안내 모달창
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </details>
+
+              <details>
+                <summary>2025.03.17. 회의록</summary>
+                <div class="mb-5 p-2 bg-brown-0.05 text-brown-0.7">
+                  <strong class="block text-lg text-center font-bold">- 논의 사항 -</strong>
+                  <ul>
+                    <li>
+                      1. 디스플레이 방식 통일
+                      <p class="ml-2.5">
+                        컴포넌트 및 전체 페이지 → flex 적용 <br />
+                        섹션별 레이아웃 규칙 → grid 활용
+                      </p>
+                    </li>
+                    <li>
+                      2. 파일명 통일
+                      <p class="ml-2.5">
+                        페이지 별 컴포넌트: component-{페이지}.html <br />
+                        공통 컴포넌트: common-{컴포넌트명}.html
+                      </p>
+                    </li>
+                  </ul>
+                  <br />
+                  <strong class="block text-lg text-center font-bold">- 진행 상황 -</strong>
+                  <ul>
+                    <li>
+                      남유지
+                      <p class="ml-2.5">- 페이지별 컴포넌트 분리하여 제작 중</p>
+                    </li>
+                    <li>
+                      유시원
+                      <p class="ml-2.5">
+                        - 이미지 네이밍 및 webp 변환 <br />
+                        - 고객지원 페이지, 자주 묻는 질문(FAQ) 등 주요 컴포넌트 작업
+                      </p>
+                    </li>
+                    <li>
+                      임한길
+                      <p class="ml-2.5">- 공통 컴포넌트 작업 중</p>
+                    </li>
+                    <li>
+                      황유빈
+                      <p class="ml-2.5">
+                        - 구조 마크업 진행 중 <br />
+                        - 헤더 애니메이션 및 스크립트 작업 필요<br />
+                        - 모바일 환경에서는 display: none, header index 따로 작업
+                      </p>
+                    </li>
+                  </ul>
+                  <br />
+                  <strong class="block text-lg text-center font-bold">- 오늘의 목표 -</strong>
+                  <ul>
+                    <li>1. 헤더 애니메이션 방식 및 모바일 대응 방식 확정 필요</li>
+                    <li>2. grid 사용 시 gap, align-items 등 디테일 조정</li>
+                    <li>3. dialog 활용한 모달창 스타일링 논의</li>
+                    <li>4. 공통 컴포넌트 스타일 가이드 정리 필요</li>
+                    <li>5. 헤더 애니메이션 방식 및 모바일 대응</li>
+                    <li>6. grid 적용 방식 세부 조정</li>
+                    <li>7. 공통 컴포넌트 스타일 확정</li>
+                  </ul>
+                </div>
+              </details>
+
+              <details>
+                <summary>2025.03.18. 회의록</summary>
+                <div class="mb-5 p-2 bg-brown-0.05 text-brown-0.7">
+                  <strong class="block text-lg text-center font-bold">- 논의 사항 -</strong>
+                  <ul>
+                    <li>1. 화요일 발표 담당자 및 발표 내용 결정</li>
+                    <li>
+                      2. 인덱스 페이지 구성 방안 논의
+                      <p class="ml-2.5">
+                        각자 아이디어 구상 후 공유<br />
+                        페이지 작업을 먼저 끝낸 사람이 인덱스 페이지 작업 시작
+                      </p>
+                    </li>
+                    <li>
+                      3. 인덱스 페이지 필수 포함 내용
+                      <p class="ml-2.5">모달창, 각 컴포넌트 페이지, home.html, 컨벤션 문서, 스크럼 회의 기록, GitHub 저장소 링크, 팀원 소개 페이지, 회고/소감</p>
+                    </li>
+                  </ul>
+                  <br />
+                  <strong class="block text-lg text-center font-bold">- 진행 상황 -</strong>
+                  <ul>
+                    <li>
+                      남유지
+                      <p class="ml-2.5">
+                        - MENU 컴포넌트 작업 완료 <br />
+                        - 메뉴 상세 페이지 컴포넌트 추가 작업 진행 중 (반응형 추가 수정 필요) <br />
+                        - NEWS, STORE 컴포넌트 작업 진행 중
+                      </p>
+                    </li>
+                    <li>
+                      유시원
+                      <p class="ml-2.5">- 가맹 신청서 컴포넌트 작업 완료</p>
+                    </li>
+                    <li>
+                      임한길
+                      <p class="ml-2.5">
+                        - 공통 컴포넌트 작업 완료 <br />
+                        - STORY 컴포넌트 작업 진행 중
+                      </p>
+                    </li>
+                    <li>
+                      황유빈
+                      <p class="ml-2.5">- 메인 페이지 광고영상 컴포넌트 작업 완료 - 메뉴 및 매장 소개, Why 버거킹 컴포넌트 작업 완료 - 고객과 함께 성장하는 버거킹 컴포넌트 작업 완료</p>
+                    </li>
+                  </ul>
+                  <br />
+                  <strong class="block text-lg text-center font-bold">- 오늘의 목표 -</strong>
+                  <ul>
+                    <li>
+                      남유지
+                      <p class="ml-2.5">- MENU 컴포넌트 완성</p>
+                    </li>
+                    <li>
+                      유시원
+                      <p class="ml-2.5">- 약관 5종, Q&A 컴포넌트 작업 완성</p>
+                    </li>
+                    <li>
+                      임한길
+                      <p class="ml-2.5">- 광고영상 모달 컴포넌트 작업 완성 <br />- 컴포넌트 점검 후 필요하면 황유빈님과 협업하여 추가 작업 진행</p>
+                    </li>
+                    <li>
+                      황유빈
+                      <p class="ml-2.5">- 공통 헤더, 메인 배너 수정. 주석처리 및 라벨 추가 <br />- 푸터 작업 예정</p>
+                    </li>
+                  </ul>
+                </div>
+              </details>
+
+              <details>
+                <summary>2025.03.19. 회의록</summary>
+                <div class="mb-5 p-2 bg-brown-0.05 text-brown-0.7">
+                  <strong class="block text-lg text-center font-bold">- 논의 사항 -</strong>
+                  <ul>
+                    <li>
+                      1. 컴포넌트 작업 내용 모두 push 후 develop 브랜치에서 merge 진행
+                      <p class="ml-2.5">충돌 발생 시 팀원들과 함께 해결</p>
+                    </li>
+
+                    <li>2. main 브랜치에 merge 후 배포 테스트</li>
+                  </ul>
+                  <br />
+                  <strong class="block text-lg text-center font-bold">- 진행 상황 -</strong>
+                  <ul>
+                    <li>
+                      남유지
+                      <p class="ml-2.5">
+                        - MENU 컴포넌트 작업 완료
+                        <br />- NEWS 컴포넌트 진행 중
+                      </p>
+                    </li>
+                    <li>
+                      유시원
+                      <p class="ml-2.5">
+                        - CUSTOMER 컴포넌트 작업 완료
+                        <br />- 페이지 작업 시작
+                      </p>
+                    </li>
+                    <li>
+                      임한길
+                      <p class="ml-2.5">- STORY 하위 페이지 컴포넌트 작업 완료</p>
+                    </li>
+                    <li>
+                      황유빈
+                      <p class="ml-2.5">- MAIN 컴포넌트 작업 완료</p>
+                    </li>
+                  </ul>
+                  <br />
+                  <strong class="block text-lg text-center font-bold">- 오늘의 목표 -</strong>
+                  <ul>
+                    <li>
+                      남유지
+                      <p class="ml-2.5">- NEWS 컴포넌트 작업 완료</p>
+                    </li>
+                    <li>
+                      유시원
+                      <p class="ml-2.5">- 백업 필요 여부 확인 후 페이지 작업 이어서 진행</p>
+                    </li>
+                    <li>
+                      임한길
+                      <p class="ml-2.5">- 푸터 백업, STORY 페이지 작업 시작</p>
+                    </li>
+                    <li>
+                      황유빈
+                      <p class="ml-2.5">- 탑 배너(반응형 적용하여 제작), 인디케이터 모양 제작, 헤더-서브메뉴 구현</p>
+                    </li>
+                  </ul>
+                </div>
+              </details>
+
+              <details>
+                <summary>2025.03.20. 회의록</summary>
+                <div class="mb-5 p-2 bg-brown-0.05 text-brown-0.7">
+                  <strong class="block text-lg text-center font-bold">- 논의 사항 -</strong>
+                  <ul>
+                    <li>
+                      1. 마크업 통일감 주기
+                      <p class="ml-2.5">h1: 로고, h2: 페이지별 제목, h3: 컴포넌트</p>
+                    </li>
+                    <li>2. header, footer 연결 및 수정</li>
+                    <li>3. sticky - 바깥요소에 지정</li>
+                    <li>4. 상세페이지: detail01.html, detail02.html 등으로 작성</li>
+                  </ul>
+                  <br />
+                  <strong class="block text-lg text-center font-bold">- 진행 상황 -</strong>
+                  <ul>
+                    <li>
+                      남유지
+                      <p class="ml-2.5">- NEWS 상세페이지 작업 진행 중</p>
+                    </li>
+                    <li>
+                      유시원
+                      <p class="ml-2.5">- CUSTOMER 페이지, qa_list 페이지 완료 (js 제외)</p>
+                    </li>
+                    <li>
+                      임한길
+                      <p class="ml-2.5">- STORY 브랜드 지도 부분까지 완료</p>
+                    </li>
+                    <li>
+                      황유빈
+                      <p class="ml-2.5">
+                        - header 작업 pr
+                        <br />- main.js 작업
+                      </p>
+                    </li>
+                  </ul>
+                  <br />
+                  <strong class="block text-lg text-center font-bold">- 오늘의 목표 -</strong>
+                  <ul>
+                    <li>
+                      남유지
+                      <p class="ml-2.5">
+                        - 전체 페이지 마크업 완료
+                        <br />- 접근성, 완성도 신경 쓰기
+                      </p>
+                    </li>
+                    <li>
+                      유시원
+                      <p class="ml-2.5">
+                        - 약관 모달 → 페이지로 빼기
+                        <br />- 상세 페이지 3-4개 제작 <br />- franchise 페이지 작업 완료
+                      </p>
+                    </li>
+                    <li>
+                      임한길
+                      <p class="ml-2.5">- STORY 하위 페이지 작업 완료</p>
+                    </li>
+                    <li>
+                      황유빈
+                      <p class="ml-2.5">
+                        - 헤더 sticky 설정하고 url 연결
+                        <br />- 컴포넌트 코딩 컨벤션과 접근성 확인 <br />- main page 제작
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </details>
+
+              <details>
+                <summary>2025.03.21. 회의록</summary>
+                <div class="mb-5 p-2 bg-brown-0.05 text-brown-0.7">
+                  <strong class="block text-lg text-center font-bold">- 논의 사항 -</strong>
+                  <ul>
+                    <li>
+                      폴더 구조 논의
+                      <p class="ml-2.5">page vs pages ⇒ page 사용하기</p>
+                    </li>
+                  </ul>
+                  <br />
+                  <strong class="block text-lg text-center font-bold">- 진행 상황 -</strong>
+                  <ul>
+                    <li>
+                      남유지
+                      <p class="ml-2.5">
+                        - 메뉴 nav active → hover로 수정
+                        <br />- 페이지 전체 작업 완료, 디테일 수정 중 <br />- 모달창 작업 중
+                      </p>
+                    </li>
+                    <li>
+                      유시원
+                      <p class="ml-2.5">
+                        - 이용약관, 위치정보이용약관, 법적고지 완료
+                        <br />- button → a로 수정 완료 <br />- 모집 폼 레이아웃 작업 중
+                      </p>
+                    </li>
+                    <li>
+                      임한길
+                      <p class="ml-2.5">
+                        - story → 광고영상 모달창 관련 스크립트 처리
+                        <br />- header, footer 웹 컴포넌트 작업 및 적용 <br />- footer 영역 모달창 관련 작업 완료
+                      </p>
+                    </li>
+                    <li>
+                      황유빈
+                      <p class="ml-2.5">
+                        - 메인 페이지 제작 완료
+                        <br />- 접근성 수정 중
+                      </p>
+                    </li>
+                  </ul>
+                  <br />
+                  <strong class="block text-lg text-center font-bold">- 오늘의 목표 -</strong>
+                  <ul>
+                    <li>
+                      남유지
+                      <p class="ml-2.5">
+                        - 상세 페이지 제작 완료
+                        <br />- 모달창 작업 완료
+                      </p>
+                    </li>
+                    <li>
+                      유시원
+                      <p class="ml-2.5">
+                        - 약관 5종 완료
+                        <br />- news 상세페이지 3-4개 제작
+                      </p>
+                    </li>
+                    <li>
+                      임한길
+                      <p class="ml-2.5">- 전체 페이지 테스트 시작</p>
+                    </li>
+                    <li>
+                      황유빈
+                      <p class="ml-2.5">- footer slide 제작</p>
+                    </li>
+                  </ul>
+                </div>
+              </details>
+
+              <details>
+                <summary>2025.03.22. 회의록</summary>
+                <div class="mb-5 p-2 bg-brown-0.05 text-brown-0.7">
+                  <strong class="block text-lg text-center font-bold">- 논의 사항 -</strong>
+                  <ul>
+                    <li>
+                      오늘까지 모두 끝내기!
+                      <p class="ml-2.5">
+                        로고, 파비콘 만들기 <br />
+                        focus outline 색상 변경
+                      </p>
+                    </li>
+                  </ul>
+                  <br />
+                  <strong class="block text-lg text-center font-bold">- 진행 상황 -</strong>
+                  <ul>
+                    <li>
+                      남유지
+                      <p class="ml-2.5">
+                        - event-detail 이미지 수정 완료
+                        <br />- event 메뉴 경로 수정 완료
+                      </p>
+                    </li>
+                    <li>
+                      유시원
+                      <p class="ml-2.5">- 문서 작업 중</p>
+                    </li>
+                    <li>
+                      임한길
+                      <p class="ml-2.5">- 전체 test 진행중</p>
+                    </li>
+                    <li>
+                      황유빈
+                      <p class="ml-2.5">
+                        - index 메인 팀소개 xl 설정
+                        <br />- 페이지 및 컴포넌트 소개 그리드 제작
+                      </p>
+                    </li>
+                  </ul>
+                  <br />
+                  <strong class="block text-lg text-center font-bold">- 오늘의 목표 -</strong>
+                  <ul>
+                    <li>
+                      남유지
+                      <p class="ml-2.5">
+                        - 모달창 디테일 수정
+                        <br />- 뉴스 sticky 부분 수정 <br />- 메뉴 상세 수정
+                      </p>
+                    </li>
+                    <li>
+                      유시원
+                      <p class="ml-2.5">
+                        - index 페이지 문서화 부분 수정하기
+                        <br />- readme 수정하기
+                      </p>
+                    </li>
+                    <li>
+                      임한길
+                      <p class="ml-2.5">
+                        - 팀 소개 멘트 및 회고록 작성 예정
+                        <br />- vite.config 수정 예정 <br />- 컴포넌트 페이지 통일감 있게 수정 예정 <br />- 전체 페이지 title 수정
+                      </p>
+                    </li>
+                    <li>
+                      황유빈
+                      <p class="ml-2.5">
+                        - index 팀소개 이미지 추가
+                        <br />- index 그리드 배열 수정 <br />- 폰트 수정
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </details>
+            </div>
           </div>
         </div>
-
-        <div class="bg-[image:url(src/assets/index-img/timeline.png)] rounded-[10px] p-5 mx-10 w-full h-100 bg-cover"></div>
       </div>
     </div>
+    <footer class="wrapper p-5 bg-light-beige md:px-7.5 lg:px-15 lg:py-10">
+      <div class="inner max-w-[1620px] mx-auto font-Pretendard text-brown text-center">
+        <p class="text-2xs lg:text-base">Copyright © 2025 1rem. All rights reserved.</p>
+      </div>
+    </footer>
 
-    <p>남유지, 유시원, 임한길, 황유빈 Let's go!</p>
-    <p>1rem 화이팅!</p>
+    <dialog id="notice" aria-label="비상업적 용도 알림" class="not-open:hidden flex items-center justify-center bg-beige ackdrop:bg-brown-0.7 m-auto rounded-[1.25rem] w-160 h-fit text-brown">
+      <article class="">
+        <header class="p-[.9375rem_2.5rem] md:p-[1.875rem_3.75rem] h-[3.375rem] md:h-22 text-center text-lg md:text-2xl">
+          <p>안내</p>
+        </header>
 
-    <p>페이지 링크</p>
-    <a href="./src/pages/home.html">HOME</a>
+        <div class="p-[0_1.25rem_.3125rem_1.25rem] p-auto md:p-[0_1.875rem_1.875rem_1.875rem] lg:pb-0 font-Pretendard text-center">
+          <p>
+            해당 사이트는 <br />
+            가시안이며 비상업적 취업을 위한 <br />
+            포트폴리오 용으로만 사용하기 위해 <br />
+            제작된 사이트입니다.
+          </p>
+        </div>
 
-    <p>컴포넌트 링크</p>
-    <ul>
-      <li><a href="./src/components/common-btns.html">공통 링크 버튼</a></li>
-      <li><a href="./src/components/common-labels.html">공통 라벨</a></li>
-      <li><a href="./src/components/component-story.html">Component-STORY</a></li>
-      <li><a href="./src/components/common-title.html">공통 타이틀</a></li>
-    </ul>
-
-    <p>페이지 링크</p>
-    <ul></ul>
+        <footer class="flex justify-center items-center p-[.625rem_0.9375rem_0.9375rem_0.9375rem] lg:p-[1.25rem_1.875rem] h-21">
+          <button type="button" id="confirmButton" class="p-[.3125rem] rounded-[2.5rem] w-full md:w-80 h-11 text-sm text-white bg-brown">확인</button>
+          <a href=""></a>
+        </footer>
+      </article>
+    </dialog>
   </body>
 </html>
