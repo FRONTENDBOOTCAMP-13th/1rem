@@ -3,96 +3,103 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>[컴포넌트] 공통 버튼 및 라벨</title>
+    <title>[컴포넌트] MENU 상세</title>
     <link rel="preload" as="font" href="/fonts/Sandoll-GothicNeoRound-400.woff" crossorigin="anonymous" />
     <link rel="preload" as="font" href="/fonts/Sandoll-GothicNeoRound-700.woff" crossorigin="anonymous" />
     <script type="module" src="/src/main.js"></script>
   </head>
-  <body>
-    <h1>메뉴 상세 페이지 컴포넌트</h1>
-    <!-- st : 메뉴 상세페이지 컴포넌트 -->
-    <figure class="m-[100px_30px_16px_16px] flex flex-col items-center lg:flex-row lg:items-center">
-      <img src="/src/assets/menu/burger/burger_1.webp" alt="" class="mx-auto w-full max-w-[20rem] min-w-[20rem] lg:relative lg:h-auto lg:min-h-[13.125remd] lg:min-w-[20rem] lg:max-w-[36.25rem] lg:m-0 lg:p-[0px_36px] lg:mt-40px lg:mb-50px" />
-      <figcaption class="lg:flex-1 lg:flex lg:flex-col lg:pl-10">
-        <div class="mt-2.5 flex flex-nowrap items-baseline">
-          <h3 class="font-BKBulMatPro text-4xl text-brown lg:text-6xl">몬스터 와퍼</h3>
-          <p class="ml-[5px] font-Pretendard text-2xs text-brown-0.7 lg:text-sm">1110 kal</p>
-        </div>
-        <p class="text-2xs text-brown-0.7 lg: text-left lg:m-[30px_0] lg:w-auto lg:text-[0.875rem]">불맛 가득한 순쇠고기, 치킨, 베이컨에 화끈한 디아블로 소스의 압도적인 맛</p>
-        <label class="flex flex-wrap rounded-[.625rem] text-center text-2xs text-[#89665b] bg-brown-0.05 mt-[.3125rem] lg:text-base lg:p-[15px_5px_15px_20px]">
-          <p class="mt-[.3125rem] mr-[15px] mb-[5px] ml-2.5">#와퍼</p>
-          <p class="mt-[.3125rem] mr-[15px] mb-[5px] ml-0">#치즈</p>
-          <p class="mt-[.3125rem] mr-[15px] mb-[5px] ml-0">#매콤한 맛</p>
-        </label>
-        <div class="lg:mt-8">
-          <button href="#" class="flex items-center justify-between w-full h-[44px] rounded-[.625rem] text-2xs text-[#89665b] bg-brown-0.05 mt-[.3125rem] px-3">
-            <div class="flex gap-0 items-center">
-              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" class="mr-2">
-                <g clip-path="url(#clip0_768_23752)">
+  <body class="m-5 space-y-10">
+    <h1 class="text-3xl font-bold">[컴포넌트] MENU 상세</h1>
+    <!-- ST : 메뉴 상세페이지 컴포넌트 -->
+    <div>
+      <h2 class="mb-4 2xl font-bold">메뉴 상세페이지 컴포넌트</h2>
+      <figure class="m-[100px_30px_16px_16px] flex flex-col items-center lg:flex-row lg:items-center">
+        <img src="/src/assets/menu/burger/burger_1.webp" alt="" class="mx-auto w-full max-w-[20rem] min-w-[20rem] lg:relative lg:h-auto lg:min-h-[13.125remd] lg:min-w-[20rem] lg:max-w-[36.25rem] lg:m-0 lg:p-[0px_36px] lg:mt-40px lg:mb-50px" />
+        <figcaption class="lg:flex-1 lg:flex lg:flex-col lg:pl-10">
+          <div class="mt-2.5 flex flex-nowrap items-baseline">
+            <h3 class="font-BKBulMatPro text-4xl text-brown lg:text-6xl">몬스터 와퍼</h3>
+            <p class="ml-[5px] font-Pretendard text-2xs text-brown-0.7 lg:text-sm">1110 kal</p>
+          </div>
+          <p class="text-2xs text-brown-0.7 lg: text-left lg:m-[30px_0] lg:w-auto lg:text-[0.875rem]">불맛 가득한 순쇠고기, 치킨, 베이컨에 화끈한 디아블로 소스의 압도적인 맛</p>
+          <label class="flex flex-wrap rounded-[.625rem] text-center text-2xs text-[#89665b] bg-brown-0.05 mt-[.3125rem] lg:text-base lg:p-[15px_5px_15px_20px]">
+            <p class="mt-[.3125rem] mr-[15px] mb-[5px] ml-2.5">#와퍼</p>
+            <p class="mt-[.3125rem] mr-[15px] mb-[5px] ml-0">#치즈</p>
+            <p class="mt-[.3125rem] mr-[15px] mb-[5px] ml-0">#매콤한 맛</p>
+          </label>
+          <div class="lg:mt-8">
+            <button href="#" class="flex items-center justify-between w-full h-[44px] rounded-[.625rem] text-2xs text-[#89665b] bg-brown-0.05 mt-[.3125rem] px-3">
+              <div class="flex gap-0 items-center">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" class="mr-2">
+                  <g clip-path="url(#clip0_768_23752)">
+                    <path
+                      d="M6.66167 13.5684C5.17417 13.5684 3.745 12.9909 2.60167 11.9234C1.24833 10.6517 0.4375 8.8142 0.4375 6.9942C0.4375 6.8892 0.4375 6.77253 0.4375 6.65003C0.536667 3.1267 3.50583 0.344196 7.0175 0.431696C10.2725 0.530863 13.5625 2.6017 13.5625 6.9942C13.5625 8.73836 13.0317 10.3542 12.1333 11.3284C11.1942 12.3492 10.0333 13.3584 7.035 13.5567C6.90667 13.5625 6.78417 13.5684 6.65583 13.5684H6.66167ZM6.83667 1.59836C4.01917 1.59836 1.68583 3.85003 1.60417 6.68503C1.60417 6.7842 1.60417 6.87753 1.60417 6.9767C1.60417 8.49336 2.275 10.0159 3.40083 11.0717C4.39833 12.005 5.67 12.4775 6.965 12.39C9.74167 12.2092 10.6283 11.2409 11.2758 10.5409C11.8183 9.9517 12.3958 8.71503 12.3958 6.9942C12.3958 3.13836 9.47917 1.68003 6.9825 1.59836C6.93583 1.59836 6.88333 1.59836 6.83667 1.59836Z"
+                      fill="#502314"
+                    />
+                    <path
+                      d="M6.43431 6.94739C6.43431 6.70822 6.13098 6.85989 5.90931 6.91822C5.65848 6.96489 5.50098 6.81906 5.50098 6.64989C5.50098 6.53322 5.54181 6.44572 5.66431 6.35239C5.81014 6.24739 6.00264 6.14822 6.19514 6.06072C6.60348 5.89739 7.02931 5.79239 7.44348 5.79822C7.60681 5.79822 7.77014 5.82156 7.78181 6.24739L7.71764 9.21072C7.71764 9.41489 7.86348 9.88739 8.03848 9.96322C8.14348 10.0099 8.19598 10.0216 8.27181 10.0507C8.41764 10.0974 8.49348 10.1382 8.49348 10.2899V10.4532C8.49348 10.5699 8.41764 10.6341 8.26014 10.6341H5.84514C5.69348 10.6341 5.61181 10.5641 5.61181 10.4532V10.2899C5.61181 10.1382 5.68764 10.0974 5.83348 10.0507C5.90931 10.0216 5.96764 10.0099 6.07264 9.96322C6.36431 9.67739 6.38181 8.62739 6.38181 8.42322L6.42848 6.94739H6.43431ZM6.02598 4.28156C6.02598 3.77989 6.39348 3.36572 6.95348 3.36572C7.48431 3.36572 7.88098 3.78572 7.88098 4.28156C7.88098 4.77739 7.63014 5.18572 7.09931 5.18572C6.52764 5.18572 6.02598 4.77739 6.02598 4.28156Z"
+                      fill="#502314"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_768_23752">
+                      <rect width="14" height="14" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+                <p class="text-xs text-brown">원산지, 영양성분, 알레르기 유발 성분</p>
+              </div>
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_108_2309)">
                   <path
-                    d="M6.66167 13.5684C5.17417 13.5684 3.745 12.9909 2.60167 11.9234C1.24833 10.6517 0.4375 8.8142 0.4375 6.9942C0.4375 6.8892 0.4375 6.77253 0.4375 6.65003C0.536667 3.1267 3.50583 0.344196 7.0175 0.431696C10.2725 0.530863 13.5625 2.6017 13.5625 6.9942C13.5625 8.73836 13.0317 10.3542 12.1333 11.3284C11.1942 12.3492 10.0333 13.3584 7.035 13.5567C6.90667 13.5625 6.78417 13.5684 6.65583 13.5684H6.66167ZM6.83667 1.59836C4.01917 1.59836 1.68583 3.85003 1.60417 6.68503C1.60417 6.7842 1.60417 6.87753 1.60417 6.9767C1.60417 8.49336 2.275 10.0159 3.40083 11.0717C4.39833 12.005 5.67 12.4775 6.965 12.39C9.74167 12.2092 10.6283 11.2409 11.2758 10.5409C11.8183 9.9517 12.3958 8.71503 12.3958 6.9942C12.3958 3.13836 9.47917 1.68003 6.9825 1.59836C6.93583 1.59836 6.88333 1.59836 6.83667 1.59836Z"
-                    fill="#502314"
-                  />
-                  <path
-                    d="M6.43431 6.94739C6.43431 6.70822 6.13098 6.85989 5.90931 6.91822C5.65848 6.96489 5.50098 6.81906 5.50098 6.64989C5.50098 6.53322 5.54181 6.44572 5.66431 6.35239C5.81014 6.24739 6.00264 6.14822 6.19514 6.06072C6.60348 5.89739 7.02931 5.79239 7.44348 5.79822C7.60681 5.79822 7.77014 5.82156 7.78181 6.24739L7.71764 9.21072C7.71764 9.41489 7.86348 9.88739 8.03848 9.96322C8.14348 10.0099 8.19598 10.0216 8.27181 10.0507C8.41764 10.0974 8.49348 10.1382 8.49348 10.2899V10.4532C8.49348 10.5699 8.41764 10.6341 8.26014 10.6341H5.84514C5.69348 10.6341 5.61181 10.5641 5.61181 10.4532V10.2899C5.61181 10.1382 5.68764 10.0974 5.83348 10.0507C5.90931 10.0216 5.96764 10.0099 6.07264 9.96322C6.36431 9.67739 6.38181 8.62739 6.38181 8.42322L6.42848 6.94739H6.43431ZM6.02598 4.28156C6.02598 3.77989 6.39348 3.36572 6.95348 3.36572C7.48431 3.36572 7.88098 3.78572 7.88098 4.28156C7.88098 4.77739 7.63014 5.18572 7.09931 5.18572C6.52764 5.18572 6.02598 4.77739 6.02598 4.28156Z"
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M11.0659 6.58163L5.57375 1.34435C5.46279 1.23882 5.27871 1.16882 5.09412 1.16882C4.90953 1.16882 4.72493 1.23882 4.61449 1.34435L3.69153 2.22307C3.58108 2.3286 3.50693 2.50413 3.50693 2.67966C3.50693 2.85519 3.58108 2.99678 3.69153 3.13678L7.74582 7.00269L3.70034 10.8596C3.58938 10.9651 3.51575 11.1406 3.51575 11.3167C3.51575 11.4922 3.58938 11.6678 3.70034 11.7733L4.62279 12.652C4.73375 12.7575 4.91834 12.8275 5.10293 12.8275C5.28753 12.8275 5.43479 12.7575 5.58256 12.652L11.0545 7.43382C11.0545 7.43382 11.5372 7.02443 11.0659 6.58163Z"
                     fill="#502314"
                   />
                 </g>
                 <defs>
-                  <clipPath id="clip0_768_23752">
-                    <rect width="14" height="14" fill="white" />
+                  <clipPath id="clip0_108_2309">
+                    <rect width="11.6667" height="7.77778" fill="white" transform="translate(11.2778 1.16669) rotate(90)" />
                   </clipPath>
                 </defs>
               </svg>
-              <p class="text-xs text-brown">원산지, 영양성분, 알레르기 유발 성분</p>
-            </div>
-            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <g clip-path="url(#clip0_108_2309)">
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M11.0659 6.58163L5.57375 1.34435C5.46279 1.23882 5.27871 1.16882 5.09412 1.16882C4.90953 1.16882 4.72493 1.23882 4.61449 1.34435L3.69153 2.22307C3.58108 2.3286 3.50693 2.50413 3.50693 2.67966C3.50693 2.85519 3.58108 2.99678 3.69153 3.13678L7.74582 7.00269L3.70034 10.8596C3.58938 10.9651 3.51575 11.1406 3.51575 11.3167C3.51575 11.4922 3.58938 11.6678 3.70034 11.7733L4.62279 12.652C4.73375 12.7575 4.91834 12.8275 5.10293 12.8275C5.28753 12.8275 5.43479 12.7575 5.58256 12.652L11.0545 7.43382C11.0545 7.43382 11.5372 7.02443 11.0659 6.58163Z"
-                  fill="#502314"
-                />
-              </g>
-              <defs>
-                <clipPath id="clip0_108_2309">
-                  <rect width="11.6667" height="7.77778" fill="white" transform="translate(11.2778 1.16669) rotate(90)" />
-                </clipPath>
-              </defs>
-            </svg>
-          </button>
-        </div>
-      </figcaption>
-    </figure>
-    <h1>메뉴 더 보기 컴포넌트</h1>
-    <!-- st: 이런 메뉴도 있어요 -->
-    <ul class="flex flex-nowrap w-full overflow-x-auto">
-      <li class="relative pt-[1.75rem] px-[.75rem] pb-[.625rem] rounded-[.625rem] bg-light-beige text-center lg:pt-[2.375rem] lg:px-[1.125rem] lg:pb-5 shadow-[0_0_10px_rgba(0,0,0,0.05)] overflow-hidden">
-        <a href="#">
-          <img src="/src/assets/menu/burger/burger_1.webp" alt="몬스터와퍼" class="max-h-[105px] mx-auto" />
-          <h3 class="mt-[.3125rem] mb-[1em] text-sm text-brown leading-[1] lg:text-lg lg:mb-0">몬스터와퍼</h3>
-          <span class="text-3xs text-brown-0.7 lg:text-2xs">몬스터와퍼</span>
-          <strong class="absolute top-[8px] left-[12px] font-Flame rounded-[.3125rem] pt-[2px] pb-[3px] text-white bg-[#ff8732] py-[0.625rem] px-1 text-[.6875rem] lg:top-5 lg:left-4.5">BEST</strong>
-        </a>
-      </li>
-      <li class="relative pt-[1.75rem] px-[.75rem] pb-[.625rem] rounded-[.625rem] bg-light-beige text-center lg:pt-[2.375rem] lg:px-[1.125rem] lg:pb-5 shadow-[0_0_10px_rgba(0,0,0,0.05)] overflow-hidden">
-        <a href="#">
-          <img src="/src/assets/menu/burger/burger_1.webp" alt="몬스터와퍼" class="max-h-[105px] mx-auto" />
-          <h3 class="mt-[.3125rem] mb-[1em] text-sm text-brown leading-[1] lg:text-lg lg:mb-0">몬스터와퍼</h3>
-          <span class="text-3xs text-brown-0.7 lg:text-2xs">몬스터와퍼</span>
-          <strong class="absolute top-[8px] left-[12px] font-Flame rounded-[.3125rem] pt-[2px] pb-[3px] text-white bg-[#ff8732] py-[0.625rem] px-1 text-[.6875rem] lg:top-5 lg:left-4.5">BEST</strong>
-        </a>
-      </li>
-      <li class="relative pt-[1.75rem] px-[.75rem] pb-[.625rem] rounded-[.625rem] bg-light-beige text-center lg:pt-[2.375rem] lg:px-[1.125rem] lg:pb-5 shadow-[0_0_10px_rgba(0,0,0,0.05)] overflow-hidden">
-        <a href="#">
-          <img src="/src/assets/menu/burger/burger_1.webp" alt="몬스터와퍼" class="max-h-[105px] mx-auto" />
-          <h3 class="mt-[.3125rem] mb-[1em] text-sm text-brown leading-[1] lg:text-lg lg:mb-0">몬스터와퍼</h3>
-          <span class="text-3xs text-brown-0.7 lg:text-2xs">몬스터와퍼</span>
-          <strong class="absolute top-[8px] left-[12px] font-Flame rounded-[.3125rem] pt-[2px] pb-[3px] text-white bg-[#ff8732] py-[0.625rem] px-1 text-[.6875rem] lg:top-5 lg:left-4.5">BEST</strong>
-        </a>
-      </li>
-    </ul>
-    <!-- ed: 이런 메뉴도 있어요 -->
+            </button>
+          </div>
+        </figcaption>
+      </figure>
+    </div>
+    <!-- ED : 메뉴 상세페이지 컴포넌트 -->
+
+    <!-- ST: 이런 메뉴도 있어요 -->
+    <div>
+      <h2 class="mb-4 2xl font-bold">이런 메뉴도 있어요</h2>
+      <ul class="flex flex-nowrap w-full overflow-x-auto">
+        <li class="relative pt-[1.75rem] px-[.75rem] pb-[.625rem] rounded-[.625rem] bg-light-beige text-center lg:pt-[2.375rem] lg:px-[1.125rem] lg:pb-5 shadow-[0_0_10px_rgba(0,0,0,0.05)] overflow-hidden">
+          <a href="#">
+            <img src="/src/assets/menu/burger/burger_1.webp" alt="몬스터와퍼" class="max-h-[105px] mx-auto" />
+            <h3 class="mt-[.3125rem] mb-[1em] text-sm text-brown leading-[1] lg:text-lg lg:mb-0">몬스터와퍼</h3>
+            <span class="text-3xs text-brown-0.7 lg:text-2xs">몬스터와퍼</span>
+            <strong class="absolute top-[8px] left-[12px] font-Flame rounded-[.3125rem] pt-[2px] pb-[3px] text-white bg-[#ff8732] py-[0.625rem] px-1 text-[.6875rem] lg:top-5 lg:left-4.5">BEST</strong>
+          </a>
+        </li>
+        <li class="relative pt-[1.75rem] px-[.75rem] pb-[.625rem] rounded-[.625rem] bg-light-beige text-center lg:pt-[2.375rem] lg:px-[1.125rem] lg:pb-5 shadow-[0_0_10px_rgba(0,0,0,0.05)] overflow-hidden">
+          <a href="#">
+            <img src="/src/assets/menu/burger/burger_1.webp" alt="몬스터와퍼" class="max-h-[105px] mx-auto" />
+            <h3 class="mt-[.3125rem] mb-[1em] text-sm text-brown leading-[1] lg:text-lg lg:mb-0">몬스터와퍼</h3>
+            <span class="text-3xs text-brown-0.7 lg:text-2xs">몬스터와퍼</span>
+            <strong class="absolute top-[8px] left-[12px] font-Flame rounded-[.3125rem] pt-[2px] pb-[3px] text-white bg-[#ff8732] py-[0.625rem] px-1 text-[.6875rem] lg:top-5 lg:left-4.5">BEST</strong>
+          </a>
+        </li>
+        <li class="relative pt-[1.75rem] px-[.75rem] pb-[.625rem] rounded-[.625rem] bg-light-beige text-center lg:pt-[2.375rem] lg:px-[1.125rem] lg:pb-5 shadow-[0_0_10px_rgba(0,0,0,0.05)] overflow-hidden">
+          <a href="#">
+            <img src="/src/assets/menu/burger/burger_1.webp" alt="몬스터와퍼" class="max-h-[105px] mx-auto" />
+            <h3 class="mt-[.3125rem] mb-[1em] text-sm text-brown leading-[1] lg:text-lg lg:mb-0">몬스터와퍼</h3>
+            <span class="text-3xs text-brown-0.7 lg:text-2xs">몬스터와퍼</span>
+            <strong class="absolute top-[8px] left-[12px] font-Flame rounded-[.3125rem] pt-[2px] pb-[3px] text-white bg-[#ff8732] py-[0.625rem] px-1 text-[.6875rem] lg:top-5 lg:left-4.5">BEST</strong>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- ED: 이런 메뉴도 있어요 -->
   </body>
 </html>
