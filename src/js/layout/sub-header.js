@@ -4,17 +4,20 @@ class subHeader extends HTMLElement {
   }
 
   connectedCallback() {
+    const pageTitle = this.getAttribute('page-title');
+
     this.innerHTML = `
-    <header class="top-0 sticky bg-beige z-1 lg:px-15">
+       <header class="top-0 sticky bg-beige z-10 lg:px-15">
       <div class="h-14 px-[3.125rem] text-lg lg:items-center lg:px-0 lg:flex lg:w-full lg:max-w-405 lg:h-[6.125rem] lg:mx-auto">
         <!-- ST:Logo -->
         <div class="flex-1 px-[1.875rem] min-w-0 text-center lg:flex-1 lg:static lg:px-0 lg:max-w-50 lg:h-6">
-          <h1 class="absolute left-5 sm:left-[1.875rem] top-[50%] w-[9.375rem] h-4 mt-[-.5rem] lg:static lg:block lg:left-0 lg:mt-0 lg:text-center"><a href="/src/pages/home.html" class="bg-[url('/src/assets/elements/bg_logo.svg')] inline-block min-w-50 indent-[-999em;] bg-no-repeat bg-contain h-4 bg-[center_left] lg:h-6 lg:min-w-50 lg:inline-block">Burger King</a></h1>
+          <h1 class="hidden absolute left-5 sm:left-[1.875rem] top-[50%] w-[9.375rem] h-4 mt-[-.5rem] lg:static lg:block lg:left-0 lg:mt-0 lg:text-center"><a href="/src/pages/home.html" class="bg-[url('/src/assets/elements/bg_logo.svg')] inline-block min-w-50 indent-[-999em;] bg-no-repeat bg-contain h-4 bg-[center_left] lg:h-6 lg:min-w-50 lg:inline-block">Burger King</a></h1>
+          <button type="button" aria-lable="이전 페이지로 이동" class="prev_btn absolute left-5 w-6 h-14 bg-[url('/src/assets/elements/btn_head_prev.svg')] bg-no-repeat bg-[left_center] md:left-7.5 lg:hidden"></button>
         </div>
         <!-- ED:Logo -->
 
         <!-- ST:Menu list -->
-        <nav class="hidden lg:flex flex-1 h-full justify-center px-5">
+        <nav id="gnb" class="hidden lg:flex flex-1 h-full justify-center px-5">
           <ul class="flex">
             <!-- ST:MENU -->
             <li class="relative">
@@ -27,9 +30,7 @@ class subHeader extends HTMLElement {
             <!-- ST:STORY -->
             <li class="relative group">
               <div class="h-full">
-                <a class="text-brown font-BKBulMatPro items-center p-[.625rem_.875rem_.625rem_.875rem_.875rem] justify-center flex h-full hd:p-[.625rem_1.25rem_.625rem_1.25rem] focus:text-ci hover:text-ci" href="/src/pages/story/brand.html">
-                  <span class="text-3xl h-[1.625rem] hd:text-4xl">STORY</span>
-                </a>
+                <a class="text-brown font-BKBulMatPro items-center p-[.625rem_.875rem_.625rem_.875rem] justify-center flex h-full hd:p-[.625rem_1.25rem_.625rem_1.25rem] focus:text-ci hover:text-ci" href="/src/pages/story/brand.html"><span class="text-3xl h-[1.625rem] hd:text-4xl">STORY</span></a>
               </div>
               <!-- ST:STORY list-->
               <ul class="flex top-[100%] left-[50%] h-[3.625rem] mt-[-1.25rem] p-[.3125rem_1.25rem_.3125rem_1.25rem] rounded-[3.125rem] transform translate-x-[-50%] translate-y-1 absolute pl-[1.5625rem] text-lg overflow-hidden opacity-0 invisible z-20 ease-linear bg-brown transition-all duration-200 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 group-focus-within:opacity-100 group-focus-within:visible group-focus-within:translate-y-0">
@@ -59,7 +60,7 @@ class subHeader extends HTMLElement {
             <!-- ST:NEWS -->
             <li class="relative group">
               <div class="h-full">
-                <a class="text-brown font-BKBulMatPro items-center p-[.625rem_.875rem_.625rem_.875rem] justify-center flex h-full hd:p-[.625rem_1.25rem_.625rem_1.25rem] focus:text-ci hover:text-ci" href="/src/pages/news/newsongoing.html"><span class="text-3xl h-[1.625rem] hd:text-4xl">NEWS</span></a>
+                <a class="text-brown font-BKBulMatPro items-center p-[.625rem_.875rem_.625rem_.875rem] justify-center flex h-full hd:p-[.625rem_1.25rem_.625rem_1.25rem] focus:text-ci hover:text-ci" href="/src/pages/news/eventongoing.html"><span class="text-3xl h-[1.625rem] hd:text-4xl">NEWS</span></a>
               </div>
               <!-- ST:NEWS List -->
               <ul class="flex top-[100%] left-[50%] h-[3.625rem] mt-[-1.25rem] p-[.3125rem_1.25rem_.3125rem_1.25rem] rounded-[3.125rem] transform translate-x-[-50%] translate-y-1 absolute pl-[1.5625rem] text-lg overflow-hidden opacity-0 invisible z-20 ease-linear bg-brown transition-all duration-200 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 group-focus-within:opacity-100 group-focus-within:visible group-focus-within:translate-y-0">
@@ -93,10 +94,13 @@ class subHeader extends HTMLElement {
         </nav>
         <!-- ED:Menu list -->
 
+        <!-- ST: page title -->
+        <h1 class="mo-title absolute top-1/2 left-1/2 translate-[-50%] text-lg text-brown font-bold lg:hidden">${pageTitle}</h1>
+
         <!-- ST:Button -->
         <div class="left-auto right-5 sm:right-[1.875rem] absolute top-0 flex h-full z-1 items-center justify-center lg:block lg:right-0 lg:left-0 lg:relative lg:ml-auto lg:h-9">
           <!-- 모바일용 버튼 -->
-          <button type="button" class="mognb-open lg:hidden relative w-6 h-full text-sm indent-[-999em] text-left bg-center before:absolute before:left-[-.3125rem] before:top-0 before:w-[2.125rem] before:h-full bg-[url('/src/assets/elements/ico_burger.svg')] bg-no-repeat bg-[length:1.5rem_1.5rem]"><span>GNB</span></button>
+          <button type="button" aria-label="모바일 메뉴 목록 열기" class="mognb-open lg:hidden relative w-6 h-full text-sm indent-[-999em] text-left bg-center before:absolute before:left-[-.3125rem] before:top-0 before:w-[2.125rem] before:h-full bg-[url('/src/assets/elements/ico_burger.svg')] bg-no-repeat bg-[length:1.5rem_1.5rem]"></button>
           <!-- PC용 버튼 -->
           <a href="/src/pages/franchise/franchise.html" class="hidden lg:inline-block h-full pt-[.5625rem] pb-2 pr-4 pl-[2.125rem] text-xs text-brown text-center rounded-[3.125rem] bg-brown-0.05 bg-[url('/src/assets/elements/ico_tit_store.svg')] bg-no-repeat bg-[left_.875rem_center] bg-[length:.875rem]"><span>가맹점 모집</span></a>
         </div>
@@ -105,7 +109,7 @@ class subHeader extends HTMLElement {
     </header>
 
     <!-- ST:Open mobile menu-->
-    <div id="moGnb" class="z-[2] fixed top-0 left-[-110%] bg-beige w-screen h-screen px-5 translate duration-[400ms]">
+    <div id="moGnb" class="z-[999] fixed top-0 left-[-110%] bg-beige w-screen h-screen px-5 translate duration-[400ms] lg:hidden">
       <header class="h-[3.5rem] flex justify-between items-center">
         <a href="/src/pages/home.html" target="_self" aria-label="BURGER KING 홈으로 이동" class="block w-[9.375rem] h-4 bg-[url(/src/assets/elements/bg_logo.svg)] bg-no-repeat bg-contain"></a>
         <button type="button" aria-label="모바일 메뉴 닫기" class="mognb-close w-[2.125rem] h-full bg-[url(/src/assets/elements/btn_pop_close.svg)] bg-no-repeat bg-center"></button>
@@ -113,13 +117,49 @@ class subHeader extends HTMLElement {
       <nav class="h-[calc(100%-8.125rem)]">
         <ul>
           <li><a href="/src/pages/menu/menu.html" class="block content-center h-21 p-5 pl-18.5 font-BKBulMatPro text-4xl text-brown font-bold bg-[url(/src/assets/elements/ico_gnb_menu01.svg)] bg-no-repeat bg-[left_center]">MENU</a></li>
-          <li class="flex justify-center items-center">
-            <a href="/src/pages/story/brand.html" class="flex-1 content-center h-21 p-5 pl-18.5 font-BKBulMatPro text-4xl text-brown font-bold bg-[url(/src/assets/elements/ico_gnb_menu02.svg)] bg-no-repeat bg-[left_center]">STORY</a>
-            <button type="button" aria-label="STORY 하위 메뉴 펼치기" aria-expanded="false" class="w-[3.625rem] h-21 bg-[url(/src/assets/elements/btn_acc_gnb.svg)] bg-no-repeat bg-center"></button>
+          <li>
+            <div class="flex justify-center items-center">
+              <a href="/src/pages/story/brand.html" class="flex-1 content-center h-21 p-5 pl-18.5 font-BKBulMatPro text-4xl text-brown font-bold bg-[url(/src/assets/elements/ico_gnb_menu02.svg)] bg-no-repeat bg-[left_center]">STORY</a>
+              <button type="button" aria-label="STORY 하위 메뉴 펼치기" aria-expanded="false" class="accordion-button w-[3.625rem] h-21 bg-[url(/src/assets/elements/btn_acc_gnb.svg)] bg-no-repeat bg-center"></button>
+            </div>
+            <div class="accordion-submenu -mx-5 h-0 overflow-hidden transition-all ease-in-out duration-300">
+              <ul class="h-auto py-[.625rem] bg-[#e4d7c8] text-lg overflow-hidden">
+                <li class="h-[2.375rem]">
+                  <a href="/src/pages/story/brand.html " class="h-[2.375rem] p-[.625rem_1.25rem_.625rem_5.875rem] text-brown whitespace-nowrap block"><span>브랜드</span></a>
+                </li>
+                <li class="h-[2.375rem]">
+                  <a href="/src/pages/story/whyburgerking.html" class="h-[2.375rem] p-[.625rem_1.25rem_.625rem_5.875rem] text-brown whitespace-nowrap block"><span>Why 버거킹</span></a>
+                </li>
+                <li class="h-[2.375rem]">
+                  <a href="/src/pages/story/esgbusiness.html" class="h-[2.375rem] p-[.625rem_1.25rem_.625rem_5.875rem] text-brown whitespace-nowrap block"><span>ESG 경영</span></a>
+                </li>
+                <li class="h-[2.375rem]">
+                  <a href="/src/pages/story/smartqsr.html" class="w-full h-[2.375rem] p-[.625rem_1.25rem_.625rem_5.875rem] text-brown whitespace-nowrap block"><span>Smart QSR</span></a>
+                </li>
+                <li class="h-[2.375rem]">
+                  <a href="/src/pages/story/awards.html" class="h-[2.375rem] p-[.625rem_1.25rem_.625rem_5.875rem] text-brown whitespace-nowrap block"><span>수상실적</span></a>
+                </li>
+                <li class="h-[2.375rem]">
+                  <a href="/src/pages/story/adarchive.html" class="h-[2.375rem] p-[.625rem_1.25rem_.625rem_5.875rem] text-brown whitespace-nowrap block"><span>광고영상</span></a>
+                </li>
+              </ul>
+            </div>
           </li>
-          <li class="flex justify-center items-center">
-            <a href="/src/pages/news/ongoing.html" class="flex-1 content-center h-21 p-5 pl-18.5 font-BKBulMatPro text-4xl text-brown font-bold bg-[url(/src/assets/elements/ico_gnb_menu04.svg)] bg-no-repeat bg-[left_center]">NEWS</a>
-            <button type="button" aria-label="NEWS 하위 메뉴 펼치기" aria-expanded="false" class="w-[3.625rem] h-21 bg-[url(/src/assets/elements/btn_acc_gnb.svg)] bg-no-repeat bg-center"></button>
+          <li>
+            <div class="flex justify-center items-center">
+              <a href="/src/pages/news/eventongoing.html" class="flex-1 content-center h-21 p-5 pl-18.5 font-BKBulMatPro text-4xl text-brown font-bold bg-[url(/src/assets/elements/ico_gnb_menu04.svg)] bg-no-repeat bg-[left_center]">NEWS</a>
+              <button type="button" aria-label="NEWS 하위 메뉴 펼치기" aria-expanded="false" class="accordion-button w-[3.625rem] h-21 bg-[url(/src/assets/elements/btn_acc_gnb.svg)] bg-no-repeat bg-center"></button>
+            </div>
+            <div class="accordion-submenu -mx-5 h-0 overflow-hidden transition-all ease-in-out">
+              <ul class="h-auto py-[.625rem] bg-[#e4d7c8] text-lg overflow-hidden">
+                <li class="h-[2.375rem]">
+                  <a href="/src/pages/news/eventongoing.html " class="h-[2.375rem] p-[.625rem_1.25rem_.625rem_5.875rem] text-brown whitespace-nowrap block"><span>이벤트</span></a>
+                </li>
+                <li class="h-[2.375rem]">
+                  <a href="/src/pages/news/notice.html" class="h-[2.375rem] p-[.625rem_1.25rem_.625rem_5.875rem] text-brown whitespace-nowrap block"><span>공지사항</span></a>
+                </li>
+              </ul>
+            </div>
           </li>
           <li><a href="/src/pages/store/storenear.html" class="block content-center h-21 p-5 pl-18.5 font-BKBulMatPro text-4xl text-brown font-bold bg-[url(/src/assets/elements/ico_gnb_menu03.svg)] bg-no-repeat bg-[left_center]">STORE</a></li>
           <li><a href="/src/pages/customer/customer.html" class="block content-center h-21 p-5 pl-18.5 font-BKBulMatPro text-4xl text-brown font-bold bg-[url(/src/assets/elements/ico_gnb_menu05.svg)] bg-no-repeat bg-[left_center]">CUSTOMER</a></li>
@@ -144,7 +184,14 @@ class subHeader extends HTMLElement {
     const moGnbOpen = document.querySelector('.mognb-open');
     const moGnb = document.querySelector('#moGnb');
     const moGnbClose = document.querySelector('.mognb-close');
+    const prevBtn = document.querySelector('.prev_btn');
 
+    // 이전 페이지로 이동 스크립트
+    prevBtn.addEventListener('click', () => {
+      window.history.back();
+    });
+
+    // 모바일 메뉴 스크립트
     moGnbOpen.addEventListener('click', () => {
       moGnb.style.left = '0';
       body.style.overflow = 'hidden';

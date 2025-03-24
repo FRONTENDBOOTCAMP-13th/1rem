@@ -3,36 +3,36 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>[컴포넌트] 페이지 타이틀 영역</title>
+    <title>메뉴 < 버거킹</title>
     <link rel="preload" as="font" href="/fonts/Sandoll-GothicNeoRound-400.woff" crossorigin="anonymous" />
     <link rel="preload" as="font" href="/fonts/Sandoll-GothicNeoRound-700.woff" crossorigin="anonymous" />
     <script type="module" src="/src/main.js"></script>
   </head>
   <body>
-    <!-- header 컴포넌트 넣어주세요. -->
-    <div class="wrapper spx-5 pt-5 pb-22.5 md:p-7.5 lg:pt-10 lg:px-15 lg:pb-22.5">
+    <skip-nav></skip-nav>
+    <sub-header page-title="메뉴 소개"></sub-header>
+    <div class="wrapper px-5 pt-5 pb-22.5 md:p-7.5 lg:pt-10 lg:px-15 lg:pb-22.5">
       <div class="inner max-w-[1620px] mx-auto">
         <h2 class="hidden text-[2.125rem] text-brown text-center font-bold lg:block lg:mt-10 lg:mb-12.5">메뉴 소개</h2>
+        <!-- st: 추천 메뉴 버튼 -->
+        <ul class="sticky top-[3.5rem] flex flex-nowrap mt-[-1.25rem] ml-[-1.25rem] px-5 w-[calc(100%+2.5rem)] gap-2.5 py-5 whitespace-nowrap bg-beige text-center z-1 overflow-auto scrollbar-hide md:mt-[-1.875rem] md:ml-[-1.875rem] md:px-7.5 md:w-[calc(100%+3.75rem)] lg:ml-[-3.75rem] lg:px-15 lg:w-[calc(100%+7.5rem)] lg:top-[6.125rem]">
+          <li><button class="hover:bg-brown-0.05 hover:text-brown py-[.3125rem] px-2.5 text-xs text-light-beige text-center rounded-[3.125rem] bg-brown lg:text-sm md:px-4 lg:py-[.4375rem]">추천메뉴</button></li>
+          <li><button class="hover:bg-brown hover:text-light-beige py-[.3125rem] px-2.5 text-xs text-brown text-center rounded-[3.125rem] bg-brown-0.05 lg:text-sm md:px-4 lg:py-[.4375rem]">오리지널스&맥시멈</button></li>
+          <li><button class="hover:bg-brown hover:text-light-beige py-[.3125rem] px-2.5 text-xs text-brown text-center rounded-[3.125rem] bg-brown-0.05 lg:text-sm md:px-4 lg:py-[.4375rem]">프리미엄</button></li>
+          <li><button class="hover:bg-brown hover:text-light-beige py-[.3125rem] px-2.5 text-xs text-brown text-center rounded-[3.125rem] bg-brown-0.05 lg:text-sm md:px-4 lg:py-[.4375rem]">와퍼&주니어</button></li>
+          <li><button class="hover:bg-brown hover:text-light-beige py-[.3125rem] px-2.5 text-xs text-brown text-center rounded-[3.125rem] bg-brown-0.05 lg:text-sm md:px-4 lg:py-[.4375rem]">치킨&슈림프버거</button></li>
+          <li><button class="hover:bg-brown hover:text-light-beige py-[.3125rem] px-2.5 text-xs text-brown text-center rounded-[3.125rem] bg-brown-0.05 lg:text-sm md:px-4 lg:py-[.4375rem]">올데이킹&킹모닝</button></li>
+          <li><button class="hover:bg-brown hover:text-light-beige py-[.3125rem] px-2.5 text-xs text-brown text-center rounded-[3.125rem] bg-brown-0.05 lg:text-sm md:px-4 lg:py-[.4375rem]">사이드</button></li>
+          <li><button class="hover:bg-brown hovers:text-light-beige py-[.3125rem] px-2.5 text-xs text-brown text-center rounded-[3.125rem] bg-brown-0.05 lg:text-sm md:px-4 lg:py-[.4375rem]">음료&디저트</button></li>
+        </ul>
+        <!-- ed : 추천 메뉴 버튼 -->
 
-        <!-- 타이틀 아래의 본문 내용은 여기서 작성해주세요. div말고 다른 태그 넣어도 됩니다.-->
-
-        <nav class="sticky mt-[-20px] p-5 top-[-20px] z-20 bg-beige text-center lg:mt-[-30px]">
-          <ul class="flex flex-nowrap whitespace-nowrap gap-5 lg:m-0 lg:p-0">
-            <li><a href="#" class="active:bg-brown active:text-light-beige py-[.5313rem] px-4 text-xs text-brown text-center rounded-[3.125rem] bg-brown-0.05 lg:text-sm lg:py-[10px]">추천메뉴</a></li>
-            <li><a href="#" class="active:bg-brown active:text-light-beige py-[.5313rem] px-4 text-xs text-brown text-center rounded-[3.125rem] bg-brown-0.05 lg:text-sm lg:py-[10px]">오리지널&맥시멈</a></li>
-            <li><a href="#" class="active:bg-brown active:text-light-beige py-[.5313rem] px-4 text-xs text-brown text-center rounded-[3.125rem] bg-brown-0.05 lg:text-sm lg:py-[10px]">프리미엄</a></li>
-            <li><a href="#" class="active:bg-brown active:text-light-beige py-[.5313rem] px-4 text-xs text-brown text-center rounded-[3.125rem] bg-brown-0.05 lg:text-sm lg:py-[10px]">와퍼&주니어</a></li>
-            <li><a href="#" class="active:bg-brown active:text-light-beige py-[.5313rem] px-4 text-xs text-brown text-center rounded-[3.125rem] bg-brown-0.05 lg:text-sm lg:py-[10px]">치킨&슈림프버거</a></li>
-            <li><a href="#" class="active:bg-brown active:text-light-beige py-[.5313rem] px-4 text-xs text-brown text-center rounded-[3.125rem] bg-brown-0.05 lg:text-sm lg:py-[10px]">올데이킹&킹모닝</a></li>
-            <li><a href="#" class="active:bg-brown active:text-light-beige py-[.5313rem] px-4 text-xs text-brown text-center rounded-[3.125rem] bg-brown-0.05 lg:text-sm lg:py-[10px]">사이드</a></li>
-            <li><a href="#" class="active:bg-brown active:text-light-beige py-[.5313rem] px-4 text-xs text-brown text-center rounded-[3.125rem] bg-brown-0.05 lg:text-sm lg:py-[10px]">음료&디저트</a></li>
-          </ul>
-        </nav>
-        <section class="p-5">
-          <div class="flex flex-row flex-wrap items-center mb-2.5">
-            <h3 class="flex-1 min-w-0 m-0 text-sm text-brown font-bold lg:text-2xl">추천 메뉴</h3>
-            <button class="flex h-[30ox] m-2.5 gap-2 items-center ml-auto p-[5px_0_5px_25px] lg:h-9">
-              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <!-- st : 메뉴 컨텐츠 -->
+        <div>
+          <div class="flex flex-wrap items-center mt-3 mb-5 md:mt-2 lg:mt-7.5">
+            <h3 class="flex-1 min-w-0 m-0 text-sm text-brown font-bold md:text-lg lg:text-2xl">추천메뉴</h3>
+            <button type="button" id="keyword" aria-label="메뉴 추천 키워드" class="flex gap-1.5 items-center ml-auto lg:h-9">
+              <svg width="20" height="20" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_768_23250)">
                   <path
                     d="M2.79406 12.0577C2.78239 11.9527 2.77656 11.8419 2.77072 11.7369C2.77072 11.6727 2.79989 11.1244 2.77072 11.1069C2.18739 10.8385 1.72656 10.3252 1.52239 9.71853C1.27156 8.98353 1.49322 8.34186 1.89572 7.71186C2.02406 7.5077 2.16989 7.30936 2.34489 7.14603C2.51989 6.9827 2.77656 6.92436 2.79406 6.65603C2.81739 6.25936 2.79406 5.8452 2.83489 5.4427C2.88156 5.01686 2.89906 4.57353 2.89322 4.14186C2.88739 3.73936 2.79406 3.34853 2.79406 2.94603C2.79406 2.65436 2.78822 2.35686 2.77656 2.0652C2.77072 1.7502 2.75322 1.4177 2.92822 1.14353C3.10322 0.869362 3.41822 0.700195 3.73906 0.700195C4.26989 0.700195 4.70739 1.13186 4.70739 1.66853C4.67239 2.77686 4.59656 3.8852 4.64322 4.99353C4.66072 5.39603 4.67239 5.80436 4.68406 6.20686C4.68406 6.37603 4.59656 6.7377 4.73072 6.86603C4.85906 6.99436 5.09239 7.0702 5.23822 7.18103C5.42489 7.32686 5.59989 7.4902 5.73989 7.6827C6.52156 8.72686 5.83322 10.576 4.70156 11.0952L4.70156 12.1044C4.70156 12.6352 4.26989 13.2827 3.73322 13.2827C3.22572 13.2827 2.96322 12.886 2.85822 12.4369C2.82906 12.3085 2.81156 12.1802 2.79406 12.0519L2.79406 12.0577ZM3.73322 10.0219C3.91406 10.0277 4.08906 9.98686 4.24656 9.89936C4.45072 9.7827 4.60822 9.60186 4.70156 9.38603C4.75406 9.26353 4.78322 9.12936 4.78322 8.98936C4.78322 8.84936 4.75406 8.7152 4.70156 8.5927C4.54406 8.21353 4.17072 7.9452 3.73322 7.9452C3.29572 7.9452 2.92239 8.21353 2.76489 8.5927C2.71239 8.7152 2.68322 8.84936 2.68322 8.98936C2.68322 9.12936 2.71239 9.26353 2.76489 9.38603C2.92239 9.77103 3.33072 10.0044 3.73322 10.016L3.73322 10.0219Z"
@@ -52,93 +52,292 @@
               <span class="text-xs text-brown cursor-pointer lg:text-lg">키워드</span>
             </button>
           </div>
-          <div>
-            <ul class="grid grid-cols-2 gap-x-2 gap-y-2.5 md:grid-cols-3 md:gap-3 lg:grid-cols-4 lg:gpa-4.5">
-              <li class="relative pt-[1.75rem] px-[.75rem] pb-[.625rem] rounded-[.625rem] bg-light-beige text-center lg:pt-[2.375rem] lg:px-[1.125rem] lg:pb-5 shadow-[0_0_10px_rgba(0,0,0,0.05)]">
-                <a href="/src/pages/menu/menudetail.html" aria-labelledby="menu-title menu-description">
-                  <img src="/src/assets/menu/burger/burger_1.webp" alt="통모짜와퍼" class="max-h-[105px] mx-auto" />
-                  <h3 class="mt-[.3125rem] mb-[1em] text-sm text-brown leading-[1] lg:text-lg lg:mb-0">통모짜와퍼</h3>
-                  <span class="text-3xs text-brown-0.7 lg:text-2xs">통모짜와퍼</span>
-                  <strong class="absolute top-[8px] left-[12px] font-Flame rounded-[.3125rem] text-white bg-ci py-[.0625rem] px-1 text-[.6875rem] lg:top-5 lg:left-4.5">NEW</strong>
-                </a>
-              </li>
-              <li class="relative pt-[1.75rem] px-[.75rem] pb-[.625rem] rounded-[.625rem] bg-light-beige text-center lg:pt-[2.375rem] lg:px-[1.125rem] lg:pb-5 shadow-[0_0_10px_rgba(0,0,0,0.05)]">
-                <a href="/src/pages/menu/menudetail.html" aria-labelledby="menu-title menu-description">
-                  <img src="/src/assets/menu/burger/burger_1.webp" alt="통모짜와퍼" class="max-h-[105px] mx-auto" />
-                  <h3 class="mt-[.3125rem] mb-[1em] text-sm text-brown leading-[1] lg:text-lg lg:mb-0">통모짜와퍼</h3>
-                  <span class="text-3xs text-brown-0.7 lg:text-2xs">통모짜와퍼</span>
-                  <strong class="absolute top-[8px] left-[12px] font-Flame rounded-[.3125rem] text-white bg-ci py-[.0625rem] px-1 text-[.6875rem] lg:top-5 lg:left-4.5">NEW</strong>
-                </a>
-              </li>
-              <li class="relative pt-[1.75rem] px-[.75rem] pb-[.625rem] rounded-[.625rem] bg-light-beige text-center lg:pt-[2.375rem] lg:px-[1.125rem] lg:pb-5 shadow-[0_0_10px_rgba(0,0,0,0.05)]">
-                <a href="/src/pages/menu/menudetail.html" aria-labelledby="menu-title menu-description">
-                  <img src="/src/assets/menu/burger/burger_1.webp" alt="통모짜와퍼" class="max-h-[105px] mx-auto" />
-                  <h3 class="mt-[.3125rem] mb-[1em] text-sm text-brown leading-[1] lg:text-lg lg:mb-0">통모짜와퍼</h3>
-                  <span class="text-3xs text-brown-0.7 lg:text-2xs">통모짜와퍼</span>
-                  <strong class="absolute top-[8px] left-[12px] font-Flame rounded-[.3125rem] text-white bg-ci py-[.0625rem] px-1 text-[.6875rem] lg:top-5 lg:left-4.5">NEW</strong>
-                </a>
-              </li>
-              <li class="relative pt-[1.75rem] px-[.75rem] pb-[.625rem] rounded-[.625rem] bg-light-beige text-center lg:pt-[2.375rem] lg:px-[1.125rem] lg:pb-5 shadow-[0_0_10px_rgba(0,0,0,0.05)]">
-                <a href="/src/pages/menu/menudetail.html" aria-labelledby="menu-title menu-description">
-                  <img src="/src/assets/menu/burger/burger_1.webp" alt="통모짜와퍼" class="max-h-[105px] mx-auto" />
-                  <h3 class="mt-[.3125rem] mb-[1em] text-sm text-brown leading-[1] lg:text-lg lg:mb-0">통모짜와퍼</h3>
-                  <span class="text-3xs text-brown-0.7 lg:text-2xs">통모짜와퍼</span>
-                  <strong class="absolute top-[8px] left-[12px] font-Flame rounded-[.3125rem] text-white bg-ci py-[.0625rem] px-1 text-[.6875rem] lg:top-5 lg:left-4.5">NEW</strong>
-                </a>
-              </li>
-              <li class="relative pt-[1.75rem] px-[.75rem] pb-[.625rem] rounded-[.625rem] bg-light-beige text-center lg:pt-[2.375rem] lg:px-[1.125rem] lg:pb-5 shadow-[0_0_10px_rgba(0,0,0,0.05)]">
-                <a href="/src/pages/menu/menudetail.html" aria-labelledby="menu-title menu-description">
-                  <img src="/src/assets/menu/burger/burger_1.webp" alt="통모짜와퍼" class="max-h-[105px] mx-auto" />
-                  <h3 class="mt-[.3125rem] mb-[1em] text-sm text-brown leading-[1] lg:text-lg lg:mb-0">통모짜와퍼</h3>
-                  <span class="text-3xs text-brown-0.7 lg:text-2xs">통모짜와퍼</span>
-                  <strong class="absolute top-[8px] left-[12px] font-Flame rounded-[.3125rem] text-white bg-ci py-[.0625rem] px-1 text-[.6875rem] lg:top-5 lg:left-4.5">NEW</strong>
-                </a>
-              </li>
-              <li class="relative pt-[1.75rem] px-[.75rem] pb-[.625rem] rounded-[.625rem] bg-light-beige text-center lg:pt-[2.375rem] lg:px-[1.125rem] lg:pb-5 shadow-[0_0_10px_rgba(0,0,0,0.05)]">
-                <a href="/src/pages/menu/menudetail.html" aria-labelledby="menu-title menu-description">
-                  <img src="/src/assets/menu/burger/burger_1.webp" alt="통모짜와퍼" class="max-h-[105px] mx-auto" />
-                  <h3 class="mt-[.3125rem] mb-[1em] text-sm text-brown leading-[1] lg:text-lg lg:mb-0">통모짜와퍼</h3>
-                  <span class="text-3xs text-brown-0.7 lg:text-2xs">통모짜와퍼</span>
-                  <strong class="absolute top-[8px] left-[12px] font-Flame rounded-[.3125rem] text-white bg-ci py-[.0625rem] px-1 text-[.6875rem] lg:top-5 lg:left-4.5">NEW</strong>
-                </a>
-              </li>
-              <li class="relative pt-[1.75rem] px-[.75rem] pb-[.625rem] rounded-[.625rem] bg-light-beige text-center lg:pt-[2.375rem] lg:px-[1.125rem] lg:pb-5 shadow-[0_0_10px_rgba(0,0,0,0.05)]">
-                <a href="/src/pages/menu/menudetail.html" aria-labelledby="menu-title menu-description">
-                  <img src="/src/assets/menu/burger/burger_1.webp" alt="통모짜와퍼" class="max-h-[105px] mx-auto" />
-                  <h3 class="mt-[.3125rem] mb-[1em] text-sm text-brown leading-[1] lg:text-lg lg:mb-0">통모짜와퍼</h3>
-                  <span class="text-3xs text-brown-0.7 lg:text-2xs">통모짜와퍼</span>
-                  <strong class="absolute top-[8px] left-[12px] font-Flame rounded-[.3125rem] text-white bg-ci py-[.0625rem] px-1 text-[.6875rem] lg:top-5 lg:left-4.5">NEW</strong>
-                </a>
-              </li>
-              <li class="relative pt-[1.75rem] px-[.75rem] pb-[.625rem] rounded-[.625rem] bg-light-beige text-center lg:pt-[2.375rem] lg:px-[1.125rem] lg:pb-5 shadow-[0_0_10px_rgba(0,0,0,0.05)]">
-                <a href="/src/pages/menu/menudetail.html" aria-labelledby="menu-title menu-description">
-                  <img src="/src/assets/menu/burger/burger_1.webp" alt="통모짜와퍼" class="max-h-[105px] mx-auto" />
-                  <h3 class="mt-[.3125rem] mb-[1em] text-sm text-brown leading-[1] lg:text-lg lg:mb-0">통모짜와퍼</h3>
-                  <span class="text-3xs text-brown-0.7 lg:text-2xs">통모짜와퍼</span>
-                  <strong class="absolute top-[8px] left-[12px] font-Flame rounded-[.3125rem] text-white bg-ci py-[.0625rem] px-1 text-[.6875rem] lg:top-5 lg:left-4.5">NEW</strong>
-                </a>
-              </li>
-              <li class="relative pt-[1.75rem] px-[.75rem] pb-[.625rem] rounded-[.625rem] bg-light-beige text-center lg:pt-[2.375rem] lg:px-[1.125rem] lg:pb-5 shadow-[0_0_10px_rgba(0,0,0,0.05)]">
-                <a href="/src/pages/menu/menudetail.html" aria-labelledby="menu-title menu-description">
-                  <img src="/src/assets/menu/burger/burger_1.webp" alt="통모짜와퍼" class="max-h-[105px] mx-auto" />
-                  <h3 class="mt-[.3125rem] mb-[1em] text-sm text-brown leading-[1] lg:text-lg lg:mb-0">통모짜와퍼</h3>
-                  <span class="text-3xs text-brown-0.7 lg:text-2xs">통모짜와퍼</span>
-                  <strong class="absolute top-[8px] left-[12px] font-Flame rounded-[.3125rem] text-white bg-ci py-[.0625rem] px-1 text-[.6875rem] lg:top-5 lg:left-4.5">NEW</strong>
-                </a>
-              </li>
-              <li class="relative pt-[1.75rem] px-[.75rem] pb-[.625rem] rounded-[.625rem] bg-light-beige text-center lg:pt-[2.375rem] lg:px-[1.125rem] lg:pb-5 shadow-[0_0_10px_rgba(0,0,0,0.05)]">
-                <a href="/src/pages/menu/menudetail.html" aria-labelledby="menu-title menu-description">
-                  <img src="/src/assets/menu/burger/burger_1.webp" alt="통모짜와퍼" class="max-h-[105px] mx-auto" />
-                  <h3 class="mt-[.3125rem] mb-[1em] text-sm text-brown leading-[1] lg:text-lg lg:mb-0">통모짜와퍼</h3>
-                  <span class="text-3xs text-brown-0.7 lg:text-2xs">통모짜와퍼</span>
-                  <strong class="absolute top-[8px] left-[12px] font-Flame rounded-[.3125rem] text-white bg-ci py-[.0625rem] px-1 text-[.6875rem] lg:top-5 lg:left-4.5">NEW</strong>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </section>
+          <ul class="relative grid grid-cols-2 gap-x-2 gap-y-2.5 pb-7.5 after:absolute after:bottom-0 after:left-[-1.25rem] after:right-[-1.25rem] after:h-[.3125rem] after:bg-brown-0.1 md:grid-cols-3 md:gap-3 md:pb-10 md:after:left-[-1.875rem] md:after:right-[-30px-0 lg:grid-cols-4 lg:gpa-4.5 md:after:left-[-3.75rem] md:after:right-[-3.75rem]">
+            <li class="relative pt-[1.75rem] px-[.75rem] pb-[.625rem] rounded-[.625rem] bg-light-beige text-center lg:pt-[2.375rem] lg:px-[1.125rem] lg:pb-5 shadow-[0_0_10px_rgba(0,0,0,0.05)]">
+              <a href="/src/pages/menu/menudetail.html" target="_self">
+                <img src="/src/assets/menu/burger/burger_24.webp" alt="통모짜와퍼" class="max-h-[105px] mx-auto" />
+                <h4 class="mt-[.3125rem] mb-[1em] text-sm text-brown leading-[1] lg:text-lg lg:mb-0">통모짜와퍼</h4>
+                <span class="block mt-1.5 leading-[1.2] text-3xs text-brown-0.7 lg:text-2xs">통모짜와퍼</span>
+                <strong class="absolute top-[8px] left-[12px] font-Flame rounded-[.3125rem] text-white bg-ci py-[.0625rem] px-1 text-[.6875rem] lg:top-5 lg:left-4.5">NEW</strong>
+              </a>
+            </li>
+            <li class="relative pt-[1.75rem] px-[.75rem] pb-[.625rem] rounded-[.625rem] bg-light-beige text-center lg:pt-[2.375rem] lg:px-[1.125rem] lg:pb-5 shadow-[0_0_10px_rgba(0,0,0,0.05)]">
+              <a href="/src/pages/menu/menudetail.html" target="_self">
+                <img src="/src/assets/menu/set/set_24.webp" alt="통모짜와퍼 라지세트" class="max-h-[105px] mx-auto" />
+                <h4 class="mt-[.3125rem] mb-[1em] text-sm text-brown leading-[1] lg:text-lg lg:mb-0">통모짜와퍼 라지세트</h4>
+                <span class="block mt-1.5 leading-[1.2] text-3xs text-brown-0.7 lg:text-2xs">통모짜와퍼 + 프렌치프라이(L) + 코카콜라(L)</span>
+                <strong class="absolute top-[8px] left-[12px] font-Flame rounded-[.3125rem] text-white bg-ci py-[.0625rem] px-1 text-[.6875rem] lg:top-5 lg:left-4.5">NEW</strong>
+              </a>
+            </li>
+            <li class="relative pt-[1.75rem] px-[.75rem] pb-[.625rem] rounded-[.625rem] bg-light-beige text-center lg:pt-[2.375rem] lg:px-[1.125rem] lg:pb-5 shadow-[0_0_10px_rgba(0,0,0,0.05)]">
+              <a href="/src/pages/menu/menudetail.html" target="_self">
+                <img src="/src/assets/menu/set/set_24.webp" alt="통모짜와퍼 세트" class="max-h-[105px] mx-auto" />
+                <h4 class="mt-[.3125rem] mb-[1em] text-sm text-brown leading-[1] lg:text-lg lg:mb-0">통모짜와퍼 세트</h4>
+                <span class="block mt-1.5 leading-[1.2] text-3xs text-brown-0.7 lg:text-2xs">통모짜와퍼 + 프렌치프라이(R) + 코카콜라(R)</span>
+                <strong class="absolute top-[8px] left-[12px] font-Flame rounded-[.3125rem] text-white bg-ci py-[.0625rem] px-1 text-[.6875rem] lg:top-5 lg:left-4.5">NEW</strong>
+              </a>
+            </li>
+
+            <li class="relative pt-[1.75rem] px-[.75rem] pb-[.625rem] rounded-[.625rem] bg-light-beige text-center lg:pt-[2.375rem] lg:px-[1.125rem] lg:pb-5 shadow-[0_0_10px_rgba(0,0,0,0.05)]">
+              <a href="/src/pages/menu/menudetail.html" target="_self">
+                <img src="/src/assets/menu/burger/burger_1.webp" alt="BBQ 통모짜와퍼" class="max-h-[105px] mx-auto" />
+                <h4 class="mt-[.3125rem] mb-[1em] text-sm text-brown leading-[1] lg:text-lg lg:mb-0">BBQ 통모짜와퍼</h4>
+                <span class="block mt-1.5 leading-[1.2] text-3xs text-brown-0.7 lg:text-2xs">BBQ 통모짜와퍼</span>
+                <strong class="absolute top-[8px] left-[12px] font-Flame rounded-[.3125rem] text-white bg-ci py-[.0625rem] px-1 text-[.6875rem] lg:top-5 lg:left-4.5">NEW</strong>
+              </a>
+            </li>
+            <li class="relative pt-[1.75rem] px-[.75rem] pb-[.625rem] rounded-[.625rem] bg-light-beige text-center lg:pt-[2.375rem] lg:px-[1.125rem] lg:pb-5 shadow-[0_0_10px_rgba(0,0,0,0.05)]">
+              <a href="/src/pages/menu/menudetail.html" target="_self">
+                <img src="/src/assets/menu/set/set_4.webp" alt="BBQ 통모짜와퍼 세트" class="max-h-[105px] mx-auto" />
+                <h4 class="mt-[.3125rem] mb-[1em] text-sm text-brown leading-[1] lg:text-lg lg:mb-0">BBQ 통모짜와퍼 세트</h4>
+                <span class="block mt-1.5 leading-[1.2] text-3xs text-brown-0.7 lg:text-2xs">BBQ 통모짜와퍼 + 프렌치프라이(R) + 코카콜라(R)</span>
+                <strong class="absolute top-[8px] left-[12px] font-Flame rounded-[.3125rem] text-white bg-ci py-[.0625rem] px-1 text-[.6875rem] lg:top-5 lg:left-4.5">NEW</strong>
+              </a>
+            </li>
+            <li class="relative pt-[1.75rem] px-[.75rem] pb-[.625rem] rounded-[.625rem] bg-light-beige text-center lg:pt-[2.375rem] lg:px-[1.125rem] lg:pb-5 shadow-[0_0_10px_rgba(0,0,0,0.05)]">
+              <a href="/src/pages/menu/menudetail.html" target="_self">
+                <img src="/src/assets/menu/set/set_4.webp" alt="BBQ 통모짜와퍼 라지세트" class="max-h-[105px] mx-auto" />
+                <h4 class="mt-[.3125rem] mb-[1em] text-sm text-brown leading-[1] lg:text-lg lg:mb-0">BBQ 통모짜와퍼 라지세트</h4>
+                <span class="block mt-1.5 leading-[1.2] text-3xs text-brown-0.7 lg:text-2xs">BBQ 통모짜와퍼 + 프렌치프라이(L) + 코카콜라(L)</span>
+                <strong class="absolute top-[8px] left-[12px] font-Flame rounded-[.3125rem] text-white bg-ci py-[.0625rem] px-1 text-[.6875rem] lg:top-5 lg:left-4.5">NEW</strong>
+              </a>
+            </li>
+
+            <li class="relative pt-[1.75rem] px-[.75rem] pb-[.625rem] rounded-[.625rem] bg-light-beige text-center lg:pt-[2.375rem] lg:px-[1.125rem] lg:pb-5 shadow-[0_0_10px_rgba(0,0,0,0.05)]">
+              <a href="/src/pages/menu/menudetail.html" target="_self">
+                <img src="/src/assets/menu/set/set_1.webp" alt="통모짜 와퍼주니어 세트" class="max-h-[105px] mx-auto" />
+                <h4 class="mt-[.3125rem] mb-[1em] text-sm text-brown leading-[1] lg:text-lg lg:mb-0">통모짜 와퍼주니어 세트</h4>
+                <span class="block mt-1.5 leading-[1.2] text-3xs text-brown-0.7 lg:text-2xs">통모짜 와퍼주니어 + 프렌치프라이(R) + 코카콜라(R)</span>
+                <strong class="absolute top-[8px] left-[12px] font-Flame rounded-[.3125rem] text-white bg-ci py-[.0625rem] px-1 text-[.6875rem] lg:top-5 lg:left-4.5">NEW</strong>
+              </a>
+            </li>
+            <li class="relative pt-[1.75rem] px-[.75rem] pb-[.625rem] rounded-[.625rem] bg-light-beige text-center lg:pt-[2.375rem] lg:px-[1.125rem] lg:pb-5 shadow-[0_0_10px_rgba(0,0,0,0.05)]">
+              <a href="/src/pages/menu/menudetail.html" target="_self">
+                <img src="/src/assets/menu/set/set_1.webp" alt="통모짜 와퍼주니어 라지세트" class="max-h-[105px] mx-auto" />
+                <h4 class="mt-[.3125rem] mb-[1em] text-sm text-brown leading-[1] lg:text-lg lg:mb-0">통모짜 와퍼주니어 라지세트</h4>
+                <span class="block mt-1.5 leading-[1.2] text-3xs text-brown-0.7 lg:text-2xs">통모짜 와퍼주니어 + 프렌치프라이(L) + 코카콜라(L)</span>
+                <strong class="absolute top-[8px] left-[12px] font-Flame rounded-[.3125rem] text-white bg-ci py-[.0625rem] px-1 text-[.6875rem] lg:top-5 lg:left-4.5">NEW</strong>
+              </a>
+            </li>
+            <li class="relative pt-[1.75rem] px-[.75rem] pb-[.625rem] rounded-[.625rem] bg-light-beige text-center lg:pt-[2.375rem] lg:px-[1.125rem] lg:pb-5 shadow-[0_0_10px_rgba(0,0,0,0.05)]">
+              <a href="/src/pages/menu/menudetail.html" target="_self">
+                <img src="/src/assets/menu/burger/burger_2.webp" alt="통모짜 와퍼주니어" class="max-h-[105px] mx-auto" />
+                <h4 class="mt-[.3125rem] mb-[1em] text-sm text-brown leading-[1] lg:text-lg lg:mb-0">통모짜 와퍼주니어</h4>
+                <span class="block mt-1.5 leading-[1.2] text-3xs text-brown-0.7 lg:text-2xs">통모짜 와퍼주니어</span>
+                <strong class="absolute top-[8px] left-[12px] font-Flame rounded-[.3125rem] text-white bg-ci py-[.0625rem] px-1 text-[.6875rem] lg:top-5 lg:left-4.5">NEW</strong>
+              </a>
+            </li>
+
+            <li class="relative pt-[1.75rem] px-[.75rem] pb-[.625rem] rounded-[.625rem] bg-light-beige text-center lg:pt-[2.375rem] lg:px-[1.125rem] lg:pb-5 shadow-[0_0_10px_rgba(0,0,0,0.05)]">
+              <a href="/src/pages/menu/menudetail.html" target="_self">
+                <img src="/src/assets/menu/set/set_37.webp" alt="BBQ 통모짜 와퍼주니어 세트" class="max-h-[105px] mx-auto" />
+                <h4 class="mt-[.3125rem] mb-[1em] text-sm text-brown leading-[1] lg:text-lg lg:mb-0">BBQ 통모짜 와퍼주니어 세트</h4>
+                <span class="block mt-1.5 leading-[1.2] text-3xs text-brown-0.7 lg:text-2xs">BBQ 통모짜 와퍼주니어 + 프렌치프라이(R) + 코카콜라(R)</span>
+                <strong class="absolute top-[8px] left-[12px] font-Flame rounded-[.3125rem] text-white bg-ci py-[.0625rem] px-1 text-[.6875rem] lg:top-5 lg:left-4.5">NEW</strong>
+              </a>
+            </li>
+            <li class="relative pt-[1.75rem] px-[.75rem] pb-[.625rem] rounded-[.625rem] bg-light-beige text-center lg:pt-[2.375rem] lg:px-[1.125rem] lg:pb-5 shadow-[0_0_10px_rgba(0,0,0,0.05)]">
+              <a href="/src/pages/menu/menudetail.html" target="_self">
+                <img src="/src/assets/menu/set/set_37.webp" alt="BBQ 통모짜 와퍼주니어 라지세트" class="max-h-[105px] mx-auto" />
+                <h4 class="mt-[.3125rem] mb-[1em] text-sm text-brown leading-[1] lg:text-lg lg:mb-0">BBQ 통모짜 와퍼주니어 라지세트</h4>
+                <span class="block mt-1.5 leading-[1.2] text-3xs text-brown-0.7 lg:text-2xs">BBQ 통모짜 와퍼주니어 + 프렌치프라이(L) + 코카콜라(L)</span>
+                <strong class="absolute top-[8px] left-[12px] font-Flame rounded-[.3125rem] text-white bg-ci py-[.0625rem] px-1 text-[.6875rem] lg:top-5 lg:left-4.5">NEW</strong>
+              </a>
+            </li>
+            <li class="relative pt-[1.75rem] px-[.75rem] pb-[.625rem] rounded-[.625rem] bg-light-beige text-center lg:pt-[2.375rem] lg:px-[1.125rem] lg:pb-5 shadow-[0_0_10px_rgba(0,0,0,0.05)]">
+              <a href="/src/pages/menu/menudetail.html" target="_self">
+                <img src="/src/assets/menu/burger/burger_14.webp" alt="BBQ 통모짜 와퍼주니어" class="max-h-[105px] mx-auto" />
+                <h4 class="mt-[.3125rem] mb-[1em] text-sm text-brown leading-[1] lg:text-lg lg:mb-0">BBQ 통모짜와퍼</h4>
+                <span class="block mt-1.5 leading-[1.2] text-3xs text-brown-0.7 lg:text-2xs">BBQ 통모짜와퍼</span>
+                <strong class="absolute top-[8px] left-[12px] font-Flame rounded-[.3125rem] text-white bg-ci py-[.0625rem] px-1 text-[.6875rem] lg:top-5 lg:left-4.5">NEW</strong>
+              </a>
+            </li>
+
+            <li class="relative pt-[1.75rem] px-[.75rem] pb-[.625rem] rounded-[.625rem] bg-light-beige text-center lg:pt-[2.375rem] lg:px-[1.125rem] lg:pb-5 shadow-[0_0_10px_rgba(0,0,0,0.05)]">
+              <a href="/src/pages/menu/menudetail.html" target="_self">
+                <img src="/src/assets/menu/pack/pack_15.webp" alt="통모짜 팩3" class="max-h-[105px] mx-auto" />
+                <h4 class="mt-[.3125rem] mb-[1em] text-sm text-brown leading-[1] lg:text-lg lg:mb-0">통모짜 팩3</h4>
+                <span class="block mt-1.5 leading-[1.2] text-3xs text-brown-0.7 lg:text-2xs">불고기와퍼 + 통모짜와퍼 + 너겟킹 4조각 + 쉐이킹프라이 스윗어니언 + 코카콜라(R)</span>
+                <strong class="absolute top-[8px] left-[12px] font-Flame rounded-[.3125rem] text-white bg-ci py-[.0625rem] px-1 text-[.6875rem] lg:top-5 lg:left-4.5">NEW</strong>
+              </a>
+            </li>
+            <li class="relative pt-[1.75rem] px-[.75rem] pb-[.625rem] rounded-[.625rem] bg-light-beige text-center lg:pt-[2.375rem] lg:px-[1.125rem] lg:pb-5 shadow-[0_0_10px_rgba(0,0,0,0.05)]">
+              <a href="/src/pages/menu/menudetail.html" target="_self">
+                <img src="/src/assets/menu/pack/pack_21.webp" alt="통모짜 팩1" class="max-h-[105px] mx-auto" />
+                <h4 class="mt-[.3125rem] mb-[1em] text-sm text-brown leading-[1] lg:text-lg lg:mb-0">통모짜 팩1</h4>
+                <span class="block mt-1.5 leading-[1.2] text-3xs text-brown-0.7 lg:text-2xs">통모짜와퍼 + BBQ 통모짜와퍼 + 핫 토마토 모짜볼 + 코카콜라(R)</span>
+                <strong class="absolute top-[8px] left-[12px] font-Flame rounded-[.3125rem] text-white bg-ci py-[.0625rem] px-1 text-[.6875rem] lg:top-5 lg:left-4.5">NEW</strong>
+              </a>
+            </li>
+            <li class="relative pt-[1.75rem] px-[.75rem] pb-[.625rem] rounded-[.625rem] bg-light-beige text-center lg:pt-[2.375rem] lg:px-[1.125rem] lg:pb-5 shadow-[0_0_10px_rgba(0,0,0,0.05)]">
+              <a href="/src/pages/menu/menudetail.html" target="_self">
+                <img src="/src/assets/menu/pack/pack_1.webp" alt="통모짜 팩2" class="max-h-[105px] mx-auto" />
+                <h4 class="mt-[.3125rem] mb-[1em] text-sm text-brown leading-[1] lg:text-lg lg:mb-0">통모짜 팩2</h4>
+                <span class="block mt-1.5 leading-[1.2] text-3xs text-brown-0.7 lg:text-2xs">통모짜와퍼 + BBQ 통모짜와퍼 + 프렌치프라이(R) + 코카콜라(R)</span>
+                <strong class="absolute top-[8px] left-[12px] font-Flame rounded-[.3125rem] text-white bg-ci py-[.0625rem] px-1 text-[.6875rem] lg:top-5 lg:left-4.5">NEW</strong>
+              </a>
+            </li>
+
+            <li class="relative pt-[1.75rem] px-[.75rem] pb-[.625rem] rounded-[.625rem] bg-light-beige text-center lg:pt-[2.375rem] lg:px-[1.125rem] lg:pb-5 shadow-[0_0_10px_rgba(0,0,0,0.05)]">
+              <a href="/src/pages/menu/menudetail.html" target="_self">
+                <img src="/src/assets/menu/pack/pack_16.webp" alt="통모짜 팩4" class="max-h-[105px] mx-auto" />
+                <h4 class="mt-[.3125rem] mb-[1em] text-sm text-brown leading-[1] lg:text-lg lg:mb-0">통모짜 팩4</h4>
+                <span class="block mt-1.5 leading-[1.2] text-3xs text-brown-0.7 lg:text-2xs">와퍼 + BBQ 통모짜와퍼 + 너겟킹 4조각 + 쉐이킹프라이 구운갈릭 + 코카콜라(R)</span>
+                <strong class="absolute top-[8px] left-[12px] font-Flame rounded-[.3125rem] text-white bg-ci py-[.0625rem] px-1 text-[.6875rem] lg:top-5 lg:left-4.5">NEW</strong>
+              </a>
+            </li>
+            <li class="relative pt-[1.75rem] px-[.75rem] pb-[.625rem] rounded-[.625rem] bg-light-beige text-center lg:pt-[2.375rem] lg:px-[1.125rem] lg:pb-5 shadow-[0_0_10px_rgba(0,0,0,0.05)]">
+              <a href="/src/pages/menu/menudetail.html" target="_self">
+                <img src="/src/assets/menu/set/set_38.webp" alt="불끈버거 맥시멈 세트" class="max-h-[105px] mx-auto" />
+                <h4 class="mt-[.3125rem] mb-[1em] text-sm text-brown leading-[1] lg:text-lg lg:mb-0">불끈버거 맥시멈 세트</h4>
+                <span class="block mt-1.5 leading-[1.2] text-3xs text-brown-0.7 lg:text-2xs">불끈버거 맥시멈 + 프렌치프라이(R) + 코카콜라(R)</span>
+                <strong class="absolute top-[8px] left-[12px] font-Flame rounded-[.3125rem] text-white bg-ci py-[.0625rem] px-1 text-[.6875rem] lg:top-5 lg:left-4.5">NEW</strong>
+              </a>
+            </li>
+            <li class="relative pt-[1.75rem] px-[.75rem] pb-[.625rem] rounded-[.625rem] bg-light-beige text-center lg:pt-[2.375rem] lg:px-[1.125rem] lg:pb-5 shadow-[0_0_10px_rgba(0,0,0,0.05)]">
+              <a href="/src/pages/menu/menudetail.html" target="_self">
+                <img src="/src/assets/menu/burger/burger_32.webp" alt="불끈버거 맥시멈" class="max-h-[105px] mx-auto" />
+                <h4 class="mt-[.3125rem] mb-[1em] text-sm text-brown leading-[1] lg:text-lg lg:mb-0">불끈버거 맥시멈</h4>
+                <span class="block mt-1.5 leading-[1.2] text-3xs text-brown-0.7 lg:text-2xs">불끈버거 맥시멈</span>
+                <strong class="absolute top-[8px] left-[12px] font-Flame rounded-[.3125rem] text-white bg-ci py-[.0625rem] px-1 text-[.6875rem] lg:top-5 lg:left-4.5">NEW</strong>
+              </a>
+            </li>
+
+            <li class="relative pt-[1.75rem] px-[.75rem] pb-[.625rem] rounded-[.625rem] bg-light-beige text-center lg:pt-[2.375rem] lg:px-[1.125rem] lg:pb-5 shadow-[0_0_10px_rgba(0,0,0,0.05)]">
+              <a href="/src/pages/menu/menudetail.html" target="_self">
+                <img src="/src/assets/menu/set/set_38.webp" alt="불끈버거 맥시멈 라지세트" class="max-h-[105px] mx-auto" />
+                <h4 class="mt-[.3125rem] mb-[1em] text-sm text-brown leading-[1] lg:text-lg lg:mb-0">불끈버거 맥시멈 라지세트</h4>
+                <span class="block mt-1.5 leading-[1.2] text-3xs text-brown-0.7 lg:text-2xs">불끈버거 맥시멈 + 프렌치프라이(L) + 코카콜라(L)</span>
+                <strong class="absolute top-[8px] left-[12px] font-Flame rounded-[.3125rem] text-white bg-ci py-[.0625rem] px-1 text-[.6875rem] lg:top-5 lg:left-4.5">NEW</strong>
+              </a>
+            </li>
+            <li class="relative pt-[1.75rem] px-[.75rem] pb-[.625rem] rounded-[.625rem] bg-light-beige text-center lg:pt-[2.375rem] lg:px-[1.125rem] lg:pb-5 shadow-[0_0_10px_rgba(0,0,0,0.05)]">
+              <a href="/src/pages/menu/menudetail.html" target="_self">
+                <img src="/src/assets/menu/set/set_52.webp" alt="불끈버거 맥시멈 더블 세트" class="max-h-[105px] mx-auto" />
+                <h4 class="mt-[.3125rem] mb-[1em] text-sm text-brown leading-[1] lg:text-lg lg:mb-0">불끈버거 맥시멈 더블 세트</h4>
+                <span class="block mt-1.5 leading-[1.2] text-3xs text-brown-0.7 lg:text-2xs">불끈버거 맥시멈 더블 + 프렌치프라이(R) + 코카콜라(R)</span>
+                <strong class="absolute top-[8px] left-[12px] font-Flame rounded-[.3125rem] text-white bg-ci py-[.0625rem] px-1 text-[.6875rem] lg:top-5 lg:left-4.5">NEW</strong>
+              </a>
+            </li>
+            <li class="relative pt-[1.75rem] px-[.75rem] pb-[.625rem] rounded-[.625rem] bg-light-beige text-center lg:pt-[2.375rem] lg:px-[1.125rem] lg:pb-5 shadow-[0_0_10px_rgba(0,0,0,0.05)]">
+              <a href="/src/pages/menu/menudetail.html" target="_self">
+                <img src="/src/assets/menu/set/set_52.webp" alt="불끈버거 맥시멈 더블 라지세트" class="max-h-[105px] mx-auto" />
+                <h4 class="mt-[.3125rem] mb-[1em] text-sm text-brown leading-[1] lg:text-lg lg:mb-0">불끈버거 맥시멈 더블 라지세트</h4>
+                <span class="block mt-1.5 leading-[1.2] text-3xs text-brown-0.7 lg:text-2xs">불끈버거 맥시멈 더블 + 프렌치프라이(L) + 코카콜라(L)</span>
+                <strong class="absolute top-[8px] left-[12px] font-Flame rounded-[.3125rem] text-white bg-ci py-[.0625rem] px-1 text-[.6875rem] lg:top-5 lg:left-4.5">NEW</strong>
+              </a>
+            </li>
+
+            <li class="relative pt-[1.75rem] px-[.75rem] pb-[.625rem] rounded-[.625rem] bg-light-beige text-center lg:pt-[2.375rem] lg:px-[1.125rem] lg:pb-5 shadow-[0_0_10px_rgba(0,0,0,0.05)]">
+              <a href="/src/pages/menu/menudetail.html" target="_self">
+                <img src="/src/assets/menu/burger/burger_3.webp" alt="불끈버거 맥시멈 더블" class="max-h-[105px] mx-auto" />
+                <h4 class="mt-[.3125rem] mb-[1em] text-sm text-brown leading-[1] lg:text-lg lg:mb-0">불끈버거 맥시멈 더블</h4>
+                <span class="block mt-1.5 leading-[1.2] text-3xs text-brown-0.7 lg:text-2xs">불끈버거 맥시멈 더블</span>
+                <strong class="absolute top-[8px] left-[12px] font-Flame rounded-[.3125rem] text-white bg-ci py-[.0625rem] px-1 text-[.6875rem] lg:top-5 lg:left-4.5">NEW</strong>
+              </a>
+            </li>
+            <li class="relative pt-[1.75rem] px-[.75rem] pb-[.625rem] rounded-[.625rem] bg-light-beige text-center lg:pt-[2.375rem] lg:px-[1.125rem] lg:pb-5 shadow-[0_0_10px_rgba(0,0,0,0.05)]">
+              <a href="/src/pages/menu/menudetail.html" target="_self">
+                <img src="/src/assets/menu/burger/burger_43.webp" alt="몬스터와퍼" class="max-h-[105px] mx-auto" />
+                <h4 class="mt-[.3125rem] mb-[1em] text-sm text-brown leading-[1] lg:text-lg lg:mb-0">몬스터와퍼</h4>
+                <span class="block mt-1.5 leading-[1.2] text-3xs text-brown-0.7 lg:text-2xs">몬스터와퍼</span>
+              </a>
+            </li>
+            <li class="relative pt-[1.75rem] px-[.75rem] pb-[.625rem] rounded-[.625rem] bg-light-beige text-center lg:pt-[2.375rem] lg:px-[1.125rem] lg:pb-5 shadow-[0_0_10px_rgba(0,0,0,0.05)]">
+              <a href="/src/pages/menu/menudetail.html" target="_self">
+                <img src="/src/assets/menu/set/set_27.webp" alt="몬스터와퍼 세트" class="max-h-[105px] mx-auto" />
+                <h4 class="mt-[.3125rem] mb-[1em] text-sm text-brown leading-[1] lg:text-lg lg:mb-0">몬스터와퍼 세트</h4>
+                <span class="block mt-1.5 leading-[1.2] text-3xs text-brown-0.7 lg:text-2xs">몬스터와퍼 + 프렌치프라이(R) + 코카콜라(R)</span>
+              </a>
+            </li>
+
+            <li class="relative pt-[1.75rem] px-[.75rem] pb-[.625rem] rounded-[.625rem] bg-light-beige text-center lg:pt-[2.375rem] lg:px-[1.125rem] lg:pb-5 shadow-[0_0_10px_rgba(0,0,0,0.05)]">
+              <a href="/src/pages/menu/menudetail.html" target="_self">
+                <img src="/src/assets/menu/set/set_27.webp" alt="몬스터와퍼 라지세트" class="max-h-[105px] mx-auto" />
+                <h4 class="mt-[.3125rem] mb-[1em] text-sm text-brown leading-[1] lg:text-lg lg:mb-0">몬스터와퍼 라지세트</h4>
+                <span class="block mt-1.5 leading-[1.2] text-3xs text-brown-0.7 lg:text-2xs">몬스터와퍼 + 프렌치프라이(L) + 코카콜라(L)</span>
+              </a>
+            </li>
+            <li class="relative pt-[1.75rem] px-[.75rem] pb-[.625rem] rounded-[.625rem] bg-light-beige text-center lg:pt-[2.375rem] lg:px-[1.125rem] lg:pb-5 shadow-[0_0_10px_rgba(0,0,0,0.05)]">
+              <a href="/src/pages/menu/menudetail.html" target="_self">
+                <img src="/src/assets/menu/burger/burger_41.webp" alt="콰트로치즈와퍼" class="max-h-[105px] mx-auto" />
+                <h4 class="mt-[.3125rem] mb-[1em] text-sm text-brown leading-[1] lg:text-lg lg:mb-0">콰트로치즈와퍼</h4>
+                <span class="block mt-1.5 leading-[1.2] text-3xs text-brown-0.7 lg:text-2xs">콰트로치즈와퍼</span>
+              </a>
+            </li>
+            <li class="relative pt-[1.75rem] px-[.75rem] pb-[.625rem] rounded-[.625rem] bg-light-beige text-center lg:pt-[2.375rem] lg:px-[1.125rem] lg:pb-5 shadow-[0_0_10px_rgba(0,0,0,0.05)]">
+              <a href="/src/pages/menu/menudetail.html" target="_self">
+                <img src="/src/assets/menu/set/set_58.webp" alt="콰트로치즈와퍼 라지세트" class="max-h-[105px] mx-auto" />
+                <h4 class="mt-[.3125rem] mb-[1em] text-sm text-brown leading-[1] lg:text-lg lg:mb-0">콰트로치즈와퍼 라지세트</h4>
+                <span class="block mt-1.5 leading-[1.2] text-3xs text-brown-0.7 lg:text-2xs">콰트로치즈와퍼 + 프렌치프라이(L) + 코카콜라(L)</span>
+              </a>
+            </li>
+
+            <li class="relative pt-[1.75rem] px-[.75rem] pb-[.625rem] rounded-[.625rem] bg-light-beige text-center lg:pt-[2.375rem] lg:px-[1.125rem] lg:pb-5 shadow-[0_0_10px_rgba(0,0,0,0.05)]">
+              <a href="/src/pages/menu/menudetail.html" target="_self">
+                <img src="/src/assets/menu/set/set_58.webp" alt="콰트로치즈와퍼 세트" class="max-h-[105px] mx-auto" />
+                <h4 class="mt-[.3125rem] mb-[1em] text-sm text-brown leading-[1] lg:text-lg lg:mb-0">콰트로치즈와퍼 세트</h4>
+                <span class="block mt-1.5 leading-[1.2] text-3xs text-brown-0.7 lg:text-2xs">콰트로치즈와퍼 + 프렌치프라이(R) + 코카콜라(R)</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="mt-5 md:mt-7.5">
+          <h3 class="mb-2.5 text-sm text-brown font-bold md:text-lg lg:text-2xl lg:mb-5">오리지널스&맥시멈</h3>
+          <ul class="grid grid-cols-2 gap-x-2 gap-y-2.5 md:grid-cols-3 md:gap-3 lg:grid-cols-4 lg:gpa-4.5">
+            <li class="relative pt-[1.75rem] px-[.75rem] pb-[.625rem] rounded-[.625rem] bg-light-beige text-center lg:pt-[2.375rem] lg:px-[1.125rem] lg:pb-5 shadow-[0_0_10px_rgba(0,0,0,0.05)]">
+              <a href="/src/pages/menu/menudetail.html" target="_self">
+                <img src="/src/assets/menu/set/set_38.webp" alt="불끈버거 맥시멈 세트" class="max-h-[105px] mx-auto" />
+                <h4 class="mt-[.3125rem] mb-[1em] text-sm text-brown leading-[1] lg:text-lg lg:mb-0">불끈버거 맥시멈 세트</h4>
+                <span class="block mt-1.5 leading-[1.2] text-3xs text-brown-0.7 lg:text-2xs">불끈버거 맥시멈 + 프렌치프라이(R) + 코카콜라(R)</span>
+                <strong class="absolute top-[8px] left-[12px] font-Flame rounded-[.3125rem] text-white bg-ci py-[.0625rem] px-1 text-[.6875rem] lg:top-5 lg:left-4.5">NEW</strong>
+              </a>
+            </li>
+            <li class="relative pt-[1.75rem] px-[.75rem] pb-[.625rem] rounded-[.625rem] bg-light-beige text-center lg:pt-[2.375rem] lg:px-[1.125rem] lg:pb-5 shadow-[0_0_10px_rgba(0,0,0,0.05)]">
+              <a href="/src/pages/menu/menudetail.html" target="_self">
+                <img src="/src/assets/menu/set/set_38.webp" alt="불끈버거 맥시멈 라지세트" class="max-h-[105px] mx-auto" />
+                <h4 class="mt-[.3125rem] mb-[1em] text-sm text-brown leading-[1] lg:text-lg lg:mb-0">불끈버거 맥시멈 라지세트</h4>
+                <span class="block mt-1.5 leading-[1.2] text-3xs text-brown-0.7 lg:text-2xs">불끈버거 맥시멈 + 프렌치프라이(L) + 코카콜라(L)</span>
+                <strong class="absolute top-[8px] left-[12px] font-Flame rounded-[.3125rem] text-white bg-ci py-[.0625rem] px-1 text-[.6875rem] lg:top-5 lg:left-4.5">NEW</strong>
+              </a>
+            </li>
+            <li class="relative pt-[1.75rem] px-[.75rem] pb-[.625rem] rounded-[.625rem] bg-light-beige text-center lg:pt-[2.375rem] lg:px-[1.125rem] lg:pb-5 shadow-[0_0_10px_rgba(0,0,0,0.05)]">
+              <a href="/src/pages/menu/menudetail.html" target="_self">
+                <img src="/src/assets/menu/burger/burger_32.webp" alt="불끈버거 맥시멈" class="max-h-[105px] mx-auto" />
+                <h4 class="mt-[.3125rem] mb-[1em] text-sm text-brown leading-[1] lg:text-lg lg:mb-0">불끈버거 맥시멈</h4>
+                <span class="block mt-1.5 leading-[1.2] text-3xs text-brown-0.7 lg:text-2xs">불끈버거 맥시멈</span>
+                <strong class="absolute top-[8px] left-[12px] font-Flame rounded-[.3125rem] text-white bg-ci py-[.0625rem] px-1 text-[.6875rem] lg:top-5 lg:left-4.5">NEW</strong>
+              </a>
+            </li>
+            <li class="relative pt-[1.75rem] px-[.75rem] pb-[.625rem] rounded-[.625rem] bg-light-beige text-center lg:pt-[2.375rem] lg:px-[1.125rem] lg:pb-5 shadow-[0_0_10px_rgba(0,0,0,0.05)]">
+              <a href="/src/pages/menu/menudetail.html" target="_self">
+                <img src="/src/assets/menu/burger/burger_3.webp" alt="불끈버거 맥시멈 더블" class="max-h-[105px] mx-auto" />
+                <h4 class="mt-[.3125rem] mb-[1em] text-sm text-brown leading-[1] lg:text-lg lg:mb-0">불끈버거 맥시멈 더블</h4>
+                <span class="block mt-1.5 leading-[1.2] text-3xs text-brown-0.7 lg:text-2xs">불끈버거 맥시멈 더블</span>
+                <strong class="absolute top-[8px] left-[12px] font-Flame rounded-[.3125rem] text-white bg-ci py-[.0625rem] px-1 text-[.6875rem] lg:top-5 lg:left-4.5">NEW</strong>
+              </a>
+            </li>
+            <li class="relative pt-[1.75rem] px-[.75rem] pb-[.625rem] rounded-[.625rem] bg-light-beige text-center lg:pt-[2.375rem] lg:px-[1.125rem] lg:pb-5 shadow-[0_0_10px_rgba(0,0,0,0.05)]">
+              <a href="/src/pages/menu/menudetail.html" target="_self">
+                <img src="/src/assets/menu/set/set_52.webp" alt="불끈버거 맥시멈 더블 세트" class="max-h-[105px] mx-auto" />
+                <h4 class="mt-[.3125rem] mb-[1em] text-sm text-brown leading-[1] lg:text-lg lg:mb-0">불끈버거 맥시멈 더블 세트</h4>
+                <span class="block mt-1.5 leading-[1.2] text-3xs text-brown-0.7 lg:text-2xs">불끈버거 맥시멈 더블 + 프렌치프라이(R) + 코카콜라(R)</span>
+                <strong class="absolute top-[8px] left-[12px] font-Flame rounded-[.3125rem] text-white bg-ci py-[.0625rem] px-1 text-[.6875rem] lg:top-5 lg:left-4.5">NEW</strong>
+              </a>
+            </li>
+            <li class="relative pt-[1.75rem] px-[.75rem] pb-[.625rem] rounded-[.625rem] bg-light-beige text-center lg:pt-[2.375rem] lg:px-[1.125rem] lg:pb-5 shadow-[0_0_10px_rgba(0,0,0,0.05)]">
+              <a href="/src/pages/menu/menudetail.html" target="_self">
+                <img src="/src/assets/menu/set/set_52.webp" alt="불끈버거 맥시멈 더블 라지세트" class="max-h-[105px] mx-auto" />
+                <h4 class="mt-[.3125rem] mb-[1em] text-sm text-brown leading-[1] lg:text-lg lg:mb-0">불끈버거 맥시멈 더블 라지세트</h4>
+                <span class="block mt-1.5 leading-[1.2] text-3xs text-brown-0.7 lg:text-2xs">불끈버거 맥시멈 더블 + 프렌치프라이(L) + 코카콜라(L)</span>
+                <strong class="absolute top-[8px] left-[12px] font-Flame rounded-[.3125rem] text-white bg-ci py-[.0625rem] px-1 text-[.6875rem] lg:top-5 lg:left-4.5">NEW</strong>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
     <!-- footer 컴포넌트 넣어주세요. -->
+    <common-footer></common-footer>
   </body>
 </html>

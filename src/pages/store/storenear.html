@@ -3,27 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>[컴포넌트] 페이지 타이틀 영역</title>
+    <title>매장 찾기 < 버거킹</title>
     <link rel="preload" as="font" href="/fonts/Sandoll-GothicNeoRound-400.woff" crossorigin="anonymous" />
     <link rel="preload" as="font" href="/fonts/Sandoll-GothicNeoRound-700.woff" crossorigin="anonymous" />
     <script type="module" src="/src/main.js"></script>
   </head>
   <body>
-    <!-- header 컴포넌트 넣어주세요. -->
-    <div class="wrapper px-5 pt-5 pb-22.5 md:p-7.5 lg:pt-10 lg:px-15 lg:pb-22.5">
+    <skip-nav></skip-nav>
+    <sub-header page-title="매장 찾기"></sub-header>
+    <div class="wrapper px-5 pt-5 pb-22.5 md:p-7.5 lg:pt-10 lg:px-15 lg:pb-22.5 min-h-[calc(100vh-166px)] lg:min-h-[calc(100vh-362px)]">
       <div class="inner max-w-[1620px] mx-auto">
         <h2 class="hidden text-[2.125rem] text-brown text-center font-bold lg:block lg:mt-10 lg:mb-12.5">매장 찾기</h2>
 
-        <!-- 타이틀 아래의 본문 내용은 여기서 작성해주세요. div말고 다른 태그 넣어도 됩니다.-->
-        <nav class="sticky top-[-20px] mt-[-30px] z-20 bg-beige m-[0_-20px] p-5 text-center mr-2 ml-2">
-          <ul class="grid grid-cols-2 border-b-1 items-cnter border-b-brown-0.05 z-10 bg-beige lg:text-2xl">
-            <li class="h-full tab-btn relative p-1 border-b-3 border-b-ci lg:text-2xl text-ci"><a href="/src/page/store/storeall.html">가까운 매장</a></li>
-            <li class="tab-btn relative p-1 lg:text-2xl text-brown-0.5"><a href="/src/page/store/storeall.html">전체매장</a></li>
+        <nav class="sticky top-[3.5rem] -mt-5 -ml-5 px-5 w-[calc(100%+2.5rem)] border-b-1 border-b-border bg-beige text-sm text-center z-1 md:w-[calc(100%+3.75rem)] md:-ml-7.5 md:px-7.5 lg:w-full lg:ml-0 lg:px-0 lg:top-24.5 lg:mt-0">
+          <ul class="grid grid-cols-2 items-cnter bg-beige lg:text-2xl">
+            <li class="h-full block tab-btn relative p-1 border-b-3 border-b-ci lg:text-2xl text-ci"><a href="/src/pages/store/storeall.html">가까운 매장</a></li>
+            <li class="tab-btn block relative p-1 lg:text-2xl text-brown-0.5"><a href="/src/pages/store/storeall.html">전체 매장</a></li>
           </ul>
         </nav>
-        <div class="flex flex-row flex-warp justify-between m-[10px_5px]">
-          <span class="flex flex-row flex-nowrap p-0 min-w-0 m-0 leading-1.2 text-sm text-[#89665b]"
-            ><p class="text-brown">2개</p>
+        <div class="flex relative items-center mt-[.9375rem] mb-2.5 md:mt-5">
+          <span class="flex flex-row flex-nowrap p-0 min-w-0 m-0 leading-1.2 text-xs text-brown-0.7 md:text-sm">
+            <p class="text-brown">2개</p>
             의 매장이 있습니다</span
           >
           <div class="flex flex-row flex-nowrap items-center ml-auto pl-[.75rem]">
@@ -63,27 +63,27 @@
             </a>
           </div>
         </div>
-        <ul class="grid md:grid-cols lg:grid-cols-2 gap-3 xl:grid-cols-3">
-          <li class="flex bg-light-beige relative mb-5 rounded-[.625rem] p-[15px]">
+        <ul class="grid md:grid-cols lg:grid-cols-2 gap-5 xl:grid-cols-3">
+          <li class="flex bg-light-beige relative rounded-[.625rem] p-[15px]">
             <a href="#" class="w-full">
               <div class="flex justify-between relative min-h-20 mb-2.5">
                 <div class="relative pr-[5.9375rem]">
                   <span class="flex flex-nowrap items-center gap-1 relative"
-                    ><p class="text-sm font-bold text-brown">천안 성성점</p>
-                    <p class="text-xs text-[#89665b]">538m</p></span
+                    ><p class="text-sm font-bold text-brown lg:text-2xl">천안 성성점</p>
+                    <p class="text-xs text-[#89665b] lg:text-sm">538m</p></span
                   >
-                  <p class="font-Pretendard text-2xs text-brown-0.7 mt-[.3125rem] mr-0 mb-0.5 ml-0">충청남도 천안시 서북구 성성8로 2-11</p>
-                  <p class="font-Pretendard m-0 text-2xs text-brown">연중무휴 (10:00~22:00)</p>
-                  <div class="flex flex-wrap mt-[5px] mr-[5px] mb-0 ml-0">
-                    <span class="inline-block min-w-[1.5625rem] h-4 pt-0.5 pr-[.3125rem] pb-0.5 pl-[.3125rem] text-[.5rem] text-[#89665b] text-center leading-3 bg-[#faf4ed] rounded-[20px]">킹오더</span>
-                    <span class="inline-block min-w-[1.5625rem] h-4 pt-0.5 pr-[.3125rem] pb-0.5 pl-[.3125rem] text-[.5rem] text-[#89665b] text-center leading-3 bg-[#faf4ed] rounded-[20px]">딜리버리 </span>
+                  <p class="font-Pretendard text-2xs text-brown-0.7 font-semibold lg:text-[.875rem] lg:mt-1">충청남도 천안시 서북구 성성8로 2-11</p>
+                  <p class="font-Pretendard m-0 text-2xs text-brown font-semibold lg:text-[.875rem] lg:mt-1">연중무휴 (10:00~22:00)</p>
+                  <div class="flex flex-wrap gap-[.3125rem] mt-[5px] mr-[5px]">
+                    <span class="inline-block min-w-[1.5625rem] h-4 pt-0.5 pr-[.3125rem] pb-0.5 pl-[.3125rem] text-[.5rem] text-[#89665b] text-center leading-3 bg-[#faf4ed] rounded-[20px] lg:text-3xs">킹오더</span>
+                    <span class="inline-block min-w-[1.5625rem] h-4 pt-0.5 pr-[.3125rem] pb-0.5 pl-[.3125rem] text-[.5rem] text-[#89665b] text-center leading-3 bg-[#faf4ed] rounded-[20px] lg:text-3xs">딜리버리 </span>
                   </div>
                 </div>
                 <img src="/src/assets/store/store_1.webp" alt="" class="absolute right-0 top-0 w-[80px] h-[80px] rounded-[.625rem]" />
               </div>
               <div class="flex justify-between mt-auto mr-0 mb-auto ml-0 text-center relative">
                 <div class="flex items-center min-w-20 mb-[-5px]">
-                  <p class="text-left text-xs text-brown">매장정보</p>
+                  <p class="text-left text-xs text-brown lg:text-sm">매장정보</p>
                   <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_108_2309)">
                       <path
@@ -104,26 +104,26 @@
               </div>
             </a>
           </li>
-          <li class="flex bg-light-beige relative mb-5 rounded-[.625rem] p-[15px]">
+          <li class="flex bg-light-beige relative rounded-[.625rem] p-[15px]">
             <a href="#" class="w-full">
               <div class="flex justify-between relative min-h-20 mb-2.5">
                 <div class="relative pr-[5.9375rem]">
                   <span class="flex flex-nowrap items-center gap-1 relative"
-                    ><p class="text-sm font-bold text-brown">천안 성성점</p>
-                    <p class="text-xs text-[#89665b]">538m</p></span
+                    ><p class="text-sm font-bold text-brown lg:text-2xl">천안 두정점</p>
+                    <p class="text-xs text-[#89665b] lg:text-sm">538m</p></span
                   >
-                  <p class="font-Pretendard text-2xs text-brown-0.7 mt-[.3125rem] mr-0 mb-0.5 ml-0">충청남도 천안시 서북구 성성8로 2-11</p>
-                  <p class="font-Pretendard m-0 text-2xs text-brown">연중무휴 (10:00~22:00)</p>
-                  <div class="flex flex-wrap mt-[5px] mr-[5px] mb-0 ml-0">
-                    <span class="inline-block min-w-[1.5625rem] h-4 pt-0.5 pr-[.3125rem] pb-0.5 pl-[.3125rem] text-[.5rem] text-[#89665b] text-center leading-3 bg-[#faf4ed] rounded-[20px]">킹오더</span>
-                    <span class="inline-block min-w-[1.5625rem] h-4 pt-0.5 pr-[.3125rem] pb-0.5 pl-[.3125rem] text-[.5rem] text-[#89665b] text-center leading-3 bg-[#faf4ed] rounded-[20px]">딜리버리 </span>
+                  <p class="font-Pretendard text-2xs text-brown-0.7 font-semibold lg:text-[.875rem] lg:mt-1">충청남도 천안시 서북구 두정로 147</p>
+                  <p class="font-Pretendard m-0 text-2xs text-brown font-semibold lg:text-[.875rem] lg:mt-1">연중무휴 (10:00~22:00)</p>
+                  <div class="flex flex-wrap gap-[.3125rem] mt-[5px] mr-[5px]">
+                    <span class="inline-block min-w-[1.5625rem] h-4 pt-0.5 pr-[.3125rem] pb-0.5 pl-[.3125rem] text-[.5rem] text-[#89665b] text-center leading-3 bg-[#faf4ed] rounded-[20px] lg:text-3xs">킹오더</span>
+                    <span class="inline-block min-w-[1.5625rem] h-4 pt-0.5 pr-[.3125rem] pb-0.5 pl-[.3125rem] text-[.5rem] text-[#89665b] text-center leading-3 bg-[#faf4ed] rounded-[20px] lg:text-3xs">딜리버리 </span>
                   </div>
                 </div>
-                <img src="/src/assets/store/store_1.webp" alt="" class="absolute right-0 top-0 w-[80px] h-[80px] rounded-[.625rem]" />
+                <img src="/src/assets/store/store_2.webp" alt="" class="absolute right-0 top-0 w-[80px] h-[80px] rounded-[.625rem]" />
               </div>
               <div class="flex justify-between mt-auto mr-0 mb-auto ml-0 text-center relative">
                 <div class="flex items-center min-w-20 mb-[-5px]">
-                  <p class="text-left text-xs text-brown">매장정보</p>
+                  <p class="text-left text-xs text-brown lg:text-sm">매장정보</p>
                   <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_108_2309)">
                       <path
@@ -147,6 +147,6 @@
         </ul>
       </div>
     </div>
-    <!-- footer 컴포넌트 넣어주세요. -->
+    <common-footer></common-footer>
   </body>
 </html>

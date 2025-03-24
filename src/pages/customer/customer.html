@@ -3,19 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>고객지원</title>
+    <title>고객지원 < 버거킹</title>
     <link rel="preload" as="font" href="/fonts/Sandoll-GothicNeoRound-400.woff" crossorigin="anonymous" />
     <link rel="preload" as="font" href="/fonts/Sandoll-GothicNeoRound-700.woff" crossorigin="anonymous" />
     <script type="module" src="/src/main.js"></script>
   </head>
   <body>
-    <!-- header 컴포넌트 넣어주세요. -->
+    <skip-nav></skip-nav>
+    <sub-header page-title="고객지원"></sub-header>
+
     <div class="wrapper px-5 pt-5 pb-22.5 md:p-7.5 lg:pt-10 lg:px-15 lg:pb-22.5">
       <div class="inner max-w-[1620px] mx-auto">
         <h2 class="hidden text-[2.125rem] text-brown text-center font-bold lg:block lg:mt-10 lg:mb-12.5">고객지원</h2>
 
-        <!-- 타이틀 아래의 본문 내용은 여기서 작성해주세요. div말고 다른 태그 넣어도 됩니다.-->
-        <div class="text-brown">
+        <div class="text-brown max-lg:min-h-[calc(100vh-10.375rem)]">
           <p class="text-sm lg:mb-7.5 lg:text-center lg:text-lg">버거킹에 <br class="md:hidden" />궁금한 점이 있나요?</p>
           <form action="" method="post" class="relative block my-2.5 w-full">
             <label for="search" class="sr-only">궁금한 내용을 검색해주세요.</label>
@@ -83,7 +84,7 @@
                 </a>
               </li>
               <li class="border-b-1 border-border py-[.9375rem] lg:py-[1.875rem] w-full">
-                <a href="/" class="flex flex-row justify-between">
+                <a href="./customerdetail03.html" class="flex flex-row justify-between">
                   <span class="text-xs lg:text-lg">푸시 알림 및 주문하기 서비스 알림이 오지 않아요.</span>
                   <img src="/src/assets/elements/ico_more_arrow.svg" alt="더보기" class="" />
                 </a>
@@ -111,7 +112,7 @@
                   <span class="text-2xs font-medium text-brown-0.7">(점심시간 12:00~13:00, 주말 공휴일 제외)</span>
                 </div>
                 <div class="flex-1 flex justify-end items-end">
-                  <a href="../franchise/franchise.html" class="flex items-center px-2.5 mt-2.5 rounded-[3.125rem] h-7.5 w-fit text-sm text-white bg-brown font-[Sandoll-GothicNeoRound]"> <span>가맹 모집안내 바로가기</span></a>
+                  <a href="../franchise/franchise.html" class="flex items-center px-2.5 mt-2.5 pt-0.5 rounded-[3.125rem] h-7.5 w-fit text-sm text-white bg-brown font-[Sandoll-GothicNeoRound]"> <span>가맹 모집안내 바로가기</span></a>
                 </div>
               </div>
             </li>
@@ -120,6 +121,6 @@
         </div>
       </div>
     </div>
-    <!-- footer 컴포넌트 넣어주세요. -->
+    <common-footer></common-footer>
   </body>
 </html>

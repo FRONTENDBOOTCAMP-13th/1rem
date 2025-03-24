@@ -23,8 +23,6 @@ document.addEventListener('DOMContentLoaded', function () {
       // 모달 제목과 iframe title 설정
       modalTitle.textContent = videoTitle;
       modalIframe.title = videoTitle;
-
-      // 모달 열기
       modal.showModal();
       modal.style.display = 'flex';
       body.style.overflow = 'hidden';

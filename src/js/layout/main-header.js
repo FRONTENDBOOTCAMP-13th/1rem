@@ -5,7 +5,7 @@ class mainHeader extends HTMLElement {
 
   connectedCallback() {
     this.innerHTML = `
-    <header class="top-0 sticky bg-beige z-1 lg:px-15">
+    <header class="top-0 sticky bg-beige z-10 lg:px-15">
       <div class="h-14 px-[3.125rem] text-lg lg:items-center lg:px-0 lg:flex lg:w-full lg:max-w-405 lg:h-[6.125rem] lg:mx-auto">
         <!-- ST:Logo -->
         <div class="flex-1 px-[1.875rem] min-w-0 text-center lg:flex-1 lg:static lg:px-0 lg:max-w-50 lg:h-6">
@@ -14,7 +14,7 @@ class mainHeader extends HTMLElement {
         <!-- ED:Logo -->
 
         <!-- ST:Menu list -->
-        <nav class="hidden lg:flex flex-1 h-full justify-center px-5">
+        <nav id="gnb" class="hidden lg:flex flex-1 h-full justify-center px-5">
           <ul class="flex">
             <!-- ST:MENU -->
             <li class="relative">
@@ -27,9 +27,7 @@ class mainHeader extends HTMLElement {
             <!-- ST:STORY -->
             <li class="relative group">
               <div class="h-full">
-                <a class="text-brown font-BKBulMatPro items-center p-[.625rem_.875rem_.625rem_.875rem_.875rem] justify-center flex h-full hd:p-[.625rem_1.25rem_.625rem_1.25rem] focus:text-ci hover:text-ci" href="/src/pages/story/brand.html">
-                  <span class="text-3xl h-[1.625rem] hd:text-4xl">STORY</span>
-                </a>
+                <a class="text-brown font-BKBulMatPro items-center p-[.625rem_.875rem_.625rem_.875rem] justify-center flex h-full hd:p-[.625rem_1.25rem_.625rem_1.25rem] focus:text-ci hover:text-ci" href="/src/pages/story/brand.html"><span class="text-3xl h-[1.625rem] hd:text-4xl">STORY</span></a>
               </div>
               <!-- ST:STORY list-->
               <ul class="flex top-[100%] left-[50%] h-[3.625rem] mt-[-1.25rem] p-[.3125rem_1.25rem_.3125rem_1.25rem] rounded-[3.125rem] transform translate-x-[-50%] translate-y-1 absolute pl-[1.5625rem] text-lg overflow-hidden opacity-0 invisible z-20 ease-linear bg-brown transition-all duration-200 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 group-focus-within:opacity-100 group-focus-within:visible group-focus-within:translate-y-0">
@@ -59,7 +57,7 @@ class mainHeader extends HTMLElement {
             <!-- ST:NEWS -->
             <li class="relative group">
               <div class="h-full">
-                <a class="text-brown font-BKBulMatPro items-center p-[.625rem_.875rem_.625rem_.875rem] justify-center flex h-full hd:p-[.625rem_1.25rem_.625rem_1.25rem] focus:text-ci hover:text-ci" href="/src/pages/news/newsongoing.html"><span class="text-3xl h-[1.625rem] hd:text-4xl">NEWS</span></a>
+                <a class="text-brown font-BKBulMatPro items-center p-[.625rem_.875rem_.625rem_.875rem] justify-center flex h-full hd:p-[.625rem_1.25rem_.625rem_1.25rem] focus:text-ci hover:text-ci" href="/src/pages/news/eventongoing.html"><span class="text-3xl h-[1.625rem] hd:text-4xl">NEWS</span></a>
               </div>
               <!-- ST:NEWS List -->
               <ul class="flex top-[100%] left-[50%] h-[3.625rem] mt-[-1.25rem] p-[.3125rem_1.25rem_.3125rem_1.25rem] rounded-[3.125rem] transform translate-x-[-50%] translate-y-1 absolute pl-[1.5625rem] text-lg overflow-hidden opacity-0 invisible z-20 ease-linear bg-brown transition-all duration-200 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 group-focus-within:opacity-100 group-focus-within:visible group-focus-within:translate-y-0">
@@ -105,7 +103,7 @@ class mainHeader extends HTMLElement {
     </header>
 
     <!-- ST:Open mobile menu-->
-    <div id="moGnb" class="z-[2] fixed top-0 left-[-110%] bg-beige w-screen h-screen px-5 translate duration-[400ms]">
+    <div id="moGnb" class="z-[999] fixed top-0 left-[-110%] bg-beige w-screen h-screen px-5 translate duration-[400ms] lg:hidden">
       <header class="h-[3.5rem] flex justify-between items-center">
         <a href="/src/pages/home.html" target="_self" aria-label="BURGER KING 홈으로 이동" class="block w-[9.375rem] h-4 bg-[url(/src/assets/elements/bg_logo.svg)] bg-no-repeat bg-contain"></a>
         <button type="button" aria-label="모바일 메뉴 닫기" class="mognb-close w-[2.125rem] h-full bg-[url(/src/assets/elements/btn_pop_close.svg)] bg-no-repeat bg-center"></button>
@@ -113,13 +111,49 @@ class mainHeader extends HTMLElement {
       <nav class="h-[calc(100%-8.125rem)]">
         <ul>
           <li><a href="/src/pages/menu/menu.html" class="block content-center h-21 p-5 pl-18.5 font-BKBulMatPro text-4xl text-brown font-bold bg-[url(/src/assets/elements/ico_gnb_menu01.svg)] bg-no-repeat bg-[left_center]">MENU</a></li>
-          <li class="flex justify-center items-center">
-            <a href="/src/pages/story/brand.html" class="flex-1 content-center h-21 p-5 pl-18.5 font-BKBulMatPro text-4xl text-brown font-bold bg-[url(/src/assets/elements/ico_gnb_menu02.svg)] bg-no-repeat bg-[left_center]">STORY</a>
-            <button type="button" aria-label="STORY 하위 메뉴 펼치기" aria-expanded="false" class="w-[3.625rem] h-21 bg-[url(/src/assets/elements/btn_acc_gnb.svg)] bg-no-repeat bg-center"></button>
+          <li>
+            <div class="flex justify-center items-center">
+              <a href="/src/pages/story/brand.html" class="flex-1 content-center h-21 p-5 pl-18.5 font-BKBulMatPro text-4xl text-brown font-bold bg-[url(/src/assets/elements/ico_gnb_menu02.svg)] bg-no-repeat bg-[left_center]">STORY</a>
+              <button type="button" aria-label="STORY 하위 메뉴 펼치기" aria-expanded="false" class="accordion-button w-[3.625rem] h-21 bg-[url(/src/assets/elements/btn_acc_gnb.svg)] bg-no-repeat bg-center"></button>
+            </div>
+            <div class="accordion-submenu -mx-5 h-0 overflow-hidden transition-all ease-in-out duration-300">
+              <ul class="h-auto py-[.625rem] bg-[#e4d7c8] text-lg overflow-hidden">
+                <li class="h-[2.375rem]">
+                  <a href="/src/pages/story/brand.html " class="h-[2.375rem] p-[.625rem_1.25rem_.625rem_5.875rem] text-brown whitespace-nowrap block"><span>브랜드</span></a>
+                </li>
+                <li class="h-[2.375rem]">
+                  <a href="/src/pages/story/whyburgerking.html" class="h-[2.375rem] p-[.625rem_1.25rem_.625rem_5.875rem] text-brown whitespace-nowrap block"><span>Why 버거킹</span></a>
+                </li>
+                <li class="h-[2.375rem]">
+                  <a href="/src/pages/story/esgbusiness.html" class="h-[2.375rem] p-[.625rem_1.25rem_.625rem_5.875rem] text-brown whitespace-nowrap block"><span>ESG 경영</span></a>
+                </li>
+                <li class="h-[2.375rem]">
+                  <a href="/src/pages/story/smartqsr.html" class="w-full h-[2.375rem] p-[.625rem_1.25rem_.625rem_5.875rem] text-brown whitespace-nowrap block"><span>Smart QSR</span></a>
+                </li>
+                <li class="h-[2.375rem]">
+                  <a href="/src/pages/story/awards.html" class="h-[2.375rem] p-[.625rem_1.25rem_.625rem_5.875rem] text-brown whitespace-nowrap block"><span>수상실적</span></a>
+                </li>
+                <li class="h-[2.375rem]">
+                  <a href="/src/pages/story/adarchive.html" class="h-[2.375rem] p-[.625rem_1.25rem_.625rem_5.875rem] text-brown whitespace-nowrap block"><span>광고영상</span></a>
+                </li>
+              </ul>
+            </div>
           </li>
-          <li class="flex justify-center items-center">
-            <a href="/src/pages/news/ongoing.html" class="flex-1 content-center h-21 p-5 pl-18.5 font-BKBulMatPro text-4xl text-brown font-bold bg-[url(/src/assets/elements/ico_gnb_menu04.svg)] bg-no-repeat bg-[left_center]">NEWS</a>
-            <button type="button" aria-label="NEWS 하위 메뉴 펼치기" aria-expanded="false" class="w-[3.625rem] h-21 bg-[url(/src/assets/elements/btn_acc_gnb.svg)] bg-no-repeat bg-center"></button>
+          <li>
+            <div class="flex justify-center items-center">
+              <a href="/src/pages/news/eventongoing.html" class="flex-1 content-center h-21 p-5 pl-18.5 font-BKBulMatPro text-4xl text-brown font-bold bg-[url(/src/assets/elements/ico_gnb_menu04.svg)] bg-no-repeat bg-[left_center]">NEWS</a>
+              <button type="button" aria-label="NEWS 하위 메뉴 펼치기" aria-expanded="false" class="accordion-button w-[3.625rem] h-21 bg-[url(/src/assets/elements/btn_acc_gnb.svg)] bg-no-repeat bg-center"></button>
+            </div>
+            <div class="accordion-submenu -mx-5 h-0 overflow-hidden transition-all ease-in-out">
+              <ul class="h-auto py-[.625rem] bg-[#e4d7c8] text-lg overflow-hidden">
+                <li class="h-[2.375rem]">
+                  <a href="/src/pages/news/eventongoing.html " class="h-[2.375rem] p-[.625rem_1.25rem_.625rem_5.875rem] text-brown whitespace-nowrap block"><span>이벤트</span></a>
+                </li>
+                <li class="h-[2.375rem]">
+                  <a href="/src/pages/news/notice.html" class="h-[2.375rem] p-[.625rem_1.25rem_.625rem_5.875rem] text-brown whitespace-nowrap block"><span>공지사항</span></a>
+                </li>
+              </ul>
+            </div>
           </li>
           <li><a href="/src/pages/store/storenear.html" class="block content-center h-21 p-5 pl-18.5 font-BKBulMatPro text-4xl text-brown font-bold bg-[url(/src/assets/elements/ico_gnb_menu03.svg)] bg-no-repeat bg-[left_center]">STORE</a></li>
           <li><a href="/src/pages/customer/customer.html" class="block content-center h-21 p-5 pl-18.5 font-BKBulMatPro text-4xl text-brown font-bold bg-[url(/src/assets/elements/ico_gnb_menu05.svg)] bg-no-repeat bg-[left_center]">CUSTOMER</a></li>

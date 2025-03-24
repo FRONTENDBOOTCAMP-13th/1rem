@@ -3,16 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>공지사항</title>
+    <title>공지사항 < 버거킹</title>
     <link rel="preload" as="font" href="/fonts/Sandoll-GothicNeoRound-400.woff" crossorigin="anonymous" />
     <link rel="preload" as="font" href="/fonts/Sandoll-GothicNeoRound-700.woff" crossorigin="anonymous" />
     <script type="module" src="/src/main.js"></script>
-    <script src="/src/js/layout/header.js"></script>
-    <script src="/src/js/layout/footer.js"></script>
   </head>
   <body>
+    <skip-nav></skip-nav>
     <!-- ST: header  -->
-    <common-header></common-header>
+    <sub-header page-title="소식"></sub-header>
     <!-- ED: header  -->
     <div class="wrapper px-5 pt-5 pb-22.5 md:p-7.5 lg:pt-10 lg:px-15 lg:pb-22.5">
       <div class="inner max-w-[1620px] mx-auto">
@@ -22,185 +21,280 @@
           <div class="hidden mb-[1.875rem] text-2xl text-center"><h2>소식</h2></div>
           <!-- ST: 공지사항 리스트 -->
           <ul class="flex flex-col mt-[-.3125rem] text-xs text-brown">
-            <li class="relative py-[.9375rem] border-b-[.0625rem] border-brown-0.1 lg:py-[1.875rem] lg:text-lg">
-              <div class="mt-0 flex items-center flex-wrap">
-                <p class="overflow-ellipsis whitespace-nowrap overflow-hidden flex-1">
-                  <span><span>[공지사항]</span></span>
-                  <strong>버거킹 개인정보 수집 및 이용 동의 개정 안내 (2025년 02월 25일 시행)</strong>
-                </p>
-                <div class="flex items-center ml-auto pl-3 text-[#89665b] text-xs"><span class="ml-0">25.02.21</span></div>
-              </div>
-              <a href="/src/pages/news/noticedetail.html" class="absolute left-0 top-0 w-full h-full indent-[-999em] text-left"><span>detail</span></a>
+            <li class="relative py-[.9375rem] leading-[1.1] border-b-[.0625rem] border-brown-0.1 lg:py-7.5 lg:text-lg">
+              <a href="/src/pages/news/noticedetail01.html" target="_self">
+                <div class="flex items-center flex-wrap">
+                  <p class="overflow-ellipsis whitespace-nowrap overflow-hidden flex-1">
+                    <span>[공지사항]</span>
+                    <strong>버거킹 개인정보 수집 및 이용 동의 개정 안내 (2025년 02월 25일 시행)</strong>
+                  </p>
+                  <div class="flex items-center ml-auto pl-3 text-[#89665b] text-xs"><span>25.02.21</span></div>
+                </div>
+              </a>
             </li>
-            <li class="relative py-[.9375rem] border-b-[.0625rem] border-brown-0.1 lg:py-[1.875rem] lg:text-lg">
-              <div class="mt-0 flex items-center flex-wrap">
-                <p class="overflow-ellipsis whitespace-nowrap overflow-hidden flex-1">
-                  <span><span>[공지사항]</span></span>
-                  <strong>버거킹 개인정보 처리방침 개정 안내 (2025년 2월 26일 시행)</strong>
-                </p>
-                <div class="flex items-center ml-auto pl-3 text-[#89665b] text-xs"><span class="ml-0">25.02.21</span></div>
-              </div>
-              <a href="/src/pages/news/noticedetail.html" class="absolute left-0 top-0 w-full h-full indent-[-999em] text-left"><span>detail</span></a>
+            <li class="relative py-[.9375rem] leading-[1.1] border-b-[.0625rem] border-brown-0.1 lg:py-7.5 lg:text-lg">
+              <a href="/src/pages/news/noticedetail02.html" target="_self">
+                <div class="flex items-center flex-wrap">
+                  <p class="overflow-ellipsis whitespace-nowrap overflow-hidden flex-1">
+                    <span>[공지사항]</span>
+                    <strong>버거킹 개인정보 처리방침 개정 안내 (2025년 2월 26일 시행)</strong>
+                  </p>
+                  <div class="flex items-center ml-auto pl-3 text-[#89665b] text-xs"><span>25.02.21</span></div>
+                </div>
+              </a>
             </li>
-            <li class="relative py-[.9375rem] border-b-[.0625rem] border-brown-0.1 lg:py-[1.875rem] lg:text-lg">
-              <div class="mt-0 flex items-center flex-wrap">
-                <p class="overflow-ellipsis whitespace-nowrap overflow-hidden flex-1">
-                  <span><span>[공지사항]</span></span>
-                  <strong>버거킹 앱 승급쿠폰 발급 오류 관련 사과문</strong>
-                </p>
-                <div class="flex items-center ml-auto pl-3 text-[#89665b] text-xs"><span class="ml-0">25.02.21</span></div>
-              </div>
-              <a href="/src/pages/news/noticedetail.html" class="absolute left-0 top-0 w-full h-full indent-[-999em] text-left"><span>detail</span></a>
+            <li class="relative py-[.9375rem] leading-[1.1] border-b-[.0625rem] border-brown-0.1 lg:py-7.5 lg:text-lg">
+              <a href="/src/pages/news/noticedetail03.html" target="_self">
+                <div class="flex items-center flex-wrap">
+                  <p class="overflow-ellipsis whitespace-nowrap overflow-hidden flex-1">
+                    <span>[공지사항]</span>
+                    <strong>버거킹 앱 승급쿠폰 발급 오류 관련 사과문</strong>
+                  </p>
+                  <div class="flex items-center ml-auto pl-3 text-[#89665b] text-xs"><span>25.02.21</span></div>
+                </div>
+              </a>
             </li>
-            <li class="relative py-[.9375rem] border-b-[.0625rem] border-brown-0.1 lg:py-[1.875rem] lg:text-lg">
-              <div class="mt-0 flex items-center flex-wrap">
-                <p class="overflow-ellipsis whitespace-nowrap overflow-hidden flex-1">
-                  <span><span>[공지사항]</span></span>
-                  <strong>생일쿠폰 미지급 오류에 대한 안내</strong>
-                </p>
-                <div class="flex items-center ml-auto pl-3 text-[#89665b] text-xs"><span class="ml-0">25.02.20</span></div>
-              </div>
-              <a href="/src/pages/news/noticedetail.html" class="absolute left-0 top-0 w-full h-full indent-[-999em] text-left"><span>detail</span></a>
+            <li class="relative py-[.9375rem] leading-[1.1] border-b-[.0625rem] border-brown-0.1 lg:py-7.5 lg:text-lg">
+              <a href="/src/pages/news/noticedetail01.html" target="_self">
+                <div class="flex items-center flex-wrap">
+                  <p class="overflow-ellipsis whitespace-nowrap overflow-hidden flex-1">
+                    <span>[공지사항]</span>
+                    <strong>생일쿠폰 미지급 오류에 대한 안내</strong>
+                  </p>
+                  <div class="flex items-center ml-auto pl-3 text-[#89665b] text-xs"><span>25.02.20</span></div>
+                </div>
+              </a>
             </li>
-            <li class="relative py-[.9375rem] border-b-[.0625rem] border-brown-0.1 lg:py-[1.875rem] lg:text-lg">
-              <div class="mt-0 flex items-center flex-wrap">
-                <p class="overflow-ellipsis whitespace-nowrap overflow-hidden flex-1">
-                  <span><span>[공지사항]</span></span>
-                  <strong>2025년 설연휴 휴점 매장 안내</strong>
-                </p>
-                <div class="flex items-center ml-auto pl-3 text-[#89665b] text-xs"><span class="ml-0">25.01.28</span></div>
-              </div>
-              <a href="/src/pages/news/noticedetail.html" class="absolute left-0 top-0 w-full h-full indent-[-999em] text-left"><span>detail</span></a>
+            <li class="relative py-[.9375rem] leading-[1.1] border-b-[.0625rem] border-brown-0.1 lg:py-7.5 lg:text-lg">
+              <a href="/src/pages/news/noticedetail01.html" target="_self">
+                <div class="flex items-center flex-wrap">
+                  <p class="overflow-ellipsis whitespace-nowrap overflow-hidden flex-1">
+                    <span>[공지사항]</span>
+                    <strong>2025년 설연휴 휴점 매장 안내</strong>
+                  </p>
+                  <div class="flex items-center ml-auto pl-3 text-[#89665b] text-xs"><span>25.01.28</span></div>
+                </div>
+              </a>
             </li>
-            <li class="relative py-[.9375rem] border-b-[.0625rem] border-brown-0.1 lg:py-[1.875rem] lg:text-lg">
-              <div class="mt-0 flex items-center flex-wrap">
-                <p class="overflow-ellipsis whitespace-nowrap overflow-hidden flex-1">
-                  <span><span>[공지사항]</span></span>
-                  <strong>버거킹 일부 제품 가격 인상 안내</strong>
-                </p>
-                <div class="flex items-center ml-auto pl-3 text-[#89665b] text-xs"><span class="ml-0">25.01.24</span></div>
-              </div>
-              <a href="/src/pages/news/noticedetail.html" class="absolute left-0 top-0 w-full h-full indent-[-999em] text-left"><span>detail</span></a>
+            <li class="relative py-[.9375rem] leading-[1.1] border-b-[.0625rem] border-brown-0.1 lg:py-7.5 lg:text-lg">
+              <a href="/src/pages/news/noticedetail01.html" target="_self">
+                <div class="flex items-center flex-wrap">
+                  <p class="overflow-ellipsis whitespace-nowrap overflow-hidden flex-1">
+                    <span>[공지사항]</span>
+                    <strong>버거킹 앱 리뉴얼 오픈 안내</strong>
+                  </p>
+                  <div class="flex items-center ml-auto pl-3 text-[#89665b] text-xs"><span>25.01.21</span></div>
+                </div>
+              </a>
             </li>
-            <li class="relative py-[.9375rem] border-b-[.0625rem] border-brown-0.1 lg:py-[1.875rem] lg:text-lg">
-              <div class="mt-0 flex items-center flex-wrap">
-                <p class="overflow-ellipsis whitespace-nowrap overflow-hidden flex-1">
-                  <span><span>[공지사항]</span></span>
-                  <strong>버거킹 앱 리뉴얼 오픈 안내</strong>
-                </p>
-                <div class="flex items-center ml-auto pl-3 text-[#89665b] text-xs"><span class="ml-0">25.01.21</span></div>
-              </div>
-              <a href="/src/pages/news/noticedetail.html" class="absolute left-0 top-0 w-full h-full indent-[-999em] text-left"><span>detail</span></a>
+            <li class="relative py-[.9375rem] leading-[1.1] border-b-[.0625rem] border-brown-0.1 lg:py-7.5 lg:text-lg">
+              <a href="/src/pages/news/noticedetail01.html" target="_self">
+                <div class="flex items-center flex-wrap">
+                  <p class="overflow-ellipsis whitespace-nowrap overflow-hidden flex-1">
+                    <span>[공지사항]</span>
+                    <strong>생년월일이 만 14세 미만으로 설정되어 있는 고객의 회원정ㅈ보 파기(예정)에 따른 공지</strong>
+                  </p>
+                  <div class="flex items-center ml-auto pl-3 text-[#89665b] text-xs"><span>24.12.24</span></div>
+                </div>
+              </a>
             </li>
-            <li class="relative py-[.9375rem] border-b-[.0625rem] border-brown-0.1 lg:py-[1.875rem] lg:text-lg">
-              <div class="mt-0 flex items-center flex-wrap">
-                <p class="overflow-ellipsis whitespace-nowrap overflow-hidden flex-1">
-                  <span><span>[공지사항]</span></span>
-                  <strong>생년월일이 만 14세 미만으로 설정되어 있는 고객의 회원정보 파기(예정)에 따른 공지</strong>
-                </p>
-                <div class="flex items-center ml-auto pl-3 text-[#89665b] text-xs"><span class="ml-0">24.12.24</span></div>
-              </div>
-              <a href="/src/pages/news/noticedetail.html" class="absolute left-0 top-0 w-full h-full indent-[-999em] text-left"><span>detail</span></a>
+            <li class="relative py-[.9375rem] leading-[1.1] border-b-[.0625rem] border-brown-0.1 lg:py-7.5 lg:text-lg">
+              <a href="/src/pages/news/noticedetail01.html" target="_self">
+                <div class="flex items-center flex-wrap">
+                  <p class="overflow-ellipsis whitespace-nowrap overflow-hidden flex-1">
+                    <span>[공지사항]</span>
+                    <strong>버거킹 개인정보 처리방침 개정 안내 (2024년 11월 20일 시행)</strong>
+                  </p>
+                  <div class="flex items-center ml-auto pl-3 text-[#89665b] text-xs"><span>24.11.15</span></div>
+                </div>
+              </a>
             </li>
-            <li class="relative py-[.9375rem] border-b-[.0625rem] border-brown-0.1 lg:py-[1.875rem] lg:text-lg">
-              <div class="mt-0 flex items-center flex-wrap">
-                <p class="overflow-ellipsis whitespace-nowrap overflow-hidden flex-1">
-                  <span><span>[공지사항]</span></span>
-                  <strong>버거킹 개인정보 처리방침 개정 안내 (2024 11월 20일 시행)</strong>
-                </p>
-                <div class="flex items-center ml-auto pl-3 text-[#89665b] text-xs"><span class="ml-0">24.11.15</span></div>
-              </div>
-              <a href="/src/pages/news/noticedetail.html" class="absolute left-0 top-0 w-full h-full indent-[-999em] text-left"><span>detail</span></a>
+            <li class="relative py-[.9375rem] leading-[1.1] border-b-[.0625rem] border-brown-0.1 lg:py-7.5 lg:text-lg">
+              <a href="/src/pages/news/noticedetail01.html" target="_self">
+                <div class="flex items-center flex-wrap">
+                  <p class="overflow-ellipsis whitespace-nowrap overflow-hidden flex-1">
+                    <span>[공지사항]</span>
+                    <strong>버거킹 위치기반 서비스 이용약관 제정 안내 (2024년 10월 29일 시행)</strong>
+                  </p>
+                  <div class="flex items-center ml-auto pl-3 text-[#89665b] text-xs"><span>45.10.18</span></div>
+                </div>
+              </a>
             </li>
-            <li class="relative py-[.9375rem] border-b-[.0625rem] border-brown-0.1 lg:py-[1.875rem] lg:text-lg">
-              <div class="mt-0 flex items-center flex-wrap">
-                <p class="overflow-ellipsis whitespace-nowrap overflow-hidden flex-1">
-                  <span><span>[공지사항]</span></span>
-                  <strong>버거킹 위치기반 서비스 이용약관 제정 안내 (2024년 10월 29일 시행)</strong>
-                </p>
-                <div class="flex items-center ml-auto pl-3 text-[#89665b] text-xs"><span class="ml-0">24.10.18</span></div>
-              </div>
-              <a href="/src/pages/news/noticedetail.html" class="absolute left-0 top-0 w-full h-full indent-[-999em] text-left"><span>detail</span></a>
+            <li class="relative py-[.9375rem] leading-[1.1] border-b-[.0625rem] border-brown-0.1 lg:py-7.5 lg:text-lg">
+              <a href="/src/pages/news/noticedetail01.html" target="_self">
+                <div class="flex items-center flex-wrap">
+                  <p class="overflow-ellipsis whitespace-nowrap overflow-hidden flex-1">
+                    <span>[공지사항]</span>
+                    <strong>버거킹 개인정보 수집 및 이용 동의 개정 안내 (2024년 10월 29일 시행)</strong>
+                  </p>
+                  <div class="flex items-center ml-auto pl-3 text-[#89665b] text-xs"><span>24.10.18</span></div>
+                </div>
+              </a>
             </li>
-            <li class="relative py-[.9375rem] border-b-[.0625rem] border-brown-0.1 lg:py-[1.875rem] lg:text-lg">
-              <div class="mt-0 flex items-center flex-wrap">
-                <p class="overflow-ellipsis whitespace-nowrap overflow-hidden flex-1">
-                  <span><span>[공지사항]</span></span>
-                  <strong>버거킹 개인정보 수집 및 이용 동의 개정 안내 (2024 10월 29일 시행)</strong>
-                </p>
-                <div class="flex items-center ml-auto pl-3 text-[#89665b] text-xs"><span class="ml-0">24.10.18</span></div>
-              </div>
-              <a href="/src/pages/news/noticedetail.html" class="absolute left-0 top-0 w-full h-full indent-[-999em] text-left"><span>detail</span></a>
+            <li class="relative py-[.9375rem] leading-[1.1] border-b-[.0625rem] border-brown-0.1 lg:py-7.5 lg:text-lg">
+              <a href="/src/pages/news/noticedetail01.html" target="_self">
+                <div class="flex items-center flex-wrap">
+                  <p class="overflow-ellipsis whitespace-nowrap overflow-hidden flex-1">
+                    <span>[공지사항]</span>
+                    <strong>버거킹 개인정보 처리방침 개정 안내 (2024년 10월 29일 시행)</strong>
+                  </p>
+                  <div class="flex items-center ml-auto pl-3 text-[#89665b] text-xs"><span>24.10.18</span></div>
+                </div>
+              </a>
             </li>
-            <li class="relative py-[.9375rem] border-b-[.0625rem] border-brown-0.1 lg:py-[1.875rem] lg:text-lg">
-              <div class="mt-0 flex items-center flex-wrap">
-                <p class="overflow-ellipsis whitespace-nowrap overflow-hidden flex-1">
-                  <span><span>[공지사항]</span></span>
-                  <strong>버거킹 개인정보 처리방침 개정 안내 (2024 10월 29일 시행)</strong>
-                </p>
-                <div class="flex items-center ml-auto pl-3 text-[#89665b] text-xs"><span class="ml-0">24.10.18</span></div>
-              </div>
-              <a href="/src/pages/news/noticedetail.html" class="absolute left-0 top-0 w-full h-full indent-[-999em] text-left"><span>detail</span></a>
+            <li class="relative py-[.9375rem] leading-[1.1] border-b-[.0625rem] border-brown-0.1 lg:py-7.5 lg:text-lg">
+              <a href="/src/pages/news/noticedetail01.html" target="_self">
+                <div class="flex items-center flex-wrap">
+                  <p class="overflow-ellipsis whitespace-nowrap overflow-hidden flex-1">
+                    <span>[공지사항]</span>
+                    <strong>2024년 추석연휴 휴점 매장 안내</strong>
+                  </p>
+                  <div class="flex items-center ml-auto pl-3 text-[#89665b] text-xs"><span>24.09.13</span></div>
+                </div>
+              </a>
             </li>
-            <li class="relative py-[.9375rem] border-b-[.0625rem] border-brown-0.1 lg:py-[1.875rem] lg:text-lg">
-              <div class="mt-0 flex items-center flex-wrap">
-                <p class="overflow-ellipsis whitespace-nowrap overflow-hidden flex-1">
-                  <span><span>[공지사항]</span></span>
-                  <strong>2024년 추석연휴 휴점 매장 안내</strong>
-                </p>
-                <div class="flex items-center ml-auto pl-3 text-[#89665b] text-xs"><span class="ml-0">24.09.13</span></div>
-              </div>
-              <a href="/src/pages/news/noticedetail.html" class="absolute left-0 top-0 w-full h-full indent-[-999em] text-left"><span>detail</span></a>
+            <li class="relative py-[.9375rem] leading-[1.1] border-b-[.0625rem] border-brown-0.1 lg:py-7.5 lg:text-lg">
+              <a href="/src/pages/news/noticedetail01.html" target="_self">
+                <div class="flex items-center flex-wrap">
+                  <p class="overflow-ellipsis whitespace-nowrap overflow-hidden flex-1">
+                    <span>[공지사항]</span>
+                    <strong>와퍼를 사랑해 주시는 버거킹 고객 여러분께</strong>
+                  </p>
+                  <div class="flex items-center ml-auto pl-3 text-[#89665b] text-xs"><span>24.04.15</span></div>
+                </div>
+              </a>
             </li>
-            <li class="relative py-[.9375rem] border-b-[.0625rem] border-brown-0.1 lg:py-[1.875rem] lg:text-lg">
-              <div class="mt-0 flex items-center flex-wrap">
-                <p class="overflow-ellipsis whitespace-nowrap overflow-hidden flex-1">
-                  <span><span>[공지사항]</span></span>
-                  <strong>와퍼를 사랑해 주시는 버거킹 고객 여러분께</strong>
-                </p>
-                <div class="flex items-center ml-auto pl-3 text-[#89665b] text-xs"><span class="ml-0">24.04.15</span></div>
-              </div>
-              <a href="/src/pages/news/noticedetail.html" class="absolute left-0 top-0 w-full h-full indent-[-999em] text-left"><span>detail</span></a>
+            <li class="relative py-[.9375rem] leading-[1.1] border-b-[.0625rem] border-brown-0.1 lg:py-7.5 lg:text-lg">
+              <a href="/src/pages/news/noticedetail01.html" target="_self">
+                <div class="flex items-center flex-wrap">
+                  <p class="overflow-ellipsis whitespace-nowrap overflow-hidden flex-1">
+                    <span>[공지사항]</span>
+                    <strong>버거킹 개인정보 처리방침 개정 안내 (2024년 3월 25일 개정, 4월 1일 시행)</strong>
+                  </p>
+                  <div class="flex items-center ml-auto pl-3 text-[#89665b] text-xs"><span>24.03.25</span></div>
+                </div>
+              </a>
             </li>
-            <li class="relative py-[.9375rem] border-b-[.0625rem] border-brown-0.1 lg:py-[1.875rem] lg:text-lg">
-              <div class="mt-0 flex items-center flex-wrap">
-                <p class="overflow-ellipsis whitespace-nowrap overflow-hidden flex-1">
-                  <span><span>[공지사항]</span></span>
-                  <strong>버거킹 개인정보 처리방침 개정 안내 (2024년 3월 25일 개정, 4월 1일 시행)</strong>
-                </p>
-                <div class="flex items-center ml-auto pl-3 text-[#89665b] text-xs"><span class="ml-0">24.03.25</span></div>
-              </div>
-              <a href="/src/pages/news/noticedetail.html" class="absolute left-0 top-0 w-full h-full indent-[-999em] text-left"><span>detail</span></a>
+            <li class="relative py-[.9375rem] leading-[1.1] border-b-[.0625rem] border-brown-0.1 lg:py-7.5 lg:text-lg">
+              <a href="/src/pages/news/noticedetail01.html" target="_self">
+                <div class="flex items-center flex-wrap">
+                  <p class="overflow-ellipsis whitespace-nowrap overflow-hidden flex-1">
+                    <span>[공지사항]</span>
+                    <strong>2024년 설연휴 휴점 매장 안내</strong>
+                  </p>
+                  <div class="flex items-center ml-auto pl-3 text-[#89665b] text-xs"><span>24.02.21</span></div>
+                </div>
+              </a>
             </li>
-            <li class="relative py-[.9375rem] border-b-[.0625rem] border-brown-0.1 lg:py-[1.875rem] lg:text-lg">
-              <div class="mt-0 flex items-center flex-wrap">
-                <p class="overflow-ellipsis whitespace-nowrap overflow-hidden flex-1">
-                  <span><span>[공지사항]</span></span>
-                  <strong>2024년 설연휴 휴점 매장 안내</strong>
-                </p>
-                <div class="flex items-center ml-auto pl-3 text-[#89665b] text-xs"><span class="ml-0">24.02.08</span></div>
-              </div>
-              <a href="/src/pages/news/noticedetail.html" class="absolute left-0 top-0 w-full h-full indent-[-999em] text-left"><span>detail</span></a>
+            <li class="relative py-[.9375rem] leading-[1.1] border-b-[.0625rem] border-brown-0.1 lg:py-7.5 lg:text-lg">
+              <a href="/src/pages/news/noticedetail01.html" target="_self">
+                <div class="flex items-center flex-wrap">
+                  <p class="overflow-ellipsis whitespace-nowrap overflow-hidden flex-1">
+                    <span>[공지사항]</span>
+                    <strong>버거킹 개인정보처리방침 개정 안내 (2023년 12월 14일 개정)</strong>
+                  </p>
+                  <div class="flex items-center ml-auto pl-3 text-[#89665b] text-xs"><span>23.12.07</span></div>
+                </div>
+              </a>
             </li>
-            <li class="relative py-[.9375rem] border-b-[.0625rem] border-brown-0.1 lg:py-[1.875rem] lg:text-lg">
-              <div class="mt-0 flex items-center flex-wrap">
-                <p class="overflow-ellipsis whitespace-nowrap overflow-hidden flex-1">
-                  <span><span>[공지사항]</span></span>
-                  <strong>버거킹 개인정보처리방침 개정 안내 (2023년 12월 14일 개정)</strong>
-                </p>
-                <div class="flex items-center ml-auto pl-3 text-[#89665b] text-xs"><span class="ml-0">23.12.07</span></div>
-              </div>
-              <a href="/src/pages/news/noticedetail.html" class="absolute left-0 top-0 w-full h-full indent-[-999em] text-left"><span>detail</span></a>
+            <li class="relative py-[.9375rem] leading-[1.1] border-b-[.0625rem] border-brown-0.1 lg:py-7.5 lg:text-lg">
+              <a href="/src/pages/news/noticedetail01.html" target="_self">
+                <div class="flex items-center flex-wrap">
+                  <p class="overflow-ellipsis whitespace-nowrap overflow-hidden flex-1">
+                    <span>[공지사항]</span>
+                    <strong>삼성카드 앱 제휴 서비스 종료 안내</strong>
+                  </p>
+                  <div class="flex items-center ml-auto pl-3 text-[#89665b] text-xs"><span>23.03.27</span></div>
+                </div>
+              </a>
             </li>
-            <li class="relative py-[.9375rem] border-b-[.0625rem] border-brown-0.1 lg:py-[1.875rem] lg:text-lg">
-              <div class="mt-0 flex items-center flex-wrap">
-                <p class="overflow-ellipsis whitespace-nowrap overflow-hidden flex-1">
-                  <span><span>[공지사항]</span></span>
-                  <strong>삼성카드 앱 제휴 서비스 종료 안내</strong>
-                </p>
-                <div class="flex items-center ml-auto pl-3 text-[#89665b] text-xs"><span class="ml-0">23.09.27</span></div>
-              </div>
-              <a href="/src/pages/news/noticedetail.html" class="absolute left-0 top-0 w-full h-full indent-[-999em] text-left"><span>detail</span></a>
+            <li class="relative py-[.9375rem] leading-[1.1] border-b-[.0625rem] border-brown-0.1 lg:py-7.5 lg:text-lg">
+              <a href="/src/pages/news/noticedetail01.html" target="_self">
+                <div class="flex items-center flex-wrap">
+                  <p class="overflow-ellipsis whitespace-nowrap overflow-hidden flex-1">
+                    <span>[공지사항]</span>
+                    <strong>버거킹 개인정보처리방침 개정 안내 (2023년 3월 31일 개정)</strong>
+                  </p>
+                  <div class="flex items-center ml-auto pl-3 text-[#89665b] text-xs"><span>23.03.24</span></div>
+                </div>
+              </a>
+            </li>
+            <li class="relative py-[.9375rem] leading-[1.1] border-b-[.0625rem] border-brown-0.1 lg:py-7.5 lg:text-lg">
+              <a href="/src/pages/news/noticedetail01.html" target="_self">
+                <div class="flex items-center flex-wrap">
+                  <p class="overflow-ellipsis whitespace-nowrap overflow-hidden flex-1">
+                    <span>[공지사항]</span>
+                    <strong>버거킹 이용약관 개정 안내 (2023년 3월 31일 개정)</strong>
+                  </p>
+                  <div class="flex items-center ml-auto pl-3 text-[#89665b] text-xs"><span>23.03.24</span></div>
+                </div>
+              </a>
+            </li>
+            <li class="relative py-[.9375rem] leading-[1.1] border-b-[.0625rem] border-brown-0.1 lg:py-7.5 lg:text-lg">
+              <a href="/src/pages/news/noticedetail01.html" target="_self">
+                <div class="flex items-center flex-wrap">
+                  <p class="overflow-ellipsis whitespace-nowrap overflow-hidden flex-1">
+                    <span>[공지사항]</span>
+                    <strong>버거킹 일부 제품 가격 인상 안내 (23년 3월 10일 시행)</strong>
+                  </p>
+                  <div class="flex items-center ml-auto pl-3 text-[#89665b] text-xs"><span>23.03.10</span></div>
+                </div>
+              </a>
+            </li>
+            <li class="relative py-[.9375rem] leading-[1.1] border-b-[.0625rem] border-brown-0.1 lg:py-7.5 lg:text-lg">
+              <a href="/src/pages/news/noticedetail01.html" target="_self">
+                <div class="flex items-center flex-wrap">
+                  <p class="overflow-ellipsis whitespace-nowrap overflow-hidden flex-1">
+                    <span>[공지사항]</span>
+                    <strong>2023년 설연휴 휴점 매장 안내</strong>
+                  </p>
+                  <div class="flex items-center ml-auto pl-3 text-[#89665b] text-xs"><span>23.01.20</span></div>
+                </div>
+              </a>
+            </li>
+            <li class="relative py-[.9375rem] leading-[1.1] border-b-[.0625rem] border-brown-0.1 lg:py-7.5 lg:text-lg">
+              <a href="/src/pages/news/noticedetail01.html" target="_self">
+                <div class="flex items-center flex-wrap">
+                  <p class="overflow-ellipsis whitespace-nowrap overflow-hidden flex-1">
+                    <span>[공지사항]</span>
+                    <strong>멤버십 채널쿠폰 정책 변경 안내</strong>
+                  </p>
+                  <div class="flex items-center ml-auto pl-3 text-[#89665b] text-xs"><span>22.10.17</span></div>
+                </div>
+              </a>
+            </li>
+            <li class="relative py-[.9375rem] leading-[1.1] border-b-[.0625rem] border-brown-0.1 lg:py-7.5 lg:text-lg">
+              <a href="/src/pages/news/noticedetail01.html" target="_self">
+                <div class="flex items-center flex-wrap">
+                  <p class="overflow-ellipsis whitespace-nowrap overflow-hidden flex-1">
+                    <span>[공지사항]</span>
+                    <strong>2022년 추석 연휴 휴점 매장 안내</strong>
+                  </p>
+                  <div class="flex items-center ml-auto pl-3 text-[#89665b] text-xs"><span>22.09.26</span></div>
+                </div>
+              </a>
+            </li>
+            <li class="relative py-[.9375rem] leading-[1.1] border-b-[.0625rem] border-brown-0.1 lg:py-7.5 lg:text-lg">
+              <a href="/src/pages/news/noticedetail01.html" target="_self">
+                <div class="flex items-center flex-wrap">
+                  <p class="overflow-ellipsis whitespace-nowrap overflow-hidden flex-1">
+                    <span>[공지사항]</span>
+                    <strong>버거킹 일부 제품 가격 인상 안내 (22년 07월 29일자 시행)</strong>
+                  </p>
+                  <div class="flex items-center ml-auto pl-3 text-[#89665b] text-xs"><span>22.09.26</span></div>
+                </div>
+              </a>
+            </li>
+            <li class="relative py-[.9375rem] leading-[1.1] border-b-[.0625rem] border-brown-0.1 lg:py-7.5 lg:text-lg">
+              <a href="/src/pages/news/noticedetail01.html" target="_self">
+                <div class="flex items-center flex-wrap">
+                  <p class="overflow-ellipsis whitespace-nowrap overflow-hidden flex-1">
+                    <span>[공지사항]</span>
+                    <strong>2021년 9월 20일(월) ~ 9월 22일(수) 추석 휴점 매장을 확인하세요.</strong>
+                  </p>
+                  <div class="flex items-center ml-auto pl-3 text-[#89665b] text-xs"><span>21.09.18</span></div>
+                </div>
+              </a>
             </li>
           </ul>
           <!-- ED: 공지사항 리스트 -->

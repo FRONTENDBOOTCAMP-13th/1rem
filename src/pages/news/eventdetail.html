@@ -3,18 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>[컴포넌트] 페이지 타이틀 영역</title>
+    <title>이벤트 < 버거킹</title>
     <link rel="preload" as="font" href="/fonts/Sandoll-GothicNeoRound-400.woff" crossorigin="anonymous" />
     <link rel="preload" as="font" href="/fonts/Sandoll-GothicNeoRound-700.woff" crossorigin="anonymous" />
     <script type="module" src="/src/main.js"></script>
   </head>
   <body>
-    <!-- header 컴포넌트 넣어주세요. -->
+    <skip-nav></skip-nav>
+    <sub-header page-title="이벤트"></sub-header>
     <div class="wrapper px-5 pt-5 pb-22.5 md:p-7.5 lg:pt-10 lg:px-15 lg:pb-22.5">
       <div class="inner max-w-[1620px] mx-auto">
-        <h2 class="hidden text-[2.125rem] text-brown text-center font-bold lg:block lg:mt-10 lg:mb-12.5">일반</h2>
-
-        <!-- 타이틀 아래의 본문 내용은 여기서 작성해주세요. div말고 다른 태그 넣어도 됩니다.-->
+        <h1 class="hidden text-[1.1875rem] text-brown-0.7 text-center font-bold lg:block lg:mt-10">이벤트</h1>
+        <h2 class="hidden text-[2.125rem] text-brown text-center font-bold lg:block lg:mb-12.5">일반</h2>
+        <!-- st : 이벤트 상세페이지 -->
         <section>
           <span class="mb-2.5 mr-[.3125rem] p-[6px_10px] inline-block rounded-[.3125rem] text-light-beige bg-brown py-[.375rem] px-[.625rem] text-3xs">진행중</span>
           <h2 class="text-lg leading-1.4 block text-brown">25년 2월 불끈버거 출시</h2>
@@ -24,7 +25,7 @@
                 <dt class="mr-2.5 text-brown m-0 p-0">기간</dt>
                 <dd class="text-[#89665b] m-0 p-0 text-xs">2025.02.17~2025.08.13</dd>
               </dl>
-              <a href="#" class="flex-nowrap w-8 h-[30px] align-middle m-0 overflow-visible cursor-pointer p-0 ml-auto">
+              <a href="#s" class="flex-nowrap w-8 h-[30px] align-middle m-0 overflow-visible cursor-pointer p-0 ml-auto">
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <g clip-path="url(#clip0_448_19154)">
                     <path
@@ -45,20 +46,20 @@
               </a>
             </div>
           </h3>
-
-          <img src="/src/assets/event/ongoing/event.webp" alt="불끈버거 이벤트 포스터" class="max-w-full m-[8px_-20px_15px] items-center align-top border-none lg:[30px_0]" />
-          <description class="min-h-[5em] text-xs leading-1.54 text-brown lg:text-3xl lg:leading-1.47">
+          <img src="/src/assets/event/ongoing/event.webp" alt="불끈버거 이벤트 포스터" class="w-[100vw] mt-[30px] left-[50%] right-[50%] -ml-[50vw] -mr-[50vw] relative max-w-none lg:w-[720px] lg:h-[1051px] lg:mx-auto lg:left-0 lg:right-0 lg:block" />
+          <div class="min-h-[5em] text-xs leading-1.54 text-brown mt-[1.875rem] lg:text-3xl lg:leading-1.47">
             1. 제품명 : 불끈버거, 불끈버거 더블<br /><br />
             2. 판매기간 : 25년 2월 17일(월) ~ 8월 13일(수)<br /><br />3. 유의 사항 <br />
             * 본 제품은 실제 이미지와 다를 수 있습니다. <br />
             * 본 제품은 밀, 대두, 우유, 토마토, 쇠고기, 난류, 새우를 포함하고 있습니다<br /><br />
             4. 제외매장 <br />
             김포현대아울렛점, 대명비발디점, 대전현대아울렛점, 목포하당점, 오션월드점, 지산리조트점
-          </description>
-          <button type="button" class="w-full mt-[30px] pt-[.6563rem] pb-[.5938rem] px-5 border border-border-form rounded-[3.125rem] text-sm text-brown">목록</button>
+          </div>
+          <a href="/src/pages/news/eventongoing.html" class="flex flex-col items-center max-w-[20.625rem] lg:min-w-[10.125rem] text-center mt-[30px] pt-[.6563rem] pb-[.5938rem] border border-border-form rounded-[3.125rem] text-sm text-brown mx-auto">목록</a>
         </section>
+        <!-- ed : 이벤트 상세페이지 -->
       </div>
     </div>
-    <!-- footer 컴포넌트 넣어주세요. -->
+    <common-footer></common-footer>
   </body>
 </html>
