@@ -71,17 +71,31 @@
     </script>
   </head>
   <body>
-    <div class="grid lg:grid-cols-2 items-center bg-[image:url(/src/assets/index-img/backgroundImg_mobile.png)] lg:bg-[image:url(/src/assets/index-img/backgroundImg.png)] w-full h-screen bg-center bg-cover">
-      <div class="relative font-BKBulMatPro text-[200px] m-auto text-light-beige leading-relaxed tracking-normal">
-        <p class="absolute top-7 left-14 lg:top-13 lg:left-20 text-xl lg:text-6xl">멋쟁이 사자처럼 16팀</p>
-        <h1 class="text-[100px] lg:text-[200px]">1rem</h1>
+    <div class="grid lg:grid-cols-2 items-center gap-5 bg-[image:url(/src/assets/index-img/backgroundImg_mobile.png)] lg:gap-0 lg:bg-[image:url(/src/assets/index-img/backgroundImg.png)] w-full min-h-screen pt-12.5 px-5 bg-center bg-cover md:px-15 xl:pl-20 xl:pr-0">
+      <div class="m-auto text-light-beige flex flex-col items-center gap-2.5 md:gap-5 lg:items-start">
+        <h1 class="relative font-BKBulMatPro w-fit leading-[1] text-[6.25rem] lg:text-[12.5rem]">
+          <p class="absolute top-0 left-[2.8125rem] text-xl lg:text-6xl lg:left-[5.3125rem]">멋쟁이 사자처럼 16팀</p>
+          1rem
+        </h1>
+        <div>
+          <p class="break-keep leading[1.5] text-2xs [text-shadow:_1px_1px_2px_#aaa] md:text-sm lg:text-lg lg:leading-[1.7] xl:text-2xl">
+            안녕하세요. 멋쟁이사자처럼 UI Project 16팀 1rem; 입니다.<br />
+            저희 팀은 버거킹 웹사이트를 클론코딩하며, 단순히 따라 만드는 것을 넘어 UI를 직접 설계하고 구현해보는 경험에 집중했습니다.<br />
+            작업 과정에서 협업과 소통을 우선으로 하였고, 팀원 각자가 주도적으로 의견을 나누고 조율하며 함께 성장할 수 있었습니다.<br />
+            rem이라는 작은 단위처럼 보일 수 있는 저희의 노력을 모아, 하나의 완성된 결과물을 만들었습니다.
+          </p>
+          <a href="/src/pages/home.html" class="mx-auto mt-6 w-34 md:w-37 lg:w-45 xl:w-47 px-3 py-1.5 sm:px-4 sm:py-2 lg:mx-0 lg:px-5 lg:py-2.5 rounded-full flex items-center gap-2 text-white shadow-[-1px_-1px_5px_rgba(255,_255,_255,_0.8),_5px_5px_10px_rgba(0,_0,_0,_0.25)] transition-all hover:shadow-[-1px_-1px_5px_rgba(255,_255,_255,_0.6),_1px_1px_5px_rgba(0,_0,_0,_0.3),inset_-2px_-2px_5px_rgba(255,_255,_255,_1),inset_2px_2px_4px_rgba(0,_0,_0,_0.3)] hover:text-ci">
+            <img src="/src/assets/elements/ico_bt_link.svg" alt="킹버거 메인페이지 링크" class="-mt-[.125rem] w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6" />
+            <span class="text-2xs sm:sm lg:text-sm xl:text-base">킹버거 방문하기</span>
+          </a>
+        </div>
       </div>
 
-      <div class="grid grid-cols-2 gap-5 px-10 lg:px-20">
+      <div class="grid grid-cols-2 gap-5 md:px-10 lg:px-20">
         <div class="flex flex-col gap-3 py-3 items-center justify-center rounded-2xl">
           <img src="/src/assets/index-img/team/oneway.webp" alt="임한길" class="border-2 lg:border-5 border-border w-20 lg:w-30 xl:w-40 aspect-1/1 rounded-[50%]" />
           <div class="flex flex-col items-center gap-y-2 mt-2 w-full">
-            <p class="bg-[rgba(231,220,220,0.3)] bg-opacity-5 py-1 min-w-[8.75rem] lg:min-w-[9.375rem] xl:min-w-40 lg:py-1.5 xl:py-2 text-center text-lg rounded-t-3xl lg:text-3xl xl:text-4xl text-light-beige">임한길</p>
+            <p class="bg-[rgba(231,220,220,0.3)] py-1 min-w-[8.75rem] lg:min-w-[9.375rem] xl:min-w-40 lg:py-1.5 xl:py-2 text-center text-lg rounded-t-3xl lg:text-3xl xl:text-4xl text-light-beige">임한길</p>
             <p class="bg-[rgba(231,220,220,0.3)] content-center min-h-11 lg:min-h-16 py-1 min-w-[8.75rem] lg:min-w-[9.375rem] xl:min-w-40 lg:py-1.5 xl:py-2 text-2xs lg:text-base text-light-beige text-center">
               Scrum Master <br />
               Team Leader
@@ -116,32 +130,16 @@
       </div>
     </div>
 
-    <div class="text-center text-brown">
-      여기 프로젝트 소개가 있으면 어떨까요.. <br />
-      안녕하세요, 팀 1rem 입니다. <br />
-      저희 팀은 버거킹 사이트 어쩌구... <br />
-      컴포넌트화랑 tailwindcss 사용한 내용..?
-    </div>
-
-    <!-- ST: Main 페이지 가는 버튼 -->
-    <div class="flex items-center justify-center text-brown">
-      <a href="/src/pages/home.html" class="px-3 py-1.5 sm:px-4 sm:py-2 lg:px-5 lg:py-2.5 rounded-full flex items-center gap-2 text-sm sm:text-base lg:text-lg text-brown shadow-[-5px_-5px_10px_rgba(255,_255,_255,_0.8),_5px_5px_10px_rgba(0,_0,_0,_0.25)] transition-all hover:shadow-[-1px_-1px_5px_rgba(255,_255,_255,_0.6),_1px_1px_5px_rgba(0,_0,_0,_0.3),inset_-2px_-2px_5px_rgba(255,_255,_255,_1),inset_2px_2px_4px_rgba(0,_0,_0,_0.3)] hover:text-ci">
-        <img src="/src/assets/elements/ico_bt_link.svg" alt="메인페이지들어가기" class="w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6" />
-        <span>Main 페이지</span>
-      </a>
-    </div>
-    <!-- ED: Main 페이지 가는 버튼 -->
-
     <!-- ST: 컴포넌트 페이지 소개 -->
     <div class="px-5 pt-5 md:p-7.5 lg:pt-10 lg:px-15">
       <div class="max-w-[1620px] mx-auto">
-        <div><h2 class="mb-3 text-4xl leading-[1] font-BKBulMatPro text-brown sm:mb-[1.125rem] sm:text-5xl sm:leading-[1.39] lg:text-6xl lg:mb-6">컴포넌트</h2></div>
+        <div><h2 class="text-center my-3 text-4xl leading-[1] font-BKBulMatPro text-brown sm:mb-[1.125rem] sm:text-5xl sm:leading-[1.39] lg:text-6xl lg:mb-6">컴포넌트 및 메인 페이지 보기</h2></div>
         <!-- ST: ~ 640px -->
         <div class="md:hidden w-full max-w-250 aspect-square mx-auto bg-[url(/assets/burger_king_logo.svg)] bg-no-repeat bg-cover bg-center">
           <ul class="grid grid-cols-3 grid-rows-5 w-full h-full">
             <li class="border-1 border-white">
               <a href="/src/components/common-btns.html" target="_self" class="block relative h-full">
-                <div class="absolute inset-0 p-2.5 bg-brown-0.7 text-center content-center bg-opacity-60">
+                <div class="absolute inset-0 p-2.5 bg-brown-0.7 text-center content-center">
                   <span class="block leading-[1.5] text-white text-[2.5vw]"
                     >공통 링크 버튼<br />
                     컴포넌트
@@ -151,7 +149,7 @@
             </li>
             <li class="border-1 border-white">
               <a href="/src/components/common-labels.html" target="_self" class="block relative h-full">
-                <div class="absolute inset-0 p-2.5 bg-brown-0.7 text-center content-center bg-opacity-60">
+                <div class="absolute inset-0 p-2.5 bg-brown-0.7 text-center content-center">
                   <span class="block leading-[1.5] text-white text-[2.5vw]"
                     >공통 라벨<br />
                     컴포넌트</span
@@ -161,7 +159,7 @@
             </li>
             <li class="border-1 border-white">
               <a href="/src/components/common-title.html" target="_self" class="block relative h-full">
-                <div class="absolute inset-0 p-2.5 bg-brown-0.7 text-center content-center bg-opacity-60">
+                <div class="absolute inset-0 p-2.5 bg-brown-0.7 text-center content-center">
                   <span class="block leading-[1.5] text-white text-[2.5vw]"
                     >공통 여백 및 페이지<br />
                     타이틀 컴포넌트</span
@@ -171,7 +169,7 @@
             </li>
             <li class="border-1 border-white">
               <a href="/src/components/component-header.html" target="_self" class="block relative h-full">
-                <div class="absolute inset-0 p-2.5 bg-brown-0.7 text-center content-center bg-opacity-60">
+                <div class="absolute inset-0 p-2.5 bg-brown-0.7 text-center content-center">
                   <span class="block leading-[1.5] text-white text-[2.5vw]"
                     >메인 header<br />
                     컴포넌트</span
@@ -181,7 +179,7 @@
             </li>
             <li class="border-1 border-white">
               <a href="/src/components/component-sub-header.html" target="_self" class="block relative h-full">
-                <div class="absolute inset-0 p-2.5 bg-brown-0.7 text-center content-center bg-opacity-60">
+                <div class="absolute inset-0 p-2.5 bg-brown-0.7 text-center content-center">
                   <span class="block leading-[1.5] text-white text-[2.5vw]"
                     >서브 header<br />
                     컴포넌트</span
@@ -191,7 +189,7 @@
             </li>
             <li class="border-1 border-white">
               <a href="/src/components/component-footer.html" target="_self" class="block relative h-full">
-                <div class="absolute inset-0 p-2.5 bg-brown-0.7 text-center content-center bg-opacity-60">
+                <div class="absolute inset-0 p-2.5 bg-brown-0.7 text-center content-center">
                   <span class="block leading-[1.5] text-white text-[2.5vw]"
                     >footer<br />
                     컴포넌트
@@ -202,15 +200,15 @@
 
             <li class="border-1 border-white col-span-3">
               <a href="/src/pages/home.html" target="_self" class="block relative h-full">
-                <div class="absolute inset-0 p-2.5 bg-brown-0.7 text-center content-center bg-opacity-60">
-                  <span class="block leading-[1.5] text-white text-[2.5vw]">킹버거 페이지</span>
+                <div class="absolute inset-0 p-2.5 bg-[rgba(214,35,0,.8)] text-center content-center">
+                  <span class="block leading-[1.5] text-white text-[3.5vw]">킹버거 페이지</span>
                 </div>
               </a>
             </li>
 
             <li class="border-1 border-white">
               <a href="/src/components/component-main.html" target="_self" class="block relative h-full">
-                <div class="absolute inset-0 p-2.5 bg-brown-0.7 text-center content-center bg-opacity-60">
+                <div class="absolute inset-0 p-2.5 bg-brown-0.7 text-center content-center">
                   <span class="block leading-[1.5] text-white text-[2.5vw]"
                     >메인 페이지<br />
                     컴포넌트
@@ -220,7 +218,7 @@
             </li>
             <li class="border-1 border-white">
               <a href="/src/components/component-menu.html" target="_self" class="block relative h-full">
-                <div class="absolute inset-0 p-2.5 bg-brown-0.7 text-center content-center bg-opacity-60">
+                <div class="absolute inset-0 p-2.5 bg-brown-0.7 text-center content-center">
                   <span class="block leading-[1.5] text-white text-[2.5vw]"
                     >메뉴 페이지<br />
                     컴포넌트
@@ -230,7 +228,7 @@
             </li>
             <li class="border-1 border-white">
               <a href="/src/components/component-mognb.html" target="_self" class="block relative h-full">
-                <div class="absolute inset-0 p-2.5 bg-brown-0.7 text-center content-center bg-opacity-60">
+                <div class="absolute inset-0 p-2.5 bg-brown-0.7 text-center content-center">
                   <span class="block leading-[1.5] text-white text-[2.5vw]"
                     >모바일 GNB<br />
                     컴포넌트
@@ -240,7 +238,7 @@
             </li>
             <li class="border-1 border-white">
               <a href="/src/components/component-story.html" target="_self" class="block relative h-full">
-                <div class="absolute inset-0 p-2.5 bg-brown-0.7 text-center content-center bg-opacity-60">
+                <div class="absolute inset-0 p-2.5 bg-brown-0.7 text-center content-center">
                   <span class="block leading-[1.5] text-white text-[2.5vw]"
                     >STORY 페이지<br />
                     컴포넌트
@@ -250,7 +248,7 @@
             </li>
             <li class="border-1 border-white">
               <a href="/src/components/component-news.html" target="_self" class="block relative h-full">
-                <div class="absolute inset-0 p-2.5 bg-brown-0.7 text-center content-center bg-opacity-60">
+                <div class="absolute inset-0 p-2.5 bg-brown-0.7 text-center content-center">
                   <span class="block leading-[1.5] text-white text-[2.5vw]"
                     >NEWS 페이지<br />
                     컴포넌트</span
@@ -260,7 +258,7 @@
             </li>
             <li class="border-1 border-white">
               <a href="/src/components/component-story.html" target="_self" class="block relative h-full">
-                <div class="absolute inset-0 p-2.5 bg-brown-0.7 text-center content-center bg-opacity-60">
+                <div class="absolute inset-0 p-2.5 bg-brown-0.7 text-center content-center">
                   <span class="block leading-[1.5] text-white text-[2.5vw]"
                     >STORE 페이지<br />
                     컴포넌트
@@ -277,7 +275,7 @@
           <ul class="grid grid-cols-4 grid-rows-4 w-full h-full">
             <li class="border-1 border-white">
               <a href="/src/components/common-btns.html" target="_self" class="block relative h-full group">
-                <div class="absolute inset-0 p-5 bg-brown-0.7 text-center content-center bg-opacity-60">
+                <div class="absolute inset-0 p-5 bg-brown-0.7 text-center content-center">
                   <span class="block leading-[1.5] text-white"
                     >공통 링크 버튼<br />
                     컴포넌트
@@ -287,7 +285,7 @@
             </li>
             <li class="border-1 border-white">
               <a href="/src/components/common-labels.html" target="_self" class="block relative h-full group">
-                <div class="absolute inset-0 p-5 bg-brown-0.7 text-center content-center bg-opacity-60">
+                <div class="absolute inset-0 p-5 bg-brown-0.7 text-center content-center">
                   <span class="block leading-[1.5] text-white"
                     >공통 라벨<br />
                     컴포넌트</span
@@ -297,7 +295,7 @@
             </li>
             <li class="border-1 border-white">
               <a href="/src/components/common-title.html" target="_self" class="block relative h-full group">
-                <div class="absolute inset-0 p-5 bg-brown-0.7 text-center content-center bg-opacity-60">
+                <div class="absolute inset-0 p-5 bg-brown-0.7 text-center content-center">
                   <span class="block leading-[1.5] text-white"
                     >공통 여백 및<br />
                     페이지 타이틀<br />
@@ -308,7 +306,7 @@
             </li>
             <li class="border-1 border-white">
               <a href="/src/components/component-header.html" target="_self" class="block relative h-full group">
-                <div class="absolute inset-0 p-5 bg-brown-0.7 text-center content-center bg-opacity-60">
+                <div class="absolute inset-0 p-5 bg-brown-0.7 text-center content-center">
                   <span class="block leading-[1.5] text-white"
                     >메인 header<br />
                     컴포넌트</span
@@ -318,7 +316,7 @@
             </li>
             <li class="border-1 border-white">
               <a href="/src/components/component-sub-header.html" target="_self" class="block relative h-full group">
-                <div class="absolute inset-0 p-5 bg-brown-0.7 text-center content-center bg-opacity-60">
+                <div class="absolute inset-0 p-5 bg-brown-0.7 text-center content-center">
                   <span class="block leading-[1.5] text-white"
                     >서브 header<br />
                     컴포넌트</span
@@ -329,15 +327,15 @@
 
             <li class="border-1 border-white col-span-2 row-span-2">
               <a href="/src/pages/home.html" target="_self" class="block relative h-full group">
-                <div class="absolute inset-0 p-5 bg-brown-0.7 text-center content-center bg-opacity-60">
-                  <span class="block leading-[1.5] text-white">킹버거 페이지</span>
+                <div class="absolute inset-0 p-5 bg-[rgba(214,35,0,.8)] text-center content-center">
+                  <span class="block leading-[1.5] text-4xl text-white">킹버거 페이지</span>
                 </div>
               </a>
             </li>
 
             <li class="border-1 border-white">
               <a href="/src/components/component-footer.html" target="_self" class="block relative h-full group">
-                <div class="absolute inset-0 p-5 bg-brown-0.7 text-center content-center bg-opacity-60">
+                <div class="absolute inset-0 p-5 bg-brown-0.7 text-center content-center">
                   <span class="block leading-[1.5] text-white"
                     >footer<br />
                     컴포넌트
@@ -347,7 +345,7 @@
             </li>
             <li class="border-1 border-white">
               <a href="/src/components/component-main.html" target="_self" class="block relative h-full group">
-                <div class="absolute inset-0 p-5 bg-brown-0.7 text-center content-center bg-opacity-60">
+                <div class="absolute inset-0 p-5 bg-brown-0.7 text-center content-center">
                   <span class="block leading-[1.5] text-white"
                     >메인 페이지<br />
                     컴포넌트
@@ -357,7 +355,7 @@
             </li>
             <li class="border-1 border-white">
               <a href="/src/components/component-menu.html" target="_self" class="block relative h-full group">
-                <div class="absolute inset-0 p-5 bg-brown-0.7 text-center content-center bg-opacity-60">
+                <div class="absolute inset-0 p-5 bg-brown-0.7 text-center content-center">
                   <span class="block leading-[1.5] text-white"
                     >메뉴 페이지<br />
                     컴포넌트
@@ -367,7 +365,7 @@
             </li>
             <li class="border-1 border-white">
               <a href="/src/components/component-mognb.html" target="_self" class="block relative h-full group">
-                <div class="absolute inset-0 p-5 bg-brown-0.7 text-center content-center bg-opacity-60">
+                <div class="absolute inset-0 p-5 bg-brown-0.7 text-center content-center">
                   <span class="block leading-[1.5] text-white"
                     >모바일 GNB<br />
                     컴포넌트
@@ -377,7 +375,7 @@
             </li>
             <li class="border-1 border-white">
               <a href="/src/components/component-story.html" target="_self" class="block relative h-full group">
-                <div class="absolute inset-0 p-5 bg-brown-0.7 text-center content-center bg-opacity-60">
+                <div class="absolute inset-0 p-5 bg-brown-0.7 text-center content-center">
                   <span class="block leading-[1.5] text-white"
                     >STORY 페이지<br />
                     컴포넌트
@@ -387,7 +385,7 @@
             </li>
             <li class="border-1 border-white">
               <a href="/src/components/component-news.html" target="_self" class="block relative h-full group">
-                <div class="absolute inset-0 p-5 bg-brown-0.7 text-center content-center bg-opacity-60">
+                <div class="absolute inset-0 p-5 bg-brown-0.7 text-center content-center">
                   <span class="block leading-[1.5] text-white"
                     >NEWS 페이지<br />
                     컴포넌트</span
@@ -397,7 +395,7 @@
             </li>
             <li class="border-1 border-white">
               <a href="/src/components/component-story.html" target="_self" class="block relative h-full group">
-                <div class="absolute inset-0 p-5 bg-brown-0.7 text-center content-center bg-opacity-60">
+                <div class="absolute inset-0 p-5 bg-brown-0.7 text-center content-center">
                   <span class="block leading-[1.5] text-white"
                     >STORE 페이지<br />
                     컴포넌트
@@ -460,8 +458,8 @@
 
             <li class="border-1 border-white col-span-3">
               <a href="/src/pages/home.html" target="_self" class="block relative h-full group">
-                <div class="absolute inset-0 p-5 bg-brown-0.7 text-center content-center bg-opacity-60 opacity-100 transition-all duration-300 ease-in-out lg:opacity-0 lg:group-hover:opacity-100 lg:bg-opacity-0 lg:group-hover:bg-opacity-60">
-                  <span class="text-white lg:text-2xl transform scale-0 group-hover:scale-100 transition-transform duration-300 ease-in-out">킹버거 페이지</span>
+                <div class="absolute inset-0 p-5 bg-[rgba(214,35,0,.8)] text-center content-center bg-opacity-60 opacity-100 transition-all duration-300 ease-in-out lg:opacity-0 lg:group-hover:opacity-100 lg:bg-opacity-0 lg:group-hover:bg-opacity-60">
+                  <span class="text-white lg:text-5xl transform scale-0 group-hover:scale-100 transition-transform duration-300 ease-in-out">킹버거 페이지</span>
                 </div>
               </a>
             </li>
@@ -511,8 +509,6 @@
           </ul>
         </div>
         <!-- ED: 1024px ~ -->
-
-        <!-- ED: 컴포넌트 페이지 소개 -->
 
         <!-- st : 문서화 컴포넌트 -->
         <h2 class="font-BKBulMatPro text-[2.125rem] text-brown text-center font-bold mt-20 mb-12.5">프로젝트 규칙</h2>
