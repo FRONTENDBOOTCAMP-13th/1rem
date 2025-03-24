@@ -5,7 +5,7 @@ class mainHeader extends HTMLElement {
 
   connectedCallback() {
     this.innerHTML = `
-    <header class="top-0 sticky bg-beige z-1 lg:px-15">
+    <header class="top-0 sticky bg-beige z-10 lg:px-15">
       <div class="h-14 px-[3.125rem] text-lg lg:items-center lg:px-0 lg:flex lg:w-full lg:max-w-405 lg:h-[6.125rem] lg:mx-auto">
         <!-- ST:Logo -->
         <div class="flex-1 px-[1.875rem] min-w-0 text-center lg:flex-1 lg:static lg:px-0 lg:max-w-50 lg:h-6">
