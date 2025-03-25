@@ -184,7 +184,7 @@ body {
 }
 
 /* summary iOS Safari의 기본 삼각형 제거 */
-details summary::-webkit-details-marker {
+.terms-summary::-webkit-details-marker {
   display: none;
 }
 
