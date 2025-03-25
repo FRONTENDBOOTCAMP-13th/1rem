@@ -8,67 +8,7 @@
     <link rel="preload" as="font" href="/fonts/Sandoll-GothicNeoRound-400.woff" crossorigin="anonymous" />
     <link rel="preload" as="font" href="/fonts/Sandoll-GothicNeoRound-700.woff" crossorigin="anonymous" />
     <script type="module" src="/src/main.js"></script>
-    <script type="module">
-      document.addEventListener('DOMContentLoaded', () => {
-        const modal = document.getElementById('notice');
-        const closeModal = document.getElementById('closeButton');
-        const dontShowTodayButton = document.getElementById('dontShowTodayButton');
-
-        // 현재 날짜를 기준으로 하루 동안 모달을 열지 않도록 설정
-        const today = new Date().toISOString().split('T')[0]; // YYYY-MM-DD 형식
-        const dontShowToday = localStorage.getItem('dontShowToday');
-
-        // 페이지 로드 시 모달 열기 여부 확인
-        if (dontShowToday !== today) {
-          modal.showModal();
-        }
-
-        // 닫기 버튼 클릭 시 모달 닫기
-        closeModal.addEventListener('click', () => {
-          modal.close();
-        });
-
-        // "오늘 하루 안보기" 버튼 클릭 시 로컬 스토리지에 날짜 저장
-        dontShowTodayButton.addEventListener('click', () => {
-          localStorage.setItem('dontShowToday', today);
-          modal.close();
-        });
-        // 아코디언 메뉴 기능 구현
-        document.querySelectorAll('.accordion-header').forEach((button) => {
-          button.addEventListener('click', () => {
-            // 현재 아이템의 콘텐츠 요소
-            const content = button.nextElementSibling;
-            // 현재 아이템의 아이콘
-            const icon = button.querySelector('.accordion-icon');
-
-            // 아코디언 열기/닫기 토글
-            if (content.classList.contains('active')) {
-              // 닫기
-              content.classList.remove('active');
-              content.style.maxHeight = '0px';
-              icon.classList.remove('rotate-45');
-            } else {
-              // 열기
-              content.classList.add('active');
-              content.style.maxHeight = content.scrollHeight + 'px';
-              icon.classList.add('rotate-45');
-            }
-
-            // 단일 아코디언 (한 번에 하나만 열림)
-            // 아래 주석을 해제하면 한 번에 하나의 항목만 열립니다
-            /*
-                    document.querySelectorAll('.accordion-content').forEach(item => {
-                        if (item !== content && item.classList.contains('active')) {
-                            item.classList.remove('active');
-                            item.style.maxHeight = '0px';
-                            item.previousElementSibling.querySelector('.accordion-icon').classList.remove('rotate-45');
-                        }
-                    });
-                    */
-          });
-        });
-      });
-    </script>
+    <script type="module" src="/src/js/index.js"></script>
   </head>
   <body>
     <div class="grid lg:grid-cols-2 items-center gap-5 bg-[image:url(/src/assets/index-img/backgroundImg_mobile.png)] lg:gap-0 lg:bg-[image:url(/src/assets/index-img/backgroundImg.png)] w-full min-h-screen pt-12.5 px-5 bg-center bg-cover md:px-15 xl:pl-20 xl:pr-0">
@@ -627,17 +567,17 @@
                   <div class="bg-brown-0.1 rounded-[.625rem] p-5">
                     <div class="text-2xs lg:text-base font-Pretendard">
                       <p>각 구역별 가독성을 위해 시작 / 끝 영역을 표시해준다.</p>
-                      <pre class="mb-5 p-2 m-1 bg-brown-0.05 text-brown-0.7">
-                    &lt;!&#45;&#45; ST: header &#45;&#45;&gt;
-                    &lt;!&#45;&#45; ED: header &#45;&#45;&gt;
+                      <pre class="text-left mb-5 p-2 m-1 bg-brown-0.05 text-brown-0.7">
+&lt;!&#45;&#45; ST: header &#45;&#45;&gt;
+&lt;!&#45;&#45; ED: header &#45;&#45;&gt;
                   
-                    &lt;!&#45;&#45; ST: 메뉴 리스트 &#45;&#45;&gt;
-                    &lt;!&#45;&#45; ED: 메뉴 리스트 &#45;&#45;&gt;</pre
+&lt;!&#45;&#45; ST: 메뉴 리스트 &#45;&#45;&gt;
+&lt;!&#45;&#45; ED: 메뉴 리스트 &#45;&#45;&gt;</pre
                       >
                       <p>4px 단위가 아닌 수치들은 [rem]로 작성한다.</p>
                       <pre class="mb-5 p-2 m-1 bg-brown-0.05 text-brown-0.7">
-                    m-4
-                    py-[.3125rem]</pre
+m-4
+py-[.3125rem]</pre
                       >
                       <p class="mb-5">
                         컴포넌트 파일은 src/components 폴더 하위에 생성하며 `component-메뉴명(컴포넌트명).html`으로 네이밍한다. <br />
@@ -649,14 +589,14 @@
                         반응형 breakpoint
                       </p>
                       <pre class="mb-5 p-2 m-1 bg-brown-0.05 text-brown-0.7">
-                    - md: 640px ~ 1023px  
-                    - lg: 1024px ~ 1499px 
-                    - xl: 1500px ~</pre
+- md: 640px ~ 1023px  
+- lg: 1024px ~ 1499px 
+- xl: 1500px ~</pre
                       >
                       <p>JS 주석: 함수나 중요한 로직에 대해서는 주석을 추가한다.</p>
                       <pre class="mb-5 p-2 m-1 bg-brown-0.05 text-brown-0.7">
-                    // 스크롤 이벤트 일시 중지 (1초 동안)
-                    isScrollingDisabled = true;
+// 스크롤 이벤트 일시 중지 (1초 동안)
+isScrollingDisabled = true;
                     setTimeout(() => {
                       isScrollingDisabled = false;
                     }, 1000);</pre
@@ -691,36 +631,36 @@
                       </div>
 
                       <pre class="mb-5 p-2 m-1 bg-brown-0.05 text-brown-0.7">
-                  <img src="/src/assets/index-img/ico_folder.svg" alt="폴더" class="inline w-[1.4em]" /> 1rem  
-                  ├─ <img src="/src/assets/index-img/ico_folder.svg" alt="폴더" class="inline w-[1.4em]" /> public
-                  │   ├─ <img src="/src/assets/index-img/ico_folder.svg" alt="폴더" class="inline w-[1.4em]" /> fonts
-                  │   |  ├─ 📋 BKBulMatPro-Bold.woff
-                  │   |  └─ 📋 Sandoll-GothicNeoRound-400.woff
-                  |   |     ...
-                  |   └─ <img src="/src/assets/index-img/ico_folder.svg" alt="폴더" class="inline w-[1.4em]" /> 
-                  └─ <img src="/src/assets/index-img/ico_folder.svg" alt="폴더" class="inline w-[1.4em]" /> src  
-                      ├─ <img src="/src/assets/index-img/ico_folder.svg" alt="폴더" class="inline w-[1.4em]" /> assets  
-                      ├─ <img src="/src/assets/index-img/ico_folder.svg" alt="폴더" class="inline w-[1.4em]" /> components  
-                      │  └─ 📋 common-btns.html  
-                      │  └─ 📋 common-labels.html  
-                      │  └─ 📋 common-title.html  
-                      │  └─ 📋 component-customer.html  
-                      │  └─ 📋 component-footer.html  
-                      │     ...
-                      ├─ <img src="/src/assets/index-img/ico_folder.svg" alt="폴더" class="inline w-[1.4em]" /> js  
-                      │  └─ <img src="/src/assets/index-img/ico_folder.svg" alt="폴더" class="inline w-[1.4em]" /> layout  
-                      │      ├─ 📋 footer.js  
-                      │      └─ 📋 main-header.js  
-                      |         ...
-                      └─ <img src="/src/assets/index-img/ico_folder.svg" alt="폴더" class="inline w-[1.4em]" /> pages  
-                        ├─ <img src="/src/assets/index-img/ico_folder.svg" alt="폴더" class="inline w-[1.4em]" /> customer  
-                        ├─ <img src="/src/assets/index-img/ico_folder.svg" alt="폴더" class="inline w-[1.4em]" /> franchise  
-                        ├─ <img src="/src/assets/index-img/ico_folder.svg" alt="폴더" class="inline w-[1.4em]" /> menu  
-                        ├─ <img src="/src/assets/index-img/ico_folder.svg" alt="폴더" class="inline w-[1.4em]" /> news  
-                        ├─ <img src="/src/assets/index-img/ico_folder.svg" alt="폴더" class="inline w-[1.4em]" /> policies  
-                        ├─ <img src="/src/assets/index-img/ico_folder.svg" alt="폴더" class="inline w-[1.4em]" /> store  
-                        ├─ <img src="/src/assets/index-img/ico_folder.svg" alt="폴더" class="inline w-[1.4em]" /> story
-                        └─ 📋 home.html 
+<img src="/src/assets/index-img/ico_folder.svg" alt="폴더" class="inline w-[1.4em]" />1rem  
+├─ <img src="/src/assets/index-img/ico_folder.svg" alt="폴더" class="inline w-[1.4em]" /> public
+│   ├─ <img src="/src/assets/index-img/ico_folder.svg" alt="폴더" class="inline w-[1.4em]" /> fonts
+│   |  ├─ 📋 BKBulMatPro-Bold.woff
+│   |  └─ 📋 Sandoll-GothicNeoRound-400.woff
+|   |     ...
+|   └─ <img src="/src/assets/index-img/ico_folder.svg" alt="폴더" class="inline w-[1.4em]" /> 
+└─ <img src="/src/assets/index-img/ico_folder.svg" alt="폴더" class="inline w-[1.4em]" /> src  
+    ├─ <img src="/src/assets/index-img/ico_folder.svg" alt="폴더" class="inline w-[1.4em]" /> assets  
+    ├─ <img src="/src/assets/index-img/ico_folder.svg" alt="폴더" class="inline w-[1.4em]" /> components  
+    │  └─ 📋 common-btns.html  
+    │  └─ 📋 common-labels.html  
+    │  └─ 📋 common-title.html  
+    │  └─ 📋 component-customer.html  
+    │  └─ 📋 component-footer.html  
+    │     ...
+    ├─ <img src="/src/assets/index-img/ico_folder.svg" alt="폴더" class="inline w-[1.4em]" /> js  
+    │  └─ <img src="/src/assets/index-img/ico_folder.svg" alt="폴더" class="inline w-[1.4em]" /> layout  
+    │      ├─ 📋 footer.js  
+    │      └─ 📋 main-header.js  
+    |         ...
+    └─ <img src="/src/assets/index-img/ico_folder.svg" alt="폴더" class="inline w-[1.4em]" /> pages  
+      ├─ <img src="/src/assets/index-img/ico_folder.svg" alt="폴더" class="inline w-[1.4em]" /> customer  
+      ├─ <img src="/src/assets/index-img/ico_folder.svg" alt="폴더" class="inline w-[1.4em]" /> franchise  
+      ├─ <img src="/src/assets/index-img/ico_folder.svg" alt="폴더" class="inline w-[1.4em]" /> menu  
+      ├─ <img src="/src/assets/index-img/ico_folder.svg" alt="폴더" class="inline w-[1.4em]" /> news  
+      ├─ <img src="/src/assets/index-img/ico_folder.svg" alt="폴더" class="inline w-[1.4em]" /> policies  
+      ├─ <img src="/src/assets/index-img/ico_folder.svg" alt="폴더" class="inline w-[1.4em]" /> store  
+      ├─ <img src="/src/assets/index-img/ico_folder.svg" alt="폴더" class="inline w-[1.4em]" /> story
+      └─ 📋 home.html 
                                   </pre>
                     </div>
                   </div>
@@ -812,7 +752,7 @@
                 <h3 class="my-5 text-base lg:text-3xl text-center font-bold">타임라인</h3>
                 <p class="text-start mb-2.5 font-Pretendard">2025년 3월</p>
                 <div class="overflow-auto">
-                  <div class="grid grid-cols-12 gap-0.5 text-center font-Pretendard min-w-200 **:min-w-full">
+                  <div class="grid grid-cols-12 gap-0.5 text-center font-Pretendard min-w-300">
                     <span>14일</span>
                     <span>15일</span>
                     <span>16일</span>
@@ -838,8 +778,8 @@
               </div>
 
               <div class="lg:col-span-2 bg-brown-0.1 rounded-[10px] p-5 lg:pt-8">
-                <h3 class="my-5 text-base lg:text-3xl text-center font-bold">데일리 스크럼</h3>
-                <div class="container grid lg:grid-cols-3 gap-2.5 text-2xs lg:text-base font-Pretendard">
+                <h3 class="my-5 lg:mt-[-.625rem] text-base lg:text-3xl text-center font-bold">데일리 스크럼</h3>
+                <div class="container grid xl:grid-cols-2 gap-2.5 text-2xs lg:text-base font-Pretendard">
                   <details>
                     <summary>2025.03.14. 회의록</summary>
                     <div class="mb-5 p-2 bg-brown-0.05 text-brown-0.7">
