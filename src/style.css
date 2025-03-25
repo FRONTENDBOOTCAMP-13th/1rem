@@ -178,11 +178,18 @@ body {
   background-color: var(--color-beige);
 }
 
+/* focus 색상 변경*/
 :focus {
-  /* focus 색상 변경*/
   outline-color: var(--color-ci);
 }
 
+/* summary iOS Safari의 기본 삼각형 제거 */
 details summary::-webkit-details-marker {
-  display: none; /* iOS Safari의 기본 삼각형 제거 */
+  display: none;
+}
+
+/* story > brand 지도영역*/
+.root_daum_roughmap .cont,
+.root_daum_roughmap .wrap_controllers {
+  display: none;
 }
