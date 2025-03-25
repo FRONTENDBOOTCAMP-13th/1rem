@@ -594,9 +594,9 @@ py-[.3125rem]</pre
                       <pre class="mb-5 p-2 m-1 bg-brown-0.05 text-brown-0.7">
 // 스크롤 이벤트 일시 중지 (1초 동안)
 isScrollingDisabled = true;
-                    setTimeout(() => {
-                      isScrollingDisabled = false;
-                    }, 1000);</pre
+setTimeout(() => {
+  isScrollingDisabled = false;
+}, 1000);</pre
                       >
                     </div>
                   </div>
@@ -618,11 +618,11 @@ isScrollingDisabled = true;
                       <p>public 정적 파일</p>
                       <div class="mb-5 p-2 m-1 bg-brown-0.05 text-brown-0.7">
                         &nbsp;&nbsp;- fonts폴더 -> 메인 폰트, 서브 폰트<br />
-                        &nbsp;&nbsp;- asset 폴더 -> 파비콘, 로고
+                        &nbsp;&nbsp;- assets 폴더 -> 파비콘, 로고
                       </div>
                       <p>src 동적 파일</p>
                       <div class="mb-5 p-2 m-1 bg-brown-0.05 text-brown-0.7">
-                        &nbsp;&nbsp;- asset 폴더 -> 이미지 파일<br />
+                        &nbsp;&nbsp;- assets 폴더 -> 이미지 파일<br />
                         &nbsp;&nbsp;- components 폴더 -> 컴포넌트<br />
                         &nbsp;&nbsp;- pages 폴더 -> 페이지
                       </div>
@@ -634,6 +634,8 @@ isScrollingDisabled = true;
 │   |  ├─ 📋 BKBulMatPro-Bold.woff
 │   |  └─ 📋 Sandoll-GothicNeoRound-400.woff
 |   |     ...
+│   ├─ <img src="/src/assets/index-img/ico_folder.svg" alt="폴더" class="inline w-[1.4em]" /> assets
+│   |  └─ 📋 burger_king_logo.svg
 |   └─ <img src="/src/assets/index-img/ico_folder.svg" alt="폴더" class="inline w-[1.4em]" /> 
 └─ <img src="/src/assets/index-img/ico_folder.svg" alt="폴더" class="inline w-[1.4em]" /> src  
     ├─ <img src="/src/assets/index-img/ico_folder.svg" alt="폴더" class="inline w-[1.4em]" /> assets  
@@ -1369,7 +1371,7 @@ isScrollingDisabled = true;
       <div class="inner max-w-[1620px] mx-auto font-Pretendard text-brown text-center">
         <p class="text-2xs lg:text-base">Copyright © 2025 1rem. All rights reserved.</p>
         <p class="text-2xs lg:text-base">
-          <a href="https://github.com/FRONTENDBOOTCAMP-13th/1rem" target="_blank" rel="noopener noreferrer" class="hover:underline">GitHub</a><span> | </span>
+          <a href="https://github.com/FRONTENDBOOTCAMP-13th/1rem" target="_blank" rel="noopener noreferrer" class="hover:underline">GitHub</a><span aria-hidden="true"> | </span>
           <a href="https://neon-megaraptor-6a4.notion.site/1rem-project-team-1b60bd97ed348075b93ff39b51cec8f7" target="_blank" rel="noopener noreferrer" class="hover:underline">Notion</a>
         </p>
       </div>
@@ -1394,7 +1396,6 @@ isScrollingDisabled = true;
         <footer class="flex justify-center items-center gap-2.5 p-[.625rem_0.9375rem_0.9375rem_0.9375rem] lg:p-[1.25rem_1.875rem] h-21">
           <button type="button" id="dontShowTodayButton" class="p-[.3125rem] rounded-[2.5rem] w-full md:w-60 h-11 text-xs md:text-sm text-white bg-brown-0.5">오늘 하루 안보기</button>
           <button type="button" id="closeButton" class="p-[.3125rem] rounded-[2.5rem] w-full md:w-60 h-11 text-xs md:text-sm text-white bg-brown">닫기</button>
-          <a href=""></a>
         </footer>
       </article>
     </dialog>

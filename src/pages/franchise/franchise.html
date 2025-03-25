@@ -38,24 +38,24 @@
             </p>
             <ul class="grid gap-2.5 lg:grid-cols-3">
               <li class="flex items-center gap-[.3125rem] p-[.625rem_.9375rem] rounded-[.625rem] h-[54px] bg-beige text-sm">
-                <img src="/src/assets/elements/ico_tick.svg" alt="" class="px-1" />
+                <img src="/src/assets/elements/ico_tick.svg" alt="" aria-hidden="true" class="px-1" />
                 <strong class="flex-1">입지 조건 및 임대 면적</strong>
-                <button id="goToMenu1" type="button" class="w-6">
-                  <img src="/src/assets/elements/btn_collapse.svg" alt="이동하기" class="m-auto" />
+                <button id="goToMenu1" aria-label="자세히 보기 버튼" type="button" class="w-6">
+                  <img src="/src/assets/elements/btn_collapse.svg" alt="" aria-hidden="true" class="m-auto" />
                 </button>
               </li>
               <li class="flex items-center gap-[.3125rem] p-[.625rem_.9375rem] rounded-[.625rem] h-[54px] bg-beige text-sm">
-                <img src="/src/assets/elements/ico_tick.svg" alt="" class="px-1" />
+                <img src="/src/assets/elements/ico_tick.svg" alt="" aria-hidden="true" class="px-1" />
                 <strong class="flex-1">개설 비용 안내</strong>
-                <button id="goToMenu2" type="button" class="w-6">
-                  <img src="/src/assets/elements/btn_collapse.svg" alt="이동하기" class="m-auto" />
+                <button id="goToMenu2" aria-label="자세히 보기 버튼" type="button" class="w-6">
+                  <img src="/src/assets/elements/btn_collapse.svg" alt="" aria-hidden="true" class="m-auto" />
                 </button>
               </li>
               <li class="flex items-center gap-[.3125rem] p-[.625rem_.9375rem] rounded-[.625rem] h-[54px] bg-beige text-sm">
-                <img src="/src/assets/elements/ico_tick.svg" alt="" class="px-1" />
+                <img src="/src/assets/elements/ico_tick.svg" alt="" aria-hidden="true" class="px-1" />
                 <strong class="flex-1">가맹 신청하기</strong>
-                <button id="goToMenu3" type="button" class="w-6">
-                  <img src="/src/assets/elements/btn_collapse.svg" alt="이동하기" class="m-auto" />
+                <button id="goToMenu3" aria-label="자세히 보기 버튼" type="button" class="w-6">
+                  <img src="/src/assets/elements/btn_collapse.svg" alt="" aria-hidden="true" class="m-auto" />
                 </button>
               </li>
             </ul>
@@ -278,7 +278,7 @@
       <article class="flex flex-col">
         <header class="sticky top-0 z-1 bg-beige p-[.9375rem_2.5rem] md:p-[1.875rem_3.75rem] h-[3.375rem] md:h-22 text-center text-lg md:text-2xl">
           <p>가맹 신청서</p>
-          <button type="button" id="closeApplicationForm" class="absolute top-0 right-[1.5625rem] bg-center bg-no-repeat bg-[image:url(/src/assets/elements/btn_pop_close.svg)] w-6 h-full"></button>
+          <button type="button" aria-label="가맹 신청서 닫기 버튼" id="closeApplicationForm" class="absolute top-0 right-[1.5625rem] bg-center bg-no-repeat bg-[image:url(/src/assets/elements/btn_pop_close.svg)] w-6 h-full"></button>
         </header>
 
         <div class="px-5 pb-[.9375rem] md:px-[1.875rem] lg:pb-5">
@@ -553,11 +553,11 @@
               <div class="flex gap-[1.875rem] items-center">
                 <label class="flex items-center w-[5.125rem]">
                   <input type="radio" checked value="y" name="rentalProperty" class="p-3 appearance-none bg-no-repeat bg-[image:url(/src/assets/customer/radio_off.svg)] checked:bg-[image:url(/src/assets/customer/radio_on.svg)] w-6 aspect-1/1" />
-                  <p class="ml-[.3125rem]">유</p>
+                  <span class="ml-[.3125rem]">유</span>
                 </label>
                 <label class="flex items-center w-[5.125rem]">
                   <input type="radio" value="n" name="rentalProperty" class="p-3 appearance-none bg-[image:url(/src/assets/customer/radio_off.svg)] checked:bg-[image:url(/src/assets/customer/radio_on.svg)] w-6 aspect-1/1" />
-                  <p class="ml-[.3125rem]">무</p>
+                  <span class="ml-[.3125rem]">무</span>
                 </label>
               </div>
             </div>
@@ -594,7 +594,7 @@
             <div class="relative flex flex-col min-h-15 bg-brown-0.05 p-[.9375rem_1.25rem] m-[1.25rem_-1.25rem_0_-1.25rem] md:mx-[-1.875rem_-1.875rem]">
               <label class="flex items-center w-fit min-w-70">
                 <input type="checkbox" required value="y" name="chkPrivacy" class="p-3 appearance-none bg-[image:url(/src/assets/customer/checkbox_off.svg)] checked:bg-[image:url(/src/assets/customer/checkbox_on.svg)] w-6 aspect-1/1" />
-                <p class="ml-[.3125rem] text-2xs">개인정보 수집 및 활용에 동의합니다.</p>
+                <span class="ml-[.3125rem] text-2xs">개인정보 수집 및 활용에 동의합니다.</span>
               </label>
 
               <details class="open:*:first:after:content-['약관닫기']">
