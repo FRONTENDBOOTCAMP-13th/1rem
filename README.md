@@ -48,7 +48,7 @@
 ## 설치 및 실행 방법
 
 ```bash
-https://github.com/FRONTENDBOOTCAMP-13th/1rem.git
+git clone https://github.com/FRONTENDBOOTCAMP-13th/1rem.git
 cd 1rem
 npm install
 npm run dev
@@ -89,16 +89,16 @@ npm run dev
 
 ## 커밋 컨벤션
 
-- `[타입] 이름 / 내용` 으로 작성
+- `[타입] 내용` 으로 작성
 - 세부 내역이 필요하다면 한 줄 띄어서
 - -로 각 항목을 구분하여 작성
 
 ```
 # 한줄 커밋
-[chore] 임한길 / prettier 패키지 추가
+[chore] prettier 패키지 추가
 
 # 여러줄 커밋
-[feat] 임한길 / STORY 페이지 구현
+[feat] STORY 페이지 구현
 
 - 브랜드 페이지
 - Why 버거킹 페이지
